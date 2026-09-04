@@ -1,0 +1,308 @@
+[
+  {
+    "path": "models/einv2/variants/C0/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+    "reason": "Relocate shared metric import to repository evaluation/.",
+    "before_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+    "after_sha256": "2038670247e9ab5cdb1456351c33d6b93064b867a28cbd7dd16450279acf7615"
+  },
+  {
+    "path": "models/einv2/variants/C0/seld/learning/initialize.py",
+    "reason": "Explicit inference checkpoint; prevent overwriting training/prediction directories.",
+    "before_sha256": "ea597efeb071ffc6c40fda013e7ec0b5f978d6b02f9473280f6d0cf44fd8a342",
+    "after_sha256": "9e5e17d55c070a4e472d1730635eab97970e69accafd77bc11115459bf328955"
+  },
+  {
+    "path": "models/einv2/variants/C0/seld/learning/evaluate.py",
+    "reason": "Write one complete metric table without duplicated headers.",
+    "before_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+    "after_sha256": "4087bd913d78a5bb6e846ee9dd5b3ccccf8a30d96c60204ba9a15b2083e0b72c"
+  },
+  {
+    "path": "models/einv2/variants/C0_legacy/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+    "reason": "Relocate shared metric import to repository evaluation/.",
+    "before_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+    "after_sha256": "2038670247e9ab5cdb1456351c33d6b93064b867a28cbd7dd16450279acf7615"
+  },
+  {
+    "path": "models/einv2/variants/C0_legacy/seld/learning/initialize.py",
+    "reason": "Explicit inference checkpoint; prevent overwriting training/prediction directories.",
+    "before_sha256": "ea597efeb071ffc6c40fda013e7ec0b5f978d6b02f9473280f6d0cf44fd8a342",
+    "after_sha256": "9e5e17d55c070a4e472d1730635eab97970e69accafd77bc11115459bf328955"
+  },
+  {
+    "path": "models/einv2/variants/C0_legacy/seld/learning/evaluate.py",
+    "reason": "Write one complete metric table without duplicated headers.",
+    "before_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+    "after_sha256": "4087bd913d78a5bb6e846ee9dd5b3ccccf8a30d96c60204ba9a15b2083e0b72c"
+  },
+  {
+    "path": "models/einv2/variants/C1/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+    "reason": "Relocate shared metric import to repository evaluation/.",
+    "before_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+    "after_sha256": "2038670247e9ab5cdb1456351c33d6b93064b867a28cbd7dd16450279acf7615"
+  },
+  {
+    "path": "models/einv2/variants/C1/seld/learning/initialize.py",
+    "reason": "Explicit inference checkpoint; prevent overwriting training/prediction directories.",
+    "before_sha256": "ea597efeb071ffc6c40fda013e7ec0b5f978d6b02f9473280f6d0cf44fd8a342",
+    "after_sha256": "9e5e17d55c070a4e472d1730635eab97970e69accafd77bc11115459bf328955"
+  },
+  {
+    "path": "models/einv2/variants/C1/seld/learning/evaluate.py",
+    "reason": "Write one complete metric table without duplicated headers.",
+    "before_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+    "after_sha256": "4087bd913d78a5bb6e846ee9dd5b3ccccf8a30d96c60204ba9a15b2083e0b72c"
+  },
+  {
+    "path": "models/einv2/variants/C2/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+    "reason": "Relocate shared metric import to repository evaluation/.",
+    "before_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+    "after_sha256": "2038670247e9ab5cdb1456351c33d6b93064b867a28cbd7dd16450279acf7615"
+  },
+  {
+    "path": "models/einv2/variants/C2/seld/learning/initialize.py",
+    "reason": "Explicit inference checkpoint; prevent overwriting training/prediction directories.",
+    "before_sha256": "60bc18cfe3e6dfca6a11f483ba6b229b4cd679612d6e963e856d834965c2781e",
+    "after_sha256": "65443b69af3e7292625cac9722bde667db7a356e81e0f61d5728f5824d1db47d"
+  },
+  {
+    "path": "models/einv2/variants/C2/seld/learning/evaluate.py",
+    "reason": "Write one complete metric table without duplicated headers.",
+    "before_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+    "after_sha256": "4087bd913d78a5bb6e846ee9dd5b3ccccf8a30d96c60204ba9a15b2083e0b72c"
+  },
+  {
+    "path": "models/einv2/variants/C3/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+    "reason": "Relocate shared metric import to repository evaluation/.",
+    "before_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+    "after_sha256": "2038670247e9ab5cdb1456351c33d6b93064b867a28cbd7dd16450279acf7615"
+  },
+  {
+    "path": "models/einv2/variants/C3/seld/learning/initialize.py",
+    "reason": "Explicit inference checkpoint; prevent overwriting training/prediction directories.",
+    "before_sha256": "60bc18cfe3e6dfca6a11f483ba6b229b4cd679612d6e963e856d834965c2781e",
+    "after_sha256": "65443b69af3e7292625cac9722bde667db7a356e81e0f61d5728f5824d1db47d"
+  },
+  {
+    "path": "models/einv2/variants/C3/seld/learning/evaluate.py",
+    "reason": "Write one complete metric table without duplicated headers.",
+    "before_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+    "after_sha256": "4087bd913d78a5bb6e846ee9dd5b3ccccf8a30d96c60204ba9a15b2083e0b72c"
+  },
+  {
+    "path": "models/einv2/variants/E1/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+    "reason": "Relocate shared metric import to repository evaluation/.",
+    "before_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+    "after_sha256": "2038670247e9ab5cdb1456351c33d6b93064b867a28cbd7dd16450279acf7615"
+  },
+  {
+    "path": "models/einv2/variants/E1/seld/learning/initialize.py",
+    "reason": "Explicit inference checkpoint; prevent overwriting training/prediction directories.",
+    "before_sha256": "ea597efeb071ffc6c40fda013e7ec0b5f978d6b02f9473280f6d0cf44fd8a342",
+    "after_sha256": "9e5e17d55c070a4e472d1730635eab97970e69accafd77bc11115459bf328955"
+  },
+  {
+    "path": "models/einv2/variants/E1/seld/learning/evaluate.py",
+    "reason": "Write one complete metric table without duplicated headers.",
+    "before_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+    "after_sha256": "4087bd913d78a5bb6e846ee9dd5b3ccccf8a30d96c60204ba9a15b2083e0b72c"
+  },
+  {
+    "path": "models/einv2/variants/E2/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+    "reason": "Relocate shared metric import to repository evaluation/.",
+    "before_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+    "after_sha256": "2038670247e9ab5cdb1456351c33d6b93064b867a28cbd7dd16450279acf7615"
+  },
+  {
+    "path": "models/einv2/variants/E2/seld/learning/initialize.py",
+    "reason": "Explicit inference checkpoint; prevent overwriting training/prediction directories.",
+    "before_sha256": "60bc18cfe3e6dfca6a11f483ba6b229b4cd679612d6e963e856d834965c2781e",
+    "after_sha256": "65443b69af3e7292625cac9722bde667db7a356e81e0f61d5728f5824d1db47d"
+  },
+  {
+    "path": "models/einv2/variants/E2/seld/learning/evaluate.py",
+    "reason": "Write one complete metric table without duplicated headers.",
+    "before_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+    "after_sha256": "4087bd913d78a5bb6e846ee9dd5b3ccccf8a30d96c60204ba9a15b2083e0b72c"
+  },
+  {
+    "path": "models/einv2/variants/E3/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+    "reason": "Relocate shared metric import to repository evaluation/.",
+    "before_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+    "after_sha256": "2038670247e9ab5cdb1456351c33d6b93064b867a28cbd7dd16450279acf7615"
+  },
+  {
+    "path": "models/einv2/variants/E3/seld/learning/initialize.py",
+    "reason": "Explicit inference checkpoint; prevent overwriting training/prediction directories.",
+    "before_sha256": "60bc18cfe3e6dfca6a11f483ba6b229b4cd679612d6e963e856d834965c2781e",
+    "after_sha256": "65443b69af3e7292625cac9722bde667db7a356e81e0f61d5728f5824d1db47d"
+  },
+  {
+    "path": "models/einv2/variants/E3/seld/learning/evaluate.py",
+    "reason": "Write one complete metric table without duplicated headers.",
+    "before_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+    "after_sha256": "4087bd913d78a5bb6e846ee9dd5b3ccccf8a30d96c60204ba9a15b2083e0b72c"
+  },
+  {
+    "path": "models/multi_accdoa/analysis/evaluate_threshold_sensitivity.py",
+    "reason": "Allow explicit evaluation output directory; preserve existing predictions.",
+    "before_sha256": "33ee7d3814e311868da8f6e20ffa6fed0049d0f6dce57f2957a8336ccc1f1c72",
+    "after_sha256": "c7779250d681a52b41dd495f77f9bf818dcb869de15e5ed91ab97696e1a2a389"
+  },
+  {
+    "path": "evaluation/test_alignment.py",
+    "reason": "Test the shipped Multi-ACCDOA wrapper directly.",
+    "before_sha256": "57c5d02657612a9327f9e69b02cf1ebc017636d758fd714a8ee324a8024a6a9c",
+    "after_sha256": "63768a7995c3fe3e4295b0317810cf384ed834e8ce7ab66680082569a6ea4c56"
+  },
+  {
+    "path": "models/einv2/variants/C0/seld/methods/ein_seld/training.py",
+    "reason": "Honor explicit scaler path without changing IV channel reordering.",
+    "before_sha256": "6121c8208f2b7c1d4562e3ea129ad0d742b4c0dbed5325a9c2c1a0068f3a10d0",
+    "after_sha256": "4527543f532be2c520743aec5c950aca5d93212953032e98398caf42716f0737"
+  },
+  {
+    "path": "models/einv2/variants/C0/seld/methods/ein_seld/inference.py",
+    "reason": "Honor explicit scaler path without changing IV channel reordering.",
+    "before_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+    "after_sha256": "a783fb1d276c5696e8092f082f0522dc00c53c215e8af314144afd248a89379d"
+  },
+  {
+    "path": "models/einv2/variants/C0/seld/learning/infer.py",
+    "reason": "Allow loading GPU-created checkpoints for CPU inference.",
+    "before_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+    "after_sha256": "c33927b3eabccae90e52936e5ee3286e90860f4d2c639015956c69db9eea3eb3"
+  },
+  {
+    "path": "models/einv2/variants/C0_legacy/seld/methods/ein_seld/training.py",
+    "reason": "Honor explicit scaler path without changing IV channel reordering.",
+    "before_sha256": "237ababaf98da0f5fc85c51c56249b4ee928acee0c903eb2889795d2dbfde034",
+    "after_sha256": "31bcb40954170161789514f9d31c9568515b0ecd54fe55b4d2b26c315e99f9f1"
+  },
+  {
+    "path": "models/einv2/variants/C0_legacy/seld/methods/ein_seld/inference.py",
+    "reason": "Honor explicit scaler path without changing IV channel reordering.",
+    "before_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+    "after_sha256": "a783fb1d276c5696e8092f082f0522dc00c53c215e8af314144afd248a89379d"
+  },
+  {
+    "path": "models/einv2/variants/C0_legacy/seld/learning/infer.py",
+    "reason": "Allow loading GPU-created checkpoints for CPU inference.",
+    "before_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+    "after_sha256": "c33927b3eabccae90e52936e5ee3286e90860f4d2c639015956c69db9eea3eb3"
+  },
+  {
+    "path": "models/einv2/variants/C1/seld/methods/ein_seld/training.py",
+    "reason": "Honor explicit scaler path without changing IV channel reordering.",
+    "before_sha256": "83d1648661f40f129d4bf46fd785d0eb801f900df4221270df1001a16de98a41",
+    "after_sha256": "aefd09e5b746aeac4c6b2cb3d3be0e22c4374f8800ff82b5cfbe659b026a104d"
+  },
+  {
+    "path": "models/einv2/variants/C1/seld/methods/ein_seld/inference.py",
+    "reason": "Honor explicit scaler path without changing IV channel reordering.",
+    "before_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+    "after_sha256": "a783fb1d276c5696e8092f082f0522dc00c53c215e8af314144afd248a89379d"
+  },
+  {
+    "path": "models/einv2/variants/C1/seld/learning/infer.py",
+    "reason": "Allow loading GPU-created checkpoints for CPU inference.",
+    "before_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+    "after_sha256": "c33927b3eabccae90e52936e5ee3286e90860f4d2c639015956c69db9eea3eb3"
+  },
+  {
+    "path": "models/einv2/variants/C2/seld/methods/ein_seld/training.py",
+    "reason": "Honor explicit scaler path without changing IV channel reordering.",
+    "before_sha256": "60a15089a3292a3ab2f258c8f880d94536f3240790405883791246ee1cc15d11",
+    "after_sha256": "d7603740df29a3cf07bd709aed80de12a3afde5c2c1739d1965e12a6233ab134"
+  },
+  {
+    "path": "models/einv2/variants/C2/seld/methods/ein_seld/inference.py",
+    "reason": "Honor explicit scaler path without changing IV channel reordering.",
+    "before_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+    "after_sha256": "a783fb1d276c5696e8092f082f0522dc00c53c215e8af314144afd248a89379d"
+  },
+  {
+    "path": "models/einv2/variants/C2/seld/learning/infer.py",
+    "reason": "Allow loading GPU-created checkpoints for CPU inference.",
+    "before_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+    "after_sha256": "c33927b3eabccae90e52936e5ee3286e90860f4d2c639015956c69db9eea3eb3"
+  },
+  {
+    "path": "models/einv2/variants/C3/seld/methods/ein_seld/training.py",
+    "reason": "Honor explicit scaler path without changing IV channel reordering.",
+    "before_sha256": "8d0fd96f9a5224f75f38b1cf985805c65adfcdc9591242f0aaa3ef46ff1a9ef3",
+    "after_sha256": "b79f0086f187011a72edba2a3c6adbb173fb0fcc0c006f2bc58ba7b96ec8d4e0"
+  },
+  {
+    "path": "models/einv2/variants/C3/seld/methods/ein_seld/inference.py",
+    "reason": "Honor explicit scaler path without changing IV channel reordering.",
+    "before_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+    "after_sha256": "a783fb1d276c5696e8092f082f0522dc00c53c215e8af314144afd248a89379d"
+  },
+  {
+    "path": "models/einv2/variants/C3/seld/learning/infer.py",
+    "reason": "Allow loading GPU-created checkpoints for CPU inference.",
+    "before_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+    "after_sha256": "c33927b3eabccae90e52936e5ee3286e90860f4d2c639015956c69db9eea3eb3"
+  },
+  {
+    "path": "models/einv2/variants/E1/seld/methods/ein_seld/training.py",
+    "reason": "Honor explicit scaler path without changing IV channel reordering.",
+    "before_sha256": "83d1648661f40f129d4bf46fd785d0eb801f900df4221270df1001a16de98a41",
+    "after_sha256": "aefd09e5b746aeac4c6b2cb3d3be0e22c4374f8800ff82b5cfbe659b026a104d"
+  },
+  {
+    "path": "models/einv2/variants/E1/seld/methods/ein_seld/inference.py",
+    "reason": "Honor explicit scaler path without changing IV channel reordering.",
+    "before_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+    "after_sha256": "a783fb1d276c5696e8092f082f0522dc00c53c215e8af314144afd248a89379d"
+  },
+  {
+    "path": "models/einv2/variants/E1/seld/learning/infer.py",
+    "reason": "Allow loading GPU-created checkpoints for CPU inference.",
+    "before_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+    "after_sha256": "c33927b3eabccae90e52936e5ee3286e90860f4d2c639015956c69db9eea3eb3"
+  },
+  {
+    "path": "models/einv2/variants/E2/seld/methods/ein_seld/training.py",
+    "reason": "Honor explicit scaler path without changing IV channel reordering.",
+    "before_sha256": "60a15089a3292a3ab2f258c8f880d94536f3240790405883791246ee1cc15d11",
+    "after_sha256": "d7603740df29a3cf07bd709aed80de12a3afde5c2c1739d1965e12a6233ab134"
+  },
+  {
+    "path": "models/einv2/variants/E2/seld/methods/ein_seld/inference.py",
+    "reason": "Honor explicit scaler path without changing IV channel reordering.",
+    "before_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+    "after_sha256": "a783fb1d276c5696e8092f082f0522dc00c53c215e8af314144afd248a89379d"
+  },
+  {
+    "path": "models/einv2/variants/E2/seld/learning/infer.py",
+    "reason": "Allow loading GPU-created checkpoints for CPU inference.",
+    "before_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+    "after_sha256": "c33927b3eabccae90e52936e5ee3286e90860f4d2c639015956c69db9eea3eb3"
+  },
+  {
+    "path": "models/einv2/variants/E3/seld/methods/ein_seld/training.py",
+    "reason": "Honor explicit scaler path without changing IV channel reordering.",
+    "before_sha256": "8d0fd96f9a5224f75f38b1cf985805c65adfcdc9591242f0aaa3ef46ff1a9ef3",
+    "after_sha256": "b79f0086f187011a72edba2a3c6adbb173fb0fcc0c006f2bc58ba7b96ec8d4e0"
+  },
+  {
+    "path": "models/einv2/variants/E3/seld/methods/ein_seld/inference.py",
+    "reason": "Honor explicit scaler path without changing IV channel reordering.",
+    "before_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+    "after_sha256": "a783fb1d276c5696e8092f082f0522dc00c53c215e8af314144afd248a89379d"
+  },
+  {
+    "path": "models/einv2/variants/E3/seld/learning/infer.py",
+    "reason": "Allow loading GPU-created checkpoints for CPU inference.",
+    "before_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+    "after_sha256": "c33927b3eabccae90e52936e5ee3286e90860f4d2c639015956c69db9eea3eb3"
+  },
+  {
+    "path": "models/multi_accdoa/parameters.py",
+    "reason": "Record the current metric protocol in future run manifests.",
+    "before_sha256": "c227eee5105649c8dac21a38d6b5734853473b0925100086e40d2cc23f6e8da8",
+    "after_sha256": "49e9eb828de6553b11a432dadbd96b94c3155d86b973e2c798fa05d190837af2"
+  }
+]

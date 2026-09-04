@@ -1,0 +1,2563 @@
+{
+  "captured_date": "2026-09-04",
+  "host": "rabbit02",
+  "source_root": "/work/zhanghc/Myllm/SELD",
+  "multi_accdoa_git_commit": "560a17a59192971b5c2c241ef4caea82f8ebb8e8",
+  "variants": {
+    "C0_legacy": "C0_CausalEINV2_seed2026",
+    "C0": "C0p1_CausalEINV2_fix_seed2026",
+    "C1": "C1_CausalEINV2_Velocity_seed2026",
+    "C2": "C2_CausalEINV2_JEPA_seed2026",
+    "C3": "C3_CausalEINV2_Velocity_JEPA_seed2026",
+    "E1": "E1_OfflineEINV2_Velocity_seed2026",
+    "E2": "E2_OfflineEINV2_JEPAConsistency_seed2026",
+    "E3": "E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026"
+  },
+  "scope": "Research source/configs and two compact historical metric logs only; no datasets/checkpoints/predictions.",
+  "files": [
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/learning/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/learning/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/learning/checkpoint.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/learning/checkpoint.py",
+      "sha256": "d7a579326fd74375b43ace0f48490b827539c26e9f42cdc8a582ffefc850a38a",
+      "bytes": 6694
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/learning/evaluate.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/learning/evaluate.py",
+      "sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+      "bytes": 4954
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/learning/infer.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/learning/infer.py",
+      "sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+      "bytes": 1145
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/learning/initialize.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/learning/initialize.py",
+      "sha256": "ea597efeb071ffc6c40fda013e7ec0b5f978d6b02f9473280f6d0cf44fd8a342",
+      "bytes": 7030
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/learning/preprocess.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/learning/preprocess.py",
+      "sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983",
+      "bytes": 11228
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/learning/train.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/learning/train.py",
+      "sha256": "b8337f56814a08602b806a153347a391cfc6e0e7a74e02146173bbbb25740beb",
+      "bytes": 3735
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/main.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/main.py",
+      "sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d",
+      "bytes": 1766
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/data.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/data.py",
+      "sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d",
+      "bytes": 4499
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/data_augmentation/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/data_augmentation/__init__.py",
+      "sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a",
+      "bytes": 71
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/ein_seld/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/ein_seld/__init__.py",
+      "sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac",
+      "bytes": 190
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/ein_seld/data.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/ein_seld/data.py",
+      "sha256": "45836d3ce7afd91bf39a2dd9bfeb71edbf470d75ddff1b48fb54c1dc6c76b1f9",
+      "bytes": 16348
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f",
+      "bytes": 79
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/ein_seld/inference.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/ein_seld/inference.py",
+      "sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+      "bytes": 4682
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/ein_seld/losses.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/ein_seld/losses.py",
+      "sha256": "5d3f44416adcf4cae6d792c0a8938b838371a3898ddab1356abbbb2848b2ff9f",
+      "bytes": 3262
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/ein_seld/metrics.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/ein_seld/metrics.py",
+      "sha256": "172d2374353621010f47415e27740f849e6adddbfd657815f08831aed312d6d7",
+      "bytes": 1963
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/ein_seld/models/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/ein_seld/models/__init__.py",
+      "sha256": "91f8eef8c5ba92bc9ea53ac608a5320c3cd38677d4fc6b188cf9da7aa283604b",
+      "bytes": 47
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/ein_seld/models/seld.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/ein_seld/models/seld.py",
+      "sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd",
+      "bytes": 6041
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/ein_seld/models/seld_causal.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/ein_seld/models/seld_causal.py",
+      "sha256": "9ab14e2750600a1da47641d01e684ff9c37a2c05052e5c18e1d2c1a8ad9c4f42",
+      "bytes": 4582
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/ein_seld/training.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/ein_seld/training.py",
+      "sha256": "237ababaf98da0f5fc85c51c56249b4ee928acee0c903eb2889795d2dbfde034",
+      "bytes": 10679
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/feature.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/feature.py",
+      "sha256": "56a0f74dbacb80ffd80718c7f96667f1e98bb1a186ec59f6eb12a2a3ffc6a767",
+      "bytes": 1950
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/feature_causal.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/feature_causal.py",
+      "sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604",
+      "bytes": 1426
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/inference.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/inference.py",
+      "sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4",
+      "bytes": 905
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/training.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/training.py",
+      "sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+      "bytes": 317
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138",
+      "bytes": 25178
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "bytes": 13603
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+      "bytes": 359
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/utils/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/utils/data_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/utils/data_utilities.py",
+      "sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315",
+      "bytes": 6303
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/utils/loss_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/utils/loss_utilities.py",
+      "sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+      "bytes": 1222
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/utils/model_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/utils/model_utilities.py",
+      "sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337",
+      "bytes": 3202
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/methods/utils/stft.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/utils/stft.py",
+      "sha256": "9b94669aafa2a63d0735f311596be0085865158eec436bfa84b6b16007b16a9f",
+      "bytes": 31475
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/utils/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/utils/cli_parser.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/utils/cli_parser.py",
+      "sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f",
+      "bytes": 3173
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/utils/common.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/utils/common.py",
+      "sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805",
+      "bytes": 3569
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/utils/config.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/utils/config.py",
+      "sha256": "5a0eca23b8c3c98afb4d5c46714230c14b4fb1c3bd9e7e9aa0fc8231260847a0",
+      "bytes": 6903
+    },
+    {
+      "path": "models/einv2/variants/C0_legacy/seld/utils/datasets.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/utils/datasets.py",
+      "sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f",
+      "bytes": 1205
+    },
+    {
+      "path": "configs/einv2/historical/C0_legacy/c0_causal_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/configs/ein_seld/c0_causal_seed2026.yaml",
+      "sha256": "35a727ee6de25ec8664a806dcf8faaefcd937dc48825c9cdaa97197f2ee1dd2f",
+      "bytes": 1080
+    },
+    {
+      "path": "configs/einv2/historical/C0_legacy/seld.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/configs/ein_seld/seld.yaml",
+      "sha256": "61e183e3ecb8b1a339a9ba7e7b989c92e4bb4e566d95fa0bc92f56cd234e5c18",
+      "bytes": 951
+    },
+    {
+      "path": "licenses/einv2/C0_legacy_MIT_LICENSE",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/Licenses/MIT_LICENSE",
+      "sha256": "3818d41b2d5a99cde13bce42f4154e91dbf5ede03c656d85bc63a67d00bca475",
+      "bytes": 1064
+    },
+    {
+      "path": "docs/upstream/einv2_C0_legacy.md",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/README.md",
+      "sha256": "140f40c6f8c15a405c74e6c6e7a4ad21644915b06ce6fcf0cb55463f6f45bb17",
+      "bytes": 8073
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/learning/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/learning/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/learning/checkpoint.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/learning/checkpoint.py",
+      "sha256": "d7a579326fd74375b43ace0f48490b827539c26e9f42cdc8a582ffefc850a38a",
+      "bytes": 6694
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/learning/evaluate.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/learning/evaluate.py",
+      "sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+      "bytes": 4954
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/learning/infer.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/learning/infer.py",
+      "sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+      "bytes": 1145
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/learning/initialize.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/learning/initialize.py",
+      "sha256": "ea597efeb071ffc6c40fda013e7ec0b5f978d6b02f9473280f6d0cf44fd8a342",
+      "bytes": 7030
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/learning/preprocess.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/learning/preprocess.py",
+      "sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983",
+      "bytes": 11228
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/learning/train.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/learning/train.py",
+      "sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2",
+      "bytes": 3731
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/main.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/main.py",
+      "sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d",
+      "bytes": 1766
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/data.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/data.py",
+      "sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d",
+      "bytes": 4499
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/data_augmentation/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/data_augmentation/__init__.py",
+      "sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a",
+      "bytes": 71
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/ein_seld/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/__init__.py",
+      "sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac",
+      "bytes": 190
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/ein_seld/data.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/data.py",
+      "sha256": "45836d3ce7afd91bf39a2dd9bfeb71edbf470d75ddff1b48fb54c1dc6c76b1f9",
+      "bytes": 16348
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f",
+      "bytes": 79
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/ein_seld/inference.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/inference.py",
+      "sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+      "bytes": 4682
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/ein_seld/losses.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/losses.py",
+      "sha256": "5d3f44416adcf4cae6d792c0a8938b838371a3898ddab1356abbbb2848b2ff9f",
+      "bytes": 3262
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/ein_seld/metrics.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/metrics.py",
+      "sha256": "172d2374353621010f47415e27740f849e6adddbfd657815f08831aed312d6d7",
+      "bytes": 1963
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/ein_seld/models/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/models/__init__.py",
+      "sha256": "91f8eef8c5ba92bc9ea53ac608a5320c3cd38677d4fc6b188cf9da7aa283604b",
+      "bytes": 47
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/ein_seld/models/seld.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/models/seld.py",
+      "sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd",
+      "bytes": 6041
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/ein_seld/models/seld_causal.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/models/seld_causal.py",
+      "sha256": "a07ab81dde818c7eb563de21b73412ec0614506fecf8d5e5941d7b0917461525",
+      "bytes": 4938
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/ein_seld/training.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/training.py",
+      "sha256": "6121c8208f2b7c1d4562e3ea129ad0d742b4c0dbed5325a9c2c1a0068f3a10d0",
+      "bytes": 11111
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/feature.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/feature.py",
+      "sha256": "c78fd8450f581881e1b28ec5d3813ead4aa8b9e421ea61bcda3220356e173df4",
+      "bytes": 2443
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/feature_causal.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/feature_causal.py",
+      "sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604",
+      "bytes": 1426
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/inference.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/inference.py",
+      "sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4",
+      "bytes": 905
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/training.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/training.py",
+      "sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+      "bytes": 317
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138",
+      "bytes": 25178
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "bytes": 13603
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+      "bytes": 359
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/utils/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/utils/data_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/utils/data_utilities.py",
+      "sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315",
+      "bytes": 6303
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/utils/loss_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/utils/loss_utilities.py",
+      "sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+      "bytes": 1222
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/utils/model_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/utils/model_utilities.py",
+      "sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337",
+      "bytes": 3202
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/methods/utils/stft.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/utils/stft.py",
+      "sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4",
+      "bytes": 31616
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/utils/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/utils/cli_parser.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/utils/cli_parser.py",
+      "sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f",
+      "bytes": 3173
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/utils/common.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/utils/common.py",
+      "sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805",
+      "bytes": 3569
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/utils/config.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/utils/config.py",
+      "sha256": "5a0eca23b8c3c98afb4d5c46714230c14b4fb1c3bd9e7e9aa0fc8231260847a0",
+      "bytes": 6903
+    },
+    {
+      "path": "models/einv2/variants/C0/seld/utils/datasets.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/utils/datasets.py",
+      "sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f",
+      "bytes": 1205
+    },
+    {
+      "path": "configs/einv2/historical/C0/c0_causal_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/configs/ein_seld/c0_causal_seed2026.yaml",
+      "sha256": "35a727ee6de25ec8664a806dcf8faaefcd937dc48825c9cdaa97197f2ee1dd2f",
+      "bytes": 1080
+    },
+    {
+      "path": "configs/einv2/historical/C0/c0p1_causal_bestfix_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/configs/ein_seld/c0p1_causal_bestfix_seed2026.yaml",
+      "sha256": "ac3f8810527438c7abc44a6aeeb84cc7724fdc94a9762a4c2c04b0b636198050",
+      "bytes": 1147
+    },
+    {
+      "path": "configs/einv2/historical/C0/c0p1_causal_bestfix_seed2027.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/configs/ein_seld/c0p1_causal_bestfix_seed2027.yaml",
+      "sha256": "02951def20e70bdc8dfbc74d156dddb57ce8290e998cbe7d468d69507bce590b",
+      "bytes": 1148
+    },
+    {
+      "path": "configs/einv2/historical/C0/c0p1_causal_bestfix_seed2028.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/configs/ein_seld/c0p1_causal_bestfix_seed2028.yaml",
+      "sha256": "110587088c08da9db14a3eeea5a9a645ad60b0e52cdd8308b36dbae04d51616d",
+      "bytes": 1148
+    },
+    {
+      "path": "configs/einv2/historical/C0/c0p1_causal_ivfix_smallhead_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/configs/ein_seld/c0p1_causal_ivfix_smallhead_seed2026.yaml",
+      "sha256": "d06f62e16e61959b02b91ce43ff1b88f4cd35327e3e80ce3c0e1180659e77d57",
+      "bytes": 1125
+    },
+    {
+      "path": "configs/einv2/historical/C0/eval_pilot_c0_best.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/configs/ein_seld/eval_pilot_c0_best.yaml",
+      "sha256": "ccdad548ae7468d2b8a5cae16cdf923c7ddca94a69d396a782bd7aa66e4f35e5",
+      "bytes": 1140
+    },
+    {
+      "path": "configs/einv2/historical/C0/eval_pilot_e0_best.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/configs/ein_seld/eval_pilot_e0_best.yaml",
+      "sha256": "d8455664fa3606664e7efb58f9d9eab7bdfe9e5fa05bc81b581d49a58982b181",
+      "bytes": 1021
+    },
+    {
+      "path": "configs/einv2/historical/C0/seld.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/configs/ein_seld/seld.yaml",
+      "sha256": "61e183e3ecb8b1a339a9ba7e7b989c92e4bb4e566d95fa0bc92f56cd234e5c18",
+      "bytes": 951
+    },
+    {
+      "path": "configs/einv2/historical/C0/val_fold1_c0_bestfix_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/configs/ein_seld/val_fold1_c0_bestfix_seed2026.yaml",
+      "sha256": "46564d3718cd10429fde8078f71d2376eff416e36ebb7a3990fa75ec3bf21b44",
+      "bytes": 1160
+    },
+    {
+      "path": "licenses/einv2/C0_MIT_LICENSE",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/Licenses/MIT_LICENSE",
+      "sha256": "3818d41b2d5a99cde13bce42f4154e91dbf5ede03c656d85bc63a67d00bca475",
+      "bytes": 1064
+    },
+    {
+      "path": "docs/upstream/einv2_C0.md",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/README.md",
+      "sha256": "140f40c6f8c15a405c74e6c6e7a4ad21644915b06ce6fcf0cb55463f6f45bb17",
+      "bytes": 8073
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/learning/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/learning/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/learning/checkpoint.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/learning/checkpoint.py",
+      "sha256": "d7a579326fd74375b43ace0f48490b827539c26e9f42cdc8a582ffefc850a38a",
+      "bytes": 6694
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/learning/evaluate.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/learning/evaluate.py",
+      "sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+      "bytes": 4954
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/learning/infer.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/learning/infer.py",
+      "sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+      "bytes": 1145
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/learning/initialize.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/learning/initialize.py",
+      "sha256": "ea597efeb071ffc6c40fda013e7ec0b5f978d6b02f9473280f6d0cf44fd8a342",
+      "bytes": 7030
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/learning/preprocess.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/learning/preprocess.py",
+      "sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983",
+      "bytes": 11228
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/learning/train.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/learning/train.py",
+      "sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2",
+      "bytes": 3731
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/main.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/main.py",
+      "sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d",
+      "bytes": 1766
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/data.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/data.py",
+      "sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d",
+      "bytes": 4499
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/data_augmentation/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/data_augmentation/__init__.py",
+      "sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a",
+      "bytes": 71
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/ein_seld/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/__init__.py",
+      "sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac",
+      "bytes": 190
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/ein_seld/data.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/data.py",
+      "sha256": "7f558b55588730984577aa0b0593ef861918eddc4a22a4107322c5e702bad779",
+      "bytes": 18718
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f",
+      "bytes": 79
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/ein_seld/inference.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/inference.py",
+      "sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+      "bytes": 4682
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/ein_seld/losses.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/losses.py",
+      "sha256": "b690cac8242090cef735e76bcf3b2f591675eba9411e70a556cbd63a0061ea80",
+      "bytes": 4442
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/ein_seld/metrics.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/metrics.py",
+      "sha256": "89344d79a1f452d5b1cfcd17d4d7af6b41855e3535de4a472dd51bbfe842cede",
+      "bytes": 2028
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/ein_seld/models/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/models/__init__.py",
+      "sha256": "91f8eef8c5ba92bc9ea53ac608a5320c3cd38677d4fc6b188cf9da7aa283604b",
+      "bytes": 47
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/ein_seld/models/seld.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/models/seld.py",
+      "sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd",
+      "bytes": 6041
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/ein_seld/models/seld_causal.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/models/seld_causal.py",
+      "sha256": "a6cd3ef854438c993f79c690a8471e0f591ee8931b1aa3a8ef7bab9877f393c3",
+      "bytes": 5635
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/ein_seld/training.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/training.py",
+      "sha256": "83d1648661f40f129d4bf46fd785d0eb801f900df4221270df1001a16de98a41",
+      "bytes": 13258
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/feature.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/feature.py",
+      "sha256": "56a0f74dbacb80ffd80718c7f96667f1e98bb1a186ec59f6eb12a2a3ffc6a767",
+      "bytes": 1950
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/feature_causal.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/feature_causal.py",
+      "sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604",
+      "bytes": 1426
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/inference.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/inference.py",
+      "sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4",
+      "bytes": 905
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/training.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/training.py",
+      "sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+      "bytes": 317
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138",
+      "bytes": 25178
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "bytes": 13603
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+      "bytes": 359
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/utils/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/utils/data_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/utils/data_utilities.py",
+      "sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315",
+      "bytes": 6303
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/utils/loss_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/utils/loss_utilities.py",
+      "sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+      "bytes": 1222
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/utils/model_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/utils/model_utilities.py",
+      "sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337",
+      "bytes": 3202
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/methods/utils/stft.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/utils/stft.py",
+      "sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4",
+      "bytes": 31616
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/utils/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/utils/cli_parser.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/utils/cli_parser.py",
+      "sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f",
+      "bytes": 3173
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/utils/common.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/utils/common.py",
+      "sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805",
+      "bytes": 3569
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/utils/config.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/utils/config.py",
+      "sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217",
+      "bytes": 6908
+    },
+    {
+      "path": "models/einv2/variants/C1/seld/utils/datasets.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/utils/datasets.py",
+      "sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f",
+      "bytes": 1205
+    },
+    {
+      "path": "configs/einv2/historical/C1/c0_causal_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/configs/ein_seld/c0_causal_seed2026.yaml",
+      "sha256": "35a727ee6de25ec8664a806dcf8faaefcd937dc48825c9cdaa97197f2ee1dd2f",
+      "bytes": 1080
+    },
+    {
+      "path": "configs/einv2/historical/C1/c0p1_causal_ivfix_smallhead_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/configs/ein_seld/c0p1_causal_ivfix_smallhead_seed2026.yaml",
+      "sha256": "d06f62e16e61959b02b91ce43ff1b88f4cd35327e3e80ce3c0e1180659e77d57",
+      "bytes": 1125
+    },
+    {
+      "path": "configs/einv2/historical/C1/c1_causal_velocity_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/configs/ein_seld/c1_causal_velocity_seed2026.yaml",
+      "sha256": "96490bb066c65dd2cf3e3ca1300c823dd3dbe3c8920e69c78c93c6bb8bd478d4",
+      "bytes": 1216
+    },
+    {
+      "path": "configs/einv2/historical/C1/c1_causal_velocity_seed2027.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/configs/ein_seld/c1_causal_velocity_seed2027.yaml",
+      "sha256": "d4c7f48f7cbd4764bfeec8a9ffa9d0e94fe5177fc311f25534d435e958c35ff4",
+      "bytes": 1241
+    },
+    {
+      "path": "configs/einv2/historical/C1/c1_causal_velocity_seed2028.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/configs/ein_seld/c1_causal_velocity_seed2028.yaml",
+      "sha256": "4c9e0ed4a546531be706afe96b719b92c27670b4948e1d53dec271d8a48cefc9",
+      "bytes": 1241
+    },
+    {
+      "path": "configs/einv2/historical/C1/eval_pilot_c1_best.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/configs/ein_seld/eval_pilot_c1_best.yaml",
+      "sha256": "fedaddf0415048d388a03b98c583268d7a58e1cd620e0e4253d7586ca5b1b72d",
+      "bytes": 1225
+    },
+    {
+      "path": "configs/einv2/historical/C1/seld.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/configs/ein_seld/seld.yaml",
+      "sha256": "61e183e3ecb8b1a339a9ba7e7b989c92e4bb4e566d95fa0bc92f56cd234e5c18",
+      "bytes": 951
+    },
+    {
+      "path": "licenses/einv2/C1_MIT_LICENSE",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/Licenses/MIT_LICENSE",
+      "sha256": "3818d41b2d5a99cde13bce42f4154e91dbf5ede03c656d85bc63a67d00bca475",
+      "bytes": 1064
+    },
+    {
+      "path": "docs/upstream/einv2_C1.md",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/README.md",
+      "sha256": "140f40c6f8c15a405c74e6c6e7a4ad21644915b06ce6fcf0cb55463f6f45bb17",
+      "bytes": 8073
+    },
+    {
+      "path": "models/einv2/variants/C1/tools/build_velocity_labels.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/scripts/build_velocity_labels.py",
+      "sha256": "fa6fe76912ff7d4a385f5e57e0206ef3bacb86d84a842a6d650a7884eb8d6b7c",
+      "bytes": 4408
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/learning/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/learning/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/learning/checkpoint.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/learning/checkpoint.py",
+      "sha256": "3e212a69cc1f1cdbca4a14d64e93620c6302cc71da0805bba581be2f3bd8c9a6",
+      "bytes": 7277
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/learning/evaluate.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/learning/evaluate.py",
+      "sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+      "bytes": 4954
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/learning/infer.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/learning/infer.py",
+      "sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+      "bytes": 1145
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/learning/initialize.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/learning/initialize.py",
+      "sha256": "60bc18cfe3e6dfca6a11f483ba6b229b4cd679612d6e963e856d834965c2781e",
+      "bytes": 7092
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/learning/preprocess.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/learning/preprocess.py",
+      "sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983",
+      "bytes": 11228
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/learning/train.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/learning/train.py",
+      "sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2",
+      "bytes": 3731
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/main.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/main.py",
+      "sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d",
+      "bytes": 1766
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/data.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/data.py",
+      "sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d",
+      "bytes": 4499
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/data_augmentation/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/data_augmentation/__init__.py",
+      "sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a",
+      "bytes": 71
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/ein_seld/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/__init__.py",
+      "sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac",
+      "bytes": 190
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/ein_seld/data.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/data.py",
+      "sha256": "7bcaaa467f50355c767a3a09ee749e106397d8b8437ed2e979d07bd8d0218896",
+      "bytes": 17712
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f",
+      "bytes": 79
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/ein_seld/inference.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/inference.py",
+      "sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+      "bytes": 4682
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/ein_seld/losses.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/losses.py",
+      "sha256": "b650a9204bff5fd687f0e02b6a39b160f2d8a6a7a2272076119f81c79e080eba",
+      "bytes": 5799
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/ein_seld/metrics.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/metrics.py",
+      "sha256": "9ea6674c48addeb0dd46fffdb8daff5cda8c954ebd5d61cd38ed66c45542a3fa",
+      "bytes": 2304
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/ein_seld/models/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/models/__init__.py",
+      "sha256": "91f8eef8c5ba92bc9ea53ac608a5320c3cd38677d4fc6b188cf9da7aa283604b",
+      "bytes": 47
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/ein_seld/models/seld.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/models/seld.py",
+      "sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd",
+      "bytes": 6041
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/ein_seld/models/seld_causal.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/models/seld_causal.py",
+      "sha256": "c8f8666847d1f3024d14f8f99ea84c8b43ffc9e37cbef5735d9e365e8baeb431",
+      "bytes": 8205
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/ein_seld/training.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/training.py",
+      "sha256": "60a15089a3292a3ab2f258c8f880d94536f3240790405883791246ee1cc15d11",
+      "bytes": 15399
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/feature.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/feature.py",
+      "sha256": "56a0f74dbacb80ffd80718c7f96667f1e98bb1a186ec59f6eb12a2a3ffc6a767",
+      "bytes": 1950
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/feature_causal.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/feature_causal.py",
+      "sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604",
+      "bytes": 1426
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/inference.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/inference.py",
+      "sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4",
+      "bytes": 905
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/training.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/training.py",
+      "sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+      "bytes": 317
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138",
+      "bytes": 25178
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "bytes": 13603
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+      "bytes": 359
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/utils/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/utils/data_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/utils/data_utilities.py",
+      "sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315",
+      "bytes": 6303
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/utils/loss_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/utils/loss_utilities.py",
+      "sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+      "bytes": 1222
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/utils/model_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/utils/model_utilities.py",
+      "sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337",
+      "bytes": 3202
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/methods/utils/stft.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/utils/stft.py",
+      "sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4",
+      "bytes": 31616
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/utils/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/utils/cli_parser.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/utils/cli_parser.py",
+      "sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f",
+      "bytes": 3173
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/utils/common.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/utils/common.py",
+      "sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805",
+      "bytes": 3569
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/utils/config.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/utils/config.py",
+      "sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217",
+      "bytes": 6908
+    },
+    {
+      "path": "models/einv2/variants/C2/seld/utils/datasets.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/utils/datasets.py",
+      "sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f",
+      "bytes": 1205
+    },
+    {
+      "path": "configs/einv2/historical/C2/c0_causal_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/configs/ein_seld/c0_causal_seed2026.yaml",
+      "sha256": "35a727ee6de25ec8664a806dcf8faaefcd937dc48825c9cdaa97197f2ee1dd2f",
+      "bytes": 1080
+    },
+    {
+      "path": "configs/einv2/historical/C2/c0p1_causal_ivfix_smallhead_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/configs/ein_seld/c0p1_causal_ivfix_smallhead_seed2026.yaml",
+      "sha256": "d06f62e16e61959b02b91ce43ff1b88f4cd35327e3e80ce3c0e1180659e77d57",
+      "bytes": 1125
+    },
+    {
+      "path": "configs/einv2/historical/C2/c2_causal_jepa_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/configs/ein_seld/c2_causal_jepa_seed2026.yaml",
+      "sha256": "f805a862a1bd1cb20122ec153d892bdf77c74e6207617dbfefed8a457b2ff890",
+      "bytes": 1319
+    },
+    {
+      "path": "configs/einv2/historical/C2/c2_causal_jepa_seed2027.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/configs/ein_seld/c2_causal_jepa_seed2027.yaml",
+      "sha256": "16e4dc56d248e9d1b888f7e80410dceb65b0bd81ce70ed2bea26ce3ea3a25609",
+      "bytes": 1338
+    },
+    {
+      "path": "configs/einv2/historical/C2/c2_causal_jepa_seed2028.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/configs/ein_seld/c2_causal_jepa_seed2028.yaml",
+      "sha256": "5880c20863461a6deb2dfddd531286548bfdecd1f18fdae71bf9aea389048f7d",
+      "bytes": 1338
+    },
+    {
+      "path": "configs/einv2/historical/C2/eval_pilot_c2_best.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/configs/ein_seld/eval_pilot_c2_best.yaml",
+      "sha256": "a57c40ff3a09e51f3348d82f8fefa66a8c367418c058156d320b51588dd6ad90",
+      "bytes": 1333
+    },
+    {
+      "path": "configs/einv2/historical/C2/seld.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/configs/ein_seld/seld.yaml",
+      "sha256": "61e183e3ecb8b1a339a9ba7e7b989c92e4bb4e566d95fa0bc92f56cd234e5c18",
+      "bytes": 951
+    },
+    {
+      "path": "licenses/einv2/C2_MIT_LICENSE",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/Licenses/MIT_LICENSE",
+      "sha256": "3818d41b2d5a99cde13bce42f4154e91dbf5ede03c656d85bc63a67d00bca475",
+      "bytes": 1064
+    },
+    {
+      "path": "docs/upstream/einv2_C2.md",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/README.md",
+      "sha256": "140f40c6f8c15a405c74e6c6e7a4ad21644915b06ce6fcf0cb55463f6f45bb17",
+      "bytes": 8073
+    },
+    {
+      "path": "models/einv2/variants/C2/tools/build_jepa_masks.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/scripts/build_jepa_masks.py",
+      "sha256": "63ece656619dcf58f12420770d20c1dabbb2ac8e8a8d49d9626b9f2744a2c293",
+      "bytes": 3989
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/learning/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/learning/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/learning/checkpoint.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/learning/checkpoint.py",
+      "sha256": "3e212a69cc1f1cdbca4a14d64e93620c6302cc71da0805bba581be2f3bd8c9a6",
+      "bytes": 7277
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/learning/evaluate.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/learning/evaluate.py",
+      "sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+      "bytes": 4954
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/learning/infer.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/learning/infer.py",
+      "sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+      "bytes": 1145
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/learning/initialize.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/learning/initialize.py",
+      "sha256": "60bc18cfe3e6dfca6a11f483ba6b229b4cd679612d6e963e856d834965c2781e",
+      "bytes": 7092
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/learning/preprocess.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/learning/preprocess.py",
+      "sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983",
+      "bytes": 11228
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/learning/train.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/learning/train.py",
+      "sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2",
+      "bytes": 3731
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/main.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/main.py",
+      "sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d",
+      "bytes": 1766
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/data.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/data.py",
+      "sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d",
+      "bytes": 4499
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/data_augmentation/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/data_augmentation/__init__.py",
+      "sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a",
+      "bytes": 71
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/ein_seld/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/__init__.py",
+      "sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac",
+      "bytes": 190
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/ein_seld/data.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/data.py",
+      "sha256": "9776da2710ad90bb1a0d946888ef6e12ff44cca6fb447739da9916ea5e42b84e",
+      "bytes": 20082
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f",
+      "bytes": 79
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/ein_seld/inference.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/inference.py",
+      "sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+      "bytes": 4682
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/ein_seld/losses.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/losses.py",
+      "sha256": "b745f27d1f1694fe0e5fc86f3dc5feec655f0323c71ce76b5521cfe95d09d3c0",
+      "bytes": 6965
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/ein_seld/metrics.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/metrics.py",
+      "sha256": "c3d69aae70fe7588d89b463dc5c1ad2c9ea7462f6d051f7741f7e89a36e61bd5",
+      "bytes": 2365
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/ein_seld/models/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/models/__init__.py",
+      "sha256": "91f8eef8c5ba92bc9ea53ac608a5320c3cd38677d4fc6b188cf9da7aa283604b",
+      "bytes": 47
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/ein_seld/models/seld.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/models/seld.py",
+      "sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd",
+      "bytes": 6041
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/ein_seld/models/seld_causal.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/models/seld_causal.py",
+      "sha256": "3b106cb074ac3615100c492fd8a1e57e10942469e7813f4317645db9d197a812",
+      "bytes": 11157
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/ein_seld/training.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/training.py",
+      "sha256": "8d0fd96f9a5224f75f38b1cf985805c65adfcdc9591242f0aaa3ef46ff1a9ef3",
+      "bytes": 17546
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/feature.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/feature.py",
+      "sha256": "56a0f74dbacb80ffd80718c7f96667f1e98bb1a186ec59f6eb12a2a3ffc6a767",
+      "bytes": 1950
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/feature_causal.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/feature_causal.py",
+      "sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604",
+      "bytes": 1426
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/inference.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/inference.py",
+      "sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4",
+      "bytes": 905
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/training.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/training.py",
+      "sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+      "bytes": 317
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138",
+      "bytes": 25178
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "bytes": 13603
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+      "bytes": 359
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/utils/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/utils/data_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/utils/data_utilities.py",
+      "sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315",
+      "bytes": 6303
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/utils/loss_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/utils/loss_utilities.py",
+      "sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+      "bytes": 1222
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/utils/model_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/utils/model_utilities.py",
+      "sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337",
+      "bytes": 3202
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/methods/utils/stft.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/utils/stft.py",
+      "sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4",
+      "bytes": 31616
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/utils/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/utils/cli_parser.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/utils/cli_parser.py",
+      "sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f",
+      "bytes": 3173
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/utils/common.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/utils/common.py",
+      "sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805",
+      "bytes": 3569
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/utils/config.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/utils/config.py",
+      "sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217",
+      "bytes": 6908
+    },
+    {
+      "path": "models/einv2/variants/C3/seld/utils/datasets.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/utils/datasets.py",
+      "sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f",
+      "bytes": 1205
+    },
+    {
+      "path": "configs/einv2/historical/C3/c0_causal_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/configs/ein_seld/c0_causal_seed2026.yaml",
+      "sha256": "35a727ee6de25ec8664a806dcf8faaefcd937dc48825c9cdaa97197f2ee1dd2f",
+      "bytes": 1080
+    },
+    {
+      "path": "configs/einv2/historical/C3/c0p1_causal_ivfix_smallhead_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/configs/ein_seld/c0p1_causal_ivfix_smallhead_seed2026.yaml",
+      "sha256": "d06f62e16e61959b02b91ce43ff1b88f4cd35327e3e80ce3c0e1180659e77d57",
+      "bytes": 1125
+    },
+    {
+      "path": "configs/einv2/historical/C3/c2_causal_jepa_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/configs/ein_seld/c2_causal_jepa_seed2026.yaml",
+      "sha256": "f805a862a1bd1cb20122ec153d892bdf77c74e6207617dbfefed8a457b2ff890",
+      "bytes": 1319
+    },
+    {
+      "path": "configs/einv2/historical/C3/c3_causal_velocity_jepa_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/configs/ein_seld/c3_causal_velocity_jepa_seed2026.yaml",
+      "sha256": "e4977509b47d7d91f0b5c5720b9ce185fd33956e1c8f35b0bad0e93878b476ff",
+      "bytes": 1444
+    },
+    {
+      "path": "configs/einv2/historical/C3/c3_causal_velocity_jepa_seed2027.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/configs/ein_seld/c3_causal_velocity_jepa_seed2027.yaml",
+      "sha256": "8bf1e465b03f9df92750907dfbd966e1a8b1a2d25d2a7b9163d9e3966877edb1",
+      "bytes": 1463
+    },
+    {
+      "path": "configs/einv2/historical/C3/c3_causal_velocity_jepa_seed2028.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/configs/ein_seld/c3_causal_velocity_jepa_seed2028.yaml",
+      "sha256": "ad07ac964e23781f21dd0aa2211e28a376ca3858332b9be7b3822a780f344f6c",
+      "bytes": 1463
+    },
+    {
+      "path": "configs/einv2/historical/C3/eval_pilot_c3_best.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/configs/ein_seld/eval_pilot_c3_best.yaml",
+      "sha256": "59c79dac3f586e3e7ea247d20e135aad60ca2f39816de421cfb59e7cdd42aa99",
+      "bytes": 1440
+    },
+    {
+      "path": "configs/einv2/historical/C3/seld.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/configs/ein_seld/seld.yaml",
+      "sha256": "61e183e3ecb8b1a339a9ba7e7b989c92e4bb4e566d95fa0bc92f56cd234e5c18",
+      "bytes": 951
+    },
+    {
+      "path": "configs/einv2/historical/C3/val_fold1_c3_best_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/configs/ein_seld/val_fold1_c3_best_seed2026.yaml",
+      "sha256": "3b4ac723af1438688001aa2d237e9ce1c375a397ec1c9a897fa31548d9cd4d66",
+      "bytes": 1444
+    },
+    {
+      "path": "licenses/einv2/C3_MIT_LICENSE",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/Licenses/MIT_LICENSE",
+      "sha256": "3818d41b2d5a99cde13bce42f4154e91dbf5ede03c656d85bc63a67d00bca475",
+      "bytes": 1064
+    },
+    {
+      "path": "docs/upstream/einv2_C3.md",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/README.md",
+      "sha256": "140f40c6f8c15a405c74e6c6e7a4ad21644915b06ce6fcf0cb55463f6f45bb17",
+      "bytes": 8073
+    },
+    {
+      "path": "models/einv2/variants/C3/tools/build_jepa_masks.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/scripts/build_jepa_masks.py",
+      "sha256": "63ece656619dcf58f12420770d20c1dabbb2ac8e8a8d49d9626b9f2744a2c293",
+      "bytes": 3989
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/learning/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/learning/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/learning/checkpoint.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/learning/checkpoint.py",
+      "sha256": "d7a579326fd74375b43ace0f48490b827539c26e9f42cdc8a582ffefc850a38a",
+      "bytes": 6694
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/learning/evaluate.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/learning/evaluate.py",
+      "sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+      "bytes": 4954
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/learning/infer.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/learning/infer.py",
+      "sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+      "bytes": 1145
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/learning/initialize.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/learning/initialize.py",
+      "sha256": "ea597efeb071ffc6c40fda013e7ec0b5f978d6b02f9473280f6d0cf44fd8a342",
+      "bytes": 7030
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/learning/preprocess.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/learning/preprocess.py",
+      "sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983",
+      "bytes": 11228
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/learning/train.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/learning/train.py",
+      "sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2",
+      "bytes": 3731
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/main.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/main.py",
+      "sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d",
+      "bytes": 1766
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/data.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/data.py",
+      "sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d",
+      "bytes": 4499
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/data_augmentation/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/data_augmentation/__init__.py",
+      "sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a",
+      "bytes": 71
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/ein_seld/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/__init__.py",
+      "sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac",
+      "bytes": 190
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/ein_seld/data.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/data.py",
+      "sha256": "7f558b55588730984577aa0b0593ef861918eddc4a22a4107322c5e702bad779",
+      "bytes": 18718
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f",
+      "bytes": 79
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/ein_seld/inference.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/inference.py",
+      "sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+      "bytes": 4682
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/ein_seld/losses.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/losses.py",
+      "sha256": "b690cac8242090cef735e76bcf3b2f591675eba9411e70a556cbd63a0061ea80",
+      "bytes": 4442
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/ein_seld/metrics.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/metrics.py",
+      "sha256": "89344d79a1f452d5b1cfcd17d4d7af6b41855e3535de4a472dd51bbfe842cede",
+      "bytes": 2028
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/ein_seld/models/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/models/__init__.py",
+      "sha256": "3c7a8160c1aad937b5a3c005b0b0563f5d50c7e80b8d41c852bb3a106e360cd7",
+      "bytes": 79
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/ein_seld/models/seld.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/models/seld.py",
+      "sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd",
+      "bytes": 6041
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/ein_seld/models/seld_causal.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/models/seld_causal.py",
+      "sha256": "a6cd3ef854438c993f79c690a8471e0f591ee8931b1aa3a8ef7bab9877f393c3",
+      "bytes": 5635
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/ein_seld/models/seld_offline_aux.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/models/seld_offline_aux.py",
+      "sha256": "2c66f44528cb32a8518f5184678ab7b434447fd778644958d247077972c6db8b",
+      "bytes": 3303
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/ein_seld/training.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/training.py",
+      "sha256": "83d1648661f40f129d4bf46fd785d0eb801f900df4221270df1001a16de98a41",
+      "bytes": 13258
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/feature.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/feature.py",
+      "sha256": "c78fd8450f581881e1b28ec5d3813ead4aa8b9e421ea61bcda3220356e173df4",
+      "bytes": 2443
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/feature_causal.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/feature_causal.py",
+      "sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604",
+      "bytes": 1426
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/inference.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/inference.py",
+      "sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4",
+      "bytes": 905
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/training.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/training.py",
+      "sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+      "bytes": 317
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138",
+      "bytes": 25178
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "bytes": 13603
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+      "bytes": 359
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/utils/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/utils/data_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/utils/data_utilities.py",
+      "sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315",
+      "bytes": 6303
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/utils/loss_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/utils/loss_utilities.py",
+      "sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+      "bytes": 1222
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/utils/model_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/utils/model_utilities.py",
+      "sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337",
+      "bytes": 3202
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/methods/utils/stft.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/utils/stft.py",
+      "sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4",
+      "bytes": 31616
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/utils/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/utils/cli_parser.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/utils/cli_parser.py",
+      "sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f",
+      "bytes": 3173
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/utils/common.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/utils/common.py",
+      "sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805",
+      "bytes": 3569
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/utils/config.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/utils/config.py",
+      "sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217",
+      "bytes": 6908
+    },
+    {
+      "path": "models/einv2/variants/E1/seld/utils/datasets.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/utils/datasets.py",
+      "sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f",
+      "bytes": 1205
+    },
+    {
+      "path": "configs/einv2/historical/E1/c0_causal_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/configs/ein_seld/c0_causal_seed2026.yaml",
+      "sha256": "35a727ee6de25ec8664a806dcf8faaefcd937dc48825c9cdaa97197f2ee1dd2f",
+      "bytes": 1080
+    },
+    {
+      "path": "configs/einv2/historical/E1/c0p1_causal_ivfix_smallhead_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/configs/ein_seld/c0p1_causal_ivfix_smallhead_seed2026.yaml",
+      "sha256": "d06f62e16e61959b02b91ce43ff1b88f4cd35327e3e80ce3c0e1180659e77d57",
+      "bytes": 1125
+    },
+    {
+      "path": "configs/einv2/historical/E1/c1_causal_velocity_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/configs/ein_seld/c1_causal_velocity_seed2026.yaml",
+      "sha256": "96490bb066c65dd2cf3e3ca1300c823dd3dbe3c8920e69c78c93c6bb8bd478d4",
+      "bytes": 1216
+    },
+    {
+      "path": "configs/einv2/historical/E1/e1_offline_velocity_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/configs/ein_seld/e1_offline_velocity_seed2026.yaml",
+      "sha256": "ef7d5365e7f7113f114f6cfb1801eee3e2b8c57da3f5dbffa4f45afa36afac27",
+      "bytes": 1125
+    },
+    {
+      "path": "configs/einv2/historical/E1/eval_pilot_c1_best.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/configs/ein_seld/eval_pilot_c1_best.yaml",
+      "sha256": "fedaddf0415048d388a03b98c583268d7a58e1cd620e0e4253d7586ca5b1b72d",
+      "bytes": 1225
+    },
+    {
+      "path": "configs/einv2/historical/E1/seld.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/configs/ein_seld/seld.yaml",
+      "sha256": "61e183e3ecb8b1a339a9ba7e7b989c92e4bb4e566d95fa0bc92f56cd234e5c18",
+      "bytes": 951
+    },
+    {
+      "path": "licenses/einv2/E1_MIT_LICENSE",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/Licenses/MIT_LICENSE",
+      "sha256": "3818d41b2d5a99cde13bce42f4154e91dbf5ede03c656d85bc63a67d00bca475",
+      "bytes": 1064
+    },
+    {
+      "path": "docs/upstream/einv2_E1.md",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/README.md",
+      "sha256": "140f40c6f8c15a405c74e6c6e7a4ad21644915b06ce6fcf0cb55463f6f45bb17",
+      "bytes": 8073
+    },
+    {
+      "path": "models/einv2/variants/E1/tools/build_velocity_labels.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/scripts/build_velocity_labels.py",
+      "sha256": "fa6fe76912ff7d4a385f5e57e0206ef3bacb86d84a842a6d650a7884eb8d6b7c",
+      "bytes": 4408
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/learning/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/learning/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/learning/checkpoint.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/learning/checkpoint.py",
+      "sha256": "3e212a69cc1f1cdbca4a14d64e93620c6302cc71da0805bba581be2f3bd8c9a6",
+      "bytes": 7277
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/learning/evaluate.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/learning/evaluate.py",
+      "sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+      "bytes": 4954
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/learning/infer.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/learning/infer.py",
+      "sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+      "bytes": 1145
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/learning/initialize.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/learning/initialize.py",
+      "sha256": "60bc18cfe3e6dfca6a11f483ba6b229b4cd679612d6e963e856d834965c2781e",
+      "bytes": 7092
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/learning/preprocess.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/learning/preprocess.py",
+      "sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983",
+      "bytes": 11228
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/learning/train.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/learning/train.py",
+      "sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2",
+      "bytes": 3731
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/main.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/main.py",
+      "sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d",
+      "bytes": 1766
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/data.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/data.py",
+      "sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d",
+      "bytes": 4499
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/data_augmentation/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/data_augmentation/__init__.py",
+      "sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a",
+      "bytes": 71
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/ein_seld/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/__init__.py",
+      "sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac",
+      "bytes": 190
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/ein_seld/data.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/data.py",
+      "sha256": "7bcaaa467f50355c767a3a09ee749e106397d8b8437ed2e979d07bd8d0218896",
+      "bytes": 17712
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f",
+      "bytes": 79
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/ein_seld/inference.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/inference.py",
+      "sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+      "bytes": 4682
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/ein_seld/losses.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/losses.py",
+      "sha256": "b650a9204bff5fd687f0e02b6a39b160f2d8a6a7a2272076119f81c79e080eba",
+      "bytes": 5799
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/ein_seld/metrics.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/metrics.py",
+      "sha256": "9ea6674c48addeb0dd46fffdb8daff5cda8c954ebd5d61cd38ed66c45542a3fa",
+      "bytes": 2304
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/ein_seld/models/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/models/__init__.py",
+      "sha256": "6245c4f413292fb5c77625db654bb482241900d2ffe06c500173cfab5f0c5b25",
+      "bytes": 80
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/ein_seld/models/seld.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/models/seld.py",
+      "sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd",
+      "bytes": 6041
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/ein_seld/models/seld_causal.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/models/seld_causal.py",
+      "sha256": "c8f8666847d1f3024d14f8f99ea84c8b43ffc9e37cbef5735d9e365e8baeb431",
+      "bytes": 8205
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/ein_seld/models/seld_offline_jepa.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/models/seld_offline_jepa.py",
+      "sha256": "8f1e13c322610996871c66b6e08cd4527a24037acf472ce1c73d638a7608ad13",
+      "bytes": 4594
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/ein_seld/training.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/training.py",
+      "sha256": "60a15089a3292a3ab2f258c8f880d94536f3240790405883791246ee1cc15d11",
+      "bytes": 15399
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/feature.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/feature.py",
+      "sha256": "c78fd8450f581881e1b28ec5d3813ead4aa8b9e421ea61bcda3220356e173df4",
+      "bytes": 2443
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/feature_causal.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/feature_causal.py",
+      "sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604",
+      "bytes": 1426
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/inference.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/inference.py",
+      "sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4",
+      "bytes": 905
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/training.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/training.py",
+      "sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+      "bytes": 317
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138",
+      "bytes": 25178
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "bytes": 13603
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+      "bytes": 359
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/utils/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/utils/data_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/utils/data_utilities.py",
+      "sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315",
+      "bytes": 6303
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/utils/loss_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/utils/loss_utilities.py",
+      "sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+      "bytes": 1222
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/utils/model_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/utils/model_utilities.py",
+      "sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337",
+      "bytes": 3202
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/methods/utils/stft.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/utils/stft.py",
+      "sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4",
+      "bytes": 31616
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/utils/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/utils/cli_parser.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/utils/cli_parser.py",
+      "sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f",
+      "bytes": 3173
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/utils/common.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/utils/common.py",
+      "sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805",
+      "bytes": 3569
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/utils/config.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/utils/config.py",
+      "sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217",
+      "bytes": 6908
+    },
+    {
+      "path": "models/einv2/variants/E2/seld/utils/datasets.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/utils/datasets.py",
+      "sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f",
+      "bytes": 1205
+    },
+    {
+      "path": "configs/einv2/historical/E2/c0_causal_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/configs/ein_seld/c0_causal_seed2026.yaml",
+      "sha256": "35a727ee6de25ec8664a806dcf8faaefcd937dc48825c9cdaa97197f2ee1dd2f",
+      "bytes": 1080
+    },
+    {
+      "path": "configs/einv2/historical/E2/c0p1_causal_ivfix_smallhead_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/configs/ein_seld/c0p1_causal_ivfix_smallhead_seed2026.yaml",
+      "sha256": "d06f62e16e61959b02b91ce43ff1b88f4cd35327e3e80ce3c0e1180659e77d57",
+      "bytes": 1125
+    },
+    {
+      "path": "configs/einv2/historical/E2/c2_causal_jepa_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/configs/ein_seld/c2_causal_jepa_seed2026.yaml",
+      "sha256": "f805a862a1bd1cb20122ec153d892bdf77c74e6207617dbfefed8a457b2ff890",
+      "bytes": 1319
+    },
+    {
+      "path": "configs/einv2/historical/E2/e2_offline_jepa_consistency_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/configs/ein_seld/e2_offline_jepa_consistency_seed2026.yaml",
+      "sha256": "7a3d34847ba4d879a5e507653e7a2c9eaf8fe7b17163a4b0b64c685326b25680",
+      "bytes": 1261
+    },
+    {
+      "path": "configs/einv2/historical/E2/eval_pilot_c2_best.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/configs/ein_seld/eval_pilot_c2_best.yaml",
+      "sha256": "a57c40ff3a09e51f3348d82f8fefa66a8c367418c058156d320b51588dd6ad90",
+      "bytes": 1333
+    },
+    {
+      "path": "configs/einv2/historical/E2/seld.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/configs/ein_seld/seld.yaml",
+      "sha256": "61e183e3ecb8b1a339a9ba7e7b989c92e4bb4e566d95fa0bc92f56cd234e5c18",
+      "bytes": 951
+    },
+    {
+      "path": "licenses/einv2/E2_MIT_LICENSE",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/Licenses/MIT_LICENSE",
+      "sha256": "3818d41b2d5a99cde13bce42f4154e91dbf5ede03c656d85bc63a67d00bca475",
+      "bytes": 1064
+    },
+    {
+      "path": "docs/upstream/einv2_E2.md",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/README.md",
+      "sha256": "140f40c6f8c15a405c74e6c6e7a4ad21644915b06ce6fcf0cb55463f6f45bb17",
+      "bytes": 8073
+    },
+    {
+      "path": "models/einv2/variants/E2/tools/build_jepa_masks.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/scripts/build_jepa_masks.py",
+      "sha256": "63ece656619dcf58f12420770d20c1dabbb2ac8e8a8d49d9626b9f2744a2c293",
+      "bytes": 3989
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/learning/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/learning/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/learning/checkpoint.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/learning/checkpoint.py",
+      "sha256": "3e212a69cc1f1cdbca4a14d64e93620c6302cc71da0805bba581be2f3bd8c9a6",
+      "bytes": 7277
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/learning/evaluate.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/learning/evaluate.py",
+      "sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+      "bytes": 4954
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/learning/infer.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/learning/infer.py",
+      "sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+      "bytes": 1145
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/learning/initialize.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/learning/initialize.py",
+      "sha256": "60bc18cfe3e6dfca6a11f483ba6b229b4cd679612d6e963e856d834965c2781e",
+      "bytes": 7092
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/learning/preprocess.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/learning/preprocess.py",
+      "sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983",
+      "bytes": 11228
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/learning/train.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/learning/train.py",
+      "sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2",
+      "bytes": 3731
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/main.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/main.py",
+      "sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d",
+      "bytes": 1766
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/data.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/data.py",
+      "sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d",
+      "bytes": 4499
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/data_augmentation/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/data_augmentation/__init__.py",
+      "sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a",
+      "bytes": 71
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/ein_seld/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/__init__.py",
+      "sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac",
+      "bytes": 190
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/ein_seld/data.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/data.py",
+      "sha256": "9776da2710ad90bb1a0d946888ef6e12ff44cca6fb447739da9916ea5e42b84e",
+      "bytes": 20082
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f",
+      "bytes": 79
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/ein_seld/inference.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/inference.py",
+      "sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+      "bytes": 4682
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/ein_seld/losses.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/losses.py",
+      "sha256": "b745f27d1f1694fe0e5fc86f3dc5feec655f0323c71ce76b5521cfe95d09d3c0",
+      "bytes": 6965
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/ein_seld/metrics.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/metrics.py",
+      "sha256": "c3d69aae70fe7588d89b463dc5c1ad2c9ea7462f6d051f7741f7e89a36e61bd5",
+      "bytes": 2365
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/ein_seld/models/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/models/__init__.py",
+      "sha256": "693b4db42153d0d0fb706a97736028e75948ffb85830d3a976230e57971d60c4",
+      "bytes": 117
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/ein_seld/models/seld.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/models/seld.py",
+      "sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd",
+      "bytes": 6041
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/ein_seld/models/seld_causal.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/models/seld_causal.py",
+      "sha256": "3b106cb074ac3615100c492fd8a1e57e10942469e7813f4317645db9d197a812",
+      "bytes": 11157
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/ein_seld/models/seld_offline_combined.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/models/seld_offline_combined.py",
+      "sha256": "10dd6b14c99a33a8a400bab0a07a5ef528eae139abc7a0a321af58bd81109216",
+      "bytes": 4042
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/ein_seld/models/seld_offline_jepa.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/models/seld_offline_jepa.py",
+      "sha256": "8f1e13c322610996871c66b6e08cd4527a24037acf472ce1c73d638a7608ad13",
+      "bytes": 4594
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/ein_seld/training.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/training.py",
+      "sha256": "8d0fd96f9a5224f75f38b1cf985805c65adfcdc9591242f0aaa3ef46ff1a9ef3",
+      "bytes": 17546
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/feature.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/feature.py",
+      "sha256": "c78fd8450f581881e1b28ec5d3813ead4aa8b9e421ea61bcda3220356e173df4",
+      "bytes": 2443
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/feature_causal.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/feature_causal.py",
+      "sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604",
+      "bytes": 1426
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/inference.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/inference.py",
+      "sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4",
+      "bytes": 905
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/training.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/training.py",
+      "sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+      "bytes": 317
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138",
+      "bytes": 25178
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "bytes": 13603
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+      "bytes": 359
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/utils/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/utils/data_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/utils/data_utilities.py",
+      "sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315",
+      "bytes": 6303
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/utils/loss_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/utils/loss_utilities.py",
+      "sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+      "bytes": 1222
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/utils/model_utilities.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/utils/model_utilities.py",
+      "sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337",
+      "bytes": 3202
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/methods/utils/stft.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/utils/stft.py",
+      "sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4",
+      "bytes": 31616
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/utils/__init__.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/utils/cli_parser.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/utils/cli_parser.py",
+      "sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f",
+      "bytes": 3173
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/utils/common.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/utils/common.py",
+      "sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805",
+      "bytes": 3569
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/utils/config.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/utils/config.py",
+      "sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217",
+      "bytes": 6908
+    },
+    {
+      "path": "models/einv2/variants/E3/seld/utils/datasets.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/utils/datasets.py",
+      "sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f",
+      "bytes": 1205
+    },
+    {
+      "path": "configs/einv2/historical/E3/c0_causal_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/configs/ein_seld/c0_causal_seed2026.yaml",
+      "sha256": "35a727ee6de25ec8664a806dcf8faaefcd937dc48825c9cdaa97197f2ee1dd2f",
+      "bytes": 1080
+    },
+    {
+      "path": "configs/einv2/historical/E3/c0p1_causal_ivfix_smallhead_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/configs/ein_seld/c0p1_causal_ivfix_smallhead_seed2026.yaml",
+      "sha256": "d06f62e16e61959b02b91ce43ff1b88f4cd35327e3e80ce3c0e1180659e77d57",
+      "bytes": 1125
+    },
+    {
+      "path": "configs/einv2/historical/E3/c2_causal_jepa_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/configs/ein_seld/c2_causal_jepa_seed2026.yaml",
+      "sha256": "f805a862a1bd1cb20122ec153d892bdf77c74e6207617dbfefed8a457b2ff890",
+      "bytes": 1319
+    },
+    {
+      "path": "configs/einv2/historical/E3/c3_causal_velocity_jepa_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/configs/ein_seld/c3_causal_velocity_jepa_seed2026.yaml",
+      "sha256": "e4977509b47d7d91f0b5c5720b9ce185fd33956e1c8f35b0bad0e93878b476ff",
+      "bytes": 1444
+    },
+    {
+      "path": "configs/einv2/historical/E3/e3_offline_velocity_jepa_consistency_seed2026.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/configs/ein_seld/e3_offline_velocity_jepa_consistency_seed2026.yaml",
+      "sha256": "7922e5c62be743267a9f89496bf192fc71d1705d29048f0ba2cd1f859c7927e0",
+      "bytes": 1386
+    },
+    {
+      "path": "configs/einv2/historical/E3/eval_pilot_c3_best.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/configs/ein_seld/eval_pilot_c3_best.yaml",
+      "sha256": "59c79dac3f586e3e7ea247d20e135aad60ca2f39816de421cfb59e7cdd42aa99",
+      "bytes": 1440
+    },
+    {
+      "path": "configs/einv2/historical/E3/seld.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/configs/ein_seld/seld.yaml",
+      "sha256": "61e183e3ecb8b1a339a9ba7e7b989c92e4bb4e566d95fa0bc92f56cd234e5c18",
+      "bytes": 951
+    },
+    {
+      "path": "licenses/einv2/E3_MIT_LICENSE",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/Licenses/MIT_LICENSE",
+      "sha256": "3818d41b2d5a99cde13bce42f4154e91dbf5ede03c656d85bc63a67d00bca475",
+      "bytes": 1064
+    },
+    {
+      "path": "docs/upstream/einv2_E3.md",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/README.md",
+      "sha256": "140f40c6f8c15a405c74e6c6e7a4ad21644915b06ce6fcf0cb55463f6f45bb17",
+      "bytes": 8073
+    },
+    {
+      "path": "models/einv2/variants/E3/tools/build_jepa_masks.py",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/scripts/build_jepa_masks.py",
+      "sha256": "63ece656619dcf58f12420770d20c1dabbb2ac8e8a8d49d9626b9f2744a2c293",
+      "bytes": 3989
+    },
+    {
+      "path": "models/multi_accdoa/SELD_evaluation_metrics.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/SELD_evaluation_metrics.py",
+      "sha256": "41b17ffbd5007cd06549b07ad620a77d7cdbc65ae62c93e409f37f28882512c9",
+      "bytes": 13630
+    },
+    {
+      "path": "models/multi_accdoa/audit_adpit_overlap.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/audit_adpit_overlap.py",
+      "sha256": "e786f6accff31edae2588ee82b8016f19a29106a9ca2d50800ed5892b734e4d4",
+      "bytes": 996
+    },
+    {
+      "path": "models/multi_accdoa/batch_feature_extraction.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/batch_feature_extraction.py",
+      "sha256": "fda887b830d86a026670fbd134c38a1a1d2f390675f601680d3660a1fd7664fc",
+      "bytes": 998
+    },
+    {
+      "path": "models/multi_accdoa/batch_feature_extraction_eval.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/batch_feature_extraction_eval.py",
+      "sha256": "2fa8e8ae529ced413a17167298714aa769a8a8c2f4c4cc755f2ac6099758e636",
+      "bytes": 573
+    },
+    {
+      "path": "models/multi_accdoa/cls_compute_seld_results.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/cls_compute_seld_results.py",
+      "sha256": "f64dcfbf98e48382ec5fb18f921ab99378a1d38f029cec02dce02b66d7e056b6",
+      "bytes": 13560
+    },
+    {
+      "path": "models/multi_accdoa/cls_data_generator.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/cls_data_generator.py",
+      "sha256": "01859e2c95b2ddd11292f6cbb4ade850a782ed3aad0ddb7234bc1e73e5e76514",
+      "bytes": 13526
+    },
+    {
+      "path": "models/multi_accdoa/cls_feature_class.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/cls_feature_class.py",
+      "sha256": "901beacc230d5874c9e50e414391f330d1bc6782966ecacd6598a52915fd3cb5",
+      "bytes": 35324
+    },
+    {
+      "path": "models/multi_accdoa/experiment_matrix.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/experiment_matrix.py",
+      "sha256": "dc23fe3dfd4dbe9c69c71d640495cd5be0ff67c276bce232d1b7ce6e1226de7b",
+      "bytes": 1462
+    },
+    {
+      "path": "models/multi_accdoa/parameters.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/parameters.py",
+      "sha256": "c227eee5105649c8dac21a38d6b5734853473b0925100086e40d2cc23f6e8da8",
+      "bytes": 8371
+    },
+    {
+      "path": "models/multi_accdoa/scripts_verify_env.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/scripts_verify_env.py",
+      "sha256": "06e22b5e5223dc9fefcc984a924271601b66870309ccc45f87c4ea8e9cbe1441",
+      "bytes": 448
+    },
+    {
+      "path": "models/multi_accdoa/seldnet_model.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/seldnet_model.py",
+      "sha256": "99790739f0e4ab994d413f07a945c1cd648c845fc1b23fb22684a58346037a2e",
+      "bytes": 16533
+    },
+    {
+      "path": "tests/multi_accdoa/test_a0_shared_initialization.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/test_a0_shared_initialization.py",
+      "sha256": "622f8fcaeb692ecc0ea23452b1388e5d830ddcc2f1173334755c6da6a30bd931",
+      "bytes": 1558
+    },
+    {
+      "path": "tests/multi_accdoa/test_causality.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/test_causality.py",
+      "sha256": "1c82e9525167a43149c871946a7564c2d3334274a587b5ebb043c6939cc6f919",
+      "bytes": 1185
+    },
+    {
+      "path": "tests/multi_accdoa/test_dynamic_aux.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/test_dynamic_aux.py",
+      "sha256": "3ae1a20edb69470b76c8318bb35c245a7b73c12c4999a454f68181d1f99802a6",
+      "bytes": 2795
+    },
+    {
+      "path": "tests/multi_accdoa/test_experiment_protocol.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/test_experiment_protocol.py",
+      "sha256": "b1662e2c19ca4981757e207011a45251c0e44736283b38b263ca39fb4d354460",
+      "bytes": 2561
+    },
+    {
+      "path": "models/multi_accdoa/train_seldnet.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/train_seldnet.py",
+      "sha256": "57b4284a1ce39420de455de9686e58b0ffd3db1b3dabb1b5a144cf3d4f12f37c",
+      "bytes": 31256
+    },
+    {
+      "path": "models/multi_accdoa/visualize_seldnet_output.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/visualize_seldnet_output.py",
+      "sha256": "91f8f3e5c4e0f027e2bf3fdc3069fb35cb8690293ebd14bde4476522cc64b4e1",
+      "bytes": 5100
+    },
+    {
+      "path": "models/multi_accdoa/analysis/analyze_activity_calibration.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/scripts/analyze_activity_calibration.py",
+      "sha256": "4ec82e309a4341cb7474cd097b29762e6a11331f2c128902d53b1f4fb8efaeed",
+      "bytes": 5155
+    },
+    {
+      "path": "models/multi_accdoa/analysis/analyze_gradient_conflict.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/scripts/analyze_gradient_conflict.py",
+      "sha256": "f17a90ed635f1a5b03a5372ef83907b743b9ce6c77fd058eefcefac9e5d90462",
+      "bytes": 6109
+    },
+    {
+      "path": "models/multi_accdoa/analysis/analyze_motion_coverage.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/scripts/analyze_motion_coverage.py",
+      "sha256": "552b31d22ae06d383ce4d1e746c864091d7d5bf12fb04ade635a251c61786c4d",
+      "bytes": 15573
+    },
+    {
+      "path": "models/multi_accdoa/analysis/evaluate_motion_strata.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/scripts/evaluate_motion_strata.py",
+      "sha256": "01979934d627f0fbd91723e55fe9d18d55d83ea5451feab402ad1cb86f009f2d",
+      "bytes": 22458
+    },
+    {
+      "path": "models/multi_accdoa/analysis/evaluate_threshold_sensitivity.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/scripts/evaluate_threshold_sensitivity.py",
+      "sha256": "33ee7d3814e311868da8f6e20ffa6fed0049d0f6dce57f2957a8336ccc1f1c72",
+      "bytes": 10283
+    },
+    {
+      "path": "models/multi_accdoa/analysis/summarize_seed_matrix.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/scripts/summarize_seed_matrix.py",
+      "sha256": "b89e1b0e2a71bbba50e26929d004c1c0f7d52bd60c86a4fc08b8ca6fbbee7539",
+      "bytes": 2993
+    },
+    {
+      "path": "models/multi_accdoa/analysis/summarize_weight_pilot.py",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/scripts/summarize_weight_pilot.py",
+      "sha256": "b95ffcbc7e6e1d3c3f8066aa324fe7e9629d3c0ed6c186c1c11cee71604b5009",
+      "bytes": 993
+    },
+    {
+      "path": "configs/multi_accdoa/historical/motion_stratified_einv2_validation.json",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/configs/motion_stratified_einv2_validation.json",
+      "sha256": "9a4c62aaa1bf6bbdff18b3722fdd2237ff39f291b76c22fa92eb843fcdf2f4cd",
+      "bytes": 766
+    },
+    {
+      "path": "configs/multi_accdoa/historical/motion_stratified_evaluation.json",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/configs/motion_stratified_evaluation.json",
+      "sha256": "22cf8e92e81f086924d10ecc53cfa3c204fb9be964e0fb6a6e18d6ad8326688d",
+      "bytes": 2177
+    },
+    {
+      "path": "configs/multi_accdoa/historical/motion_stratified_pilot_v2_validation.json",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/configs/motion_stratified_pilot_v2_validation.json",
+      "sha256": "d0a6c92b1bfb41c6359589389a8979b2a3a544df4e1ace586507769d889b7d09",
+      "bytes": 1331
+    },
+    {
+      "path": "docs/upstream/multi_accdoa.md",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/README.md",
+      "sha256": "91f8201843fe865ac2c5a23c425db5f6f9672013753cf06871e97920df6cc623",
+      "bytes": 14950
+    },
+    {
+      "path": "licenses/multi_accdoa_upstream_commit.txt",
+      "source": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/OFFICIAL_COMMIT.txt",
+      "sha256": "e10ff5d50a2c5feb532880e3b2b3d1efb53bcdd51cc24d0c627222648af301a4",
+      "bytes": 41
+    },
+    {
+      "path": "evaluation/aligned_metrics.py",
+      "source": "/work/zhanghc/Myllm/SELD/evaluation/dcase_aligned_20260904/aligned_metrics.py",
+      "sha256": "d4d1adeb4f5d40b25d8a1ef38694ce3d84ebd2385ee91da2137498e5e36e1a60",
+      "bytes": 6808
+    },
+    {
+      "path": "evaluation/einv2_adapter.py",
+      "source": "/work/zhanghc/Myllm/SELD/evaluation/dcase_aligned_20260904/einv2_adapter.py",
+      "sha256": "cc5bdbf500d65e7fc97a4b91e3d18c7d2e07621fba611aa359e2b2774d128703",
+      "bytes": 1493
+    },
+    {
+      "path": "evaluation/score_directory.py",
+      "source": "/work/zhanghc/Myllm/SELD/evaluation/dcase_aligned_20260904/score_directory.py",
+      "sha256": "b9ae027c28ada53c90ed0b3514cccd93ee9509654f4b164d779bae87c59d73a0",
+      "bytes": 1757
+    },
+    {
+      "path": "evaluation/test_alignment.py",
+      "source": "/work/zhanghc/Myllm/SELD/evaluation/dcase_aligned_20260904/test_alignment.py",
+      "sha256": "57c5d02657612a9327f9e69b02cf1ebc017636d758fd714a8ee324a8024a6a9c",
+      "bytes": 11064
+    },
+    {
+      "path": "evaluation/upstream/LICENSE_DCASE2020.md",
+      "source": "/work/zhanghc/Myllm/SELD/evaluation/dcase_aligned_20260904/upstream/LICENSE_DCASE2020.md",
+      "sha256": "ec4a3df5d8ca39e1be06b8678e7957ee2015eefc6e4f6bb5082157096a7c4071",
+      "bytes": 1967
+    },
+    {
+      "path": "evaluation/upstream/dcase2020_feature.py",
+      "source": "/work/zhanghc/Myllm/SELD/evaluation/dcase_aligned_20260904/upstream/dcase2020_feature.py",
+      "sha256": "ac5a0becd56d2906cd873289dcb46c2844e283b1459437ef1df16b5fef635617",
+      "bytes": 20872
+    },
+    {
+      "path": "evaluation/upstream/dcase2020_metrics.py",
+      "source": "/work/zhanghc/Myllm/SELD/evaluation/dcase_aligned_20260904/upstream/dcase2020_metrics.py",
+      "sha256": "a6b4021b14b1e98d3c7014914c50c8d5ffcd263159d45b070703c64d1bb61ceb",
+      "bytes": 13606
+    },
+    {
+      "path": "evaluation/upstream/dcase2023_feature.py",
+      "source": "/work/zhanghc/Myllm/SELD/evaluation/dcase_aligned_20260904/upstream/dcase2023_feature.py",
+      "sha256": "427d6afba7f74b94d64269c1aec826aa290c075a205def5cea5cd3b127e63b14",
+      "bytes": 32805
+    },
+    {
+      "path": "evaluation/upstream/dcase2023_metrics.py",
+      "source": "/work/zhanghc/Myllm/SELD/evaluation/dcase_aligned_20260904/upstream/dcase2023_metrics.py",
+      "sha256": "41b17ffbd5007cd06549b07ad620a77d7cdbc65ae62c93e409f37f28882512c9",
+      "bytes": 13630
+    },
+    {
+      "path": "reports/historical/C0_seed2026_validation_metrics.csv",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/out_train/ein_seld/C0p1_CausalEINV2_fix_seed2026/checkpoints/metrics_statistics.csv",
+      "sha256": "a70d1ce8aa970d05b91fc9ebfe83ec6155aa5b63a669512da2231863182d28e7",
+      "bytes": 16757
+    },
+    {
+      "path": "reports/historical/C3_seed2026_validation_metrics.csv",
+      "source": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/out_train/ein_seld/C3_CausalEINV2_Velocity_JEPA_seed2026/checkpoints/metrics_statistics.csv",
+      "sha256": "47d81f24f6ed6eb09d27b86ee4bcfe35c2b223da413efa5ce62efcf2e5f25e54",
+      "bytes": 32770
+    },
+    {
+      "path": "configs/einv2/historical/C0/E0_OfflineEINV2_seed2027.yaml",
+      "source": "/work/zhanghc/Myllm/SELD/experiment_completion_20260904/configs/E0_OfflineEINV2_seed2027.yaml",
+      "sha256": "22d1d60fa15f0580558a6b8e2bbe06af94820d004b90841b933647f67a6933ef",
+      "bytes": 1375
+    }
+  ]
+}
