@@ -1,0 +1,16 @@
+# Tested existing rabbit02 environment: Python 3.10; install Torch from its official cu121 index.
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.4.1+cu121
+torchaudio==2.4.1+cu121
+numpy==1.26.4
+scipy==1.15.3
+pandas==2.2.3
+librosa==0.10.2.post1
+h5py==3.16.0
+ruamel.yaml==0.18.10
+termcolor==2.5.0
+tensorboard==2.18.0
+matplotlib==3.10.9
+soundfile==0.13.1
+scikit-learn==1.7.2
+tqdm==4.67.3

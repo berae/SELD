@@ -1,0 +1,66 @@
+[
+  {
+    "family": "EINV2",
+    "variant": "C0.1",
+    "seed": 2026,
+    "split": "validation",
+    "max_abs_delta": 0.0,
+    "delta": {
+      "ER20": 0.0,
+      "F20": 0.0,
+      "LE_CD": 0.0,
+      "LR_CD": 0.0,
+      "SELD_LR": 0.0
+    },
+    "new_versioned_result": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/out_eval/ein_seld/Completion_20260904_EINV2_C0_bestfix_seed2026_validation/results_dcase2023_micro.csv",
+    "passed": true
+  },
+  {
+    "family": "EINV2",
+    "variant": "C3",
+    "seed": 2026,
+    "split": "evaluation",
+    "max_abs_delta": 0.0,
+    "delta": {
+      "ER20": 0.0,
+      "F20": 0.0,
+      "LE_CD": 0.0,
+      "LR_CD": 0.0,
+      "SELD_LR": 0.0
+    },
+    "new_versioned_result": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/out_eval/ein_seld/Completion_20260904_C3_CausalEINV2_Velocity_JEPA_seed2026_evaluation/results_dcase2023_micro.csv",
+    "passed": true
+  },
+  {
+    "family": "Multi-ACCDOA",
+    "variant": "C0",
+    "seed": 2026,
+    "split": "validation",
+    "max_abs_delta": 1.4210854715202004e-14,
+    "delta": {
+      "ER20": 0.0,
+      "F20": 0.0,
+      "LE_CD": -1.4210854715202004e-14,
+      "LR_CD": 0.0,
+      "SELD_LR": 0.0
+    },
+    "new_versioned_result": null,
+    "passed": true
+  },
+  {
+    "family": "Multi-ACCDOA",
+    "variant": "C0",
+    "seed": 2026,
+    "split": "evaluation",
+    "max_abs_delta": 1.9539925233402755e-14,
+    "delta": {
+      "ER20": 0.0,
+      "F20": 0.0,
+      "LE_CD": -1.9539925233402755e-14,
+      "LR_CD": 0.0,
+      "SELD_LR": -5.551115123125783e-17
+    },
+    "new_versioned_result": null,
+    "passed": true
+  }
+]

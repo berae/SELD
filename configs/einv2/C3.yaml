@@ -1,0 +1,61 @@
+# Portable recipe derived from historical/C3/c3_causal_velocity_jepa_seed2026.yaml
+method: ein_seld
+dataset: dcase2020task3
+workspace_dir: null  # supplied by the portable entry point
+dataset_dir: null  # supplied by the portable entry point
+hdf5_dir: null  # supplied by the portable entry point
+jepa_hdf5_dir: null  # supplied by the portable entry point
+velocity_hdf5_dir: null  # supplied by the portable entry point
+causal_scalar_path: null  # supplied by the portable entry point
+data:
+  type: foa
+  sample_rate: 24000
+  n_fft: 1024
+  hop_length: 600
+  n_mels: 256
+  window: hann
+  fmin: 20
+  fmax: 12000
+  train_chunklen_sec: 4
+  train_hoplen_sec: 4
+  test_chunklen_sec: 4
+  test_hoplen_sec: 4
+  audio_feature: causal_logmel&intensity
+  feature_freeze: True
+  foa_iv_acn_reorder: True
+data_augmentation:
+  type: None
+training:
+  train_id: null  # assigned from --run-id / --seed
+  model: CausalEINV2VelocityJEPA
+  resume_model: null
+  loss_type: all
+  loss_beta: 0.5
+  lambda_velocity: 0.2
+  lambda_jepa: 0.2
+  jepa_ema_momentum: 0.996
+  jepa_latent_dim: 128
+  jepa_predictor_hidden_dim: 256
+  jepa_horizons_frames: [1, 3, 5]
+  PIT_type: tPIT
+  batch_size: 32
+  train_fold: 2,3,4,5,6
+  valid_fold: 1
+  overlap: 1&2
+  optimizer: adam
+  lr: 0.0005
+  lr_step_size: 80
+  lr_gamma: 0.1
+  max_epoch: 90
+  threshold_sed: 0.5
+  remark: null  # assigned from --run-id / --seed
+inference:
+  infer_id: null  # assigned from --run-id / --seed
+  testset_type: dev
+  test_fold: 1
+  overlap: 1&2
+  train_ids: null  # assigned from --run-id / --seed
+  models: CausalEINV2VelocityJEPA
+  batch_size: 64
+  threshold_sed: 0.5
+  remark: null  # assigned from --run-id / --seed

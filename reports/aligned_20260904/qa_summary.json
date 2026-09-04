@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "score_sets": 84,
+  "protocol_rows": 336,
+  "groups": 112,
+  "paired_seed_rows": 240,
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "unit_tests": 21,
+  "real_entrypoint_tests": 4,
+  "old_einv2_reproduced": 48,
+  "old_multi_nonjack_reproduced": 30,
+  "old_multi_jackknife_last_subset_reproduced": 6,
+  "training_rerun": false,
+  "prediction_rerun": false,
+  "scope": "Metric source equivalence, saved-prediction rescoring and entrypoint integration; not independent training reproduction."
+}

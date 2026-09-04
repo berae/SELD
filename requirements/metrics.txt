@@ -1,0 +1,3 @@
+# Minimal standalone aligned evaluator (Python 3.10).
+numpy==1.26.4
+scipy==1.15.3

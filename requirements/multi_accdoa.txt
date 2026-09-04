@@ -1,0 +1,11 @@
+# Tested existing rabbit02 environment: Python 3.8; separate from EINV2.
+--extra-index-url https://download.pytorch.org/whl/cu111
+torch==1.10.0+cu111
+numpy==1.22.4
+scipy==1.7.3
+librosa==0.8.1
+scikit-learn==1.0.2
+joblib==1.1.1
+matplotlib==3.5.3
+ipython==8.12.3
+soundfile==0.12.1

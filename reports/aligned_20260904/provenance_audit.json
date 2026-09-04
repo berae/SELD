@@ -1,0 +1,1664 @@
+{
+  "metadata": [
+    {
+      "root": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset",
+      "split": "validation",
+      "checked": 100,
+      "mismatches": [],
+      "short_extent_files": [
+        {
+          "file": "fold1_room1_mix001_ov1.csv",
+          "max_gt_frame": 563,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix002_ov1.csv",
+          "max_gt_frame": 421,
+          "old_frame_bound": 430,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix003_ov1.csv",
+          "max_gt_frame": 475,
+          "old_frame_bound": 480,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix004_ov1.csv",
+          "max_gt_frame": 587,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix005_ov1.csv",
+          "max_gt_frame": 531,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix006_ov1.csv",
+          "max_gt_frame": 483,
+          "old_frame_bound": 490,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix007_ov1.csv",
+          "max_gt_frame": 519,
+          "old_frame_bound": 520,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix008_ov1.csv",
+          "max_gt_frame": 549,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix009_ov1.csv",
+          "max_gt_frame": 410,
+          "old_frame_bound": 410,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "fold1_room1_mix011_ov1.csv",
+          "max_gt_frame": 462,
+          "old_frame_bound": 470,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix012_ov1.csv",
+          "max_gt_frame": 455,
+          "old_frame_bound": 460,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix013_ov1.csv",
+          "max_gt_frame": 449,
+          "old_frame_bound": 450,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix014_ov1.csv",
+          "max_gt_frame": 545,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix015_ov1.csv",
+          "max_gt_frame": 474,
+          "old_frame_bound": 480,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix016_ov1.csv",
+          "max_gt_frame": 461,
+          "old_frame_bound": 470,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix017_ov1.csv",
+          "max_gt_frame": 524,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix018_ov1.csv",
+          "max_gt_frame": 571,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix019_ov1.csv",
+          "max_gt_frame": 443,
+          "old_frame_bound": 450,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix020_ov1.csv",
+          "max_gt_frame": 455,
+          "old_frame_bound": 460,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix021_ov1.csv",
+          "max_gt_frame": 427,
+          "old_frame_bound": 430,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix022_ov1.csv",
+          "max_gt_frame": 519,
+          "old_frame_bound": 520,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix023_ov1.csv",
+          "max_gt_frame": 553,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix024_ov1.csv",
+          "max_gt_frame": 544,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix025_ov1.csv",
+          "max_gt_frame": 574,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix026_ov2.csv",
+          "max_gt_frame": 541,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix027_ov2.csv",
+          "max_gt_frame": 501,
+          "old_frame_bound": 510,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix028_ov2.csv",
+          "max_gt_frame": 578,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix029_ov2.csv",
+          "max_gt_frame": 503,
+          "old_frame_bound": 510,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix030_ov2.csv",
+          "max_gt_frame": 552,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix031_ov2.csv",
+          "max_gt_frame": 564,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix032_ov2.csv",
+          "max_gt_frame": 539,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix033_ov2.csv",
+          "max_gt_frame": 589,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix035_ov2.csv",
+          "max_gt_frame": 568,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix036_ov2.csv",
+          "max_gt_frame": 501,
+          "old_frame_bound": 510,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix037_ov2.csv",
+          "max_gt_frame": 511,
+          "old_frame_bound": 520,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix038_ov2.csv",
+          "max_gt_frame": 561,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix039_ov2.csv",
+          "max_gt_frame": 537,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix040_ov2.csv",
+          "max_gt_frame": 559,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix041_ov2.csv",
+          "max_gt_frame": 586,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix042_ov2.csv",
+          "max_gt_frame": 552,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix044_ov2.csv",
+          "max_gt_frame": 575,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix045_ov2.csv",
+          "max_gt_frame": 572,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix046_ov2.csv",
+          "max_gt_frame": 585,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix047_ov2.csv",
+          "max_gt_frame": 505,
+          "old_frame_bound": 510,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix048_ov2.csv",
+          "max_gt_frame": 546,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix049_ov2.csv",
+          "max_gt_frame": 589,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room1_mix050_ov2.csv",
+          "max_gt_frame": 588,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix001_ov1.csv",
+          "max_gt_frame": 550,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "fold1_room2_mix002_ov1.csv",
+          "max_gt_frame": 440,
+          "old_frame_bound": 440,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "fold1_room2_mix003_ov1.csv",
+          "max_gt_frame": 497,
+          "old_frame_bound": 500,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix004_ov1.csv",
+          "max_gt_frame": 582,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix005_ov1.csv",
+          "max_gt_frame": 523,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix006_ov1.csv",
+          "max_gt_frame": 528,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix007_ov1.csv",
+          "max_gt_frame": 550,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "fold1_room2_mix008_ov1.csv",
+          "max_gt_frame": 581,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix009_ov1.csv",
+          "max_gt_frame": 545,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix010_ov1.csv",
+          "max_gt_frame": 571,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix011_ov1.csv",
+          "max_gt_frame": 471,
+          "old_frame_bound": 480,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix012_ov1.csv",
+          "max_gt_frame": 560,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "fold1_room2_mix014_ov1.csv",
+          "max_gt_frame": 529,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix015_ov1.csv",
+          "max_gt_frame": 534,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix017_ov1.csv",
+          "max_gt_frame": 570,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "fold1_room2_mix019_ov1.csv",
+          "max_gt_frame": 534,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix020_ov1.csv",
+          "max_gt_frame": 584,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix021_ov1.csv",
+          "max_gt_frame": 464,
+          "old_frame_bound": 470,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix022_ov1.csv",
+          "max_gt_frame": 528,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix023_ov1.csv",
+          "max_gt_frame": 567,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix024_ov1.csv",
+          "max_gt_frame": 448,
+          "old_frame_bound": 450,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix025_ov1.csv",
+          "max_gt_frame": 466,
+          "old_frame_bound": 470,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix026_ov2.csv",
+          "max_gt_frame": 550,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "fold1_room2_mix027_ov2.csv",
+          "max_gt_frame": 588,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix028_ov2.csv",
+          "max_gt_frame": 557,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix029_ov2.csv",
+          "max_gt_frame": 571,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix030_ov2.csv",
+          "max_gt_frame": 543,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix031_ov2.csv",
+          "max_gt_frame": 543,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix033_ov2.csv",
+          "max_gt_frame": 541,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix035_ov2.csv",
+          "max_gt_frame": 462,
+          "old_frame_bound": 470,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix036_ov2.csv",
+          "max_gt_frame": 530,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "fold1_room2_mix037_ov2.csv",
+          "max_gt_frame": 518,
+          "old_frame_bound": 520,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix038_ov2.csv",
+          "max_gt_frame": 575,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix039_ov2.csv",
+          "max_gt_frame": 566,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix040_ov2.csv",
+          "max_gt_frame": 549,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix042_ov2.csv",
+          "max_gt_frame": 586,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix043_ov2.csv",
+          "max_gt_frame": 518,
+          "old_frame_bound": 520,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix044_ov2.csv",
+          "max_gt_frame": 533,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix045_ov2.csv",
+          "max_gt_frame": 492,
+          "old_frame_bound": 500,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix046_ov2.csv",
+          "max_gt_frame": 488,
+          "old_frame_bound": 490,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix047_ov2.csv",
+          "max_gt_frame": 571,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix048_ov2.csv",
+          "max_gt_frame": 581,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "fold1_room2_mix050_ov2.csv",
+          "max_gt_frame": 543,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        }
+      ]
+    },
+    {
+      "root": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset",
+      "split": "evaluation",
+      "checked": 200,
+      "mismatches": [],
+      "short_extent_files": [
+        {
+          "file": "mix002.csv",
+          "max_gt_frame": 590,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "mix003.csv",
+          "max_gt_frame": 518,
+          "old_frame_bound": 520,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix004.csv",
+          "max_gt_frame": 508,
+          "old_frame_bound": 510,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix005.csv",
+          "max_gt_frame": 533,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix006.csv",
+          "max_gt_frame": 455,
+          "old_frame_bound": 460,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix008.csv",
+          "max_gt_frame": 497,
+          "old_frame_bound": 500,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix009.csv",
+          "max_gt_frame": 531,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix010.csv",
+          "max_gt_frame": 519,
+          "old_frame_bound": 520,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix011.csv",
+          "max_gt_frame": 583,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix012.csv",
+          "max_gt_frame": 579,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix013.csv",
+          "max_gt_frame": 510,
+          "old_frame_bound": 510,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "mix014.csv",
+          "max_gt_frame": 477,
+          "old_frame_bound": 480,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix015.csv",
+          "max_gt_frame": 538,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix016.csv",
+          "max_gt_frame": 413,
+          "old_frame_bound": 420,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix017.csv",
+          "max_gt_frame": 478,
+          "old_frame_bound": 480,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix018.csv",
+          "max_gt_frame": 590,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "mix019.csv",
+          "max_gt_frame": 546,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix020.csv",
+          "max_gt_frame": 534,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix021.csv",
+          "max_gt_frame": 428,
+          "old_frame_bound": 430,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix022.csv",
+          "max_gt_frame": 524,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix023.csv",
+          "max_gt_frame": 534,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix024.csv",
+          "max_gt_frame": 578,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix025.csv",
+          "max_gt_frame": 566,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix026.csv",
+          "max_gt_frame": 481,
+          "old_frame_bound": 490,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix028.csv",
+          "max_gt_frame": 474,
+          "old_frame_bound": 480,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix029.csv",
+          "max_gt_frame": 497,
+          "old_frame_bound": 500,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix031.csv",
+          "max_gt_frame": 584,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix032.csv",
+          "max_gt_frame": 557,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix033.csv",
+          "max_gt_frame": 540,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "mix034.csv",
+          "max_gt_frame": 584,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix035.csv",
+          "max_gt_frame": 561,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix036.csv",
+          "max_gt_frame": 573,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix037.csv",
+          "max_gt_frame": 542,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix038.csv",
+          "max_gt_frame": 538,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix039.csv",
+          "max_gt_frame": 581,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix040.csv",
+          "max_gt_frame": 587,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix041.csv",
+          "max_gt_frame": 582,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix042.csv",
+          "max_gt_frame": 510,
+          "old_frame_bound": 510,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "mix043.csv",
+          "max_gt_frame": 483,
+          "old_frame_bound": 490,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix044.csv",
+          "max_gt_frame": 510,
+          "old_frame_bound": 510,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "mix045.csv",
+          "max_gt_frame": 538,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix046.csv",
+          "max_gt_frame": 581,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix047.csv",
+          "max_gt_frame": 577,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix048.csv",
+          "max_gt_frame": 557,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix050.csv",
+          "max_gt_frame": 492,
+          "old_frame_bound": 500,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix051.csv",
+          "max_gt_frame": 548,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix052.csv",
+          "max_gt_frame": 552,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix053.csv",
+          "max_gt_frame": 533,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix054.csv",
+          "max_gt_frame": 564,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix055.csv",
+          "max_gt_frame": 533,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix056.csv",
+          "max_gt_frame": 584,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix057.csv",
+          "max_gt_frame": 507,
+          "old_frame_bound": 510,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix058.csv",
+          "max_gt_frame": 587,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix059.csv",
+          "max_gt_frame": 583,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix060.csv",
+          "max_gt_frame": 541,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix066.csv",
+          "max_gt_frame": 579,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix067.csv",
+          "max_gt_frame": 566,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix068.csv",
+          "max_gt_frame": 586,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix069.csv",
+          "max_gt_frame": 540,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "mix070.csv",
+          "max_gt_frame": 590,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "mix072.csv",
+          "max_gt_frame": 524,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix073.csv",
+          "max_gt_frame": 543,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix074.csv",
+          "max_gt_frame": 590,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "mix075.csv",
+          "max_gt_frame": 547,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix077.csv",
+          "max_gt_frame": 487,
+          "old_frame_bound": 490,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix078.csv",
+          "max_gt_frame": 522,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix080.csv",
+          "max_gt_frame": 502,
+          "old_frame_bound": 510,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix081.csv",
+          "max_gt_frame": 565,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix082.csv",
+          "max_gt_frame": 449,
+          "old_frame_bound": 450,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix084.csv",
+          "max_gt_frame": 561,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix085.csv",
+          "max_gt_frame": 562,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix086.csv",
+          "max_gt_frame": 579,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix087.csv",
+          "max_gt_frame": 585,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix088.csv",
+          "max_gt_frame": 556,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix089.csv",
+          "max_gt_frame": 522,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix090.csv",
+          "max_gt_frame": 590,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "mix092.csv",
+          "max_gt_frame": 546,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix094.csv",
+          "max_gt_frame": 583,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix095.csv",
+          "max_gt_frame": 544,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix096.csv",
+          "max_gt_frame": 476,
+          "old_frame_bound": 480,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix097.csv",
+          "max_gt_frame": 541,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix098.csv",
+          "max_gt_frame": 556,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix099.csv",
+          "max_gt_frame": 576,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix101.csv",
+          "max_gt_frame": 573,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix102.csv",
+          "max_gt_frame": 582,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix103.csv",
+          "max_gt_frame": 582,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix104.csv",
+          "max_gt_frame": 567,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix105.csv",
+          "max_gt_frame": 476,
+          "old_frame_bound": 480,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix106.csv",
+          "max_gt_frame": 562,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix107.csv",
+          "max_gt_frame": 589,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix108.csv",
+          "max_gt_frame": 568,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix109.csv",
+          "max_gt_frame": 554,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix112.csv",
+          "max_gt_frame": 508,
+          "old_frame_bound": 510,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix113.csv",
+          "max_gt_frame": 567,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix114.csv",
+          "max_gt_frame": 589,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix115.csv",
+          "max_gt_frame": 555,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix116.csv",
+          "max_gt_frame": 504,
+          "old_frame_bound": 510,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix117.csv",
+          "max_gt_frame": 525,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix118.csv",
+          "max_gt_frame": 455,
+          "old_frame_bound": 460,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix119.csv",
+          "max_gt_frame": 579,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix120.csv",
+          "max_gt_frame": 577,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix121.csv",
+          "max_gt_frame": 573,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix122.csv",
+          "max_gt_frame": 533,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix123.csv",
+          "max_gt_frame": 583,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix124.csv",
+          "max_gt_frame": 471,
+          "old_frame_bound": 480,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix125.csv",
+          "max_gt_frame": 523,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix126.csv",
+          "max_gt_frame": 552,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix127.csv",
+          "max_gt_frame": 528,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix128.csv",
+          "max_gt_frame": 503,
+          "old_frame_bound": 510,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix129.csv",
+          "max_gt_frame": 559,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix130.csv",
+          "max_gt_frame": 546,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix131.csv",
+          "max_gt_frame": 553,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix132.csv",
+          "max_gt_frame": 496,
+          "old_frame_bound": 500,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix133.csv",
+          "max_gt_frame": 532,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix134.csv",
+          "max_gt_frame": 566,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix135.csv",
+          "max_gt_frame": 507,
+          "old_frame_bound": 510,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix136.csv",
+          "max_gt_frame": 573,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix137.csv",
+          "max_gt_frame": 570,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "mix138.csv",
+          "max_gt_frame": 561,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix139.csv",
+          "max_gt_frame": 543,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix140.csv",
+          "max_gt_frame": 542,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix141.csv",
+          "max_gt_frame": 413,
+          "old_frame_bound": 420,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix142.csv",
+          "max_gt_frame": 537,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix143.csv",
+          "max_gt_frame": 456,
+          "old_frame_bound": 460,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix144.csv",
+          "max_gt_frame": 582,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix146.csv",
+          "max_gt_frame": 484,
+          "old_frame_bound": 490,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix147.csv",
+          "max_gt_frame": 589,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix148.csv",
+          "max_gt_frame": 588,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix149.csv",
+          "max_gt_frame": 568,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix150.csv",
+          "max_gt_frame": 507,
+          "old_frame_bound": 510,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix151.csv",
+          "max_gt_frame": 539,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix152.csv",
+          "max_gt_frame": 556,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix153.csv",
+          "max_gt_frame": 532,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix154.csv",
+          "max_gt_frame": 523,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix155.csv",
+          "max_gt_frame": 579,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix156.csv",
+          "max_gt_frame": 565,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix157.csv",
+          "max_gt_frame": 558,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix158.csv",
+          "max_gt_frame": 576,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix159.csv",
+          "max_gt_frame": 563,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix160.csv",
+          "max_gt_frame": 551,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix161.csv",
+          "max_gt_frame": 432,
+          "old_frame_bound": 440,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix162.csv",
+          "max_gt_frame": 554,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix163.csv",
+          "max_gt_frame": 552,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix164.csv",
+          "max_gt_frame": 529,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix165.csv",
+          "max_gt_frame": 577,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix166.csv",
+          "max_gt_frame": 562,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix167.csv",
+          "max_gt_frame": 577,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix168.csv",
+          "max_gt_frame": 445,
+          "old_frame_bound": 450,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix169.csv",
+          "max_gt_frame": 565,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix170.csv",
+          "max_gt_frame": 459,
+          "old_frame_bound": 460,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix171.csv",
+          "max_gt_frame": 587,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix172.csv",
+          "max_gt_frame": 519,
+          "old_frame_bound": 520,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix173.csv",
+          "max_gt_frame": 472,
+          "old_frame_bound": 480,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix174.csv",
+          "max_gt_frame": 559,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix175.csv",
+          "max_gt_frame": 542,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix176.csv",
+          "max_gt_frame": 457,
+          "old_frame_bound": 460,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix177.csv",
+          "max_gt_frame": 547,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix178.csv",
+          "max_gt_frame": 544,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix179.csv",
+          "max_gt_frame": 523,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix180.csv",
+          "max_gt_frame": 495,
+          "old_frame_bound": 500,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix181.csv",
+          "max_gt_frame": 543,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix182.csv",
+          "max_gt_frame": 473,
+          "old_frame_bound": 480,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix183.csv",
+          "max_gt_frame": 503,
+          "old_frame_bound": 510,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix184.csv",
+          "max_gt_frame": 588,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix185.csv",
+          "max_gt_frame": 587,
+          "old_frame_bound": 590,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix187.csv",
+          "max_gt_frame": 540,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "mix188.csv",
+          "max_gt_frame": 561,
+          "old_frame_bound": 570,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix189.csv",
+          "max_gt_frame": 520,
+          "old_frame_bound": 520,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "mix191.csv",
+          "max_gt_frame": 560,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "mix192.csv",
+          "max_gt_frame": 532,
+          "old_frame_bound": 540,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix193.csv",
+          "max_gt_frame": 572,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix195.csv",
+          "max_gt_frame": 578,
+          "old_frame_bound": 580,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix196.csv",
+          "max_gt_frame": 554,
+          "old_frame_bound": 560,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix197.csv",
+          "max_gt_frame": 440,
+          "old_frame_bound": 440,
+          "dropped_gt_rows": 1
+        },
+        {
+          "file": "mix198.csv",
+          "max_gt_frame": 544,
+          "old_frame_bound": 550,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix199.csv",
+          "max_gt_frame": 521,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 0
+        },
+        {
+          "file": "mix200.csv",
+          "max_gt_frame": 528,
+          "old_frame_bound": 530,
+          "dropped_gt_rows": 0
+        }
+      ]
+    }
+  ],
+  "einv2_metric_copies": [
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "official_after_numpy_compat": true
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "official_after_numpy_compat": true
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "official_after_numpy_compat": true
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "official_after_numpy_compat": true
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "official_after_numpy_compat": true
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "official_after_numpy_compat": true
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "official_after_numpy_compat": true
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "official_after_numpy_compat": true
+    }
+  ]
+}

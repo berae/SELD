@@ -1,0 +1,4 @@
+* text=auto eol=lf
+evaluation/upstream/* -text
+provenance/* -text
+reports/historical/*.csv -text

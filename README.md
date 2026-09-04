@@ -1,1 +1,109 @@
 # SELD
+
+EINV2 与 Multi-ACCDOA 的 causal / offline、velocity、JEPA 辅助监督实验代码。
+当前版本 **0.1.0**：从 rabbit02 的实际研究代码整理，保留变体与来源，不包含数据、权重或大体积预测。
+
+## 目录
+
+```text
+models/
+  einv2/variants/      C0、C1、C2、C3、E1、E2、E3；C0_legacy 仅历史参考
+  multi_accdoa/       独立的 Multi-ACCDOA 实现、参数与 analysis 工具
+configs/
+  einv2/              8 个可迁移配置；historical/ 保留原始配置
+  multi_accdoa/       8 个显式 lambda005 配置；historical/ 为旧诊断配置
+scripts/
+  train/              只训练与 validation
+  eval/               checkpoint 推理、官方评分、静态/动态诊断
+  preprocess/         特征、velocity targets、JEPA masks
+evaluation/           SHA256 固定的 DCASE metric、适配与回归测试
+tests/                入口、来源完整性、模型 forward/causal 测试
+requirements/         EINV2 与 Multi-ACCDOA 分开的依赖
+reports/              小型结果表与证据索引
+provenance/           原始路径/hash、整理改动清单
+docs/                 协议、历史结果、版本管理、上游说明
+```
+
+E0 使用 `models/einv2/variants/C0` 中的 offline `EINV2` 类；通过 `configs/einv2/E0.yaml` 选择，不使用 causal 模型。
+EINV2 首版保留独立变体实现，避免合并代码时改变历史 checkpoint 对应的方法。不同模型用独立进程与环境运行。
+
+## 环境与配置
+
+- EINV2：Python 3.10，依赖见 `requirements/einv2.txt`。
+- Multi-ACCDOA：Python 3.8，依赖见 `requirements/multi_accdoa.txt`。
+- 仅重评分：`requirements/metrics.txt`。现有环境验证通过；未重新创建空白环境验证完整安装。
+- 数据为 **TAU2020 FOA**：train folds2–6、validation fold1、独立 evaluation 200 recordings。
+- 标准 seeds：2026、2027、2028。每个入口一次运行一个 seed；GPU 由 `CUDA_VISIBLE_DEVICES` 明确指定，不自动占卡。
+- EINV2 causal 与 offline 的 scalar / IV 顺序不同，不能共用错误的预处理缓存；见 [协议](docs/EXPERIMENT_PROTOCOL.md)。
+- 所有命令从仓库根目录执行。`--help` 查看参数；`--dry-run` 仅显示计划，不验证数据存在、不训练。
+
+## 训练与测试分开
+
+EINV2 C3 训练（路径替换为自己的路径）：
+
+```bash
+CUDA_VISIBLE_DEVICES=0 PYTHONHASHSEED=2026 python scripts/train/einv2.py \
+  --variant C3 --seed 2026 --dataset-root /data/TAU2020_SELD_dataset \
+  --hdf5-root /cache/einv2 --scalar-path /cache/einv2/matching_scalar.h5 \
+  --velocity-root /cache/velocity --jepa-root /cache/jepa \
+  --output-root /experiments/einv2
+```
+
+Multi-ACCDOA C3 训练（默认显式使用 lambda_velocity=lambda_jepa=0.05）：
+
+```bash
+CUDA_VISIBLE_DEVICES=0 PYTHONHASHSEED=2026 python scripts/train/multi_accdoa.py \
+  --variant C3 --seed 2026 --dataset-root /data/TAU2020_SELD_dataset \
+  --feature-root /cache/multi_strictcausal --output-root /experiments
+```
+
+训练入口不自动访问 evaluation set。Multi-ACCDOA 写出包含完整 params/checkpoint 的 manifest；独立测试直接读取它：
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python scripts/eval/multi_accdoa.py \
+  --manifest /experiments/multi_accdoa/C3_seed2026_v010/manifests/RUN.json \
+  --split evaluation --output-dir /experiments/eval/C3_seed2026
+```
+
+迁移后可用 `--checkpoint`、`--dataset-root`、`--feature-root` 覆盖 manifest 的机器路径。测试不创建 optimizer，也不调用训练循环。
+
+EINV2 先用显式 checkpoint 生成预测，再按相同官方协议评分：
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python scripts/eval/einv2.py \
+  --variant C3 --checkpoint /checkpoints/C3_epoch_best.pth --seed 2026 \
+  --dataset-root /data/TAU2020_SELD_dataset --hdf5-root /cache/einv2 \
+  --scalar-path /cache/einv2/matching_scalar.h5 \
+  --split evaluation --output-root /experiments/einv2
+
+python scripts/eval/score.py \
+  --prediction-dir /experiments/einv2/out_infer/ein_seld/C3_seed2026_v010_evaluation/submissions \
+  --reference-dir /data/TAU2020_SELD_dataset/metadata_eval \
+  --prediction-schema polar4 --output /experiments/einv2/C3_metrics.json
+```
+
+Multi-ACCDOA 保存的预测使用 `cartesian7`；validation 参考目录改为 `metadata_dev`，并增加 `--reference-glob 'fold1*.csv'`。官方评分要求预测/参考文件集合完全匹配，包含空预测文件。
+
+## 结果与 metric 版本
+
+共同协议是 **DCASE2023 官方 core + micro + 完整60秒**，同时保留 macro 与 legacy2020 输出。这里的“2023”表示 metric 版本，不表示使用了 DCASE2023 数据集；micro 也不是官方默认 macro。
+
+- 当前结果：[统一结果说明](reports/RESULTS.md)、[每个 run](reports/aligned_20260904/aligned_run_metrics.csv)、[三 seed 汇总](reports/aligned_20260904/aligned_aggregate_metrics.csv)。
+- 历史 **15.28° → 11.94°**：[原始日志与限制](reports/HISTORICAL_LE.md)。它是 seed2026/fold1 validation，不能当作三 seed test 均值。
+- 旧 `LR20` 实际是 localization F；新 `LR_CD` 才是 recall。`F20` 也不是纯 SED F1，未报告 mAP。
+- 静态/动态工具的 `Recall@20` 是自定义逐帧诊断，不等于官方 `LR_CD`。
+- 新训练的 validation metric 已切换；历史 checkpoint 的选择并未重做。新旧训练结果必须区分版本。
+
+## 验证与开发
+
+```bash
+python tests/test_repository.py
+python evaluation/test_alignment.py
+python tests/test_entrypoint_config.py           # EINV2 环境
+CUDA_VISIBLE_DEVICES= python tests/test_einv2_variant.py --variant C3
+PYTHONPATH=models/multi_accdoa python tests/multi_accdoa/test_dynamic_aux.py
+PYTHONPATH=models/multi_accdoa python tests/multi_accdoa/test_experiment_protocol.py
+```
+
+见 [版本管理](docs/VERSIONING.md)、[验证记录](docs/VALIDATION.md) 和 [第三方来源](THIRD_PARTY_NOTICES.md)。
+`docs/upstream/`、`configs/*/historical/` 是来源归档，可能包含旧机器路径或过时说明，不是当前运行指南。
