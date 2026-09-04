@@ -1,5 +1,7 @@
 # 统一 metric 结果摘要
 
+完整列表见 [实验结果总表](EXPERIMENT_CATALOG.md)（14 组主矩阵、配对差、静态/动态诊断）和 [逐 seed run 索引](catalog_20260904/RUN_INDEX.md)。下方保留简要摘要，不是全部变体。
+
 下面均为 TAU2020 **evaluation、seeds2026/2027/2028的均值**，`dcase2023_micro`、完整60秒。单run与standard deviation以随附CSV为准；没有在本版重训或重新选择checkpoint。
 
 | Family | Variant | LE_CD ↓ | LR_CD ↑ | F20 ↑ | SELD ↓ |

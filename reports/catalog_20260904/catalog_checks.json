@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "run_split_rows": 84,
+  "unique_runs": 42,
+  "groups": 14,
+  "sample_sd_ddof": 1,
+  "recomputed_metric_groups": 140,
+  "motion_rows": 168,
+  "checked_server_table_hashes": [
+    "aligned_run_metrics.csv",
+    "aligned_aggregate_metrics.csv",
+    "aligned_paired_seed_deltas.csv",
+    "completion_motion_per_run.csv",
+    "completion_motion_support.csv",
+    "completion_new_training.csv",
+    "completion_qa_checks.json"
+  ],
+  "training_rerun": false,
+  "inference_rerun": false,
+  "statistical_significance_tested": false
+}

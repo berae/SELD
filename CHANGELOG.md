@@ -2,6 +2,9 @@
 
 ## Unreleased — 2026-09-04
 
+- 展开 14 组实验主矩阵与 42 个逐 seed run；保存 84 行证据索引、静态/动态诊断及独立重算检查。
+- 新增 2 张方法示意图、4 张 causal/noncausal 架构图及 SVG 生成源码，覆盖 16 个 portable recipes，按实际 mask、head、normalization 和 EMA 实现绘制。
+
 - 新增 rabbit02 / RB05 数据资产表、六套原始数据与派生缓存的只读快照、标签覆盖和 TAU2020 迁移核对结果。
 - 新增独立盘点脚本、复核 notebook 和 5 项测试；不修改模型、训练配置、metric 或服务器原始数据，代码版本仍为 0.1.0。
 

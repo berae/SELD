@@ -2,3 +2,5 @@
 evaluation/upstream/* -text
 provenance/* -text
 reports/historical/*.csv -text
+reports/aligned_20260904/*.csv -text
+reports/catalog_20260904/completion_* -text

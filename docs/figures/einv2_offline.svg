@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="880" viewBox="0 0 1400 880" role="img" aria-labelledby="title desc">
+<title id="title">EINV2 · offline / noncausal</title><desc id="desc">E0 baseline；E1 + velocity；E2 + latent；E3 两项联合。图示 4s 输入，B 为 batch size。</desc>
+<defs><marker id="arrow-main" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#2463a6"/></marker><marker id="arrow-aux" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#986018"/></marker><marker id="arrow-target" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#23775c"/></marker><marker id="arrow-plain" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#52637a"/></marker></defs>
+<style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;fill:#172b4d} .small{fill:#52637a}</style>
+<rect width="1400" height="880" fill="white"/>
+<text x="36" y="43" font-size="27" text-anchor="start" style="fill:#172b4d;font-weight:600">EINV2 · offline / noncausal</text>
+<text x="36" y="78" font-size="16" text-anchor="start" style="fill:#52637a;font-weight:400">E0 baseline；E1 + velocity；E2 + latent；E3 两项联合。图示 4s 输入，B 为 batch size。</text>
+<path d="M36 98 H1364" stroke="#d8e1eb"/>
+<g data-node-group="true">
+<rect data-node="true" x="36" y="300" width="178" height="125" rx="9" fill="#edf4fc" stroke="#2463a6" stroke-width="1.6"/>
+<text x="125.0" y="341.28" font-size="17" text-anchor="middle" style="fill:#172b4d;font-weight:600">FOA waveform</text>
+<text x="125.0" y="368.28" font-size="17" text-anchor="middle" style="fill:#172b4d;font-weight:400">B × 4 × 96000</text>
+<text x="125.0" y="395.28" font-size="17" text-anchor="middle" style="fill:#172b4d;font-weight:400">24 kHz / 4 s</text>
+</g>
+<g data-node-group="true">
+<rect data-node="true" x="256" y="300" width="252" height="125" rx="9" fill="#edf4fc" stroke="#2463a6" stroke-width="1.6"/>
+<text x="382.0" y="328.94" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:600">Feature + scalar</text>
+<text x="382.0" y="354.94" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:400">4 log-mel + 3 IV</text>
+<text x="382.0" y="380.94" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:400">B × 7 × 161 × 256</text>
+<text x="382.0" y="406.94" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:400">hop = 25 ms</text>
+</g>
+<polyline points="214,363 256,363" fill="none" stroke="#2463a6" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-main)"/>
+<g data-node-group="true">
+<rect data-node="true" x="552" y="130" width="264" height="154" rx="9" fill="#edf4fc" stroke="#2463a6" stroke-width="1.6"/>
+<text x="684.0" y="160.44" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:600">SED CNN · 前 4 channels</text>
+<text x="684.0" y="186.44" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:400">DoubleConv × 4 stages</text>
+<text x="684.0" y="212.44" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:400">64 → 128 → 256 → 512</text>
+<text x="684.0" y="238.44" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:400">pool (t,f): 2×2, 2×2,</text>
+<text x="684.0" y="264.44" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:400">1×2, 1×2</text>
+</g>
+<g data-node-group="true">
+<rect data-node="true" x="552" y="445" width="264" height="154" rx="9" fill="#edf4fc" stroke="#2463a6" stroke-width="1.6"/>
+<text x="684.0" y="475.44" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:600">DOA CNN · 全 7 channels</text>
+<text x="684.0" y="501.44" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:400">DoubleConv × 4 stages</text>
+<text x="684.0" y="527.44" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:400">64 → 128 → 256 → 512</text>
+<text x="684.0" y="553.44" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:400">pool (t,f): 2×2, 2×2,</text>
+<text x="684.0" y="579.44" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:400">1×2, 1×2</text>
+</g>
+<polyline points="508,338 529,338 529,207 552,207" fill="none" stroke="#2463a6" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-main)"/>
+<polyline points="508,387 529,387 529,522 552,522" fill="none" stroke="#2463a6" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-main)"/>
+<g data-node-group="true">
+<rect data-node="true" x="566" y="319" width="238" height="89" rx="9" fill="#f6f8fb" stroke="#8593a5" stroke-width="1.6"/>
+<text x="685.0" y="343.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:600">内部 3 次 soft-stitch</text>
+<text x="685.0" y="368.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">发生于 stages 1–3 后</text>
+<text x="685.0" y="393.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">顺序式 SED → DOA 更新</text>
+</g>
+<polyline points="642,284 642,319" fill="none" stroke="#2463a6" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-main)"/>
+<polyline points="722,319 722,284" fill="none" stroke="#2463a6" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-main)"/>
+<polyline points="642,408 642,445" fill="none" stroke="#2463a6" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-main)"/>
+<polyline points="722,445 722,408" fill="none" stroke="#2463a6" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-main)"/>
+<g data-node-group="true">
+<rect data-node="true" x="862" y="145" width="233" height="124" rx="9" fill="#edf4fc" stroke="#2463a6" stroke-width="1.6"/>
+<text x="978.5" y="174.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:600">Freq mean → Transformer</text>
+<text x="978.5" y="199.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">2 个独立 track encoders</text>
+<text x="978.5" y="224.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">每个: 2 layers, d=512</text>
+<text x="978.5" y="249.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">8 heads, FFN=1024</text>
+</g>
+<polyline points="816,207 862,207" fill="none" stroke="#2463a6" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-main)"/>
+<g data-node-group="true">
+<rect data-node="true" x="862" y="460" width="233" height="124" rx="9" fill="#edf4fc" stroke="#2463a6" stroke-width="1.6"/>
+<text x="978.5" y="489.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:600">Freq mean → Transformer</text>
+<text x="978.5" y="514.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">2 个独立 track encoders</text>
+<text x="978.5" y="539.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">每个: 2 layers, d=512</text>
+<text x="978.5" y="564.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">8 heads, FFN=1024</text>
+</g>
+<polyline points="816,522 862,522" fill="none" stroke="#2463a6" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-main)"/>
+<g data-node-group="true">
+<rect data-node="true" x="1141" y="153" width="223" height="108" rx="9" fill="#edf4fc" stroke="#2463a6" stroke-width="1.6"/>
+<text x="1252.5" y="174.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:600">SED heads × 2</text>
+<text x="1252.5" y="199.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">Linear 512 → 14 logits</text>
+<text x="1252.5" y="224.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">B × 40 × 2 × 14</text>
+<text x="1252.5" y="249.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">推理时 sigmoid</text>
+</g>
+<g data-node-group="true">
+<rect data-node="true" x="1141" y="468" width="223" height="108" rx="9" fill="#edf4fc" stroke="#2463a6" stroke-width="1.6"/>
+<text x="1252.5" y="502.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:600">DOA heads × 2</text>
+<text x="1252.5" y="527.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">Linear 512 → 3 + tanh</text>
+<text x="1252.5" y="552.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">B × 40 × 2 × 3</text>
+</g>
+<polyline points="1095,207 1141,207" fill="none" stroke="#2463a6" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-main)"/>
+<polyline points="1095,522 1141,522" fill="none" stroke="#2463a6" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-main)"/>
+<g data-node-group="true">
+<rect data-node="true" x="633" y="655" width="300" height="91" rx="9" fill="#fff5e5" stroke="#986018" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="783.0" y="680.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:600">Velocity heads · E1 / E3</text>
+<text x="783.0" y="705.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">每个 DOA track: Linear 512 → 3</text>
+<text x="783.0" y="730.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">训练监督；不参与 SELD 解码</text>
+</g>
+<g data-node-group="true">
+<rect data-node="true" x="1017" y="655" width="347" height="91" rx="9" fill="#fff5e5" stroke="#986018" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="1190.5" y="680.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:600">Latent branch · E2 / E3</text>
+<text x="1190.5" y="705.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">每 track: Linear 512 → 128 + LN</text>
+<text x="1190.5" y="730.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">horizon-conditioned MLP → 128</text>
+</g>
+<polyline points="965,584 965,622 783,622 783,655" fill="none" stroke="#986018" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-aux)" stroke-dasharray="7 5"/>
+<polyline points="965,584 965,622 1190,622 1190,655" fill="none" stroke="#986018" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-aux)" stroke-dasharray="7 5"/>
+<text x="883" y="306" font-size="14" text-anchor="start" style="fill:#52637a;font-weight:400">output: B × 40 × 512</text>
+<text x="38" y="480" font-size="16" text-anchor="start" style="fill:#172b4d;font-weight:400">Frontend: centered STFT；legacy IV/scalar</text>
+<text x="38" y="509" font-size="16" text-anchor="start" style="fill:#172b4d;font-weight:400">Conv: 对称 padding；BatchNorm2d</text>
+<text x="38" y="538" font-size="16" text-anchor="start" style="fill:#172b4d;font-weight:400">Attention: 无 mask；全片段上下文</text>
+<text x="38" y="567" font-size="15" text-anchor="start" style="fill:#172b4d;font-weight:400">Latent loss 是 consistency，不称 causal prediction</text>
+<text x="36" y="795" font-size="15" text-anchor="start" style="fill:#52637a;font-weight:400">蓝色：主预测路径；橙色虚线：可选辅助分支。训练主损失为 0.5 BCEWithLogits + 0.5 DOA MSE，使用 frame-wise tPIT。</text>
+<text x="36" y="820" font-size="15" text-anchor="start" style="fill:#52637a;font-weight:400">辅助分支可能仍由当前 forward 计算，但不参与 SELD 输出解码；EMA teacher 仅用于训练/validation loss。</text>
+<text x="36" y="845" font-size="15" text-anchor="start" style="fill:#52637a;font-weight:400">示意图不宣称零时延：pooling、音频时间戳及 chunk 边界仍需端到端检验；soft-stitch 不画成同时对称交换。</text>
+</svg>

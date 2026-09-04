@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-04",
+  "assessment": "Share with caveats",
+  "checks": {
+    "catalog_tests": 5,
+    "repository_tests": 5,
+    "data_inventory_tests": 5,
+    "recomputed_metric_groups": 140,
+    "source_run_split_rows": 84,
+    "training_rerun": false,
+    "inference_rerun": false,
+    "checkpoint_deserialization": false
+  },
+  "renders": [
+    {
+      "file": "einv2_causal.svg",
+      "errors": [],
+      "rendered": true
+    },
+    {
+      "file": "einv2_offline.svg",
+      "errors": [],
+      "rendered": true
+    },
+    {
+      "file": "latent_prediction.svg",
+      "errors": [],
+      "rendered": true
+    },
+    {
+      "file": "multi_accdoa_causal.svg",
+      "errors": [],
+      "rendered": true
+    },
+    {
+      "file": "multi_accdoa_noncausal.svg",
+      "errors": [],
+      "rendered": true
+    },
+    {
+      "file": "velocity_supervision.svg",
+      "errors": [],
+      "rendered": true
+    },
+    {
+      "file": "reports/EXPERIMENT_CATALOG.md",
+      "table_rows": 14,
+      "errors": [],
+      "rendered": true
+    }
+  ],
+  "visual_review": "All six SVG previews and the 14-row result table were inspected; no clipping or node-label overflow observed. Diagram semantics manually traced to source code.",
+  "limitations": [
+    "No independent training reproduction or significance test.",
+    "Architecture diagrams include optional heads, not measured inference latency.",
+    "Static/dynamic diagnostic metrics are not official LE_CD/LR_CD."
+  ]
+}

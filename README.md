@@ -94,16 +94,22 @@ Multi-ACCDOA 保存的预测使用 `cartesian7`；validation 参考目录改为 
 共同协议是 **DCASE2023 官方 core + micro + 完整60秒**，同时保留 macro 与 legacy2020 输出。这里的“2023”表示 metric 版本，不表示使用了 DCASE2023 数据集；micro 也不是官方默认 macro。
 
 - 当前结果：[统一结果说明](reports/RESULTS.md)、[每个 run](reports/aligned_20260904/aligned_run_metrics.csv)、[三 seed 汇总](reports/aligned_20260904/aligned_aggregate_metrics.csv)。
+- 完整列表：[14 组主结果与静态/动态定位表](reports/EXPERIMENT_CATALOG.md)、[42 个逐 seed run](reports/catalog_20260904/RUN_INDEX.md)；保留 config/checkpoint/result 路径与缺失实验说明。
 - 历史 **15.28° → 11.94°**：[原始日志与限制](reports/HISTORICAL_LE.md)。它是 seed2026/fold1 validation，不能当作三 seed test 均值。
 - 旧 `LR20` 实际是 localization F；新 `LR_CD` 才是 recall。`F20` 也不是纯 SED F1，未报告 mAP。
 - 静态/动态工具的 `Recall@20` 是自定义逐帧诊断，不等于官方 `LR_CD`。
 - 新训练的 validation metric 已切换；历史 checkpoint 的选择并未重做。新旧训练结果必须区分版本。
+
+## 方法与架构图
+
+[方法与架构图](docs/METHOD_AND_ARCHITECTURE.md)：2 张辅助监督方法图、4 张 causal / noncausal 模型架构图，覆盖全部 16 个 portable recipes。SVG 与生成源码一并保存，区分主预测路径、辅助 head 和 EMA target。
 
 ## 验证与开发
 
 ```bash
 python tests/test_repository.py
 python tests/test_data_inventory.py             # 无需原始数据
+python tests/test_experiment_catalog.py          # 结果与架构图可复算检查
 python evaluation/test_alignment.py
 python tests/test_entrypoint_config.py           # EINV2 环境
 CUDA_VISIBLE_DEVICES= python tests/test_einv2_variant.py --variant C3

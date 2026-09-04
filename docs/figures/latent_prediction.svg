@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-labelledby="title desc">
+<title id="title">方法示意 · JEPA-style latent prediction / consistency</title><desc id="desc">h ∈ {1, 3, 5} label frames = 100 / 300 / 500 ms；future latent 仅作为训练目标，不作为主预测输入。</desc>
+<defs><marker id="arrow-main" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#2463a6"/></marker><marker id="arrow-aux" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#986018"/></marker><marker id="arrow-target" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#23775c"/></marker><marker id="arrow-plain" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4.5 L0,9 Z" fill="#52637a"/></marker></defs>
+<style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;fill:#172b4d} .small{fill:#52637a}</style>
+<rect width="1400" height="850" fill="white"/>
+<text x="36" y="43" font-size="27" text-anchor="start" style="fill:#172b4d;font-weight:600">方法示意 · JEPA-style latent prediction / consistency</text>
+<text x="36" y="78" font-size="16" text-anchor="start" style="fill:#52637a;font-weight:400">h ∈ {1, 3, 5} label frames = 100 / 300 / 500 ms；future latent 仅作为训练目标，不作为主预测输入。</text>
+<path d="M36 98 H1364" stroke="#d8e1eb"/>
+<g data-node-group="true">
+<rect data-node="true" x="36" y="203" width="179" height="111" rx="9" fill="#f6f8fb" stroke="#8593a5" stroke-width="1.6"/>
+<text x="125.5" y="237.94" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:600">同一 feature chunk</text>
+<text x="125.5" y="263.94" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:400">x</text>
+<text x="125.5" y="289.94" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:400">online / target 共用</text>
+</g>
+<g data-node-group="true">
+<rect data-node="true" x="260" y="145" width="228" height="110" rx="9" fill="#edf4fc" stroke="#2463a6" stroke-width="1.6"/>
+<text x="374.0" y="180.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:600">Online backbone θ</text>
+<text x="374.0" y="205.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">取时间 t 的表示</text>
+<text x="374.0" y="230.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">EINV2: DOA track features</text>
+</g>
+<g data-node-group="true">
+<rect data-node="true" x="534" y="145" width="217" height="110" rx="9" fill="#edf4fc" stroke="#2463a6" stroke-width="1.6"/>
+<text x="642.5" y="179.44" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:600">Projection gθ</text>
+<text x="642.5" y="205.44" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:400">latent dimension = 128</text>
+<text x="642.5" y="231.44" font-size="16" text-anchor="middle" style="fill:#172b4d;font-weight:400">得到 zₜ</text>
+</g>
+<g data-node-group="true">
+<rect data-node="true" x="797" y="145" width="246" height="110" rx="9" fill="#fff5e5" stroke="#986018" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="920.0" y="167.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:600">Predictor qθ(zₜ, 0.1h)</text>
+<text x="920.0" y="192.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">MLP 129 → 256 → 128</text>
+<text x="920.0" y="217.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">GELU hidden activation</text>
+<text x="920.0" y="242.6" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">EINV2: tPIT canonicalize</text>
+</g>
+<g data-node-group="true">
+<rect data-node="true" x="1131" y="276" width="233" height="121" rx="9" fill="#fff5e5" stroke="#986018" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="1247.5" y="304.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:600">Masked cosine loss</text>
+<text x="1247.5" y="329.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">1 − cos(ẑₜ₊ₕ, sg(z̄ₜ₊ₕ))</text>
+<text x="1247.5" y="354.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">按有效 mask / horizon</text>
+<text x="1247.5" y="379.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">汇总后加入主损失</text>
+</g>
+<polyline points="215,238 237,238 237,200 260,200" fill="none" stroke="#2463a6" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-main)"/>
+<polyline points="488,200 534,200" fill="none" stroke="#2463a6" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-main)"/>
+<polyline points="751,200 797,200" fill="none" stroke="#986018" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-aux)" stroke-dasharray="7 5"/>
+<polyline points="1043,200 1100,200 1100,306 1131,306" fill="none" stroke="#986018" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-aux)" stroke-dasharray="7 5"/>
+<g data-node-group="true">
+<rect data-node="true" x="260" y="397" width="228" height="110" rx="9" fill="#edf7f2" stroke="#23775c" stroke-width="1.6"/>
+<text x="374.0" y="432.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:600">EMA target backbone θ̄</text>
+<text x="374.0" y="457.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">同 architecture / eval()</text>
+<text x="374.0" y="482.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">no_grad / stop gradient</text>
+</g>
+<g data-node-group="true">
+<rect data-node="true" x="534" y="397" width="217" height="110" rx="9" fill="#edf7f2" stroke="#23775c" stroke-width="1.6"/>
+<text x="642.5" y="432.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:600">Target projection gθ̄</text>
+<text x="642.5" y="457.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">按目标时间 t+h 取 latent</text>
+<text x="642.5" y="482.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">仅用作 loss target</text>
+</g>
+<g data-node-group="true">
+<rect data-node="true" x="797" y="397" width="246" height="110" rx="9" fill="#edf7f2" stroke="#23775c" stroke-width="1.6"/>
+<text x="920.0" y="432.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:600">Alignment + stop-grad</text>
+<text x="920.0" y="457.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">EINV2: canonical tPIT slots</text>
+<text x="920.0" y="482.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">Multi: 固定 track/class slots</text>
+</g>
+<polyline points="215,280 237,280 237,452 260,452" fill="none" stroke="#23775c" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-target)"/>
+<polyline points="488,452 534,452" fill="none" stroke="#23775c" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-target)"/>
+<polyline points="751,452 797,452" fill="none" stroke="#23775c" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-target)"/>
+<polyline points="1043,452 1100,452 1100,367 1131,367" fill="none" stroke="#23775c" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-target)"/>
+<polyline points="374,255 374,397" fill="none" stroke="#23775c" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-target)" stroke-dasharray="7 5"/>
+<polyline points="642,255 642,397" fill="none" stroke="#23775c" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow-target)" stroke-dasharray="7 5"/>
+<text x="394" y="322" font-size="15" text-anchor="start" style="fill:#23775c;font-weight:400">EMA m=0.996</text>
+<text x="394" y="350" font-size="15" text-anchor="start" style="fill:#23775c;font-weight:400">不是反向传播</text>
+<g data-node-group="true">
+<rect data-node="true" x="36" y="580" width="627" height="115" rx="9" fill="#f6f8fb" stroke="#8593a5" stroke-width="1.6"/>
+<text x="349.5" y="605.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:600">EINV2 mask / projection</text>
+<text x="349.5" y="630.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">同一 GT identity 在 [t,t+h] 全区间连续且保持内部 slot</text>
+<text x="349.5" y="655.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">online tPIT 置换用于 canonicalize online / teacher slots</text>
+<text x="349.5" y="680.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">projection = Linear + LayerNorm；每 track 独立</text>
+</g>
+<g data-node-group="true">
+<rect data-node="true" x="697" y="580" width="667" height="115" rx="9" fill="#f6f8fb" stroke="#8593a5" stroke-width="1.6"/>
+<text x="1030.5" y="605.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:600">Multi-ACCDOA mask / projection</text>
+<text x="1030.5" y="630.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">仅检查两端 activity 与 ADPIT assignment ID 相同</text>
+<text x="1030.5" y="655.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">没有检查区间内每一帧，也没有 source identity 监督</text>
+<text x="1030.5" y="680.1" font-size="15" text-anchor="middle" style="fill:#172b4d;font-weight:400">projection = Linear + L2 normalization；每 track/class latent</text>
+</g>
+<text x="36" y="765" font-size="15" text-anchor="start" style="fill:#52637a;font-weight:400">Causal backbone 对应 future prediction；offline / noncausal backbone 已见未来上下文，只称 temporal latent consistency。</text>
+<text x="36" y="790" font-size="15" text-anchor="start" style="fill:#52637a;font-weight:400">蓝色：online 表示；橙色：可学习 predictor / loss；绿色：EMA reference。完整 teacher 由 model deepcopy 构造。</text>
+<text x="36" y="815" font-size="15" text-anchor="start" style="fill:#52637a;font-weight:400">EMA teacher 和未来 target 不参与 SELD 解码；这里不是标准 JEPA 复现声明，也没有独立 trajectory decoder。</text>
+</svg>

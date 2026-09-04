@@ -1,0 +1,5 @@
+﻿split,motion_group,references
+validation,static,31428.0
+validation,dynamic,26274.0
+evaluation,static,64036.0
+evaluation,dynamic,53184.0
