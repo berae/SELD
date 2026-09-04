@@ -1,0 +1,48 @@
+{
+  "files": 100,
+  "scores": {
+    "dcase2020_source": {
+      "ER20": 1.0,
+      "F20": 0.0,
+      "LE_CD": 180.0,
+      "LF_CD": 0.0,
+      "SELD_LF": 1.0
+    },
+    "dcase2020_web_lr": {
+      "ER20": 1.0,
+      "F20": 0.0,
+      "LE_CD": 180.0,
+      "LR_CD": 0.0,
+      "SELD_LR": 1.0
+    },
+    "dcase2023_micro": {
+      "ER20": 1.0,
+      "F20": 0.0,
+      "LE_CD": 180.0,
+      "LR_CD": 0.0,
+      "SELD_LR": 1.0
+    },
+    "dcase2023_macro": {
+      "ER20": 1.0,
+      "F20": 0.0,
+      "LE_CD": 180.0,
+      "LR_CD": 0.0,
+      "SELD_LR": 1.0
+    }
+  },
+  "upstream": {
+    "2020": [
+      "384ad9baa634e91268f35759fd7382e0d2f0ef12",
+      "a6b4021b14b1e98d3c7014914c50c8d5ffcd263159d45b070703c64d1bb61ceb"
+    ],
+    "2023": [
+      "24d14c9ebe6878062dc3b68eb07dd0100722f530",
+      "41b17ffbd5007cd06549b07ad620a77d7cdbc65ae62c93e409f37f28882512c9"
+    ]
+  },
+  "training_validation_max_abs_diff": 0.0,
+  "checkpoint": "/work/zhanghc/Myllm/SELD/experiment_einv2_reaudit_20260904_r1/runs/smoke_C3_seed2026_framecausal_v020/best.pth",
+  "split": "validation",
+  "version": "einv2_reaudit_v1",
+  "status": "completed"
+}

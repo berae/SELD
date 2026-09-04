@@ -1,0 +1,1480 @@
+{
+  "scope": "historical code audit, no training",
+  "normalization": {
+    "scalar": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/_hdf5/dcase2020task3/scalar/foa_causal_logmel&intensity_sr24000_nfft1024_hop600_mel256.h5",
+    "scalar_sha256": "3855ae4209113e0e268508ee74969fe7aebe3b645dda9a47e23010fca76d0ef2",
+    "mean_max_abs_diff": 0.0135329719632864,
+    "std_max_abs_diff": 0.012766219675540924
+  },
+  "variants": {
+    "C0": {
+      "shared_init_max_abs_diff": 0.0,
+      "rng_after_init": "50323420928d47ca17331f69ecdca26815f35e0d81da73e0da2b989e5a2824a6",
+      "eval_max_abs_diff": 0.0,
+      "train_same_rng_max_abs_diff": 0.0,
+      "audio_prefix_checks": {
+        "9600": {
+          "first_four_frames_max_diff": 0.0,
+          "frame_index_4_max_diff": 0.016300350427627563
+        },
+        "11400": {
+          "first_four_frames_max_diff": 0.0,
+          "frame_index_4_max_diff": 0.0
+        },
+        "12000": {
+          "first_four_frames_max_diff": 0.0,
+          "frame_index_4_max_diff": 0.0
+        }
+      }
+    },
+    "C1": {
+      "shared_init_max_abs_diff": 0.0,
+      "rng_after_init": "59384b19b37f546a109d1ac095c5a561e64777670af2eb238e30ba1ec8e591d0",
+      "eval_max_abs_diff": 0.0,
+      "train_same_rng_max_abs_diff": 0.0,
+      "audio_prefix_checks": {
+        "9600": {
+          "first_four_frames_max_diff": 0.0,
+          "frame_index_4_max_diff": 0.016300350427627563
+        },
+        "11400": {
+          "first_four_frames_max_diff": 0.0,
+          "frame_index_4_max_diff": 0.0
+        },
+        "12000": {
+          "first_four_frames_max_diff": 0.0,
+          "frame_index_4_max_diff": 0.0
+        }
+      }
+    },
+    "C2": {
+      "shared_init_max_abs_diff": 0.0,
+      "rng_after_init": "27c526e4edfc873580a1d1192dd3c46006000f83bd49578adb0934334d5638ec",
+      "eval_max_abs_diff": 0.0,
+      "train_same_rng_max_abs_diff": 2.322727918624878,
+      "audio_prefix_checks": {
+        "9600": {
+          "first_four_frames_max_diff": 0.0,
+          "frame_index_4_max_diff": 0.016300350427627563
+        },
+        "11400": {
+          "first_four_frames_max_diff": 0.0,
+          "frame_index_4_max_diff": 0.0
+        },
+        "12000": {
+          "first_four_frames_max_diff": 0.0,
+          "frame_index_4_max_diff": 0.0
+        }
+      }
+    },
+    "C3": {
+      "shared_init_max_abs_diff": 0.0,
+      "rng_after_init": "f3bd83922e0d6fa5270e0489caa84a4a32793e7e8de639dcf2fead63a5719cfb",
+      "eval_max_abs_diff": 0.0,
+      "train_same_rng_max_abs_diff": 2.322727918624878,
+      "audio_prefix_checks": {
+        "9600": {
+          "first_four_frames_max_diff": 0.0,
+          "frame_index_4_max_diff": 0.016300350427627563
+        },
+        "11400": {
+          "first_four_frames_max_diff": 0.0,
+          "frame_index_4_max_diff": 0.0
+        },
+        "12000": {
+          "first_four_frames_max_diff": 0.0,
+          "frame_index_4_max_diff": 0.0
+        }
+      }
+    }
+  },
+  "server_sources": [
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/learning/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/learning/checkpoint.py",
+      "snapshot_sha256": "d7a579326fd74375b43ace0f48490b827539c26e9f42cdc8a582ffefc850a38a",
+      "current_sha256": "d7a579326fd74375b43ace0f48490b827539c26e9f42cdc8a582ffefc850a38a"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/learning/evaluate.py",
+      "snapshot_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+      "current_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/learning/infer.py",
+      "snapshot_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+      "current_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/learning/initialize.py",
+      "snapshot_sha256": "ea597efeb071ffc6c40fda013e7ec0b5f978d6b02f9473280f6d0cf44fd8a342",
+      "current_sha256": "ea597efeb071ffc6c40fda013e7ec0b5f978d6b02f9473280f6d0cf44fd8a342"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/learning/preprocess.py",
+      "snapshot_sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983",
+      "current_sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/learning/train.py",
+      "snapshot_sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2",
+      "current_sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/main.py",
+      "snapshot_sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d",
+      "current_sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/data.py",
+      "snapshot_sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d",
+      "current_sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/data_augmentation/__init__.py",
+      "snapshot_sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a",
+      "current_sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/__init__.py",
+      "snapshot_sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac",
+      "current_sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/data.py",
+      "snapshot_sha256": "45836d3ce7afd91bf39a2dd9bfeb71edbf470d75ddff1b48fb54c1dc6c76b1f9",
+      "current_sha256": "45836d3ce7afd91bf39a2dd9bfeb71edbf470d75ddff1b48fb54c1dc6c76b1f9"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "snapshot_sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f",
+      "current_sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/inference.py",
+      "snapshot_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+      "current_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/losses.py",
+      "snapshot_sha256": "5d3f44416adcf4cae6d792c0a8938b838371a3898ddab1356abbbb2848b2ff9f",
+      "current_sha256": "5d3f44416adcf4cae6d792c0a8938b838371a3898ddab1356abbbb2848b2ff9f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/metrics.py",
+      "snapshot_sha256": "172d2374353621010f47415e27740f849e6adddbfd657815f08831aed312d6d7",
+      "current_sha256": "172d2374353621010f47415e27740f849e6adddbfd657815f08831aed312d6d7"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/models/__init__.py",
+      "snapshot_sha256": "91f8eef8c5ba92bc9ea53ac608a5320c3cd38677d4fc6b188cf9da7aa283604b",
+      "current_sha256": "91f8eef8c5ba92bc9ea53ac608a5320c3cd38677d4fc6b188cf9da7aa283604b"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/models/seld.py",
+      "snapshot_sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd",
+      "current_sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/models/seld_causal.py",
+      "snapshot_sha256": "a07ab81dde818c7eb563de21b73412ec0614506fecf8d5e5941d7b0917461525",
+      "current_sha256": "a07ab81dde818c7eb563de21b73412ec0614506fecf8d5e5941d7b0917461525"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/ein_seld/training.py",
+      "snapshot_sha256": "6121c8208f2b7c1d4562e3ea129ad0d742b4c0dbed5325a9c2c1a0068f3a10d0",
+      "current_sha256": "6121c8208f2b7c1d4562e3ea129ad0d742b4c0dbed5325a9c2c1a0068f3a10d0"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/feature.py",
+      "snapshot_sha256": "c78fd8450f581881e1b28ec5d3813ead4aa8b9e421ea61bcda3220356e173df4",
+      "current_sha256": "c78fd8450f581881e1b28ec5d3813ead4aa8b9e421ea61bcda3220356e173df4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/feature_causal.py",
+      "snapshot_sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604",
+      "current_sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/inference.py",
+      "snapshot_sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4",
+      "current_sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/training.py",
+      "snapshot_sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+      "current_sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "snapshot_sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138",
+      "current_sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "snapshot_sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "current_sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "snapshot_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+      "current_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/utils/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/utils/data_utilities.py",
+      "snapshot_sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315",
+      "current_sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/utils/loss_utilities.py",
+      "snapshot_sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+      "current_sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/utils/model_utilities.py",
+      "snapshot_sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337",
+      "current_sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/methods/utils/stft.py",
+      "snapshot_sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4",
+      "current_sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/utils/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/utils/cli_parser.py",
+      "snapshot_sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f",
+      "current_sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/utils/common.py",
+      "snapshot_sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805",
+      "current_sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/utils/config.py",
+      "snapshot_sha256": "5a0eca23b8c3c98afb4d5c46714230c14b4fb1c3bd9e7e9aa0fc8231260847a0",
+      "current_sha256": "5a0eca23b8c3c98afb4d5c46714230c14b4fb1c3bd9e7e9aa0fc8231260847a0"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/seld/utils/datasets.py",
+      "snapshot_sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f",
+      "current_sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/learning/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/learning/checkpoint.py",
+      "snapshot_sha256": "d7a579326fd74375b43ace0f48490b827539c26e9f42cdc8a582ffefc850a38a",
+      "current_sha256": "d7a579326fd74375b43ace0f48490b827539c26e9f42cdc8a582ffefc850a38a"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/learning/evaluate.py",
+      "snapshot_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+      "current_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/learning/infer.py",
+      "snapshot_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+      "current_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/learning/initialize.py",
+      "snapshot_sha256": "ea597efeb071ffc6c40fda013e7ec0b5f978d6b02f9473280f6d0cf44fd8a342",
+      "current_sha256": "ea597efeb071ffc6c40fda013e7ec0b5f978d6b02f9473280f6d0cf44fd8a342"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/learning/preprocess.py",
+      "snapshot_sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983",
+      "current_sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/learning/train.py",
+      "snapshot_sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2",
+      "current_sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/main.py",
+      "snapshot_sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d",
+      "current_sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/data.py",
+      "snapshot_sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d",
+      "current_sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/data_augmentation/__init__.py",
+      "snapshot_sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a",
+      "current_sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/__init__.py",
+      "snapshot_sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac",
+      "current_sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/data.py",
+      "snapshot_sha256": "7f558b55588730984577aa0b0593ef861918eddc4a22a4107322c5e702bad779",
+      "current_sha256": "7f558b55588730984577aa0b0593ef861918eddc4a22a4107322c5e702bad779"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "snapshot_sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f",
+      "current_sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/inference.py",
+      "snapshot_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+      "current_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/losses.py",
+      "snapshot_sha256": "b690cac8242090cef735e76bcf3b2f591675eba9411e70a556cbd63a0061ea80",
+      "current_sha256": "b690cac8242090cef735e76bcf3b2f591675eba9411e70a556cbd63a0061ea80"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/metrics.py",
+      "snapshot_sha256": "89344d79a1f452d5b1cfcd17d4d7af6b41855e3535de4a472dd51bbfe842cede",
+      "current_sha256": "89344d79a1f452d5b1cfcd17d4d7af6b41855e3535de4a472dd51bbfe842cede"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/models/__init__.py",
+      "snapshot_sha256": "91f8eef8c5ba92bc9ea53ac608a5320c3cd38677d4fc6b188cf9da7aa283604b",
+      "current_sha256": "91f8eef8c5ba92bc9ea53ac608a5320c3cd38677d4fc6b188cf9da7aa283604b"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/models/seld.py",
+      "snapshot_sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd",
+      "current_sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/models/seld_causal.py",
+      "snapshot_sha256": "a6cd3ef854438c993f79c690a8471e0f591ee8931b1aa3a8ef7bab9877f393c3",
+      "current_sha256": "a6cd3ef854438c993f79c690a8471e0f591ee8931b1aa3a8ef7bab9877f393c3"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/ein_seld/training.py",
+      "snapshot_sha256": "83d1648661f40f129d4bf46fd785d0eb801f900df4221270df1001a16de98a41",
+      "current_sha256": "83d1648661f40f129d4bf46fd785d0eb801f900df4221270df1001a16de98a41"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/feature.py",
+      "snapshot_sha256": "56a0f74dbacb80ffd80718c7f96667f1e98bb1a186ec59f6eb12a2a3ffc6a767",
+      "current_sha256": "56a0f74dbacb80ffd80718c7f96667f1e98bb1a186ec59f6eb12a2a3ffc6a767"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/feature_causal.py",
+      "snapshot_sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604",
+      "current_sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/inference.py",
+      "snapshot_sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4",
+      "current_sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/training.py",
+      "snapshot_sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+      "current_sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "snapshot_sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138",
+      "current_sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "snapshot_sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "current_sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "snapshot_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+      "current_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/utils/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/utils/data_utilities.py",
+      "snapshot_sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315",
+      "current_sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/utils/loss_utilities.py",
+      "snapshot_sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+      "current_sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/utils/model_utilities.py",
+      "snapshot_sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337",
+      "current_sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/methods/utils/stft.py",
+      "snapshot_sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4",
+      "current_sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/utils/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/utils/cli_parser.py",
+      "snapshot_sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f",
+      "current_sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/utils/common.py",
+      "snapshot_sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805",
+      "current_sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/utils/config.py",
+      "snapshot_sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217",
+      "current_sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/seld/utils/datasets.py",
+      "snapshot_sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f",
+      "current_sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/scripts/build_velocity_labels.py",
+      "snapshot_sha256": "fa6fe76912ff7d4a385f5e57e0206ef3bacb86d84a842a6d650a7884eb8d6b7c",
+      "current_sha256": "fa6fe76912ff7d4a385f5e57e0206ef3bacb86d84a842a6d650a7884eb8d6b7c"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/learning/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/learning/checkpoint.py",
+      "snapshot_sha256": "3e212a69cc1f1cdbca4a14d64e93620c6302cc71da0805bba581be2f3bd8c9a6",
+      "current_sha256": "3e212a69cc1f1cdbca4a14d64e93620c6302cc71da0805bba581be2f3bd8c9a6"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/learning/evaluate.py",
+      "snapshot_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+      "current_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/learning/infer.py",
+      "snapshot_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+      "current_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/learning/initialize.py",
+      "snapshot_sha256": "60bc18cfe3e6dfca6a11f483ba6b229b4cd679612d6e963e856d834965c2781e",
+      "current_sha256": "60bc18cfe3e6dfca6a11f483ba6b229b4cd679612d6e963e856d834965c2781e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/learning/preprocess.py",
+      "snapshot_sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983",
+      "current_sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/learning/train.py",
+      "snapshot_sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2",
+      "current_sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/main.py",
+      "snapshot_sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d",
+      "current_sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/data.py",
+      "snapshot_sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d",
+      "current_sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/data_augmentation/__init__.py",
+      "snapshot_sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a",
+      "current_sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/__init__.py",
+      "snapshot_sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac",
+      "current_sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/data.py",
+      "snapshot_sha256": "7bcaaa467f50355c767a3a09ee749e106397d8b8437ed2e979d07bd8d0218896",
+      "current_sha256": "7bcaaa467f50355c767a3a09ee749e106397d8b8437ed2e979d07bd8d0218896"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "snapshot_sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f",
+      "current_sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/inference.py",
+      "snapshot_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+      "current_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/losses.py",
+      "snapshot_sha256": "b650a9204bff5fd687f0e02b6a39b160f2d8a6a7a2272076119f81c79e080eba",
+      "current_sha256": "b650a9204bff5fd687f0e02b6a39b160f2d8a6a7a2272076119f81c79e080eba"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/metrics.py",
+      "snapshot_sha256": "9ea6674c48addeb0dd46fffdb8daff5cda8c954ebd5d61cd38ed66c45542a3fa",
+      "current_sha256": "9ea6674c48addeb0dd46fffdb8daff5cda8c954ebd5d61cd38ed66c45542a3fa"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/models/__init__.py",
+      "snapshot_sha256": "91f8eef8c5ba92bc9ea53ac608a5320c3cd38677d4fc6b188cf9da7aa283604b",
+      "current_sha256": "91f8eef8c5ba92bc9ea53ac608a5320c3cd38677d4fc6b188cf9da7aa283604b"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/models/seld.py",
+      "snapshot_sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd",
+      "current_sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/models/seld_causal.py",
+      "snapshot_sha256": "c8f8666847d1f3024d14f8f99ea84c8b43ffc9e37cbef5735d9e365e8baeb431",
+      "current_sha256": "c8f8666847d1f3024d14f8f99ea84c8b43ffc9e37cbef5735d9e365e8baeb431"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/ein_seld/training.py",
+      "snapshot_sha256": "60a15089a3292a3ab2f258c8f880d94536f3240790405883791246ee1cc15d11",
+      "current_sha256": "60a15089a3292a3ab2f258c8f880d94536f3240790405883791246ee1cc15d11"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/feature.py",
+      "snapshot_sha256": "56a0f74dbacb80ffd80718c7f96667f1e98bb1a186ec59f6eb12a2a3ffc6a767",
+      "current_sha256": "56a0f74dbacb80ffd80718c7f96667f1e98bb1a186ec59f6eb12a2a3ffc6a767"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/feature_causal.py",
+      "snapshot_sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604",
+      "current_sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/inference.py",
+      "snapshot_sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4",
+      "current_sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/training.py",
+      "snapshot_sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+      "current_sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "snapshot_sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138",
+      "current_sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "snapshot_sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "current_sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "snapshot_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+      "current_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/utils/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/utils/data_utilities.py",
+      "snapshot_sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315",
+      "current_sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/utils/loss_utilities.py",
+      "snapshot_sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+      "current_sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/utils/model_utilities.py",
+      "snapshot_sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337",
+      "current_sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/methods/utils/stft.py",
+      "snapshot_sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4",
+      "current_sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/utils/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/utils/cli_parser.py",
+      "snapshot_sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f",
+      "current_sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/utils/common.py",
+      "snapshot_sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805",
+      "current_sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/utils/config.py",
+      "snapshot_sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217",
+      "current_sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/seld/utils/datasets.py",
+      "snapshot_sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f",
+      "current_sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/scripts/build_jepa_masks.py",
+      "snapshot_sha256": "63ece656619dcf58f12420770d20c1dabbb2ac8e8a8d49d9626b9f2744a2c293",
+      "current_sha256": "63ece656619dcf58f12420770d20c1dabbb2ac8e8a8d49d9626b9f2744a2c293"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/learning/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/learning/checkpoint.py",
+      "snapshot_sha256": "3e212a69cc1f1cdbca4a14d64e93620c6302cc71da0805bba581be2f3bd8c9a6",
+      "current_sha256": "3e212a69cc1f1cdbca4a14d64e93620c6302cc71da0805bba581be2f3bd8c9a6"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/learning/evaluate.py",
+      "snapshot_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+      "current_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/learning/infer.py",
+      "snapshot_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+      "current_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/learning/initialize.py",
+      "snapshot_sha256": "60bc18cfe3e6dfca6a11f483ba6b229b4cd679612d6e963e856d834965c2781e",
+      "current_sha256": "60bc18cfe3e6dfca6a11f483ba6b229b4cd679612d6e963e856d834965c2781e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/learning/preprocess.py",
+      "snapshot_sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983",
+      "current_sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/learning/train.py",
+      "snapshot_sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2",
+      "current_sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/main.py",
+      "snapshot_sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d",
+      "current_sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/data.py",
+      "snapshot_sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d",
+      "current_sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/data_augmentation/__init__.py",
+      "snapshot_sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a",
+      "current_sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/__init__.py",
+      "snapshot_sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac",
+      "current_sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/data.py",
+      "snapshot_sha256": "9776da2710ad90bb1a0d946888ef6e12ff44cca6fb447739da9916ea5e42b84e",
+      "current_sha256": "9776da2710ad90bb1a0d946888ef6e12ff44cca6fb447739da9916ea5e42b84e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "snapshot_sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f",
+      "current_sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/inference.py",
+      "snapshot_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+      "current_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/losses.py",
+      "snapshot_sha256": "b745f27d1f1694fe0e5fc86f3dc5feec655f0323c71ce76b5521cfe95d09d3c0",
+      "current_sha256": "b745f27d1f1694fe0e5fc86f3dc5feec655f0323c71ce76b5521cfe95d09d3c0"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/metrics.py",
+      "snapshot_sha256": "c3d69aae70fe7588d89b463dc5c1ad2c9ea7462f6d051f7741f7e89a36e61bd5",
+      "current_sha256": "c3d69aae70fe7588d89b463dc5c1ad2c9ea7462f6d051f7741f7e89a36e61bd5"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/models/__init__.py",
+      "snapshot_sha256": "91f8eef8c5ba92bc9ea53ac608a5320c3cd38677d4fc6b188cf9da7aa283604b",
+      "current_sha256": "91f8eef8c5ba92bc9ea53ac608a5320c3cd38677d4fc6b188cf9da7aa283604b"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/models/seld.py",
+      "snapshot_sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd",
+      "current_sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/models/seld_causal.py",
+      "snapshot_sha256": "3b106cb074ac3615100c492fd8a1e57e10942469e7813f4317645db9d197a812",
+      "current_sha256": "3b106cb074ac3615100c492fd8a1e57e10942469e7813f4317645db9d197a812"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/ein_seld/training.py",
+      "snapshot_sha256": "8d0fd96f9a5224f75f38b1cf985805c65adfcdc9591242f0aaa3ef46ff1a9ef3",
+      "current_sha256": "8d0fd96f9a5224f75f38b1cf985805c65adfcdc9591242f0aaa3ef46ff1a9ef3"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/feature.py",
+      "snapshot_sha256": "56a0f74dbacb80ffd80718c7f96667f1e98bb1a186ec59f6eb12a2a3ffc6a767",
+      "current_sha256": "56a0f74dbacb80ffd80718c7f96667f1e98bb1a186ec59f6eb12a2a3ffc6a767"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/feature_causal.py",
+      "snapshot_sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604",
+      "current_sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/inference.py",
+      "snapshot_sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4",
+      "current_sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/training.py",
+      "snapshot_sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+      "current_sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "snapshot_sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138",
+      "current_sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "snapshot_sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "current_sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "snapshot_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+      "current_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/utils/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/utils/data_utilities.py",
+      "snapshot_sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315",
+      "current_sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/utils/loss_utilities.py",
+      "snapshot_sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+      "current_sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/utils/model_utilities.py",
+      "snapshot_sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337",
+      "current_sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/methods/utils/stft.py",
+      "snapshot_sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4",
+      "current_sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/utils/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/utils/cli_parser.py",
+      "snapshot_sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f",
+      "current_sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/utils/common.py",
+      "snapshot_sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805",
+      "current_sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/utils/config.py",
+      "snapshot_sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217",
+      "current_sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/seld/utils/datasets.py",
+      "snapshot_sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f",
+      "current_sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/scripts/build_jepa_masks.py",
+      "snapshot_sha256": "63ece656619dcf58f12420770d20c1dabbb2ac8e8a8d49d9626b9f2744a2c293",
+      "current_sha256": "63ece656619dcf58f12420770d20c1dabbb2ac8e8a8d49d9626b9f2744a2c293"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/learning/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/learning/checkpoint.py",
+      "snapshot_sha256": "d7a579326fd74375b43ace0f48490b827539c26e9f42cdc8a582ffefc850a38a",
+      "current_sha256": "d7a579326fd74375b43ace0f48490b827539c26e9f42cdc8a582ffefc850a38a"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/learning/evaluate.py",
+      "snapshot_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+      "current_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/learning/infer.py",
+      "snapshot_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+      "current_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/learning/initialize.py",
+      "snapshot_sha256": "ea597efeb071ffc6c40fda013e7ec0b5f978d6b02f9473280f6d0cf44fd8a342",
+      "current_sha256": "ea597efeb071ffc6c40fda013e7ec0b5f978d6b02f9473280f6d0cf44fd8a342"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/learning/preprocess.py",
+      "snapshot_sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983",
+      "current_sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/learning/train.py",
+      "snapshot_sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2",
+      "current_sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/main.py",
+      "snapshot_sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d",
+      "current_sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/data.py",
+      "snapshot_sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d",
+      "current_sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/data_augmentation/__init__.py",
+      "snapshot_sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a",
+      "current_sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/__init__.py",
+      "snapshot_sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac",
+      "current_sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/data.py",
+      "snapshot_sha256": "7f558b55588730984577aa0b0593ef861918eddc4a22a4107322c5e702bad779",
+      "current_sha256": "7f558b55588730984577aa0b0593ef861918eddc4a22a4107322c5e702bad779"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "snapshot_sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f",
+      "current_sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/inference.py",
+      "snapshot_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+      "current_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/losses.py",
+      "snapshot_sha256": "b690cac8242090cef735e76bcf3b2f591675eba9411e70a556cbd63a0061ea80",
+      "current_sha256": "b690cac8242090cef735e76bcf3b2f591675eba9411e70a556cbd63a0061ea80"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/metrics.py",
+      "snapshot_sha256": "89344d79a1f452d5b1cfcd17d4d7af6b41855e3535de4a472dd51bbfe842cede",
+      "current_sha256": "89344d79a1f452d5b1cfcd17d4d7af6b41855e3535de4a472dd51bbfe842cede"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/models/__init__.py",
+      "snapshot_sha256": "3c7a8160c1aad937b5a3c005b0b0563f5d50c7e80b8d41c852bb3a106e360cd7",
+      "current_sha256": "3c7a8160c1aad937b5a3c005b0b0563f5d50c7e80b8d41c852bb3a106e360cd7"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/models/seld.py",
+      "snapshot_sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd",
+      "current_sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/models/seld_causal.py",
+      "snapshot_sha256": "a6cd3ef854438c993f79c690a8471e0f591ee8931b1aa3a8ef7bab9877f393c3",
+      "current_sha256": "a6cd3ef854438c993f79c690a8471e0f591ee8931b1aa3a8ef7bab9877f393c3"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/models/seld_offline_aux.py",
+      "snapshot_sha256": "2c66f44528cb32a8518f5184678ab7b434447fd778644958d247077972c6db8b",
+      "current_sha256": "2c66f44528cb32a8518f5184678ab7b434447fd778644958d247077972c6db8b"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/ein_seld/training.py",
+      "snapshot_sha256": "83d1648661f40f129d4bf46fd785d0eb801f900df4221270df1001a16de98a41",
+      "current_sha256": "83d1648661f40f129d4bf46fd785d0eb801f900df4221270df1001a16de98a41"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/feature.py",
+      "snapshot_sha256": "c78fd8450f581881e1b28ec5d3813ead4aa8b9e421ea61bcda3220356e173df4",
+      "current_sha256": "c78fd8450f581881e1b28ec5d3813ead4aa8b9e421ea61bcda3220356e173df4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/feature_causal.py",
+      "snapshot_sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604",
+      "current_sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/inference.py",
+      "snapshot_sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4",
+      "current_sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/training.py",
+      "snapshot_sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+      "current_sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "snapshot_sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138",
+      "current_sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "snapshot_sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "current_sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "snapshot_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+      "current_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/utils/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/utils/data_utilities.py",
+      "snapshot_sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315",
+      "current_sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/utils/loss_utilities.py",
+      "snapshot_sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+      "current_sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/utils/model_utilities.py",
+      "snapshot_sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337",
+      "current_sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/methods/utils/stft.py",
+      "snapshot_sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4",
+      "current_sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/utils/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/utils/cli_parser.py",
+      "snapshot_sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f",
+      "current_sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/utils/common.py",
+      "snapshot_sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805",
+      "current_sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/utils/config.py",
+      "snapshot_sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217",
+      "current_sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/seld/utils/datasets.py",
+      "snapshot_sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f",
+      "current_sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/scripts/build_velocity_labels.py",
+      "snapshot_sha256": "fa6fe76912ff7d4a385f5e57e0206ef3bacb86d84a842a6d650a7884eb8d6b7c",
+      "current_sha256": "fa6fe76912ff7d4a385f5e57e0206ef3bacb86d84a842a6d650a7884eb8d6b7c"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/learning/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/learning/checkpoint.py",
+      "snapshot_sha256": "3e212a69cc1f1cdbca4a14d64e93620c6302cc71da0805bba581be2f3bd8c9a6",
+      "current_sha256": "3e212a69cc1f1cdbca4a14d64e93620c6302cc71da0805bba581be2f3bd8c9a6"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/learning/evaluate.py",
+      "snapshot_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+      "current_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/learning/infer.py",
+      "snapshot_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+      "current_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/learning/initialize.py",
+      "snapshot_sha256": "60bc18cfe3e6dfca6a11f483ba6b229b4cd679612d6e963e856d834965c2781e",
+      "current_sha256": "60bc18cfe3e6dfca6a11f483ba6b229b4cd679612d6e963e856d834965c2781e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/learning/preprocess.py",
+      "snapshot_sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983",
+      "current_sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/learning/train.py",
+      "snapshot_sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2",
+      "current_sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/main.py",
+      "snapshot_sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d",
+      "current_sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/data.py",
+      "snapshot_sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d",
+      "current_sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/data_augmentation/__init__.py",
+      "snapshot_sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a",
+      "current_sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/__init__.py",
+      "snapshot_sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac",
+      "current_sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/data.py",
+      "snapshot_sha256": "7bcaaa467f50355c767a3a09ee749e106397d8b8437ed2e979d07bd8d0218896",
+      "current_sha256": "7bcaaa467f50355c767a3a09ee749e106397d8b8437ed2e979d07bd8d0218896"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "snapshot_sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f",
+      "current_sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/inference.py",
+      "snapshot_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+      "current_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/losses.py",
+      "snapshot_sha256": "b650a9204bff5fd687f0e02b6a39b160f2d8a6a7a2272076119f81c79e080eba",
+      "current_sha256": "b650a9204bff5fd687f0e02b6a39b160f2d8a6a7a2272076119f81c79e080eba"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/metrics.py",
+      "snapshot_sha256": "9ea6674c48addeb0dd46fffdb8daff5cda8c954ebd5d61cd38ed66c45542a3fa",
+      "current_sha256": "9ea6674c48addeb0dd46fffdb8daff5cda8c954ebd5d61cd38ed66c45542a3fa"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/models/__init__.py",
+      "snapshot_sha256": "6245c4f413292fb5c77625db654bb482241900d2ffe06c500173cfab5f0c5b25",
+      "current_sha256": "6245c4f413292fb5c77625db654bb482241900d2ffe06c500173cfab5f0c5b25"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/models/seld.py",
+      "snapshot_sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd",
+      "current_sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/models/seld_causal.py",
+      "snapshot_sha256": "c8f8666847d1f3024d14f8f99ea84c8b43ffc9e37cbef5735d9e365e8baeb431",
+      "current_sha256": "c8f8666847d1f3024d14f8f99ea84c8b43ffc9e37cbef5735d9e365e8baeb431"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/models/seld_offline_jepa.py",
+      "snapshot_sha256": "8f1e13c322610996871c66b6e08cd4527a24037acf472ce1c73d638a7608ad13",
+      "current_sha256": "8f1e13c322610996871c66b6e08cd4527a24037acf472ce1c73d638a7608ad13"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/ein_seld/training.py",
+      "snapshot_sha256": "60a15089a3292a3ab2f258c8f880d94536f3240790405883791246ee1cc15d11",
+      "current_sha256": "60a15089a3292a3ab2f258c8f880d94536f3240790405883791246ee1cc15d11"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/feature.py",
+      "snapshot_sha256": "c78fd8450f581881e1b28ec5d3813ead4aa8b9e421ea61bcda3220356e173df4",
+      "current_sha256": "c78fd8450f581881e1b28ec5d3813ead4aa8b9e421ea61bcda3220356e173df4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/feature_causal.py",
+      "snapshot_sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604",
+      "current_sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/inference.py",
+      "snapshot_sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4",
+      "current_sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/training.py",
+      "snapshot_sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+      "current_sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "snapshot_sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138",
+      "current_sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "snapshot_sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "current_sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "snapshot_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+      "current_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/utils/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/utils/data_utilities.py",
+      "snapshot_sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315",
+      "current_sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/utils/loss_utilities.py",
+      "snapshot_sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+      "current_sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/utils/model_utilities.py",
+      "snapshot_sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337",
+      "current_sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/methods/utils/stft.py",
+      "snapshot_sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4",
+      "current_sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/utils/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/utils/cli_parser.py",
+      "snapshot_sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f",
+      "current_sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/utils/common.py",
+      "snapshot_sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805",
+      "current_sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/utils/config.py",
+      "snapshot_sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217",
+      "current_sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/seld/utils/datasets.py",
+      "snapshot_sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f",
+      "current_sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/scripts/build_jepa_masks.py",
+      "snapshot_sha256": "63ece656619dcf58f12420770d20c1dabbb2ac8e8a8d49d9626b9f2744a2c293",
+      "current_sha256": "63ece656619dcf58f12420770d20c1dabbb2ac8e8a8d49d9626b9f2744a2c293"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/learning/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/learning/checkpoint.py",
+      "snapshot_sha256": "3e212a69cc1f1cdbca4a14d64e93620c6302cc71da0805bba581be2f3bd8c9a6",
+      "current_sha256": "3e212a69cc1f1cdbca4a14d64e93620c6302cc71da0805bba581be2f3bd8c9a6"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/learning/evaluate.py",
+      "snapshot_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a",
+      "current_sha256": "59cc990890d66a4979c6da40d0687f1c636c271b97953786e837edb54f8f486a"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/learning/infer.py",
+      "snapshot_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89",
+      "current_sha256": "8111c645b5f89689c1ce1f4e85dedaa8d8fd8c6179a8221ca50544791eb25e89"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/learning/initialize.py",
+      "snapshot_sha256": "60bc18cfe3e6dfca6a11f483ba6b229b4cd679612d6e963e856d834965c2781e",
+      "current_sha256": "60bc18cfe3e6dfca6a11f483ba6b229b4cd679612d6e963e856d834965c2781e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/learning/preprocess.py",
+      "snapshot_sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983",
+      "current_sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/learning/train.py",
+      "snapshot_sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2",
+      "current_sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/main.py",
+      "snapshot_sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d",
+      "current_sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/data.py",
+      "snapshot_sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d",
+      "current_sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/data_augmentation/__init__.py",
+      "snapshot_sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a",
+      "current_sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/__init__.py",
+      "snapshot_sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac",
+      "current_sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/data.py",
+      "snapshot_sha256": "9776da2710ad90bb1a0d946888ef6e12ff44cca6fb447739da9916ea5e42b84e",
+      "current_sha256": "9776da2710ad90bb1a0d946888ef6e12ff44cca6fb447739da9916ea5e42b84e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/data_augmentation/__init__.py",
+      "snapshot_sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f",
+      "current_sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/inference.py",
+      "snapshot_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e",
+      "current_sha256": "05b8535a1dea17c79706d8dd8ca985e9dd04146c1db2bb443dd7d948df24b24e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/losses.py",
+      "snapshot_sha256": "b745f27d1f1694fe0e5fc86f3dc5feec655f0323c71ce76b5521cfe95d09d3c0",
+      "current_sha256": "b745f27d1f1694fe0e5fc86f3dc5feec655f0323c71ce76b5521cfe95d09d3c0"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/metrics.py",
+      "snapshot_sha256": "c3d69aae70fe7588d89b463dc5c1ad2c9ea7462f6d051f7741f7e89a36e61bd5",
+      "current_sha256": "c3d69aae70fe7588d89b463dc5c1ad2c9ea7462f6d051f7741f7e89a36e61bd5"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/models/__init__.py",
+      "snapshot_sha256": "693b4db42153d0d0fb706a97736028e75948ffb85830d3a976230e57971d60c4",
+      "current_sha256": "693b4db42153d0d0fb706a97736028e75948ffb85830d3a976230e57971d60c4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/models/seld.py",
+      "snapshot_sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd",
+      "current_sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/models/seld_causal.py",
+      "snapshot_sha256": "3b106cb074ac3615100c492fd8a1e57e10942469e7813f4317645db9d197a812",
+      "current_sha256": "3b106cb074ac3615100c492fd8a1e57e10942469e7813f4317645db9d197a812"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/models/seld_offline_combined.py",
+      "snapshot_sha256": "10dd6b14c99a33a8a400bab0a07a5ef528eae139abc7a0a321af58bd81109216",
+      "current_sha256": "10dd6b14c99a33a8a400bab0a07a5ef528eae139abc7a0a321af58bd81109216"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/models/seld_offline_jepa.py",
+      "snapshot_sha256": "8f1e13c322610996871c66b6e08cd4527a24037acf472ce1c73d638a7608ad13",
+      "current_sha256": "8f1e13c322610996871c66b6e08cd4527a24037acf472ce1c73d638a7608ad13"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/ein_seld/training.py",
+      "snapshot_sha256": "8d0fd96f9a5224f75f38b1cf985805c65adfcdc9591242f0aaa3ef46ff1a9ef3",
+      "current_sha256": "8d0fd96f9a5224f75f38b1cf985805c65adfcdc9591242f0aaa3ef46ff1a9ef3"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/feature.py",
+      "snapshot_sha256": "c78fd8450f581881e1b28ec5d3813ead4aa8b9e421ea61bcda3220356e173df4",
+      "current_sha256": "c78fd8450f581881e1b28ec5d3813ead4aa8b9e421ea61bcda3220356e173df4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/feature_causal.py",
+      "snapshot_sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604",
+      "current_sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/inference.py",
+      "snapshot_sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4",
+      "current_sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/training.py",
+      "snapshot_sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+      "current_sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+      "snapshot_sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138",
+      "current_sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+      "snapshot_sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+      "current_sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+      "snapshot_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8",
+      "current_sha256": "c04ad0ec5b6d9429fbe37c5bb0cbf6591b0c62822901b439688bea311581f1f8"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/utils/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/utils/data_utilities.py",
+      "snapshot_sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315",
+      "current_sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/utils/loss_utilities.py",
+      "snapshot_sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+      "current_sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/utils/model_utilities.py",
+      "snapshot_sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337",
+      "current_sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/methods/utils/stft.py",
+      "snapshot_sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4",
+      "current_sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/utils/__init__.py",
+      "snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/utils/cli_parser.py",
+      "snapshot_sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f",
+      "current_sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/utils/common.py",
+      "snapshot_sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805",
+      "current_sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/utils/config.py",
+      "snapshot_sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217",
+      "current_sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/seld/utils/datasets.py",
+      "snapshot_sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f",
+      "current_sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f"
+    },
+    {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E3_OfflineEINV2_Velocity_JEPAConsistency_seed2026/scripts/build_jepa_masks.py",
+      "snapshot_sha256": "63ece656619dcf58f12420770d20c1dabbb2ac8e8a8d49d9626b9f2744a2c293",
+      "current_sha256": "63ece656619dcf58f12420770d20c1dabbb2ac8e8a8d49d9626b9f2744a2c293"
+    }
+  ],
+  "source_changed_since_snapshot": [],
+  "scalar_metadata": {},
+  "scalar_generator": {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/seld/methods/data.py",
+    "dev_file_count": 600,
+    "filter": "BaseDataset includes all dev files, no train_fold filter"
+  }
+}

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.0 — 2026-09-04
+
+- 用户确认当前100 ms帧口径，保留原75 ms输入依赖；不再宣称相对帧起点零前视。
+- 新增隔离EINV2 causal runtime与独立train/eval入口；历史模型、checkpoint和结果不覆盖。
+- 统一归一化；新scaler仅用folds2–6并保存完整500文件清单；C0–C3共享初始化和dropout路径。
+- teacher独立tPIT匹配；保留主要损失、权重、horizons。官方validation选best，StepLR在完整epoch边界执行。
+- 新增7项回归测试与有限12-run队列；smoke通过不代表正式实验完成。
+
 ## Unreleased — 2026-09-04
 
 - 展开 14 组实验主矩阵与 42 个逐 seed run；保存 84 行证据索引、静态/动态诊断及独立重算检查。

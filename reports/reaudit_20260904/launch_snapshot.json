@@ -1,0 +1,186 @@
+{
+  "supervisor_pid": 171028,
+  "updated_at": "2026-09-04T10:12:14.577668+00:00",
+  "stopped_after_failure": false,
+  "source_root": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1",
+  "timeout_hours": 24.0,
+  "jobs": [
+    {
+      "id": "C0_seed2026_framecausal_v020",
+      "seed": 2026,
+      "variant": "C0",
+      "status": "training",
+      "gpu": 0,
+      "pid": 171040,
+      "command": [
+        "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+        "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/scripts/train/einv2_audited.py",
+        "--project-root",
+        "/work/zhanghc/Myllm/SELD",
+        "--output-root",
+        "/work/zhanghc/Myllm/SELD/experiment_einv2_reaudit_20260904_r1/runs",
+        "--scalar",
+        "/work/zhanghc/Myllm/SELD/experiment_einv2_reaudit_20260904_r1/scalar_trainfolds2-6.h5",
+        "--variant",
+        "C0",
+        "--seed",
+        "2026"
+      ],
+      "log": "/work/zhanghc/Myllm/SELD/experiment_einv2_reaudit_20260904_r1/queue_logs/C0_seed2026_framecausal_v020.training.log",
+      "phase_started_at": "2026-09-04T10:11:44.538606+00:00",
+      "elapsed_seconds": 30,
+      "log_bytes": 3362,
+      "output_stall_advisory": false
+    },
+    {
+      "id": "C1_seed2026_framecausal_v020",
+      "seed": 2026,
+      "variant": "C1",
+      "status": "training",
+      "gpu": 1,
+      "pid": 171041,
+      "command": [
+        "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+        "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/scripts/train/einv2_audited.py",
+        "--project-root",
+        "/work/zhanghc/Myllm/SELD",
+        "--output-root",
+        "/work/zhanghc/Myllm/SELD/experiment_einv2_reaudit_20260904_r1/runs",
+        "--scalar",
+        "/work/zhanghc/Myllm/SELD/experiment_einv2_reaudit_20260904_r1/scalar_trainfolds2-6.h5",
+        "--variant",
+        "C1",
+        "--seed",
+        "2026"
+      ],
+      "log": "/work/zhanghc/Myllm/SELD/experiment_einv2_reaudit_20260904_r1/queue_logs/C1_seed2026_framecausal_v020.training.log",
+      "phase_started_at": "2026-09-04T10:11:44.547288+00:00",
+      "elapsed_seconds": 30,
+      "log_bytes": 3409,
+      "output_stall_advisory": false
+    },
+    {
+      "id": "C2_seed2026_framecausal_v020",
+      "seed": 2026,
+      "variant": "C2",
+      "status": "training",
+      "gpu": 2,
+      "pid": 171042,
+      "command": [
+        "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+        "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/scripts/train/einv2_audited.py",
+        "--project-root",
+        "/work/zhanghc/Myllm/SELD",
+        "--output-root",
+        "/work/zhanghc/Myllm/SELD/experiment_einv2_reaudit_20260904_r1/runs",
+        "--scalar",
+        "/work/zhanghc/Myllm/SELD/experiment_einv2_reaudit_20260904_r1/scalar_trainfolds2-6.h5",
+        "--variant",
+        "C2",
+        "--seed",
+        "2026"
+      ],
+      "log": "/work/zhanghc/Myllm/SELD/experiment_einv2_reaudit_20260904_r1/queue_logs/C2_seed2026_framecausal_v020.training.log",
+      "phase_started_at": "2026-09-04T10:11:44.548595+00:00",
+      "elapsed_seconds": 30,
+      "log_bytes": 3013,
+      "output_stall_advisory": false
+    },
+    {
+      "id": "C3_seed2026_framecausal_v020",
+      "seed": 2026,
+      "variant": "C3",
+      "status": "training",
+      "gpu": 3,
+      "pid": 171045,
+      "command": [
+        "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+        "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/scripts/train/einv2_audited.py",
+        "--project-root",
+        "/work/zhanghc/Myllm/SELD",
+        "--output-root",
+        "/work/zhanghc/Myllm/SELD/experiment_einv2_reaudit_20260904_r1/runs",
+        "--scalar",
+        "/work/zhanghc/Myllm/SELD/experiment_einv2_reaudit_20260904_r1/scalar_trainfolds2-6.h5",
+        "--variant",
+        "C3",
+        "--seed",
+        "2026"
+      ],
+      "log": "/work/zhanghc/Myllm/SELD/experiment_einv2_reaudit_20260904_r1/queue_logs/C3_seed2026_framecausal_v020.training.log",
+      "phase_started_at": "2026-09-04T10:11:44.551883+00:00",
+      "elapsed_seconds": 30,
+      "log_bytes": 3046,
+      "output_stall_advisory": false
+    },
+    {
+      "id": "C0_seed2027_framecausal_v020",
+      "seed": 2027,
+      "variant": "C0",
+      "status": "training",
+      "gpu": 4,
+      "pid": 171044,
+      "command": [
+        "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+        "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/scripts/train/einv2_audited.py",
+        "--project-root",
+        "/work/zhanghc/Myllm/SELD",
+        "--output-root",
+        "/work/zhanghc/Myllm/SELD/experiment_einv2_reaudit_20260904_r1/runs",
+        "--scalar",
+        "/work/zhanghc/Myllm/SELD/experiment_einv2_reaudit_20260904_r1/scalar_trainfolds2-6.h5",
+        "--variant",
+        "C0",
+        "--seed",
+        "2027"
+      ],
+      "log": "/work/zhanghc/Myllm/SELD/experiment_einv2_reaudit_20260904_r1/queue_logs/C0_seed2027_framecausal_v020.training.log",
+      "phase_started_at": "2026-09-04T10:11:44.550431+00:00",
+      "elapsed_seconds": 30,
+      "log_bytes": 3363,
+      "output_stall_advisory": false
+    },
+    {
+      "id": "C1_seed2027_framecausal_v020",
+      "seed": 2027,
+      "variant": "C1",
+      "status": "pending"
+    },
+    {
+      "id": "C2_seed2027_framecausal_v020",
+      "seed": 2027,
+      "variant": "C2",
+      "status": "pending"
+    },
+    {
+      "id": "C3_seed2027_framecausal_v020",
+      "seed": 2027,
+      "variant": "C3",
+      "status": "pending"
+    },
+    {
+      "id": "C0_seed2028_framecausal_v020",
+      "seed": 2028,
+      "variant": "C0",
+      "status": "pending"
+    },
+    {
+      "id": "C1_seed2028_framecausal_v020",
+      "seed": 2028,
+      "variant": "C1",
+      "status": "pending"
+    },
+    {
+      "id": "C2_seed2028_framecausal_v020",
+      "seed": 2028,
+      "variant": "C2",
+      "status": "pending"
+    },
+    {
+      "id": "C3_seed2028_framecausal_v020",
+      "seed": 2028,
+      "variant": "C3",
+      "status": "pending"
+    }
+  ]
+}

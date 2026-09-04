@@ -1,12 +1,19 @@
 # SELD
 
 EINV2 与 Multi-ACCDOA 的 causal / offline、velocity、JEPA 辅助监督实验代码。
-当前版本 **0.1.0**：从 rabbit02 的实际研究代码整理，保留变体与来源，不包含数据、权重或大体积预测。
+当前版本 **0.2.0**：新增经过审计的 EINV2 当前帧因果重跑入口；保留历史变体与来源，不包含数据、权重或大体积预测。
+
+## EINV2 新实验入口（0.2.0）
+
+[当前帧因果重跑协议与命令](docs/EINV2_AUDITED_RUNS.md)：C0–C3 × 三 seeds，保留100 ms帧内75 ms输入依赖，统一归一化、train-only scaler、随机路径、teacher轨道对齐和官方validation选优。训练使用`scripts/train/einv2_audited.py`，独立测试使用`scripts/eval/einv2_audited.py`。
+
+**下方原 EINV2 命令与既有结果表属于历史版本**，不能作为上述修复已验证有效的证据。历史预处理问题见[重审报告](reports/EINV2_REAUDIT_20260904.md)。Multi-ACCDOA本轮未修改。
 
 ## 目录
 
 ```text
 models/
+  einv2/audited/       0.2.0共享C0–C3运行逻辑，历史模型不变
   einv2/variants/      C0、C1、C2、C3、E1、E2、E3；C0_legacy 仅历史参考
   multi_accdoa/       独立的 Multi-ACCDOA 实现、参数与 analysis 工具
 configs/
