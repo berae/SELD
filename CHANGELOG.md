@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased — 2026-09-04
+
+- 新增 rabbit02 / RB05 数据资产表、六套原始数据与派生缓存的只读快照、标签覆盖和 TAU2020 迁移核对结果。
+- 新增独立盘点脚本、复核 notebook 和 5 项测试；不修改模型、训练配置、metric 或服务器原始数据，代码版本仍为 0.1.0。
+
 ## 0.1.0 — 2026-09-04
 
 - 从 rabbit02 导入 EINV2 独立变体及 Dynamic Multi-ACCDOA 实际代码，并保存来源路径/commit/SHA256。

@@ -16,6 +16,7 @@ scripts/
   train/              只训练与 validation
   eval/               checkpoint 推理、官方评分、静态/动态诊断
   preprocess/         特征、velocity targets、JEPA masks
+  data/               只读数据盘点与标签覆盖检查
 evaluation/           SHA256 固定的 DCASE metric、适配与回归测试
 tests/                入口、来源完整性、模型 forward/causal 测试
 requirements/         EINV2 与 Multi-ACCDOA 分开的依赖
@@ -26,6 +27,10 @@ docs/                 协议、历史结果、版本管理、上游说明
 
 E0 使用 `models/einv2/variants/C0` 中的 offline `EINV2` 类；通过 `configs/einv2/E0.yaml` 选择，不使用 causal 模型。
 EINV2 首版保留独立变体实现，避免合并代码时改变历史 checkpoint 对应的方法。不同模型用独立进程与环境运行。
+
+## 数据资产
+
+[数据清单与迁移核对](docs/DATA_INVENTORY.md)：2026-09-04 实查 rabbit02 / RB05，列出六套原始数据、split / 标签 / 时长 / 容量、派生缓存、绝对路径与验证范围。TAU2020 是当前主实验数据；其他数据已下载不等于当前训练入口已接入。仓库不上传原始音频、特征或权重。
 
 ## 环境与配置
 
@@ -98,6 +103,7 @@ Multi-ACCDOA 保存的预测使用 `cartesian7`；validation 参考目录改为 
 
 ```bash
 python tests/test_repository.py
+python tests/test_data_inventory.py             # 无需原始数据
 python evaluation/test_alignment.py
 python tests/test_entrypoint_config.py           # EINV2 环境
 CUDA_VISIBLE_DEVICES= python tests/test_einv2_variant.py --variant C3

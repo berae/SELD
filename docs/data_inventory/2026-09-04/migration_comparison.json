@@ -1,0 +1,72 @@
+[
+  {
+    "asset": "Multi_TAU2020_data",
+    "rabbit02_path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/data/TAU2020_SELD_dataset",
+    "RB05_path": "/home/zhanghc/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset",
+    "files": 1600,
+    "bytes": 9223072462,
+    "file_size_digest_match": true,
+    "files_match": true,
+    "bytes_match": true,
+    "content_sample_checks": 12,
+    "content_sample_mismatches": [],
+    "full_content_checked_files": 800,
+    "full_content_group_mismatches": []
+  },
+  {
+    "asset": "Multi_strict_features",
+    "rabbit02_path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6",
+    "RB05_path": "/home/zhanghc/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6",
+    "files": 2202,
+    "bytes": 18171189997,
+    "file_size_digest_match": true,
+    "files_match": true,
+    "bytes_match": true,
+    "content_sample_checks": 15,
+    "content_sample_mismatches": [],
+    "full_content_checked_files": 0,
+    "full_content_group_mismatches": []
+  },
+  {
+    "asset": "EINV2_TAU2020_hdf5",
+    "rabbit02_path": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/_hdf5",
+    "RB05_path": "/home/zhanghc/SELD/EINV2/shared/_hdf5",
+    "files": 1606,
+    "bytes": 9284589904,
+    "file_size_digest_match": true,
+    "files_match": true,
+    "bytes_match": true,
+    "content_sample_checks": 14,
+    "content_sample_mismatches": [],
+    "full_content_checked_files": 2,
+    "full_content_group_mismatches": []
+  },
+  {
+    "asset": "EINV2_velocity",
+    "rabbit02_path": "/work/zhanghc/Myllm/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/velocity_hdf5",
+    "RB05_path": "/home/zhanghc/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/velocity_hdf5",
+    "files": 600,
+    "bytes": 15206400,
+    "file_size_digest_match": true,
+    "files_match": true,
+    "bytes_match": true,
+    "content_sample_checks": 3,
+    "content_sample_mismatches": [],
+    "full_content_checked_files": 0,
+    "full_content_group_mismatches": []
+  },
+  {
+    "asset": "EINV2_jepa",
+    "rabbit02_path": "/work/zhanghc/Myllm/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/jepa_hdf5",
+    "RB05_path": "/home/zhanghc/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/jepa_hdf5",
+    "files": 600,
+    "bytes": 18086400,
+    "file_size_digest_match": true,
+    "files_match": true,
+    "bytes_match": true,
+    "content_sample_checks": 3,
+    "content_sample_mismatches": [],
+    "full_content_checked_files": 0,
+    "full_content_group_mismatches": []
+  }
+]
