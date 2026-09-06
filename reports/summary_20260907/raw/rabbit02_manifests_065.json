@@ -1,0 +1,156 @@
+{
+  "path": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/manifests/44_C2_smoke_seed2026_strictcausal_v1_eval_split0_multiaccdoa_foa.json",
+  "sha256": "ec0a3cb5f775bf18ed948982e846b3d56f873b214ba6c3e9272054cba86d83f9",
+  "data": {
+    "best_validation": {
+      "ER": 1.0,
+      "F": 0.0,
+      "LE": 180,
+      "LR": 0.0,
+      "SELD": 1.0,
+      "epoch": 1
+    },
+    "checkpoint": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/models/44_C2_smoke_seed2026_strictcausal_v1_eval_split0_multiaccdoa_foa_model.h5",
+    "completed_at_utc": "2026-09-02T08:53:19Z",
+    "evaluation": {
+      "ER": [
+        1.0,
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "F": [
+        0.0,
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "LE": [
+        180,
+        [
+          180.0,
+          180.0
+        ]
+      ],
+      "LR": [
+        0.0,
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "SELD": [
+        1.0,
+        [
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    "git": {
+      "commit": "a084dd070fdd75066f208bc1d10a853c886e2f5c",
+      "dirty": false
+    },
+    "job_id": "C2_smoke_seed2026_strictcausal_v1",
+    "params": {
+      "average": "micro",
+      "batch_size": 128,
+      "causal": true,
+      "causal_frontend": true,
+      "dataset": "foa",
+      "dataset_dir": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset",
+      "dcase_output_dir": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/results",
+      "detect_anomaly": false,
+      "dropout_rate": 0.05,
+      "experiment_variant": "C2",
+      "f_pool_size": [
+        4,
+        4,
+        2
+      ],
+      "feat_label_dir": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6",
+      "feature_sequence_length": 250,
+      "finetune_mode": false,
+      "fmax_doa_salsalite": 2000,
+      "fmax_spectra_salsalite": 9000,
+      "fmin_doa_salsalite": 50,
+      "fnn_size": 128,
+      "frontend_frame_alignment": "right_edge",
+      "frontend_left_pad_samples": 544,
+      "frontend_lookahead_s": 0.0,
+      "fs": 24000,
+      "hop_len_s": 0.02,
+      "jepa_ema_momentum": 0.996,
+      "jepa_horizons_frames": [
+        1,
+        3,
+        5
+      ],
+      "jepa_latent_dim": 128,
+      "jepa_predictor_hidden_dim": 256,
+      "label_hop_len_s": 0.1,
+      "label_sequence_length": 50,
+      "lad_doa_thresh": 20,
+      "lambda_jepa": 0.2,
+      "lambda_velocity": 0.2,
+      "lr": 0.001,
+      "max_audio_len_s": 60,
+      "mode": "eval",
+      "model_dir": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/models",
+      "multi_accdoa": true,
+      "nb_cnn2d_filt": 64,
+      "nb_epochs": 100,
+      "nb_fnn_layers": 1,
+      "nb_heads": 8,
+      "nb_mel_bins": 64,
+      "nb_rnn_layers": 2,
+      "nb_self_attn_layers": 2,
+      "normalization_fit_splits": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "patience": 100,
+      "pretrained_model_weights": "models/1_1_foa_dev_split6_model.h5",
+      "quick_test": true,
+      "rnn_size": 128,
+      "seed": 2026,
+      "self_attn": true,
+      "t_pool_size": [
+        5,
+        1,
+        1
+      ],
+      "thresh_unify": 15,
+      "unique_classes": 14,
+      "use_jepa": true,
+      "use_salsalite": false,
+      "use_velocity": false,
+      "velocity_dt": 0.1
+    },
+    "prediction_dir": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/results/44_C2_smoke_seed2026_strictcausal_v1_eval_split0_multiaccdoa_foa_20260902085238_test",
+    "seed": 2026,
+    "splits": {
+      "evaluation": [
+        0
+      ],
+      "train": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "validation": 1
+    },
+    "started_at_utc": "2026-09-02T08:52:26Z",
+    "status": "completed",
+    "task_id": "44",
+    "unique_name": "44_C2_smoke_seed2026_strictcausal_v1_eval_split0_multiaccdoa_foa",
+    "variant": "C2"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/data_intermediate/manifests/data_audit_v0.json",
+  "sha256": "ac1d856e4d87922ecb05fc1cf19a64d282f3872bec0854217bc23f0d2f052e43",
+  "data": {
+    "status": "PASS",
+    "errors": [],
+    "split_recording_overlap": {
+      "test-train": [],
+      "test-val": [],
+      "train-val": []
+    },
+    "tracks": {
+      "segments": 7143,
+      "continuous_segments_ge_2_5s": 2498,
+      "duration_s": {
+        "median": 1.6,
+        "p95": 15.1,
+        "max": 30.2
+      }
+    },
+    "splits": {
+      "train": {
+        "samples": 63569,
+        "recordings": 388,
+        "tracks": 963,
+        "classes": {
+          "0": 8654,
+          "1": 4532,
+          "2": 3898,
+          "3": 3861,
+          "4": 7995,
+          "5": 1248,
+          "7": 10693,
+          "8": 10082,
+          "9": 31,
+          "10": 1899,
+          "12": 7019,
+          "13": 3657
+        },
+        "motion_bins": {
+          "static": 33725,
+          "medium": 11200,
+          "slow": 10614,
+          "fast": 8030
+        },
+        "speed_deg_s": {
+          "min": 0.0,
+          "median": 6.04e-06,
+          "p95": 39.39134342,
+          "max": 85.0
+        },
+        "position_norm_error_max": 7.270935187264627e-09,
+        "tangent_dot_abs_max": 9.551324563726593e-09,
+        "future_norm_error_max": 7.270935187264627e-09,
+        "bad_context_length": 0,
+        "missing_audio_count": 0,
+        "missing_audio_examples": []
+      },
+      "val": {
+        "samples": 15024,
+        "recordings": 98,
+        "tracks": 252,
+        "classes": {
+          "0": 1144,
+          "1": 947,
+          "2": 1778,
+          "3": 1026,
+          "4": 2663,
+          "5": 148,
+          "7": 1885,
+          "8": 3135,
+          "10": 162,
+          "12": 1119,
+          "13": 1017
+        },
+        "motion_bins": {
+          "static": 7542,
+          "medium": 2860,
+          "slow": 2763,
+          "fast": 1859
+        },
+        "speed_deg_s": {
+          "min": 0.0,
+          "median": 6.04e-06,
+          "p95": 39.76560078,
+          "max": 68.23902605
+        },
+        "position_norm_error_max": 7.270935187264627e-09,
+        "tangent_dot_abs_max": 8.970675979824705e-09,
+        "future_norm_error_max": 7.270935187264627e-09,
+        "bad_context_length": 0,
+        "missing_audio_count": 0,
+        "missing_audio_examples": []
+      },
+      "test": {
+        "samples": 14765,
+        "recordings": 99,
+        "tracks": 231,
+        "classes": {
+          "0": 2342,
+          "1": 962,
+          "2": 1061,
+          "4": 2081,
+          "5": 54,
+          "7": 3084,
+          "8": 2922,
+          "10": 10,
+          "12": 722,
+          "13": 1527
+        },
+        "motion_bins": {
+          "static": 7653,
+          "slow": 3039,
+          "medium": 2459,
+          "fast": 1614
+        },
+        "speed_deg_s": {
+          "min": 0.0,
+          "median": 6.04e-06,
+          "p95": 39.97067715,
+          "max": 74.28631426
+        },
+        "position_norm_error_max": 7.270935187264627e-09,
+        "tangent_dot_abs_max": 1.2481543709610271e-08,
+        "future_norm_error_max": 7.270935187264627e-09,
+        "bad_context_length": 0,
+        "missing_audio_count": 0,
+        "missing_audio_examples": []
+      }
+    }
+  }
+}

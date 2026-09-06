@@ -1,0 +1,31 @@
+{
+  "run_id": "EINV2_C0_bestfix_seed2028",
+  "split": "evaluation",
+  "checks": {
+    "historical_config": {
+      "path": "/work/zhanghc/Myllm/SELD/experiment_completion_20260904/configs/Completion_20260904_EINV2_C0_bestfix_seed2028_evaluation.yaml",
+      "exists": true,
+      "bytes": 1578,
+      "mtime_ns": 1788490467974907323,
+      "sha256": "4e4b0b4357044daa2d93744af32082633259b411e14aa4b831d29951c975fc85"
+    },
+    "checkpoint": {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/out_train/ein_seld/EINV2_C0_bestfix_seed2028/checkpoints/rabbit02_gpu3_bestfix_seed2028_epoch_45.pth",
+      "exists": true,
+      "bytes": 419846080,
+      "mtime_ns": 1788452153055419717
+    },
+    "prediction_dir": {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/out_infer/ein_seld/Completion_20260904_EINV2_C0_bestfix_seed2028_evaluation/submissions",
+      "exists": true,
+      "csv_files": 200
+    },
+    "original_result": {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C0p1_CausalEINV2_fix_seed2026/out_eval/ein_seld/Completion_20260904_EINV2_C0_bestfix_seed2028_evaluation/results.csv",
+      "exists": true,
+      "bytes": 245,
+      "mtime_ns": 1788506024736493540,
+      "sha256": "8c5e5b28103c36c71eb75f8ff4f7b12de67b9607aae0c4d2eb3a85b5a743debe"
+    }
+  }
+}

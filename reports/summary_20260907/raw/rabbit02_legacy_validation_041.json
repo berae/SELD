@@ -1,0 +1,31 @@
+{
+  "run_id": "E2_OfflineEINV2_JEPAConsistency_seed2028",
+  "split": "validation",
+  "checks": {
+    "historical_config": {
+      "path": "/work/zhanghc/Myllm/SELD/experiment_completion_20260904/configs/Completion_20260904_E2_OfflineEINV2_JEPAConsistency_seed2028_validation.yaml",
+      "exists": true,
+      "bytes": 1759,
+      "mtime_ns": 1788490467022903856,
+      "sha256": "bc7033f4ac8a37cba752da4095a6d4aa2dd7c43743bf4b088f1a4898295bcd4f"
+    },
+    "checkpoint": {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/out_train/ein_seld/E2_OfflineEINV2_JEPAConsistency_seed2028/checkpoints/completion_20260904_E2_seed2028_epoch_85.pth",
+      "exists": true,
+      "bytes": 528869710,
+      "mtime_ns": 1788506023540477796
+    },
+    "prediction_dir": {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/out_infer/ein_seld/Completion_20260904_E2_OfflineEINV2_JEPAConsistency_seed2028_validation/submissions",
+      "exists": true,
+      "csv_files": 100
+    },
+    "original_result": {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E2_OfflineEINV2_JEPAConsistency_seed2026/out_eval/ein_seld/Completion_20260904_E2_OfflineEINV2_JEPAConsistency_seed2028_validation/results.csv",
+      "exists": true,
+      "bytes": 244,
+      "mtime_ns": 1788506513952806930,
+      "sha256": "129ca213c87a423e7527317d08828c5db6c7de7096d00c35753a46ff56a40342"
+    }
+  }
+}

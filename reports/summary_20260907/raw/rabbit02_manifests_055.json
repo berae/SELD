@@ -1,0 +1,156 @@
+{
+  "path": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/manifests/32_paper_v1_A0_seed2028_eval_split0_multiaccdoa_foa.json",
+  "sha256": "5d2516ff01fd493c2f19535b11178e6462b12921120322865959c192b1652020",
+  "data": {
+    "best_validation": {
+      "ER": 0.558594917787743,
+      "F": 0.5134719637511126,
+      "LE": 15.043828562864853,
+      "LR": 0.5955575432319619,
+      "SELD": 0.3832855590384794,
+      "epoch": 98
+    },
+    "checkpoint": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/models/32_paper_v1_A0_seed2028_eval_split0_multiaccdoa_foa_model.h5",
+    "completed_at_utc": "2026-09-02T11:46:06Z",
+    "evaluation": {
+      "ER": [
+        0.5203422909473052,
+        [
+          0.4988931395829565,
+          0.543683091515296
+        ]
+      ],
+      "F": [
+        0.5521417901409019,
+        [
+          0.5274465839033995,
+          0.5737848588548848
+        ]
+      ],
+      "LE": [
+        14.676493174802108,
+        [
+          13.862544134762029,
+          15.51002887724724
+        ]
+      ],
+      "LR": [
+        0.6233756534727408,
+        [
+          0.5996643795687279,
+          0.644460162325765
+        ]
+      ],
+      "SELD": [
+        0.3565902301317519,
+        [
+          0.3407063525912801,
+          0.3743939493145044
+        ]
+      ]
+    },
+    "git": {
+      "commit": "ca05f674b3c719c7b1912417a766f3219197e1a1",
+      "dirty": false
+    },
+    "job_id": "paper_v1_A0_seed2028",
+    "params": {
+      "average": "micro",
+      "batch_size": 128,
+      "causal": false,
+      "causal_frontend": true,
+      "dataset": "foa",
+      "dataset_dir": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset",
+      "dcase_output_dir": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/results",
+      "detect_anomaly": false,
+      "dropout_rate": 0.05,
+      "experiment_variant": "A0",
+      "f_pool_size": [
+        4,
+        4,
+        2
+      ],
+      "feat_label_dir": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6",
+      "feature_sequence_length": 250,
+      "finetune_mode": false,
+      "fmax_doa_salsalite": 2000,
+      "fmax_spectra_salsalite": 9000,
+      "fmin_doa_salsalite": 50,
+      "fnn_size": 128,
+      "frontend_frame_alignment": "right_edge",
+      "frontend_left_pad_samples": 544,
+      "frontend_lookahead_s": 0.0,
+      "fs": 24000,
+      "hop_len_s": 0.02,
+      "jepa_ema_momentum": 0.996,
+      "jepa_horizons_frames": [
+        1,
+        3,
+        5
+      ],
+      "jepa_latent_dim": 128,
+      "jepa_predictor_hidden_dim": 256,
+      "label_hop_len_s": 0.1,
+      "label_sequence_length": 50,
+      "lad_doa_thresh": 20,
+      "lambda_jepa": 0.2,
+      "lambda_velocity": 0.2,
+      "lr": 0.001,
+      "max_audio_len_s": 60,
+      "mode": "eval",
+      "model_dir": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/models",
+      "multi_accdoa": true,
+      "nb_cnn2d_filt": 64,
+      "nb_epochs": 100,
+      "nb_fnn_layers": 1,
+      "nb_heads": 8,
+      "nb_mel_bins": 64,
+      "nb_rnn_layers": 2,
+      "nb_self_attn_layers": 2,
+      "normalization_fit_splits": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "patience": 100,
+      "pretrained_model_weights": "models/1_1_foa_dev_split6_model.h5",
+      "quick_test": false,
+      "rnn_size": 128,
+      "seed": 2028,
+      "self_attn": true,
+      "t_pool_size": [
+        5,
+        1,
+        1
+      ],
+      "thresh_unify": 15,
+      "unique_classes": 14,
+      "use_jepa": false,
+      "use_salsalite": false,
+      "use_velocity": false,
+      "velocity_dt": 0.1
+    },
+    "prediction_dir": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/results/32_paper_v1_A0_seed2028_eval_split0_multiaccdoa_foa_20260902113350_test",
+    "seed": 2028,
+    "splits": {
+      "evaluation": [
+        0
+      ],
+      "train": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "validation": 1
+    },
+    "started_at_utc": "2026-09-02T10:50:19Z",
+    "status": "completed",
+    "task_id": "32",
+    "unique_name": "32_paper_v1_A0_seed2028_eval_split0_multiaccdoa_foa",
+    "variant": "A0"
+  }
+}

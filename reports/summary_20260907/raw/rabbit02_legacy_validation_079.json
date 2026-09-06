@@ -1,0 +1,32 @@
+{
+  "run_id": "supplemental_v2_A3_lambda005_seed2026",
+  "split": "validation",
+  "checks": {
+    "historical_config": {
+      "path": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/manifests/52_supplemental_v2_A3_lambda005_seed2026_eval_split0_multiaccdoa_foa.json#params",
+      "exists": true,
+      "bytes": 3028,
+      "sha256": "79e851c216ee005863bb03c6507f66272de39a3c388f8a28d359a4bddcbc533a",
+      "json_pointer": "params",
+      "resolved_path": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/manifests/52_supplemental_v2_A3_lambda005_seed2026_eval_split0_multiaccdoa_foa.json"
+    },
+    "checkpoint": {
+      "path": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/models/52_supplemental_v2_A3_lambda005_seed2026_eval_split0_multiaccdoa_foa_model.h5",
+      "exists": true,
+      "bytes": 6075227,
+      "mtime_ns": 1788445434062169087
+    },
+    "prediction_dir": {
+      "path": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/analysis/threshold_predictions/Completion_20260904_supplemental_v2_A3_lambda005_seed2026_validation_seed2026_validation_t050",
+      "exists": true,
+      "csv_files": 100
+    },
+    "original_result": {
+      "path": "/work/zhanghc/Myllm/SELD/experiment_completion_20260904/results/Completion_20260904_supplemental_v2_A3_lambda005_seed2026_validation.csv",
+      "exists": true,
+      "bytes": 448,
+      "mtime_ns": 1788506211814583846,
+      "sha256": "4fff3146521f127bbe166a6170171fba7e89ba3c809fd4f1791df38765175b1b"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "run_id": "C3_CausalEINV2_Velocity_JEPA_seed2027",
+  "split": "validation",
+  "checks": {
+    "historical_config": {
+      "path": "/work/zhanghc/Myllm/SELD/experiment_completion_20260904/configs/Completion_20260904_C3_CausalEINV2_Velocity_JEPA_seed2027_validation.yaml",
+      "exists": true,
+      "bytes": 1967,
+      "mtime_ns": 1788490464778895689,
+      "sha256": "ee92c25dd3bef4b67b19f6ddd4ba2fce1394617d163a7884a19a66a91fdf8078"
+    },
+    "checkpoint": {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/out_train/ein_seld/C3_CausalEINV2_Velocity_JEPA_seed2027/checkpoints/rabbit02_gpu3_c3_seed2027_epoch_80.pth",
+      "exists": true,
+      "bytes": 528837138,
+      "mtime_ns": 1788446808296837827
+    },
+    "prediction_dir": {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/out_infer/ein_seld/Completion_20260904_C3_CausalEINV2_Velocity_JEPA_seed2027_validation/submissions",
+      "exists": true,
+      "csv_files": 100
+    },
+    "original_result": {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/C3_CausalEINV2_Velocity_JEPA_seed2026/out_eval/ein_seld/Completion_20260904_C3_CausalEINV2_Velocity_JEPA_seed2027_validation/results.csv",
+      "exists": true,
+      "bytes": 244,
+      "mtime_ns": 1788505675018043960,
+      "sha256": "b4755deb094058592a9425a6a993edbaee992491ffde5802dc639f672716488b"
+    }
+  }
+}

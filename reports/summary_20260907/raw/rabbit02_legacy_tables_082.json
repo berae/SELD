@@ -1,0 +1,6 @@
+{
+  "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/results/out_train/ein_seld/STARSS22_C0_RealOnly_CkptFix_seed2026/checkpoints/metrics_statistics.csv",
+  "sha256": "75e2aa8e66853cf578e2f0c518d07fa22e9e85a31e98d44988a99fb0e78e76e2",
+  "bytes": 106,
+  "text": "epoch\tER_macro\tF_macro\tLE_macro\tLR_macro\tSELD_scr_macro\tER_micro\tF_micro\tLE_micro\tLR_micro\tSELD_scr_micro\n"
+}

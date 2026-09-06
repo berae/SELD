@@ -1,0 +1,20 @@
+{
+  "formal_main_runs": 68,
+  "scored_run_splits": 131,
+  "formal_new_runs": 26,
+  "missing_evaluation": [
+    "C3_jepa020_seed2026_rb05_v1",
+    "C3_jepa020_seed2027_rb05_v1",
+    "C3_jepa020_seed2028_rb05_v1",
+    "D1_motionpairs_v020_seed2026_rb05_v1",
+    "D3_motionpairs_v020_jepa005_seed2026_rb05_v1"
+  ],
+  "smoke_runs": 7,
+  "failed_smokes": 2,
+  "legacy_records": 175,
+  "formula_checks": "PASS",
+  "legacy_path_checks": "PASS",
+  "modern_epoch_log_checkpoint_checks": "PASS",
+  "checkpoint_payload_deserialized": false,
+  "scope": "two project roots; current+historical summaries, no dataset/venv/symlink traversal; no independent retraining"
+}

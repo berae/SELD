@@ -1,0 +1,279 @@
+[
+  {
+    "host": "rabbit02",
+    "root": "/work/zhanghc/Myllm/SELD",
+    "collected_at": "2026-09-06T17:41:45.324788+00:00",
+    "project_processes": "",
+    "branches": {
+      "starss22_23_download_runner.sh": {
+        ".sh": 1
+      },
+      "starss22_23_download_launch.sh": {
+        ".sh": 1
+      },
+      "experiment_completion_20260904": {
+        ".py": 5,
+        ".log": 230,
+        ".json": 224,
+        ".csv": 61,
+        ".md": 5,
+        ".yaml": 55
+      },
+      "logs": {
+        ".log": 1
+      },
+      "EINV2": {
+        ".sh": 95,
+        ".log": 95,
+        ".py": 412,
+        ".yml": 8,
+        ".md": 13,
+        ".txt": 39,
+        ".yaml": 148,
+        ".pth": 85,
+        ".csv": 8782,
+        ".json": 6
+      },
+      "NTU_SNTL_Task3": {
+        ".md": 1,
+        ".py": 11,
+        ".txt": 1
+      },
+      "ObjectStateSELD": {
+        ".md": 15,
+        ".log": 10,
+        ".py": 64,
+        ".sh": 8,
+        ".txt": 7,
+        ".csv": 1605,
+        ".yml": 2,
+        ".yaml": 7,
+        ".json": 6
+      },
+      "DynamicCausalMultiACCDOA_TAU2020": {
+        ".md": 14,
+        ".sh": 22,
+        ".py": 26,
+        ".txt": 3,
+        ".log": 76,
+        ".csv": 36385,
+        ".json": 54
+      },
+      "CausalMultiACCDOA_TAU2020": {
+        ".md": 2,
+        ".py": 14,
+        ".sh": 12,
+        ".txt": 1,
+        ".log": 4,
+        ".csv": 1008
+      },
+      "MultiACCDOA_TAU2020": {
+        ".md": 2,
+        ".py": 16,
+        ".sh": 8,
+        ".txt": 2,
+        ".log": 5,
+        ".csv": 512
+      },
+      "DCASE2025_StereoSELD": {
+        ".log": 1,
+        ".sh": 2
+      },
+      "evaluation": {
+        ".md": 3,
+        ".json": 7,
+        ".py": 19
+      },
+      "code_releases": {
+        ".md": 42,
+        ".py": 740,
+        ".txt": 8,
+        ".csv": 16,
+        ".json": 41,
+        ".yaml": 124
+      },
+      "MultiACCDOA_DCASE2023": {
+        ".md": 2,
+        ".py": 11,
+        ".sh": 3,
+        ".txt": 1,
+        ".log": 5
+      },
+      "PSELDNets": {
+        ".md": 2,
+        ".txt": 1,
+        ".log": 5,
+        ".yaml": 79,
+        ".ckpt": 1,
+        ".py": 56
+      },
+      "experiment_einv2_reaudit_20260904_r1": {
+        ".json": 82,
+        ".log": 37,
+        ".jsonl": 13,
+        ".pth": 26,
+        ".csv": 3700
+      }
+    },
+    "git": [
+      {
+        "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2",
+        "head": "7d6e2bac630381b6976d5280e46e5d7e8e1d8455\n",
+        "status": " M code/learning/preprocess.py\n M code/learning/train.py\n M code/methods/data.py\n M code/methods/ein_seld/data.py\n M code/methods/feature.py\n M code/methods/utils/SELD_metrics.py\n M code/methods/utils/stft.py\n M code/utils/datasets.py\n M configs/ein_seld/seld.yaml\n?? analysis/\n?? code/learning/train.py.codex_candidate\n?? code/learning/train.py.pre_checkpoint_restore_20260825\n?? configs/ein_seld/seld_starss22.yaml\n?? configs/ein_seld/seld_starss22_c0_realonly_ckptfix.yaml\n?? configs/ein_seld/seld_starss22_c0_realonly_ckptfix_iotuned.yaml\n?? configs/ein_seld/seld_starss22_checkpoint_smoke.yaml\n?? configs/ein_seld/seld_starss23.yaml\n?? configs/ein_seld/seld_starss23_c0_realonly_ckptfix_iotuned.yaml\n?? launch_starss22_c0_iotuned.sh\n?? launch_starss23_c0_iotuned.sh\n?? logs/\n?? tools/\n",
+        "log": "7d6e2ba 2024-11-14 20:30:05 +0800 Add the data augmentation method.\n"
+      },
+      {
+        "path": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026",
+        "head": "9f42da23f4ef4620ca495af37e079dc7f8cde06c\n",
+        "status": " M seld/learning/evaluate.py\n M seld/methods/ein_seld/metrics.py\n M seld/methods/ein_seld/models/__init__.py\n M seld/methods/utils/SELD_evaluation_metrics_2019.py\n M seld/methods/utils/SELD_evaluation_metrics_2020.py\n M seld/methods/utils/stft.py\n M seld/utils/config.py\n?? EXPERIMENT_PROVENANCE.txt\n?? __pycache__/\n?? _hdf5/\n?? configs/ein_seld/c0_causal_seed2026.yaml\n?? einv2_causal_smoke.py\n?? logs/\n?? out_train/\n?? scripts/__pycache__/\n?? scripts/diagnose_causal_einv2_overfit.py\n?? scripts/run_causal_einv2_diagnostic_v2.sh\n?? seld/__pycache__/\n?? seld/learning/__pycache__/\n?? seld/learning/evaluate.py.before_metric_alignment_20260904\n?? seld/methods/__pycache__/\n?? seld/methods/ein_seld/__pycache__/\n?? seld/methods/ein_seld/data_augmentation/__pycache__/\n?? seld/methods/ein_seld/metrics.py.before_metric_alignment_20260904\n?? seld/methods/ein_seld/models/__pycache__/\n?? seld/methods/ein_seld/models/seld_causal.py\n?? seld/methods/feature_causal.py\n?? seld/methods/utils/SELD_evaluation_metrics_aligned.py\n?? seld/methods/utils/__pycache__/\n?? seld/utils/__pycache__/\n?? seld/utils/config.py.orig\n",
+        "log": "9f42da2 2021-08-05 11:54:30 +0800 Update prepare_env.sh\nd67bfd1 2021-05-17 14:37:03 +0800 License added\n3706542 2021-05-11 22:08:58 +0800 Update seld.py\n1f6d1e2 2021-04-14 00:15:38 +0800 Update README.md\n27715d0 2021-02-21 16:32:41 +0800 Update seld.yaml\n"
+      },
+      {
+        "path": "/work/zhanghc/Myllm/SELD/NTU_SNTL_Task3",
+        "head": "0e4f207b3e702711b0fc61273e52c73caa79e0ca\n",
+        "status": "",
+        "log": "0e4f207 2025-07-01 20:58:38 +0800 Update README.md with paper\n"
+      },
+      {
+        "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/external/seld-dcase2022",
+        "head": "c8adb1d3a5a35de2d6c7b6d19e01ad455eef3986\n",
+        "status": "?? __pycache__/\n",
+        "log": "c8adb1d 2022-06-06 09:16:27 +0300 added support for computing 95% confidence interval in metrics using jackknife'\n0bc1eaf 2022-04-30 06:02:46 +0300 updated readme with new scores after metric bug fix\n7ed2e5f 2022-04-30 05:50:51 +0300 Merge branch 'main' of https://github.com/sharathadavanne/seld-dcase2022 into main\nb64091d 2022-04-30 05:50:45 +0300 fixed metric bug\n545c914 2022-04-12 11:27:58 +0530 Bug fix multi-accdoa, more than 2 overlapping condition\n"
+      },
+      {
+        "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/external/seld-dcase2020",
+        "head": "384ad9baa634e91268f35759fd7382e0d2f0ef12\n",
+        "status": "?? __pycache__/\n?? metrics/__pycache__/\n",
+        "log": "384ad9b 2020-11-20 12:28:53 +0530 Updated broken links\nad8102e 2020-11-19 15:27:12 +0200 Update README.md\n133fea0 2020-11-19 15:19:45 +0200 fixed order of AIV components for ACN channel numbering\na2ce3a1 2020-10-07 12:18:59 +0300 Update README.md\ncacfb38 2020-10-07 12:15:47 +0300 Update README.md\n"
+      },
+      {
+        "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/external/EIN-SELD",
+        "head": "9f42da23f4ef4620ca495af37e079dc7f8cde06c\n",
+        "status": "?? seld/__pycache__/\n?? seld/learning/__pycache__/\n?? seld/methods/__pycache__/\n?? seld/methods/data_augmentation/__pycache__/\n?? seld/methods/ein_seld/__pycache__/\n?? seld/methods/ein_seld/data_augmentation/__pycache__/\n?? seld/methods/ein_seld/models/__pycache__/\n?? seld/methods/utils/__pycache__/\n?? seld/utils/__pycache__/\n",
+        "log": "9f42da2 2021-08-05 11:54:30 +0800 Update prepare_env.sh\nd67bfd1 2021-05-17 14:37:03 +0800 License added\n3706542 2021-05-11 22:08:58 +0800 Update seld.py\n1f6d1e2 2021-04-14 00:15:38 +0800 Update README.md\n27715d0 2021-02-21 16:32:41 +0800 Update seld.yaml\n"
+      },
+      {
+        "path": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020",
+        "head": "560a17a59192971b5c2c241ef4caea82f8ebb8e8\n",
+        "status": " M cls_compute_seld_results.py\n?? cls_compute_seld_results.py.before_metric_alignment_20260904\n",
+        "log": "560a17a 2026-09-03 14:43:29 +0800 experiment: freeze promoted auxiliary weights\n96ae42b 2026-09-03 14:41:14 +0800 analysis: add EINV2 validation motion comparison\n1b203b0 2026-09-03 14:35:06 +0800 analysis: evaluate validation pilots by motion\ned91bda 2026-09-03 11:55:02 +0800 docs: define dynamic SELD benchmark RFC\n981ec68 2026-09-03 11:02:37 +0800 analysis: stratify Multi-ACCDOA and EINV2 by motion\n"
+      },
+      {
+        "path": "/work/zhanghc/Myllm/SELD/PSELDNets",
+        "head": "8092a14866963e4dc38ee389aa146f0a2edef1bb\n",
+        "status": "?? .venvs/\n?? _hdf5/\n?? ckpts/mACCDOA-HTSAT-0.567.ckpt\n?? ckpts/model/\n?? datasets/STARSS23/\n?? logs/\n?? src/augment/__pycache__/\n?? src/data/__pycache__/\n?? src/data/components/__pycache__/\n?? src/loss/__pycache__/\n?? src/models/__pycache__/\n?? src/models/components/__pycache__/\n?? src/models/components/conformer/__pycache__/\n?? src/preproc/__pycache__/\n?? src/utils/__pycache__/\n",
+        "log": "8092a14 2025-09-17 09:10:13 +0800 Add MIT License to the project\nadb5e39 2025-08-02 20:55:29 +0800 Update README.md\n99c52dc 2025-05-23 22:38:26 +0800 Update AGG_LOSS.md\n7dc7e54 2025-05-23 22:16:15 +0800     Add the implementaion of the aggregated loss function.\n8edc8b4 2025-05-23 22:13:15 +0800 Add the implementaion of the aggregated loss function.\n"
+      }
+    ],
+    "exclusions": [
+      "datasets",
+      "venvs",
+      "raw audio/HDF5",
+      "git internals",
+      "symlink directories",
+      "cache"
+    ],
+    "raw_census_rows": 55196,
+    "source_census_sha256": "f6d909c984764abda647b745bc65e342d171510cd0732aa3da99ac0e80813aa7"
+  },
+  {
+    "host": "RB05",
+    "root": "/home/zhanghc/SELD",
+    "collected_at": "2026-09-06T17:41:33.823236+00:00",
+    "project_processes": "",
+    "branches": {
+      "README.transfer_test.md": {
+        ".md": 1
+      },
+      "run_rb05_einv2_migration_after_multi.sh": {
+        ".sh": 1
+      },
+      "run_rb05_asset_migration.sh": {
+        ".sh": 1
+      },
+      "experiment_einv2_fairbaseline_20260905_r1": {
+        ".log": 19,
+        ".md": 1,
+        ".json": 37,
+        ".py": 1,
+        ".jsonl": 6,
+        ".pth": 12,
+        ".csv": 1800
+      },
+      "experiment_einv2_dynamicmask_20260905_r1": {
+        ".md": 1,
+        ".log": 13,
+        ".json": 29,
+        ".jsonl": 4,
+        ".pth": 8,
+        ".csv": 400
+      },
+      "DynamicCausalMultiACCDOA_TAU2020": {
+        ".txt": 1,
+        ".py": 26,
+        ".sh": 22,
+        ".md": 14,
+        ".csv": 803,
+        ".log": 1,
+        ".json": 5
+      },
+      "experiment_einv2_weightprobe_20260904_r1": {
+        ".log": 22,
+        ".json": 54,
+        ".md": 2,
+        ".py": 2,
+        ".jsonl": 8,
+        ".pth": 16,
+        ".csv": 1400
+      },
+      "EINV2": {
+        ".sh": 41,
+        ".yml": 4,
+        ".py": 174,
+        ".md": 7,
+        ".txt": 21,
+        ".log": 42,
+        ".csv": 1413,
+        ".yaml": 53,
+        ".pth": 18
+      },
+      "migration_logs": {
+        ".log": 13,
+        ".txt": 6
+      },
+      "experiment_completion_20260904": {
+        ".py": 2,
+        ".json": 5,
+        ".csv": 2,
+        ".md": 2,
+        ".yaml": 21
+      },
+      "code_releases": {
+        ".md": 51,
+        ".txt": 8,
+        ".json": 58,
+        ".csv": 20,
+        ".py": 763,
+        ".yaml": 124
+      }
+    },
+    "git": [
+      {
+        "path": "/home/zhanghc/SELD/DynamicCausalMultiACCDOA_TAU2020",
+        "head": "23facccd0acd496663a472722cd65ecf1d521e06\n",
+        "status": "?? configs/motion_stratified_einv2_lambda005_r1.json\n",
+        "log": "23faccc 2026-09-03 15:04:10 +0800 infra: remove rabbit02 paths from active runners\n5acfc9a 2026-09-03 15:01:52 +0800 infra: make experiment launchers portable\n560a17a 2026-09-03 14:43:29 +0800 experiment: freeze promoted auxiliary weights\n96ae42b 2026-09-03 14:41:14 +0800 analysis: add EINV2 validation motion comparison\n1b203b0 2026-09-03 14:35:06 +0800 analysis: evaluate validation pilots by motion\n"
+      }
+    ],
+    "exclusions": [
+      "datasets",
+      "venvs",
+      "raw audio/HDF5",
+      "git internals",
+      "symlink directories",
+      "cache"
+    ],
+    "raw_census_rows": 7558,
+    "source_census_sha256": "7c08f71c1017a1dd0440c814447313326a882b960c2e345c90c526832eabc20d"
+  }
+]

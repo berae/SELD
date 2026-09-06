@@ -1,0 +1,458 @@
+{
+  "run_dir": "/home/zhanghc/SELD/experiment_einv2_weightprobe_20260904_r1/runs/C3_jepa005_seed2026_rb05_v1",
+  "config": {
+    "method": "ein_seld",
+    "dataset": "dcase2020task3",
+    "workspace_dir": "/home/zhanghc/SELD/experiment_einv2_weightprobe_20260904_r1/runs/C3_jepa005_seed2026_rb05_v1",
+    "dataset_dir": "/home/zhanghc/SELD/EINV2/dataset_root",
+    "hdf5_dir": "/home/zhanghc/SELD/EINV2/shared/_hdf5",
+    "jepa_hdf5_dir": "/home/zhanghc/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/jepa_hdf5/dcase2020task3/jepa",
+    "velocity_hdf5_dir": "/home/zhanghc/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/velocity_hdf5/dcase2020task3/velocity",
+    "causal_scalar_path": "/home/zhanghc/SELD/experiment_einv2_weightprobe_20260904_r1/scalar_trainfolds2-6.h5",
+    "data": {
+      "type": "foa",
+      "sample_rate": 24000,
+      "n_fft": 1024,
+      "hop_length": 600,
+      "n_mels": 256,
+      "window": "hann",
+      "fmin": 20,
+      "fmax": 12000,
+      "train_chunklen_sec": 4,
+      "train_hoplen_sec": 4,
+      "test_chunklen_sec": 4,
+      "test_hoplen_sec": 4,
+      "audio_feature": "causal_logmel&intensity",
+      "feature_freeze": true,
+      "foa_iv_acn_reorder": false
+    },
+    "data_augmentation": {
+      "type": "None"
+    },
+    "training": {
+      "train_id": "C3_jepa005_seed2026_rb05_v1",
+      "model": "CausalEINV2VelocityJEPA",
+      "resume_model": null,
+      "loss_type": "all",
+      "loss_beta": 0.5,
+      "lambda_velocity": 0.2,
+      "lambda_jepa": 0.05,
+      "jepa_ema_momentum": 0.996,
+      "jepa_latent_dim": 128,
+      "jepa_predictor_hidden_dim": 256,
+      "jepa_horizons_frames": [
+        1,
+        3,
+        5
+      ],
+      "PIT_type": "tPIT",
+      "batch_size": 32,
+      "train_fold": "2,3,4,5,6",
+      "valid_fold": 1,
+      "overlap": "1&2",
+      "optimizer": "adam",
+      "lr": 0.0005,
+      "lr_step_size": 80,
+      "lr_gamma": 0.1,
+      "max_epoch": 90,
+      "threshold_sed": 0.5,
+      "remark": "C3_jepa005_seed2026_rb05_v1"
+    },
+    "inference": {
+      "infer_id": null,
+      "testset_type": "dev",
+      "test_fold": 1,
+      "overlap": "1&2",
+      "train_ids": null,
+      "models": "CausalEINV2VelocityJEPA",
+      "batch_size": 32,
+      "threshold_sed": 0.5,
+      "remark": null
+    },
+    "audit": {
+      "version": "einv2_rb05_weightprobe_v1",
+      "variant": "C3",
+      "seed": 2026,
+      "alignment": "current_frame_75ms",
+      "metric": "dcase2023_micro",
+      "checkpoint_selection": "minimum_validation_SELD_LR",
+      "scalar_sha256": "e3967bac4bd4bc72f57b491c9f1f3a7ede36a65bb244b061b3d6914e75d38d44",
+      "resume": "fresh_runs_only",
+      "context": "4 s independently reset chunks; no streaming cache",
+      "auxiliary_heads": "identically initialized in every variant; zero-weight heads receive no gradients",
+      "parent_version": "einv2_reaudit_v1 / repository 0.2.0",
+      "smoke_batches": 0,
+      "source_hashes": {
+        "models/einv2/audited/runner.py": "a6247b38c96c97738474a7de2175ca90a00a1003fbefabc909dd915423ba365d",
+        "models/einv2/audited/runtime.py": "cd5ffb973820aa2f032da65815084de5476fd5f6f333675d27a4e6c80c51c18a",
+        "models/einv2/variants/C3/seld/learning/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "models/einv2/variants/C3/seld/learning/checkpoint.py": "3e212a69cc1f1cdbca4a14d64e93620c6302cc71da0805bba581be2f3bd8c9a6",
+        "models/einv2/variants/C3/seld/learning/evaluate.py": "4087bd913d78a5bb6e846ee9dd5b3ccccf8a30d96c60204ba9a15b2083e0b72c",
+        "models/einv2/variants/C3/seld/learning/infer.py": "c33927b3eabccae90e52936e5ee3286e90860f4d2c639015956c69db9eea3eb3",
+        "models/einv2/variants/C3/seld/learning/initialize.py": "65443b69af3e7292625cac9722bde667db7a356e81e0f61d5728f5824d1db47d",
+        "models/einv2/variants/C3/seld/learning/preprocess.py": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983",
+        "models/einv2/variants/C3/seld/learning/train.py": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2",
+        "models/einv2/variants/C3/seld/main.py": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d",
+        "models/einv2/variants/C3/seld/methods/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "models/einv2/variants/C3/seld/methods/data.py": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d",
+        "models/einv2/variants/C3/seld/methods/data_augmentation/__init__.py": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a",
+        "models/einv2/variants/C3/seld/methods/ein_seld/__init__.py": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac",
+        "models/einv2/variants/C3/seld/methods/ein_seld/data.py": "9776da2710ad90bb1a0d946888ef6e12ff44cca6fb447739da9916ea5e42b84e",
+        "models/einv2/variants/C3/seld/methods/ein_seld/data_augmentation/__init__.py": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f",
+        "models/einv2/variants/C3/seld/methods/ein_seld/inference.py": "a783fb1d276c5696e8092f082f0522dc00c53c215e8af314144afd248a89379d",
+        "models/einv2/variants/C3/seld/methods/ein_seld/losses.py": "b745f27d1f1694fe0e5fc86f3dc5feec655f0323c71ce76b5521cfe95d09d3c0",
+        "models/einv2/variants/C3/seld/methods/ein_seld/metrics.py": "c3d69aae70fe7588d89b463dc5c1ad2c9ea7462f6d051f7741f7e89a36e61bd5",
+        "models/einv2/variants/C3/seld/methods/ein_seld/models/__init__.py": "91f8eef8c5ba92bc9ea53ac608a5320c3cd38677d4fc6b188cf9da7aa283604b",
+        "models/einv2/variants/C3/seld/methods/ein_seld/models/seld.py": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd",
+        "models/einv2/variants/C3/seld/methods/ein_seld/models/seld_causal.py": "3b106cb074ac3615100c492fd8a1e57e10942469e7813f4317645db9d197a812",
+        "models/einv2/variants/C3/seld/methods/ein_seld/training.py": "b79f0086f187011a72edba2a3c6adbb173fb0fcc0c006f2bc58ba7b96ec8d4e0",
+        "models/einv2/variants/C3/seld/methods/feature.py": "56a0f74dbacb80ffd80718c7f96667f1e98bb1a186ec59f6eb12a2a3ffc6a767",
+        "models/einv2/variants/C3/seld/methods/feature_causal.py": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604",
+        "models/einv2/variants/C3/seld/methods/inference.py": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4",
+        "models/einv2/variants/C3/seld/methods/training.py": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+        "models/einv2/variants/C3/seld/methods/utils/SELD_evaluation_metrics_2019.py": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138",
+        "models/einv2/variants/C3/seld/methods/utils/SELD_evaluation_metrics_2020.py": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+        "models/einv2/variants/C3/seld/methods/utils/SELD_evaluation_metrics_aligned.py": "2038670247e9ab5cdb1456351c33d6b93064b867a28cbd7dd16450279acf7615",
+        "models/einv2/variants/C3/seld/methods/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "models/einv2/variants/C3/seld/methods/utils/data_utilities.py": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315",
+        "models/einv2/variants/C3/seld/methods/utils/loss_utilities.py": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+        "models/einv2/variants/C3/seld/methods/utils/model_utilities.py": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337",
+        "models/einv2/variants/C3/seld/methods/utils/stft.py": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4",
+        "models/einv2/variants/C3/seld/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "models/einv2/variants/C3/seld/utils/cli_parser.py": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f",
+        "models/einv2/variants/C3/seld/utils/common.py": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805",
+        "models/einv2/variants/C3/seld/utils/config.py": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217",
+        "models/einv2/variants/C3/seld/utils/datasets.py": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f",
+        "evaluation/aligned_metrics.py": "d4d1adeb4f5d40b25d8a1ef38694ce3d84ebd2385ee91da2137498e5e36e1a60",
+        "evaluation/einv2_adapter.py": "cc5bdbf500d65e7fc97a4b91e3d18c7d2e07621fba611aa359e2b2774d128703",
+        "evaluation/score_directory.py": "b9ae027c28ada53c90ed0b3514cccd93ee9509654f4b164d779bae87c59d73a0",
+        "evaluation/snapshots/einv2_legacy.py": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+        "evaluation/snapshots/multi_legacy.py": "41b17ffbd5007cd06549b07ad620a77d7cdbc65ae62c93e409f37f28882512c9",
+        "evaluation/test_alignment.py": "63768a7995c3fe3e4295b0317810cf384ed834e8ce7ab66680082569a6ea4c56",
+        "evaluation/upstream/dcase2020_feature.py": "ac5a0becd56d2906cd873289dcb46c2844e283b1459437ef1df16b5fef635617",
+        "evaluation/upstream/dcase2020_metrics.py": "a6b4021b14b1e98d3c7014914c50c8d5ffcd263159d45b070703c64d1bb61ceb",
+        "evaluation/upstream/dcase2023_feature.py": "427d6afba7f74b94d64269c1aec826aa290c075a205def5cea5cd3b127e63b14",
+        "evaluation/upstream/dcase2023_metrics.py": "41b17ffbd5007cd06549b07ad620a77d7cdbc65ae62c93e409f37f28882512c9",
+        "scripts/train/einv2_audited.py": "6846936448238e615907640f0b534ca6a299537f15e3c2099df2ab0d90535df8",
+        "scripts/eval/einv2_audited.py": "ad425edf05765689fd98d84fe5b1150cffccab73a2147aeaa483d001d07f21be",
+        "scripts/data/build_einv2_train_scalar.py": "a3d5f666229d52a89e7bd635676a055d2eb058ac5183caa175ea214b85ec2c18",
+        "configs/einv2/C3.yaml": "65f29e930316626cd6ba640e74425bac445dac11a46871b5db9e95eb01fb0667",
+        "scripts/train/einv2_weightprobe_queue.py": "69fa5d0456af03ceacec650dd526a04d0f915ceed74f59f1d393d274c72207dc",
+        "docs/RB05_WEIGHTPROBE_PLAN.md": "77c89346abe522750f1f6f9e4ec4524581442b8ce90b03d6c634fc5d87a61279"
+      }
+    }
+  },
+  "config_evidence": {
+    "path": "/home/zhanghc/SELD/experiment_einv2_weightprobe_20260904_r1/runs/C3_jepa005_seed2026_rb05_v1/config.json",
+    "exists": true,
+    "bytes": 9726,
+    "mtime_ns": 1788519097410114017,
+    "sha256": "863b24e542a9f350a2c6ee5ecf9f7fbbc64891a9cf3d4a584c1386308d20aa15"
+  },
+  "status": {
+    "status": "completed",
+    "run_id": "C3_jepa005_seed2026_rb05_v1",
+    "pid": 1969494,
+    "started_at": "2026-09-04T10:51:37.457206+00:00",
+    "batches_per_epoch": 235,
+    "total_epochs": 90,
+    "epoch": 90,
+    "batch": 235,
+    "losses": {
+      "all": 0.015738447803132077,
+      "sed": 0.006466258696696542,
+      "doa": 0.015270248479507071,
+      "velocity": 0.006394372735806602,
+      "jepa": 0.0718263917463891
+    },
+    "updated_at": "2026-09-04T14:02:23.439807+00:00",
+    "best": {
+      "SELD_LR": 0.3781447294363649,
+      "epoch": 86
+    },
+    "validation": {
+      "ER20": 0.67751567632129,
+      "F20": 0.5372500684743906,
+      "LE_CD": 15.018569008277703,
+      "LR_CD": 0.6984221494492409,
+      "SELD_LR": 0.38131998822202257
+    },
+    "epoch_seconds": 126.10857838299125,
+    "finished_at": "2026-09-04T14:02:44.087798+00:00",
+    "checkpoint": "/home/zhanghc/SELD/experiment_einv2_weightprobe_20260904_r1/runs/C3_jepa005_seed2026_rb05_v1/best.pth"
+  },
+  "files": {
+    "status.json": {
+      "path": "/home/zhanghc/SELD/experiment_einv2_weightprobe_20260904_r1/runs/C3_jepa005_seed2026_rb05_v1/status.json",
+      "exists": true,
+      "bytes": 926,
+      "mtime_ns": 1788530564087611027,
+      "sha256": "ca94efbda36df2c9897a9c87d4dd5ecc14e74b40dd5154e1c1a9a8cb472e743b"
+    },
+    "environment.json": {
+      "path": "/home/zhanghc/SELD/experiment_einv2_weightprobe_20260904_r1/runs/C3_jepa005_seed2026_rb05_v1/environment.json",
+      "exists": true,
+      "bytes": 889,
+      "mtime_ns": 1788519097456113856,
+      "sha256": "e1cfebf95cb916274043c5d2ec52cf8b1d173eb09982c51497673ecc3e3ba5f4"
+    },
+    "split_manifest.json": {
+      "path": "/home/zhanghc/SELD/experiment_einv2_weightprobe_20260904_r1/runs/C3_jepa005_seed2026_rb05_v1/split_manifest.json",
+      "exists": true,
+      "bytes": 64275,
+      "mtime_ns": 1788519100016104855,
+      "sha256": "650ee358a5634eb212b5a3921dc5e01a76261ed8402e32d8f92ee65a9b45a83a"
+    },
+    "best.pth": {
+      "path": "/home/zhanghc/SELD/experiment_einv2_weightprobe_20260904_r1/runs/C3_jepa005_seed2026_rb05_v1/best.pth",
+      "exists": true,
+      "bytes": 533495950,
+      "mtime_ns": 1788530047807927455
+    },
+    "latest.pth": {
+      "path": "/home/zhanghc/SELD/experiment_einv2_weightprobe_20260904_r1/runs/C3_jepa005_seed2026_rb05_v1/latest.pth",
+      "exists": true,
+      "bytes": 533498092,
+      "mtime_ns": 1788530563382606047
+    },
+    "metrics.jsonl": {
+      "path": "/home/zhanghc/SELD/experiment_einv2_weightprobe_20260904_r1/runs/C3_jepa005_seed2026_rb05_v1/metrics.jsonl",
+      "exists": true,
+      "bytes": 111086,
+      "mtime_ns": 1788530562824602102,
+      "sha256": "2e3e3a084989536c5f1bcdb664cdc14ed9efdbb060e8c228124c1e42ddcfb47a"
+    },
+    "validation/metrics.json": {
+      "path": "/home/zhanghc/SELD/experiment_einv2_weightprobe_20260904_r1/runs/C3_jepa005_seed2026_rb05_v1/validation/metrics.json",
+      "exists": true,
+      "bytes": 1420,
+      "mtime_ns": 1788530594127816605,
+      "sha256": "f74bade0958c9e94c6e8def09ab6725100dca07d2498545bc9fd8b4b0f36cdae"
+    },
+    "evaluation/metrics.json": {
+      "path": "/home/zhanghc/SELD/experiment_einv2_weightprobe_20260904_r1/runs/C3_jepa005_seed2026_rb05_v1/evaluation/metrics.json",
+      "exists": true,
+      "bytes": 1382,
+      "mtime_ns": 1788546581478505381,
+      "sha256": "8a27ceea58914e564eda1e7c3068905f7ac43fb7b0a26bc6dc9d9d6db09095f3"
+    }
+  },
+  "metrics": {
+    "validation": {
+      "files": 100,
+      "scores": {
+        "dcase2020_source": {
+          "ER20": 0.6077894416552564,
+          "F20": 0.553668284327719,
+          "LE_CD": 14.980285830492225,
+          "LF_CD": 0.6624322009705965,
+          "SELD_LF": 0.36872819163158554
+        },
+        "dcase2020_web_lr": {
+          "ER20": 0.6077894416552564,
+          "F20": 0.553668284327719,
+          "LE_CD": 14.980285830492225,
+          "LR_CD": 0.7060702875399361,
+          "SELD_LR": 0.35781866998925066
+        },
+        "dcase2023_micro": {
+          "ER20": 0.6640788295013437,
+          "F20": 0.5395817516736835,
+          "LE_CD": 15.016213548650864,
+          "LR_CD": 0.6953415686858163,
+          "SELD_LR": 0.3781447294363649
+        },
+        "dcase2023_macro": {
+          "ER20": 0.6640788295013437,
+          "F20": 0.5195189902026637,
+          "LE_CD": 14.4287086446356,
+          "LR_CD": 0.6880902068055544,
+          "SELD_LR": 0.3841572812408308
+        }
+      },
+      "upstream": {
+        "2020": [
+          "384ad9baa634e91268f35759fd7382e0d2f0ef12",
+          "a6b4021b14b1e98d3c7014914c50c8d5ffcd263159d45b070703c64d1bb61ceb"
+        ],
+        "2023": [
+          "24d14c9ebe6878062dc3b68eb07dd0100722f530",
+          "41b17ffbd5007cd06549b07ad620a77d7cdbc65ae62c93e409f37f28882512c9"
+        ]
+      },
+      "training_validation_max_abs_diff": 0.0,
+      "checkpoint": "/home/zhanghc/SELD/experiment_einv2_weightprobe_20260904_r1/runs/C3_jepa005_seed2026_rb05_v1/best.pth",
+      "split": "validation",
+      "version": "einv2_rb05_weightprobe_v1",
+      "status": "completed"
+    },
+    "evaluation": {
+      "files": 200,
+      "scores": {
+        "dcase2020_source": {
+          "ER20": 0.5756012442151582,
+          "F20": 0.5799235043660242,
+          "LE_CD": 14.359351535045066,
+          "LF_CD": 0.6873782203940246,
+          "SELD_LF": 0.34701842366245106
+        },
+        "dcase2020_web_lr": {
+          "ER20": 0.5756012442151582,
+          "F20": 0.5799235043660242,
+          "LE_CD": 14.359351535045066,
+          "LR_CD": 0.7226310598588878,
+          "SELD_LR": 0.33820521379623525
+        },
+        "dcase2023_micro": {
+          "ER20": 0.6218449854813491,
+          "F20": 0.5670254403131115,
+          "LE_CD": 14.350253615239263,
+          "LR_CD": 0.713851401453359,
+          "SELD_LR": 0.35517294372766306
+        },
+        "dcase2023_macro": {
+          "ER20": 0.6218449854813491,
+          "F20": 0.5722677199333754,
+          "LE_CD": 13.030684870343588,
+          "LR_CD": 0.7003611010158132,
+          "SELD_LR": 0.35540221456407284
+        }
+      },
+      "upstream": {
+        "2020": [
+          "384ad9baa634e91268f35759fd7382e0d2f0ef12",
+          "a6b4021b14b1e98d3c7014914c50c8d5ffcd263159d45b070703c64d1bb61ceb"
+        ],
+        "2023": [
+          "24d14c9ebe6878062dc3b68eb07dd0100722f530",
+          "41b17ffbd5007cd06549b07ad620a77d7cdbc65ae62c93e409f37f28882512c9"
+        ]
+      },
+      "checkpoint": "/home/zhanghc/SELD/experiment_einv2_weightprobe_20260904_r1/runs/C3_jepa005_seed2026_rb05_v1/best.pth",
+      "split": "evaluation",
+      "version": "einv2_rb05_weightprobe_v1",
+      "status": "completed"
+    }
+  },
+  "log_tail": [
+    {
+      "epoch": 89,
+      "lr": 5e-05,
+      "train": {
+        "all": 0.015867626805730322,
+        "sed": 0.006558792467447038,
+        "doa": 0.01540307553009467,
+        "velocity": 0.006413709684374168,
+        "jepa": 0.07207901565001366
+      },
+      "validation": {
+        "files": 100,
+        "scores": {
+          "dcase2020_source": {
+            "ER20": 0.6199604442415944,
+            "F20": 0.5482680295286768,
+            "LE_CD": 15.05765734404975,
+            "LF_CD": 0.6577228847245882,
+            "SELD_LF": 0.3744057954749292
+          },
+          "dcase2020_web_lr": {
+            "ER20": 0.6199604442415944,
+            "F20": 0.5482680295286768,
+            "LE_CD": 15.05765734404975,
+            "LR_CD": 0.7048531872813023,
+            "SELD_LR": 0.36262321983575063
+          },
+          "dcase2023_micro": {
+            "ER20": 0.6782621678112869,
+            "F20": 0.533644282872625,
+            "LE_CD": 15.08000022112578,
+            "LR_CD": 0.6941053885084847,
+            "SELD_LR": 0.3835725688591079
+          },
+          "dcase2023_macro": {
+            "ER20": 0.6782621678112869,
+            "F20": 0.5154793308565787,
+            "LE_CD": 14.509903172405362,
+            "LR_CD": 0.6899723281428695,
+            "SELD_LR": 0.3883552704979672
+          }
+        },
+        "upstream": {
+          "2020": [
+            "384ad9baa634e91268f35759fd7382e0d2f0ef12",
+            "a6b4021b14b1e98d3c7014914c50c8d5ffcd263159d45b070703c64d1bb61ceb"
+          ],
+          "2023": [
+            "24d14c9ebe6878062dc3b68eb07dd0100722f530",
+            "41b17ffbd5007cd06549b07ad620a77d7cdbc65ae62c93e409f37f28882512c9"
+          ]
+        }
+      },
+      "elapsed_seconds": 127.71991033665836,
+      "best": {
+        "SELD_LR": 0.3781447294363649,
+        "epoch": 86
+      }
+    },
+    {
+      "epoch": 90,
+      "lr": 5e-05,
+      "train": {
+        "all": 0.015738447803132077,
+        "sed": 0.006466258696696542,
+        "doa": 0.015270248479507071,
+        "velocity": 0.006394372735806602,
+        "jepa": 0.0718263917463891
+      },
+      "validation": {
+        "files": 100,
+        "scores": {
+          "dcase2020_source": {
+            "ER20": 0.6181347938536437,
+            "F20": 0.5513873159682898,
+            "LE_CD": 14.981595825581111,
+            "LF_CD": 0.6598244620611551,
+            "SELD_LF": 0.37253852593602343
+          },
+          "dcase2020_web_lr": {
+            "ER20": 0.6181347938536437,
+            "F20": 0.5513873159682898,
+            "LE_CD": 14.981595825581111,
+            "LR_CD": 0.7091130381865206,
+            "SELD_LR": 0.3602163819046821
+          },
+          "dcase2023_micro": {
+            "ER20": 0.67751567632129,
+            "F20": 0.5372500684743906,
+            "LE_CD": 15.018569008277703,
+            "LR_CD": 0.6984221494492409,
+            "SELD_LR": 0.38131998822202257
+          },
+          "dcase2023_macro": {
+            "ER20": 0.67751567632129,
+            "F20": 0.5169271161883207,
+            "LE_CD": 14.36333408826222,
+            "LR_CD": 0.6901371805780577,
+            "SELD_LR": 0.38756192001131423
+          }
+        },
+        "upstream": {
+          "2020": [
+            "384ad9baa634e91268f35759fd7382e0d2f0ef12",
+            "a6b4021b14b1e98d3c7014914c50c8d5ffcd263159d45b070703c64d1bb61ceb"
+          ],
+          "2023": [
+            "24d14c9ebe6878062dc3b68eb07dd0100722f530",
+            "41b17ffbd5007cd06549b07ad620a77d7cdbc65ae62c93e409f37f28882512c9"
+          ]
+        }
+      },
+      "elapsed_seconds": 126.10857838299125,
+      "best": {
+        "SELD_LR": 0.3781447294363649,
+        "epoch": 86
+      }
+    }
+  ],
+  "log_rows": 90
+}

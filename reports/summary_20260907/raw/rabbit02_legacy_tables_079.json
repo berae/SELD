@@ -1,0 +1,6 @@
+{
+  "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/results/out_train/ein_seld/STARSS22_C0_CheckpointSmoke_seed2026/checkpoints/metrics_statistics.csv",
+  "sha256": "215e397807d7ab8b66bb4a1bd99bd7a50f49e6ee79cb3b2a182e504c450c2866",
+  "bytes": 305,
+  "text": "epoch\tER_macro\tF_macro\tLE_macro\tLR_macro\tSELD_scr_macro\tER_micro\tF_micro\tLE_micro\tLR_micro\tSELD_scr_micro\n1\t0.9694289394589953\t0.004489436073828625\t139.61925059101557\t0.019021157943446654\t0.9303952121812848\t0.9694289394589953\t0.012671594508975714\t56.84741880457571\t0.053069987118935166\t0.8048765877974596\n"
+}

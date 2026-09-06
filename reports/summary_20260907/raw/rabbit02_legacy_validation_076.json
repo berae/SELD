@@ -1,0 +1,34 @@
+{
+  "run_id": "paper_v1_A0_seed2028",
+  "split": "evaluation",
+  "checks": {
+    "historical_config": {
+      "path": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/manifests/32_paper_v1_A0_seed2028_eval_split0_multiaccdoa_foa.json#params",
+      "exists": true,
+      "bytes": 3703,
+      "sha256": "5d2516ff01fd493c2f19535b11178e6462b12921120322865959c192b1652020",
+      "json_pointer": "params",
+      "resolved_path": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/manifests/32_paper_v1_A0_seed2028_eval_split0_multiaccdoa_foa.json"
+    },
+    "checkpoint": {
+      "path": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/models/32_paper_v1_A0_seed2028_eval_split0_multiaccdoa_foa_model.h5",
+      "exists": true,
+      "bytes": 6075227,
+      "mtime_ns": 1788348802961552353
+    },
+    "prediction_dir": {
+      "path": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/results/32_paper_v1_A0_seed2028_eval_split0_multiaccdoa_foa_20260902113350_test",
+      "exists": true,
+      "csv_files": 200
+    },
+    "original_result": {
+      "path": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/manifests/32_paper_v1_A0_seed2028_eval_split0_multiaccdoa_foa.json",
+      "exists": true,
+      "bytes": 3703,
+      "mtime_ns": 1788349566282362705,
+      "sha256": "5d2516ff01fd493c2f19535b11178e6462b12921120322865959c192b1652020",
+      "json_pointer": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/manifests/32_paper_v1_A0_seed2028_eval_split0_multiaccdoa_foa.json",
+      "resolved_path": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/manifests/32_paper_v1_A0_seed2028_eval_split0_multiaccdoa_foa.json"
+    }
+  }
+}

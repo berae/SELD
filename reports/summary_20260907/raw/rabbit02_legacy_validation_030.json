@@ -1,0 +1,31 @@
+{
+  "run_id": "E1_OfflineEINV2_Velocity_seed2026",
+  "split": "evaluation",
+  "checks": {
+    "historical_config": {
+      "path": "/work/zhanghc/Myllm/SELD/experiment_completion_20260904/configs/Completion_20260904_E1_OfflineEINV2_Velocity_seed2026_evaluation.yaml",
+      "exists": true,
+      "bytes": 1562,
+      "mtime_ns": 1788490465934899895,
+      "sha256": "710aa755f744479de46ab7bdf3a4727bcbc778d88b37ee4769a7bf1a372534c3"
+    },
+    "checkpoint": {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/out_train/ein_seld/E1_OfflineEINV2_Velocity_seed2026/checkpoints/rabbit02_gpu4_e1_epoch_69.pth",
+      "exists": true,
+      "bytes": 419937610,
+      "mtime_ns": 1787562967524619982
+    },
+    "prediction_dir": {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/out_infer/ein_seld/Completion_20260904_E1_OfflineEINV2_Velocity_seed2026_evaluation/submissions",
+      "exists": true,
+      "csv_files": 200
+    },
+    "original_result": {
+      "path": "/work/zhanghc/Myllm/SELD/EINV2/E1_OfflineEINV2_Velocity_seed2026/out_eval/ein_seld/Completion_20260904_E1_OfflineEINV2_Velocity_seed2026_evaluation/results.csv",
+      "exists": true,
+      "bytes": 245,
+      "mtime_ns": 1788505699426642413,
+      "sha256": "aecd13591a63558d99334fa2dbd4056d743185a100d713dd7621ebe475e2e78a"
+    }
+  }
+}
