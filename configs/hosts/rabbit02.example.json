@@ -1,0 +1,5 @@
+{
+  "project_root": "/work/zhanghc/Myllm/SELD",
+  "hdf5_dir": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/_hdf5",
+  "scalar": "/work/zhanghc/Myllm/SELD/experiment_einv2_reaudit_20260904_r1/scalar_trainfolds2-6.h5"
+}

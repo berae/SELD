@@ -35,3 +35,5 @@ logs/
 *.tar*
 *.log
 *.before_*
+# Local read-only discovery census contains large duplicated prediction listings.
+/reports/inventory_20260907/

@@ -1,0 +1,8 @@
+model_id: B3
+description: Object-State JEPA with velocity, future position and latent prediction
+objectives:
+  current: true
+  velocity: true
+  future_position: true
+  future_latent: true
+

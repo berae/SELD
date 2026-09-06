@@ -1,7 +1,15 @@
 # SELD
 
 EINV2 与 Multi-ACCDOA 的 causal / offline、velocity、JEPA 辅助监督实验代码。
-当前版本 **0.2.0**：新增经过审计的 EINV2 当前帧因果重跑入口；保留历史变体与来源，不包含数据、权重或大体积预测。
+当前版本 **0.3.0**：汇总两台服务器全部已发现实验记录，整理命名配置与训练/测试入口，保留三个精确runtime快照及历史代码；不包含数据、权重或大体积预测。
+
+## 当前入口（2026-09-07）
+
+- [全部实验结果](reports/ALL_EXPERIMENTS.md)：68个统一主run、131个已评分run×split；另列旧Multi 8×3矩阵、STARSS训练曲线、试跑与缺测。
+- [代码地图与复现命令](docs/CODE_MAP.md)：EINV2/Multi-ACCDOA分开，训练/测试分开，host路径与method recipe分开。
+- [逐run证据](reports/summary_20260907/runs.csv)、[全部旧记录](reports/summary_20260907/legacy_registry.csv)。旧A1/A2 λ=.2已有三seed，不能概括为“仅有代码”。
+
+下面保留0.2.0及历史使用说明；已有checkpoint请先按`audit.version`恢复匹配runtime，不能直接用最新版覆盖旧运行源码。
 
 ## EINV2 新实验入口（0.2.0）
 

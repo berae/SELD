@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set +e
+
+root=/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020
+python_bin="$root/.venvs/dcase2023-official-py38/bin/python"
+run_id=tau2020_eval_smoke2_fulltest
+log="$root/logs/${run_id}.log"
+exit_file="$root/logs/${run_id}.exit_code"
+
+cd "$root" || exit 98
+rm -f "$exit_file"
+export CUDA_VISIBLE_DEVICES=4
+timeout --signal=TERM --kill-after=60s 1h \
+  "$python_bin" -u train_seldnet.py 33 "$run_id" \
+  >"$log" 2>&1
+code=$?
+printf '%s\n' "$code" >"$exit_file"
+exit "$code"

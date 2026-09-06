@@ -1,0 +1,8 @@
+model_id: B2
+description: Current SELD plus direct future coordinate regression
+objectives:
+  current: true
+  velocity: false
+  future_position: true
+  future_latent: false
+

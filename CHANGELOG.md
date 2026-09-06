@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.3.0 — 2026-09-07
+
+- 汇总68个统一主run、131个已评分split，并收录旧Multi λ=.2/λ=.02、STARSS与失败记录；保留原始metric口径。
+- 合并服务器已使用的low-JEPA/dynamicmask配置能力，不修改模型/loss数学实现。
+- 新增显式recipe/host路径、新D1/D3队列别名、三个runtime的SHA256精确恢复工具。
+- 新归档168份历史项目源文件/配置；旧训练目录、checkpoint与数据保持不变。
+- 更正：Multi A1/A2旧λ=.2已有三seed；缺的是λ=.05完整结果。90epoch新版run不是早停。
+
+## 2026-09-05 — `einv2_rb05_dynamicmask_v1`
+
+- Added an opt-in `velocity_min_norm` filter for the EINV2 velocity auxiliary loss.
+- Kept the default at `0.0`, which preserves the audited all-valid-pairs objective.
+- Added a two-run pilot: dynamic-pair velocity-only and dynamic-pair velocity + JEPA `0.05`.
+- Inference, DCASE-aligned scoring, model architecture, data, and checkpoint selection are unchanged.
+
 ## 0.2.0 — 2026-09-04
 
 - 用户确认当前100 ms帧口径，保留原75 ms输入依赖；不再宣称相对帧起点零前视。

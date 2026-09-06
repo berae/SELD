@@ -1,0 +1,1388 @@
+[
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/OFFICIAL_COMMIT.txt",
+    "sha256": "e10ff5d50a2c5feb532880e3b2b3d1efb53bcdd51cc24d0c627222648af301a4",
+    "bytes": 41,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/OFFICIAL_COMMIT.txt"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/README.md",
+    "sha256": "b25b1ad587c0d6acec79f2afe8338a4b523118213222a502938206808482f98e",
+    "bytes": 14662,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/README.md"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/REPRODUCTION_PROTOCOL_ZH.md",
+    "sha256": "d4a0c5f9e6a802f08ad36b94a9b7b74afd389b92aebfa5865239668b46e000d7",
+    "bytes": 2169,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/REPRODUCTION_PROTOCOL_ZH.md"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/SELD_evaluation_metrics.py",
+    "sha256": "41b17ffbd5007cd06549b07ad620a77d7cdbc65ae62c93e409f37f28882512c9",
+    "bytes": 13630,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/SELD_evaluation_metrics.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/audit_adpit_overlap.py",
+    "sha256": "e786f6accff31edae2588ee82b8016f19a29106a9ca2d50800ed5892b734e4d4",
+    "bytes": 996,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/audit_adpit_overlap.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/batch_feature_extraction.py",
+    "sha256": "fda887b830d86a026670fbd134c38a1a1d2f390675f601680d3660a1fd7664fc",
+    "bytes": 998,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/batch_feature_extraction.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/batch_feature_extraction_eval.py",
+    "sha256": "2fa8e8ae529ced413a17167298714aa769a8a8c2f4c4cc755f2ac6099758e636",
+    "bytes": 573,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/batch_feature_extraction_eval.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/cls_compute_seld_results.py",
+    "sha256": "94cbaeba38c5ce074fd8e07aea914689b9e4fb4e77203276c36f0d72d8497d66",
+    "bytes": 12633,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/cls_compute_seld_results.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/cls_data_generator.py",
+    "sha256": "01859e2c95b2ddd11292f6cbb4ade850a782ed3aad0ddb7234bc1e73e5e76514",
+    "bytes": 13526,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/cls_data_generator.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/cls_feature_class.py",
+    "sha256": "427d6afba7f74b94d64269c1aec826aa290c075a205def5cea5cd3b127e63b14",
+    "bytes": 32805,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/cls_feature_class.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/launch_causal_tau2020_full.sh",
+    "sha256": "2dd93ab6c6f1ecc49deb80f78d21a4b635547bdd1dd31d637e8aa0896493243c",
+    "bytes": 602,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/launch_causal_tau2020_full.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/launch_causal_tau2020_smoke.sh",
+    "sha256": "0b96dab0b45a376386ab369de8295836914c8213e2c6d50eec2b43463b5dfe1b",
+    "bytes": 595,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/launch_causal_tau2020_smoke.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/launch_noncausal_tau2020_full_seed2026.sh",
+    "sha256": "d39e7ff3c64d4b84d9b0646986f855182fb7365597a1d623cc4537752720dba0",
+    "bytes": 721,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/launch_noncausal_tau2020_full_seed2026.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/launch_noncausal_tau2020_smoke_seed2026.sh",
+    "sha256": "f888efe6caf946ab7e02420c29f7a8b0cb894a8510c51712cf09a94e597654b4",
+    "bytes": 598,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/launch_noncausal_tau2020_smoke_seed2026.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/launch_tau2020_eval_preprocess.sh",
+    "sha256": "b48eee17ad62e8829c1f28734bda0532a009279c8f85a358cc664ed41968f0be",
+    "bytes": 454,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/launch_tau2020_eval_preprocess.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/launch_tau2020_full.sh",
+    "sha256": "7dd0e04c3a5ed14c2765ed16d67c9bdca62ed741cfc0a0c0a5672f2cbed05b2c",
+    "bytes": 490,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/launch_tau2020_full.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/launch_tau2020_preprocess.sh",
+    "sha256": "366850cf3840deccef715aa64075002fbbee837941c3df891cf4a9c3401f1854",
+    "bytes": 440,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/launch_tau2020_preprocess.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/launch_tau2020_smoke.sh",
+    "sha256": "dc35e3c6f04436a2d5febef188237e793701d83e22b317b579631a29b4f1d5c0",
+    "bytes": 479,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/launch_tau2020_smoke.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/launch_tau2020_smoke_fulltest.sh",
+    "sha256": "1b734b9ec7a4668cfed3ce02a3841814e16565efdad3346d8764f1e0f442ca1f",
+    "bytes": 488,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/launch_tau2020_smoke_fulltest.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/parameters.official.py",
+    "sha256": "bfb765ea2869e32418cf07bcb7cec76fb892d5cc570e9648a93c4b4be456193c",
+    "bytes": 5433,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/parameters.official.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/parameters.py",
+    "sha256": "dc2a331aca1754c87f888f4c5cbf5a42fde40f156b5bf2539aa5d37042a1d951",
+    "bytes": 6932,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/parameters.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/scripts/launch_setup_env.sh",
+    "sha256": "4e241dae5eee43f8b3b999af6187b1f6d5769c93219b25361966386d2d50a6c2",
+    "bytes": 325,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/scripts/launch_setup_env.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/scripts/setup_env.sh",
+    "sha256": "487b819aec10b0287a089cfb33794550d3957f992d2fc87d60d337322eb9718a",
+    "bytes": 959,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/scripts/setup_env.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/scripts_verify_env.py",
+    "sha256": "06e22b5e5223dc9fefcc984a924271601b66870309ccc45f87c4ea8e9cbe1441",
+    "bytes": 448,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/scripts_verify_env.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/seldnet_model.py",
+    "sha256": "e26eff3373058e35c6fa86f713b991a8b804b30cbbef601907fa8b9c0392b70c",
+    "bytes": 9980,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/seldnet_model.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/setup_dcase2023_official_env.sh",
+    "sha256": "81cf941fd2020475129c3e5239774cad798c59e87659aefba45f0165db4e314f",
+    "bytes": 959,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/setup_dcase2023_official_env.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/test_causality.py",
+    "sha256": "1c82e9525167a43149c871946a7564c2d3334274a587b5ebb043c6939cc6f919",
+    "bytes": 1185,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/test_causality.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/train_seldnet.py",
+    "sha256": "ae6fc1f82ba86e4bd82f7bb35f6c85e2b0421cac7a52fd5cdae922843656502e",
+    "bytes": 24206,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/train_seldnet.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/CausalMultiACCDOA_TAU2020/visualize_seldnet_output.py",
+    "sha256": "91f8f3e5c4e0f027e2bf3fdc3069fb35cb8690293ebd14bde4476522cc64b4e1",
+    "bytes": 5100,
+    "archived_path": "archive/legacy_projects/rabbit02/CausalMultiACCDOA_TAU2020/visualize_seldnet_output.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/README.md",
+    "sha256": "61fbf323d7f116363b379b94ffd0dbaadddfa83741cdcb7ae8a0590fda38b8ad",
+    "bytes": 6250,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/README.md"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/analysis/source_motion/STARSS22/motion_summary.json",
+    "sha256": "9709f10e409d5756c23e3a6611e4283e23fd82f4baf5e7465b03d68e625a3791",
+    "bytes": 1193,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/analysis/source_motion/STARSS22/motion_summary.json"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/analysis/source_motion/STARSS23/motion_summary.json",
+    "sha256": "3a2bd35a9d31b49efaff0a756807807065a9506d189a86a8e5ca326a02be374f",
+    "bytes": 1210,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/analysis/source_motion/STARSS23/motion_summary.json"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/compute_seld_metrics.py",
+    "sha256": "96fad43f7f8f01a4b1da7b9c4ad08e0cc5cd602d05cdd7c1b1fbe79fd13b7933",
+    "bytes": 15630,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/compute_seld_metrics.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/learning/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/learning/__init__.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/learning/checkpoint.py",
+    "sha256": "c33b2b937f9bb1bf841d84c820ca47b4b672f5be192bffe32c848b5f6bbe83ac",
+    "bytes": 7008,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/learning/checkpoint.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/learning/infer.py",
+    "sha256": "2990063e5b838c1fe689013bfc40db6872997de51caa365c3e88d17132e0dc31",
+    "bytes": 1270,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/learning/infer.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/learning/initialize.py",
+    "sha256": "8c4bc80683d55b61e53e8ae839fb61635d2da6ca491d4cd3bd17043828e2ea7b",
+    "bytes": 7430,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/learning/initialize.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/learning/preprocess.py",
+    "sha256": "d3c6bcf6cbb4f3c460e1d55d02f654a52c4d51082d5bc5a842daee0d3df38100",
+    "bytes": 28965,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/learning/preprocess.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/learning/train.py",
+    "sha256": "30f240d4ef411b737b5ede4fd8ce165fc64951c3b4ba75aa8f1f462de63b823a",
+    "bytes": 5026,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/learning/train.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/main.py",
+    "sha256": "452b9605908265d324792115cfb01ad05dac914dbef242d4bedf927d878aeaf7",
+    "bytes": 2506,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/main.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/__init__.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/data.py",
+    "sha256": "cd6da85b91c817a2e5084306e2bdfb65d9089312cee5ac444799fb977d5334c4",
+    "bytes": 3782,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/data.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/__init__.py",
+    "sha256": "723a110c30752d019a76369fc5bcffc4f80c5a06f710bd6e51e19b6c88b490ca",
+    "bytes": 78,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/__init__.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/data.py",
+    "sha256": "b346f517be48bebac012f6ce3a240b080470b9afdf4d5a6f73b995b41af30447",
+    "bytes": 12786,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/data.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/inference.py",
+    "sha256": "fea9660d6af6c15f5a222acaca2daa44762efb7803726289220b3a02d3eb4951",
+    "bytes": 5046,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/inference.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/losses.py",
+    "sha256": "96f27e3b06316a988836026cb141c6bab3d93c0cd58c5cf375d13ad13e27d2f6",
+    "bytes": 3138,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/losses.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/models/ConvConformer.py",
+    "sha256": "f7b5b8f4786aa83a42c379df3218fc0c9dd0084292ea6265d1e0aace9899dd73",
+    "bytes": 7746,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/models/ConvConformer.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/models/ConvTransformer.py",
+    "sha256": "ff8d554d54a5c01b74da6250dca5964ced315a3b213174e715f17a4b2ec51609",
+    "bytes": 8566,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/models/ConvTransformer.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/models/DenseConformer.py",
+    "sha256": "6b0d97ad67b690f0cf18241f09c2b16f8e3fbcf90a529bfb708e03cdb27fb6b8",
+    "bytes": 9821,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/models/DenseConformer.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/models/__init__.py",
+    "sha256": "a951df6115d3f38005446a0964a5aba751226e63dd799a93d1108c3a7e10b8c5",
+    "bytes": 91,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/models/__init__.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/training.py",
+    "sha256": "ad5e8961f160b90014eb9dc6416a4ede89083408b6867741516bf0d711b6c7f8",
+    "bytes": 8056,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/ein_seld/training.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/feature.py",
+    "sha256": "df83b2d1fcf232fd0ee16191e6243aa68aac6659f687947303147a5421912408",
+    "bytes": 7428,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/feature.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/inference.py",
+    "sha256": "3066768787dc26cafba90e76b23ccd5759a9ae248e0999968eefb5902882019f",
+    "bytes": 336,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/inference.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/metrics.py",
+    "sha256": "a48cad3c7f2d596117ed0707802e9fd4c55fa80a7d46a52eb954a4116496d378",
+    "bytes": 1807,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/metrics.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/training.py",
+    "sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+    "bytes": 317,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/training.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/utils/SELD_metrics.py",
+    "sha256": "0c4cd5b2ba2e24eda84bb81ece510c819b5f6c8b9a58257f648c2175cc7f1888",
+    "bytes": 13625,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/utils/SELD_metrics.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/utils/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/utils/__init__.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/__init__.py",
+    "sha256": "2c4d3da767b7613cb9366bf609c0334b23a8e9d6901cfb26747b8250a634852b",
+    "bytes": 667,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/__init__.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/activation.py",
+    "sha256": "e3852032a4fb9fbae2c60ae2794ce8ea582cfb04ece40d68a14d5b7e355fc194",
+    "bytes": 1592,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/activation.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/attention.py",
+    "sha256": "0f66d04dd7d13cb4acf34b9cf7d9c14eb322c80b520cf8d6ab3951a0ca8740fb",
+    "bytes": 6428,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/attention.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/convolution.py",
+    "sha256": "ceb5f33786b5cf2fd98a2547f6cdca0e37bda90feee5a2cd8e1576859b3b918b",
+    "bytes": 7029,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/convolution.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/decoder.py",
+    "sha256": "12a2c9ac3a07f5b7fce0aac5eb4ee0a008de5ba0dc6581438201b150313577b6",
+    "bytes": 5064,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/decoder.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/embedding.py",
+    "sha256": "92862e1673b57de4dd555d870d784c6d6aa67f8890b669d8712908b01f2fc30f",
+    "bytes": 1861,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/embedding.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/encoder.py",
+    "sha256": "70d3a3548a723c84a9b3fa18b93ef3da6f8ffef3459b7a6381ff062222a6ccba",
+    "bytes": 10007,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/encoder.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/feed_forward.py",
+    "sha256": "5ead6260bf70f290752f0df85d781f121b0e7d04831c6556b263df062ac8eaeb",
+    "bytes": 2117,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/feed_forward.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/model.py",
+    "sha256": "0e46af5252e68bfc826de88bc8403a8cca8eed8389d4e0d9b5958205bc3f326d",
+    "bytes": 9594,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/model.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/modules.py",
+    "sha256": "8ad6e1f61ac3055be19e094cc0c99dede179d43245b9d9af1c80a04cfe6039f7",
+    "bytes": 2540,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/utils/conformer/modules.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/utils/data_utilities.py",
+    "sha256": "ca2e59b7e2867cb1f7c081be44f9dda5ae1d4f27f9bdf333729befeb674fa0de",
+    "bytes": 15990,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/utils/data_utilities.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/utils/dense_block.py",
+    "sha256": "09f83fd2a3324472717a24b7f47f7d586c911a31ba4b4a7b6bffbafb3e5991a9",
+    "bytes": 4940,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/utils/dense_block.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/utils/loss_utilities.py",
+    "sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+    "bytes": 1222,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/utils/loss_utilities.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/utils/model_utilities.py",
+    "sha256": "5282bdee2a28b31e8eeff9c69ddd93636cf622588763d969e76ac107b9b0cbc6",
+    "bytes": 3157,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/utils/model_utilities.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/methods/utils/stft.py",
+    "sha256": "69a3397e3454627cbae179ca9c686987b685ad3bf0bf279790191fa5d320cb1b",
+    "bytes": 31642,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/methods/utils/stft.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/utils/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/utils/__init__.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/utils/cli_parser.py",
+    "sha256": "7c40fc1b69c9daa59e0e0a938edea77e806cbc4dd357dd51b7b494aff667baa7",
+    "bytes": 3260,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/utils/cli_parser.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/utils/common.py",
+    "sha256": "1e3f59a2941aecc33f5eaf8144d2a7bb050577bbc110383d6eec3f858dc2497d",
+    "bytes": 4202,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/utils/common.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/utils/config.py",
+    "sha256": "033940fb55d3bf2a89e6978b9b1f208a5791bb42f67f66ff6bdb584e57a6f162",
+    "bytes": 6513,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/utils/config.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/utils/datasets.py",
+    "sha256": "6f58dc570faeabbfe77b7665583a4cba85e6842cba37e6c9ee01577e1ae6f404",
+    "bytes": 4217,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/utils/datasets.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/code/utils/ddp_init.py",
+    "sha256": "03b003a76ad88f254e02875918e0906414b6d701a1b7958b3c8cefc6969c65c3",
+    "bytes": 1671,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/code/utils/ddp_init.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/configs/ein_seld/seld.yaml",
+    "sha256": "df9707bf2ee7fa43d8be36f488a7710fe6d836fca1189f9b8f44df9535c417ae",
+    "bytes": 1068,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/configs/ein_seld/seld.yaml"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/configs/ein_seld/seld_starss22.yaml",
+    "sha256": "6ff1133d4e3ef54dfc3644b097fa05c8df52be256dbcaf317806e8e989d5c468",
+    "bytes": 1141,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/configs/ein_seld/seld_starss22.yaml"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/configs/ein_seld/seld_starss22_c0_realonly_ckptfix.yaml",
+    "sha256": "a679edd2ece3857d8fcd75b1c02763c96182ee301898a17d8670c0b942550b8e",
+    "bytes": 1149,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/configs/ein_seld/seld_starss22_c0_realonly_ckptfix.yaml"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/configs/ein_seld/seld_starss22_c0_realonly_ckptfix_iotuned.yaml",
+    "sha256": "c20acfe45d95b6e800e18b799e411d3c27d870266aa3a253e9541fd83bddf5bd",
+    "bytes": 1173,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/configs/ein_seld/seld_starss22_c0_realonly_ckptfix_iotuned.yaml"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/configs/ein_seld/seld_starss22_checkpoint_smoke.yaml",
+    "sha256": "aae6a5b4a5de1f9cf1f9e32fb460ac58b6f92efe3a2d528f62081671403b5ad8",
+    "bytes": 1145,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/configs/ein_seld/seld_starss22_checkpoint_smoke.yaml"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/configs/ein_seld/seld_starss23.yaml",
+    "sha256": "15bc1b1954f233c0526b625746e89f7b12ad8f1e525f8f44a9682770620f6514",
+    "bytes": 1141,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/configs/ein_seld/seld_starss23.yaml"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/configs/ein_seld/seld_starss23_c0_realonly_ckptfix_iotuned.yaml",
+    "sha256": "0dd93434516ecfa2174d1b7a253186b210c59bee787504f114fb4bcd78cfa6e1",
+    "bytes": 1173,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/configs/ein_seld/seld_starss23_c0_realonly_ckptfix_iotuned.yaml"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/dataset/STARSS22/metadata_dev_manifest.json",
+    "sha256": "48eb2a33d89794d51b9fcc0bb98a5e8d2ca477fbd9d5b8dc4b5188e5d0765769",
+    "bytes": 22333,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/dataset/STARSS22/metadata_dev_manifest.json"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/dataset/STARSS23/metadata_dev_manifest.json",
+    "sha256": "f8dee8e0bdeaf5274d28f9db20c2f937c11c4decfd0db13fd57acd3e3657ea6d",
+    "bytes": 30763,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/dataset/STARSS23/metadata_dev_manifest.json"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/launch_starss22_c0_iotuned.sh",
+    "sha256": "d0d1875468d85afa5554fbfaef61fb2fdf4f510c8c3f38ef17756649daf6dfbd",
+    "bytes": 799,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/launch_starss22_c0_iotuned.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/launch_starss23_c0_iotuned.sh",
+    "sha256": "a6cdf27dcfae479cb8f78078a9c8a82355585b3923c748c5d94a4318009518eb",
+    "bytes": 799,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/launch_starss23_c0_iotuned.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/scripts/ein_seld/infer.sh",
+    "sha256": "79f887c33a3f3a45854531333e26ed3bb742ef6aa24faa535f44dfb40e593a98",
+    "bytes": 77,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/scripts/ein_seld/infer.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/scripts/ein_seld/train.sh",
+    "sha256": "3701a235b406cd592d769904e54d80d4f2c2442cd79536d128f0ae323c293423",
+    "bytes": 90,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/scripts/ein_seld/train.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/scripts/preprocess.sh",
+    "sha256": "602ac3a0391c8181e816838c889925b590eab55bfd489e752035c2e39acf40fe",
+    "bytes": 1169,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/scripts/preprocess.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/tools/source_motion/README.md",
+    "sha256": "de9dcb40d620d91e2820775abb3e943ef1297398da49c669e90575aa96354253",
+    "bytes": 2162,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/tools/source_motion/README.md"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/tools/source_motion/analyze_source_motion.py",
+    "sha256": "cfb5e78a5e2cf3ab9f9f3a51a7364da58fb59cfb7be0ab9de0f4abbcb365a9e9",
+    "bytes": 15429,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/tools/source_motion/analyze_source_motion.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/tools/source_motion/evaluate_motion_strata.py",
+    "sha256": "25152e6e4a7e03097c6b60feb245e6a7b0f4c29593b1f5fca5be5aa9dbc6a668",
+    "bytes": 11685,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/tools/source_motion/evaluate_motion_strata.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/tools/source_motion/launch_starss22_23_official_c0_parallel.sh",
+    "sha256": "2f4b5b3fe1e1b9a05626afc60c1c23b89e5b222cd75b114f5a67ff4aca92b99f",
+    "bytes": 910,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/tools/source_motion/launch_starss22_23_official_c0_parallel.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/tools/source_motion/launch_starss22_23_official_c0_serial_gpu04.sh",
+    "sha256": "a842d55af290c9a3ee7ceb68df7de56c72d9a7461aea71cf73937090124a0d02",
+    "bytes": 1464,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/tools/source_motion/launch_starss22_23_official_c0_serial_gpu04.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/tools/source_motion/prepare_canonical_metadata.py",
+    "sha256": "fe57d3f6415c893e0578ebae0c75ec2af8afd443440c59b5ce9b36f2b06b808e",
+    "bytes": 4254,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/tools/source_motion/prepare_canonical_metadata.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/tools/source_motion/run_starss_hdf5_prepare.sh",
+    "sha256": "16ad4653860b70626854edc5897c07a7ba73c1a4b8740164f20d957424439bd4",
+    "bytes": 2455,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/tools/source_motion/run_starss_hdf5_prepare.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/tools/source_motion/run_starss_metadata_and_motion.sh",
+    "sha256": "7a2a09a62bec8f1added7683669848542131e26f330a94b9adecd4eec1808111",
+    "bytes": 1987,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/tools/source_motion/run_starss_metadata_and_motion.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/tools/source_motion/run_starss_official_c0_sequence.sh",
+    "sha256": "469fb47fd5e6a83c08c28ec979f5aeab298a1971a5222aa45c303a0e4322a8a8",
+    "bytes": 3299,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/tools/source_motion/run_starss_official_c0_sequence.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/tools/source_motion/start_starss22_23_official_c0_serial_gpu04.sh",
+    "sha256": "e40c3e76af8ffc2b31b9413357c82bc451d5da6c4450e6b2ab8c48f4077f38ff",
+    "bytes": 1665,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/tools/source_motion/start_starss22_23_official_c0_serial_gpu04.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/tools/source_motion/start_starss22_gpu04_starss23_gpu03_parallel.sh",
+    "sha256": "3c674e6bfe22b8de203d4da66cac9729992b9c41c2d1923d40c061a000420d09",
+    "bytes": 2003,
+    "archived_path": "archive/legacy_projects/rabbit02/EINV2/STARSS_OfficialEINV2/tools/source_motion/start_starss22_gpu04_starss23_gpu03_parallel.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_DCASE2023/OFFICIAL_COMMIT.txt",
+    "sha256": "e10ff5d50a2c5feb532880e3b2b3d1efb53bcdd51cc24d0c627222648af301a4",
+    "bytes": 41,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_DCASE2023/OFFICIAL_COMMIT.txt"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_DCASE2023/README.md",
+    "sha256": "b25b1ad587c0d6acec79f2afe8338a4b523118213222a502938206808482f98e",
+    "bytes": 14662,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_DCASE2023/README.md"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_DCASE2023/REPRODUCTION_PROTOCOL_ZH.md",
+    "sha256": "d4a0c5f9e6a802f08ad36b94a9b7b74afd389b92aebfa5865239668b46e000d7",
+    "bytes": 2169,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_DCASE2023/REPRODUCTION_PROTOCOL_ZH.md"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_DCASE2023/SELD_evaluation_metrics.py",
+    "sha256": "41b17ffbd5007cd06549b07ad620a77d7cdbc65ae62c93e409f37f28882512c9",
+    "bytes": 13630,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_DCASE2023/SELD_evaluation_metrics.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_DCASE2023/batch_feature_extraction.py",
+    "sha256": "fda887b830d86a026670fbd134c38a1a1d2f390675f601680d3660a1fd7664fc",
+    "bytes": 998,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_DCASE2023/batch_feature_extraction.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_DCASE2023/cls_compute_seld_results.py",
+    "sha256": "94cbaeba38c5ce074fd8e07aea914689b9e4fb4e77203276c36f0d72d8497d66",
+    "bytes": 12633,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_DCASE2023/cls_compute_seld_results.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_DCASE2023/cls_data_generator.py",
+    "sha256": "437c2fa9b6bf0e8435c3fff6b5ae1dc2e946e0a40df150bb649df5c538b9b9ea",
+    "bytes": 13414,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_DCASE2023/cls_data_generator.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_DCASE2023/cls_feature_class.py",
+    "sha256": "427d6afba7f74b94d64269c1aec826aa290c075a205def5cea5cd3b127e63b14",
+    "bytes": 32805,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_DCASE2023/cls_feature_class.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_DCASE2023/parameters.official.py",
+    "sha256": "bfb765ea2869e32418cf07bcb7cec76fb892d5cc570e9648a93c4b4be456193c",
+    "bytes": 5433,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_DCASE2023/parameters.official.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_DCASE2023/parameters.py",
+    "sha256": "35e07cef2d7058652de458bba4ac291dc8e62ae2d757393e3377e0b2d51c1ed3",
+    "bytes": 5808,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_DCASE2023/parameters.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_DCASE2023/scripts/launch_setup_env.sh",
+    "sha256": "4e241dae5eee43f8b3b999af6187b1f6d5769c93219b25361966386d2d50a6c2",
+    "bytes": 325,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_DCASE2023/scripts/launch_setup_env.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_DCASE2023/scripts/setup_env.sh",
+    "sha256": "487b819aec10b0287a089cfb33794550d3957f992d2fc87d60d337322eb9718a",
+    "bytes": 959,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_DCASE2023/scripts/setup_env.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_DCASE2023/scripts_verify_env.py",
+    "sha256": "06e22b5e5223dc9fefcc984a924271601b66870309ccc45f87c4ea8e9cbe1441",
+    "bytes": 448,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_DCASE2023/scripts_verify_env.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_DCASE2023/seldnet_model.py",
+    "sha256": "9ff100af184c17cb0670fe4dec8d4e05bc740dc02bcdfec7c93855a3d7b8fc79",
+    "bytes": 9178,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_DCASE2023/seldnet_model.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_DCASE2023/setup_dcase2023_official_env.sh",
+    "sha256": "81cf941fd2020475129c3e5239774cad798c59e87659aefba45f0165db4e314f",
+    "bytes": 959,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_DCASE2023/setup_dcase2023_official_env.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_DCASE2023/train_seldnet.py",
+    "sha256": "302506206963e70f19db64f53ff62109210dfa1cda637a377ffaa38e6e9b9b42",
+    "bytes": 22604,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_DCASE2023/train_seldnet.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_DCASE2023/visualize_seldnet_output.py",
+    "sha256": "91f8f3e5c4e0f027e2bf3fdc3069fb35cb8690293ebd14bde4476522cc64b4e1",
+    "bytes": 5100,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_DCASE2023/visualize_seldnet_output.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/OFFICIAL_COMMIT.txt",
+    "sha256": "e10ff5d50a2c5feb532880e3b2b3d1efb53bcdd51cc24d0c627222648af301a4",
+    "bytes": 41,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/OFFICIAL_COMMIT.txt"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/README.md",
+    "sha256": "b25b1ad587c0d6acec79f2afe8338a4b523118213222a502938206808482f98e",
+    "bytes": 14662,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/README.md"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/REPRODUCTION_PROTOCOL_ZH.md",
+    "sha256": "d4a0c5f9e6a802f08ad36b94a9b7b74afd389b92aebfa5865239668b46e000d7",
+    "bytes": 2169,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/REPRODUCTION_PROTOCOL_ZH.md"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/SELD_evaluation_metrics.py",
+    "sha256": "41b17ffbd5007cd06549b07ad620a77d7cdbc65ae62c93e409f37f28882512c9",
+    "bytes": 13630,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/SELD_evaluation_metrics.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/batch_feature_extraction.py",
+    "sha256": "fda887b830d86a026670fbd134c38a1a1d2f390675f601680d3660a1fd7664fc",
+    "bytes": 998,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/batch_feature_extraction.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/batch_feature_extraction_eval.py",
+    "sha256": "2fa8e8ae529ced413a17167298714aa769a8a8c2f4c4cc755f2ac6099758e636",
+    "bytes": 573,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/batch_feature_extraction_eval.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/cls_compute_seld_results.py",
+    "sha256": "94cbaeba38c5ce074fd8e07aea914689b9e4fb4e77203276c36f0d72d8497d66",
+    "bytes": 12633,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/cls_compute_seld_results.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/cls_data_generator.py",
+    "sha256": "01859e2c95b2ddd11292f6cbb4ade850a782ed3aad0ddb7234bc1e73e5e76514",
+    "bytes": 13526,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/cls_data_generator.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/cls_feature_class.py",
+    "sha256": "427d6afba7f74b94d64269c1aec826aa290c075a205def5cea5cd3b127e63b14",
+    "bytes": 32805,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/cls_feature_class.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/code_backup_before_eval_protocol_20260828/batch_feature_extraction.py",
+    "sha256": "fda887b830d86a026670fbd134c38a1a1d2f390675f601680d3660a1fd7664fc",
+    "bytes": 998,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/code_backup_before_eval_protocol_20260828/batch_feature_extraction.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/code_backup_before_eval_protocol_20260828/cls_data_generator.py",
+    "sha256": "437c2fa9b6bf0e8435c3fff6b5ae1dc2e946e0a40df150bb649df5c538b9b9ea",
+    "bytes": 13414,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/code_backup_before_eval_protocol_20260828/cls_data_generator.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/code_backup_before_eval_protocol_20260828/parameters.py",
+    "sha256": "3dcf200875d095be8d29d994576c4461d36dad73796e59bd558bac1cb35d4a32",
+    "bytes": 5806,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/code_backup_before_eval_protocol_20260828/parameters.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/code_backup_before_eval_protocol_20260828/train_seldnet.py",
+    "sha256": "302506206963e70f19db64f53ff62109210dfa1cda637a377ffaa38e6e9b9b42",
+    "bytes": 22604,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/code_backup_before_eval_protocol_20260828/train_seldnet.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/launch_tau2020_eval_preprocess.sh",
+    "sha256": "b48eee17ad62e8829c1f28734bda0532a009279c8f85a358cc664ed41968f0be",
+    "bytes": 454,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/launch_tau2020_eval_preprocess.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/launch_tau2020_full.sh",
+    "sha256": "7dd0e04c3a5ed14c2765ed16d67c9bdca62ed741cfc0a0c0a5672f2cbed05b2c",
+    "bytes": 490,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/launch_tau2020_full.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/launch_tau2020_preprocess.sh",
+    "sha256": "366850cf3840deccef715aa64075002fbbee837941c3df891cf4a9c3401f1854",
+    "bytes": 440,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/launch_tau2020_preprocess.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/launch_tau2020_smoke.sh",
+    "sha256": "dc35e3c6f04436a2d5febef188237e793701d83e22b317b579631a29b4f1d5c0",
+    "bytes": 479,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/launch_tau2020_smoke.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/launch_tau2020_smoke_fulltest.sh",
+    "sha256": "1b734b9ec7a4668cfed3ce02a3841814e16565efdad3346d8764f1e0f442ca1f",
+    "bytes": 488,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/launch_tau2020_smoke_fulltest.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/parameters.official.py",
+    "sha256": "bfb765ea2869e32418cf07bcb7cec76fb892d5cc570e9648a93c4b4be456193c",
+    "bytes": 5433,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/parameters.official.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/parameters.py",
+    "sha256": "61f2291cd751a661be12258ee5bd4553e1ebae27c424fe9f831141c25c9ac817",
+    "bytes": 6270,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/parameters.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/scripts/launch_setup_env.sh",
+    "sha256": "4e241dae5eee43f8b3b999af6187b1f6d5769c93219b25361966386d2d50a6c2",
+    "bytes": 325,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/scripts/launch_setup_env.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/scripts/setup_env.sh",
+    "sha256": "487b819aec10b0287a089cfb33794550d3957f992d2fc87d60d337322eb9718a",
+    "bytes": 959,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/scripts/setup_env.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/scripts_verify_env.py",
+    "sha256": "06e22b5e5223dc9fefcc984a924271601b66870309ccc45f87c4ea8e9cbe1441",
+    "bytes": 448,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/scripts_verify_env.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/seldnet_model.py",
+    "sha256": "9ff100af184c17cb0670fe4dec8d4e05bc740dc02bcdfec7c93855a3d7b8fc79",
+    "bytes": 9178,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/seldnet_model.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/setup_dcase2023_official_env.sh",
+    "sha256": "81cf941fd2020475129c3e5239774cad798c59e87659aefba45f0165db4e314f",
+    "bytes": 959,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/setup_dcase2023_official_env.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/train_seldnet.py",
+    "sha256": "c0bbf57f827709d0152a9f67dbf26622711232809e6aaacf624506c5fa2f2840",
+    "bytes": 23794,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/train_seldnet.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/MultiACCDOA_TAU2020/visualize_seldnet_output.py",
+    "sha256": "91f8f3e5c4e0f027e2bf3fdc3069fb35cb8690293ebd14bde4476522cc64b4e1",
+    "bytes": 5100,
+    "archived_path": "archive/legacy_projects/rabbit02/MultiACCDOA_TAU2020/visualize_seldnet_output.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/README.md",
+    "sha256": "6dbfa8c9eb0710dc0dbf0406aeb7240c532e687fe81b0e574e35bf1deb84c7cc",
+    "bytes": 1619,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/README.md"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/configs/b0/config.yaml",
+    "sha256": "bf3118bdd5a76eddabc8d18257fe5b41e6a9088185c3160fbfa873cd3b447022",
+    "bytes": 139,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/configs/b0/config.yaml"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/configs/b1/config.yaml",
+    "sha256": "c485995fc4909ebf4129904a2a44f7900bfcacb92c9916e7f32fcf4b6c7cbb04",
+    "bytes": 181,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/configs/b1/config.yaml"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/configs/b2/config.yaml",
+    "sha256": "a1b4211e0163886e89bfbd909099c38c735bdd5be701b898680dcb47f3641152",
+    "bytes": 174,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/configs/b2/config.yaml"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/configs/b3/config.yaml",
+    "sha256": "2cb2a4ca2125f4eb3ddbd364e760b007bb495de655236037198b5b720232e2c9",
+    "bytes": 189,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/configs/b3/config.yaml"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/configs/data_v0.yaml",
+    "sha256": "3c8657cd5dfa1219ab4eb7e700ce96ef46c74ad4fb5fa1eaf2bda94a0561fc75",
+    "bytes": 959,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/configs/data_v0.yaml"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/configs/v0_common.yaml",
+    "sha256": "39462b9ce0364e350622d3ca919414ec9d10b9aabf6a4d7b1328012e27dc3b7e",
+    "bytes": 1370,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/configs/v0_common.yaml"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/docs/data_audit_v0.md",
+    "sha256": "eec1ba69c6d35aa28c20b463563780ce1c53baccc1f1a37a7699fdd5988000bf",
+    "bytes": 723,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/docs/data_audit_v0.md"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/docs/environment_object_state_seld_v0.yml",
+    "sha256": "c3581588230c5ef0974a52ff32d7709573f3d30b7dcd06c69f8b0eb0669890f2",
+    "bytes": 4263,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/docs/environment_object_state_seld_v0.yml"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/docs/readiness_report_2026-08-03.md",
+    "sha256": "67dd7d6f4d35188668e60916614935674f04d37f334b0da2325a8621062b5850",
+    "bytes": 5016,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/docs/readiness_report_2026-08-03.md"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/docs/requirements_object_state_seld_v0.lock.txt",
+    "sha256": "038b163dd33bb0559d9487e065f9df0e3062f80eec0113848c2f55d14abe32b1",
+    "bytes": 2548,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/docs/requirements_object_state_seld_v0.lock.txt"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/object_state_seld/__init__.py",
+    "sha256": "1177daa25efa83a16d94b47ac9486cc2aed8cf24f398355dbb7b6867cda1c5ca",
+    "bytes": 184,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/object_state_seld/__init__.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/object_state_seld/data.py",
+    "sha256": "18a9120a809e14f398a869a1219408bd11a8aa37d03ce78dd32ac559038f9b60",
+    "bytes": 1880,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/object_state_seld/data.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/object_state_seld/model.py",
+    "sha256": "e907189a3dba58991abdbe60188a5280e2aec60829a95e65ee990821e4dbecd7",
+    "bytes": 3846,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/object_state_seld/model.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/scripts/audit_raw_data_readiness.py",
+    "sha256": "4d3d33da2a7db781292dbf6a1ea87899cc894ded0ac6b8cdce3d3de04f292be5",
+    "bytes": 3963,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/scripts/audit_raw_data_readiness.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/scripts/audit_tracks.py",
+    "sha256": "e543c65811b0fdea314ea23556ca483440edf918f170d44492a2d505888ad439",
+    "bytes": 8890,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/scripts/audit_tracks.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/scripts/build_object_state_manifest.py",
+    "sha256": "10716e78f19405b0dbde03569058ea1f251f3599f604b86d78ef534264754d8f",
+    "bytes": 17539,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/scripts/build_object_state_manifest.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/scripts/check_seld_env.py",
+    "sha256": "f7e8a0c97a17d2fadb53d1f1fafca490a5d5a6fd71b16bba6d658a0a315985a7",
+    "bytes": 1488,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/scripts/check_seld_env.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/scripts/download_p1_official_20260807.sh",
+    "sha256": "407d47cc2105bb2a88fca340403399ec432444c8126c698f6eccbb7b81640a04",
+    "bytes": 8568,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/scripts/download_p1_official_20260807.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/scripts/launch_p1_official_20260807.sh",
+    "sha256": "28ea6b16b53ef2b4242187843817337d72cc811dd0184404fd64bc41370f508e",
+    "bytes": 922,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/scripts/launch_p1_official_20260807.sh"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/scripts/smoke_test_b0.py",
+    "sha256": "67bfdf312248b2a1afa159425aee93cd8b44ff34ad0dadfa2b99c77b191e2af4",
+    "bytes": 2351,
+    "archived_path": "archive/legacy_projects/rabbit02/ObjectStateSELD/scripts/smoke_test_b0.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/configs/einv2/C3.yaml",
+    "sha256": "65f29e930316626cd6ba640e74425bac445dac11a46871b5db9e95eb01fb0667",
+    "bytes": 1724,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "configs/einv2/C3.yaml"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/evaluation/aligned_metrics.py",
+    "sha256": "d4d1adeb4f5d40b25d8a1ef38694ce3d84ebd2385ee91da2137498e5e36e1a60",
+    "bytes": 6808,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "evaluation/aligned_metrics.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/evaluation/einv2_adapter.py",
+    "sha256": "cc5bdbf500d65e7fc97a4b91e3d18c7d2e07621fba611aa359e2b2774d128703",
+    "bytes": 1493,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "evaluation/einv2_adapter.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/evaluation/score_directory.py",
+    "sha256": "b9ae027c28ada53c90ed0b3514cccd93ee9509654f4b164d779bae87c59d73a0",
+    "bytes": 1757,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "evaluation/score_directory.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/evaluation/snapshots/einv2_legacy.py",
+    "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+    "bytes": 13603,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "evaluation/snapshots/einv2_legacy.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/evaluation/snapshots/multi_legacy.py",
+    "sha256": "41b17ffbd5007cd06549b07ad620a77d7cdbc65ae62c93e409f37f28882512c9",
+    "bytes": 13630,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "evaluation/snapshots/multi_legacy.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/evaluation/test_alignment.py",
+    "sha256": "63768a7995c3fe3e4295b0317810cf384ed834e8ce7ab66680082569a6ea4c56",
+    "bytes": 11083,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "evaluation/test_alignment.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/evaluation/upstream/dcase2020_feature.py",
+    "sha256": "ac5a0becd56d2906cd873289dcb46c2844e283b1459437ef1df16b5fef635617",
+    "bytes": 20872,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "evaluation/upstream/dcase2020_feature.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/evaluation/upstream/dcase2020_metrics.py",
+    "sha256": "a6b4021b14b1e98d3c7014914c50c8d5ffcd263159d45b070703c64d1bb61ceb",
+    "bytes": 13606,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "evaluation/upstream/dcase2020_metrics.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/evaluation/upstream/dcase2023_feature.py",
+    "sha256": "427d6afba7f74b94d64269c1aec826aa290c075a205def5cea5cd3b127e63b14",
+    "bytes": 32805,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "evaluation/upstream/dcase2023_feature.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/evaluation/upstream/dcase2023_metrics.py",
+    "sha256": "41b17ffbd5007cd06549b07ad620a77d7cdbc65ae62c93e409f37f28882512c9",
+    "bytes": 13630,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "evaluation/upstream/dcase2023_metrics.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/audited/runner.py",
+    "sha256": "588bf7245945e61ca40b311f0cba25fa96e65cbde2707a87e27578e5016048ce",
+    "bytes": 14423,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/audited/runner.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/audited/runtime.py",
+    "sha256": "6acc41191b307e1da49f49c25348403cd35084aba090e0397a220c437dd4ed65",
+    "bytes": 6977,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/audited/runtime.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/learning/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/learning/__init__.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/learning/checkpoint.py",
+    "sha256": "3e212a69cc1f1cdbca4a14d64e93620c6302cc71da0805bba581be2f3bd8c9a6",
+    "bytes": 7277,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/learning/checkpoint.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/learning/evaluate.py",
+    "sha256": "4087bd913d78a5bb6e846ee9dd5b3ccccf8a30d96c60204ba9a15b2083e0b72c",
+    "bytes": 4967,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/learning/evaluate.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/learning/infer.py",
+    "sha256": "c33927b3eabccae90e52936e5ee3286e90860f4d2c639015956c69db9eea3eb3",
+    "bytes": 1165,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/learning/infer.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/learning/initialize.py",
+    "sha256": "65443b69af3e7292625cac9722bde667db7a356e81e0f61d5728f5824d1db47d",
+    "bytes": 7111,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/learning/initialize.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/learning/preprocess.py",
+    "sha256": "755ce75c234b8e59671d8ebf9bf6542b9ffb88567e6f968427de04ac4c3d2983",
+    "bytes": 11228,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/learning/preprocess.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/learning/train.py",
+    "sha256": "8cabfa14c2231be5e82d60268229e0fd94bafed7e4a773472413cb77c15e54a2",
+    "bytes": 3731,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/learning/train.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/main.py",
+    "sha256": "508c7b0accac0506d79d6309ec2c2406dc6583dd22c099a10fc790d996eaa52d",
+    "bytes": 1766,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/main.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/__init__.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/data.py",
+    "sha256": "a6474648e405b2637477677b3132c095f8dcb12dde0da3c48e48cf430a4fcd3d",
+    "bytes": 4499,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/data.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/data_augmentation/__init__.py",
+    "sha256": "6daabd5ab068c5d295d91b42d887f382c8c0afb65220177b2ca8c66d74a3cd9a",
+    "bytes": 71,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/data_augmentation/__init__.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/ein_seld/__init__.py",
+    "sha256": "0d34267c4c99cd5c3cf3efc26ed0f1086cc24e2105323ed7943f32ec1ceba5ac",
+    "bytes": 190,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/ein_seld/__init__.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/ein_seld/data.py",
+    "sha256": "9776da2710ad90bb1a0d946888ef6e12ff44cca6fb447739da9916ea5e42b84e",
+    "bytes": 20082,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/ein_seld/data.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/ein_seld/data_augmentation/__init__.py",
+    "sha256": "1137cedfb4c414e1a8fa33a34093f3e3b76026cb6634569660a7f68511653b8f",
+    "bytes": 79,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/ein_seld/data_augmentation/__init__.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/ein_seld/inference.py",
+    "sha256": "a783fb1d276c5696e8092f082f0522dc00c53c215e8af314144afd248a89379d",
+    "bytes": 4721,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/ein_seld/inference.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/ein_seld/losses.py",
+    "sha256": "b745f27d1f1694fe0e5fc86f3dc5feec655f0323c71ce76b5521cfe95d09d3c0",
+    "bytes": 6965,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/ein_seld/losses.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/ein_seld/metrics.py",
+    "sha256": "c3d69aae70fe7588d89b463dc5c1ad2c9ea7462f6d051f7741f7e89a36e61bd5",
+    "bytes": 2365,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/ein_seld/metrics.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/ein_seld/models/__init__.py",
+    "sha256": "91f8eef8c5ba92bc9ea53ac608a5320c3cd38677d4fc6b188cf9da7aa283604b",
+    "bytes": 47,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/ein_seld/models/__init__.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/ein_seld/models/seld.py",
+    "sha256": "b8f276f443d18568a8e68802dc4cd04265f3ce0e9f31958adaddba4b11289edd",
+    "bytes": 6041,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/ein_seld/models/seld.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/ein_seld/models/seld_causal.py",
+    "sha256": "3b106cb074ac3615100c492fd8a1e57e10942469e7813f4317645db9d197a812",
+    "bytes": 11157,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/ein_seld/models/seld_causal.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/ein_seld/training.py",
+    "sha256": "b79f0086f187011a72edba2a3c6adbb173fb0fcc0c006f2bc58ba7b96ec8d4e0",
+    "bytes": 17585,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/ein_seld/training.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/feature.py",
+    "sha256": "56a0f74dbacb80ffd80718c7f96667f1e98bb1a186ec59f6eb12a2a3ffc6a767",
+    "bytes": 1950,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/feature.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/feature_causal.py",
+    "sha256": "cf814d1039e62898ea5025451f716c3fa9dcbc31667dde2541cd1bd8c35b8604",
+    "bytes": 1426,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/feature_causal.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/inference.py",
+    "sha256": "d667430dedc021b4791446377cb1ec6feef8c7fdc2924fcddd0933d4d3f6dbc4",
+    "bytes": 905,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/inference.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/training.py",
+    "sha256": "499a95f88a4351953c47c6db6978a1fc71e10377d7174955b04019bed960f8eb",
+    "bytes": 317,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/training.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/utils/SELD_evaluation_metrics_2019.py",
+    "sha256": "17286290563587ee4167261e364461a28b6e08fc654f38f73c5543f780f1d138",
+    "bytes": 25178,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/utils/SELD_evaluation_metrics_2019.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/utils/SELD_evaluation_metrics_2020.py",
+    "sha256": "9749bb62aab2e6e46efb1e9d759c7009a8e9e7c6aa210a7ce0feaf577d0be26e",
+    "bytes": 13603,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/utils/SELD_evaluation_metrics_2020.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/utils/SELD_evaluation_metrics_aligned.py",
+    "sha256": "2038670247e9ab5cdb1456351c33d6b93064b867a28cbd7dd16450279acf7615",
+    "bytes": 332,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/utils/SELD_evaluation_metrics_aligned.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/utils/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/utils/__init__.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/utils/data_utilities.py",
+    "sha256": "cb278bef5085c54c0b46dc6fb34af77b3c1f91994d711ac0e3ab9fae401d4315",
+    "bytes": 6303,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/utils/data_utilities.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/utils/loss_utilities.py",
+    "sha256": "618fad8754f13a3e82b50e85b5b2bd79342a9fea49721f421350581f5658a6fb",
+    "bytes": 1222,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/utils/loss_utilities.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/utils/model_utilities.py",
+    "sha256": "96fcdc3621ca1ff4ca4b7f5915f00948092a74ff2a779105b0a664ba241fb337",
+    "bytes": 3202,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/utils/model_utilities.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/methods/utils/stft.py",
+    "sha256": "5640a46f4c3fc3b6d37c09a741e409b14fab434d9542d09fcf46186e63506bc4",
+    "bytes": 31616,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/methods/utils/stft.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/utils/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/utils/__init__.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/utils/cli_parser.py",
+    "sha256": "3f49e4e929e8f6b669f47240c5fe6d968cf384be17dcecbd49a4207afcb10e2f",
+    "bytes": 3173,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/utils/cli_parser.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/utils/common.py",
+    "sha256": "a9469182f72d746cfa72a3e6690a4b47fa79ecb1a433bf3616766ada1420b805",
+    "bytes": 3569,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/utils/common.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/utils/config.py",
+    "sha256": "c02880889bd1cab23ea903a2f4bb74201055991296440b3b937adc3c153cc217",
+    "bytes": 6908,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/utils/config.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/models/einv2/variants/C3/seld/utils/datasets.py",
+    "sha256": "8af79508d74fded26ce4bccf54164ba6852359404e420baf9b0848af44b5f65f",
+    "bytes": 1205,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "models/einv2/variants/C3/seld/utils/datasets.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/scripts/data/build_einv2_train_scalar.py",
+    "sha256": "a3d5f666229d52a89e7bd635676a055d2eb058ac5183caa175ea214b85ec2c18",
+    "bytes": 3190,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "scripts/data/build_einv2_train_scalar.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/scripts/eval/einv2_audited.py",
+    "sha256": "ad425edf05765689fd98d84fe5b1150cffccab73a2147aeaa483d001d07f21be",
+    "bytes": 194,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "scripts/eval/einv2_audited.py"
+  },
+  {
+    "path": "/work/zhanghc/Myllm/SELD/code_releases/SELD_reaudit_20260904_r1/scripts/train/einv2_audited.py",
+    "sha256": "6846936448238e615907640f0b534ca6a299537f15e3c2099df2ab0d90535df8",
+    "bytes": 196,
+    "version": "einv2_reaudit_v1",
+    "relative_path": "scripts/train/einv2_audited.py"
+  }
+]

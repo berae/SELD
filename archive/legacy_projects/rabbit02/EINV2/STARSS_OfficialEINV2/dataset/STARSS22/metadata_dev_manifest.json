@@ -1,0 +1,646 @@
+{
+  "dataset": "STARSS22",
+  "source_root": "/work/zhanghc/Myllm/SELD/datasets/STARSS22/raw/metadata_dev",
+  "destination_root": "/work/zhanghc/Myllm/SELD/EINV2/STARSS_OfficialEINV2/dataset/STARSS22/metadata_dev",
+  "files": 121,
+  "rows": 222980,
+  "source_column_histogram": {
+    "5": 222980
+  },
+  "canonical_columns": [
+    "frame",
+    "class_id",
+    "source_id",
+    "azimuth_deg",
+    "elevation_deg"
+  ],
+  "class_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "source_ids": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "outputs": [
+    {
+      "relative_path": "dev-test-sony/fold4_room23_mix001.csv",
+      "rows": 1846,
+      "sha256": "468634457fed1f7bdf623eb94a540922e06e78d0c73933cdec267912fd151b74"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room23_mix002.csv",
+      "rows": 1006,
+      "sha256": "217c8437aff80ffbc1d6389e3e0f85a743bf3f4c544e6de0d6ff1424712f919c"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room23_mix003.csv",
+      "rows": 1267,
+      "sha256": "4839f3cafab80e6bc585324a64560d30b372adde2858e8f631f47de7eeb3b98e"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room23_mix004.csv",
+      "rows": 3070,
+      "sha256": "67198d8b6f5e96d56e6a5144a4faf9525e57df3a7fdd264927143e07146193d3"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room23_mix005.csv",
+      "rows": 812,
+      "sha256": "b91bdb874a37f993c023437cfe0e5eb73195c676a6274439276b52d29b6abc3b"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room23_mix006.csv",
+      "rows": 1969,
+      "sha256": "979abae12d665cfaf3cdd26721c34bfe169eef0f2b256def59a56c098055c177"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room23_mix007.csv",
+      "rows": 1211,
+      "sha256": "e2a25c701e3da1bd09e7e94bdb83ac9a84df6b0e5f0088638702c7e79d912015"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room23_mix008.csv",
+      "rows": 759,
+      "sha256": "802e56fc1a1adae7457509951c67bb24f75a73c534dff48cd5ea43971311a58e"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room23_mix009.csv",
+      "rows": 1234,
+      "sha256": "3267e13c4bfd575b6d3fa011e62acf80c4d9cda741e684d8d24844efeb47b80f"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room23_mix010.csv",
+      "rows": 779,
+      "sha256": "d26209b8495308c9d289151a2cc36bd4e1be216e86a7b6d0bf5872a5b995b9b0"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room23_mix011.csv",
+      "rows": 1246,
+      "sha256": "e02891f15cbc67029602e1d25e5ca45cb84e2d14041b97025fe4d73a33bf4037"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room23_mix012.csv",
+      "rows": 1053,
+      "sha256": "cc25986da3cf39d08a5c29deae11e0cdf5ac67c90d71affd646f2c318aee3548"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room23_mix013.csv",
+      "rows": 752,
+      "sha256": "8e37176305324aa621eae7c7b1617cc9f05d90ca2bfe4b312e3b0f083053ec74"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room23_mix014.csv",
+      "rows": 2613,
+      "sha256": "d091ad536d1d4cd3c0b8ab76dd53ee53fedf8b49cadb61d0571df2caf27470d3"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room24_mix001.csv",
+      "rows": 3292,
+      "sha256": "f00b8cd1a04a2adf150288affbbe8bc08421a510e93a2a0f04d3ba421c2355bc"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room24_mix002.csv",
+      "rows": 3558,
+      "sha256": "79ee15f5a8f4a45b8a44941525ced98be60694ea5b267001a3240bebbf5b43d5"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room24_mix003.csv",
+      "rows": 2024,
+      "sha256": "61c8709f27fb68a548bc8868d02230e1e0bfa7386715c05b8776183d0743e9c0"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room24_mix004.csv",
+      "rows": 1827,
+      "sha256": "57f06a55fc7de5f1874cab7e0f3fceba54480c53fd8c870839fe1f164e82ce86"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room24_mix005.csv",
+      "rows": 2274,
+      "sha256": "56d107cf0ca95a18790f0384c35ab259b18adeaf00100d6a55c6f65e0a5cb755"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room24_mix006.csv",
+      "rows": 1352,
+      "sha256": "9ac37ffffd518300f47cd96c2288f1d63641293903fdd51e24e8ca62ea29e81d"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room24_mix007.csv",
+      "rows": 1499,
+      "sha256": "4dae266e0d89478b4a1360361f085eeab050f1eca17c55d2c91dbd08011d8074"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room24_mix008.csv",
+      "rows": 1246,
+      "sha256": "5778202694db67141408ff4f231b6993f8847989c1a8fe3af0b925efc6c39584"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room24_mix009.csv",
+      "rows": 1568,
+      "sha256": "ecd0aadadd5813155dab977e5eece8b1223ab78771d0afe0ad06d4a860fc9681"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room24_mix010.csv",
+      "rows": 467,
+      "sha256": "d8cacb68894f2d443aaefd583b80f2d4aad3894f0629bb1ca1d5fc01d22a53e0"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room24_mix011.csv",
+      "rows": 812,
+      "sha256": "5d6bade7576030bb038cb7cd0c3fde02efd038ef5ab39724e0863bc73014ba84"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room24_mix012.csv",
+      "rows": 1890,
+      "sha256": "3a19564a23356a395fda4a270f3d755eaf6c27cc9756dcabf2e752abf980b20e"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room24_mix013.csv",
+      "rows": 1792,
+      "sha256": "29ac2e08f58659c673be21b70325d937e86ffa40bc5c798513300655dae458f2"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room24_mix014.csv",
+      "rows": 2945,
+      "sha256": "0f0fc2927ee8a4e4e67f8ba0418fa1f70661ff6b095ed44713374ec27812579d"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room24_mix015.csv",
+      "rows": 294,
+      "sha256": "1cdcd85118d1fbf0eab3581ece515bf2d6ba587402d11941b73920e273b28fb7"
+    },
+    {
+      "relative_path": "dev-test-sony/fold4_room24_mix016.csv",
+      "rows": 1185,
+      "sha256": "31febeb699e30f373f5d6ee7ded61b6aaae3e0b9bd0a10d3e5e3336d3689d49b"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room10_mix001.csv",
+      "rows": 1845,
+      "sha256": "75c1f67934ffcf0218f6a4dac22efbeee1e514311a6b898d5e81fb3214d2279b"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room10_mix002.csv",
+      "rows": 2035,
+      "sha256": "84eb3d0ca6e80547880d6dfc81f67c6bba2900a0e1172f762e348e1af35284da"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room10_mix003.csv",
+      "rows": 875,
+      "sha256": "96292079d81ed7daf589ca0cecc575ee67c660d3f6feba97d1a46b1060b3cb1d"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room10_mix004.csv",
+      "rows": 780,
+      "sha256": "20197dcabf2ceeb14eb3b0eb7dad0cbf3757961fc1fbbe655da74a256a7ebdfc"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room10_mix005.csv",
+      "rows": 940,
+      "sha256": "53e898040e5daef6d7a93f779a0de0a3fb4c98b259ac52f22d1e4322fe2dd3c4"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room10_mix006.csv",
+      "rows": 2110,
+      "sha256": "421cdd9f6a59688a3a832cbe612e9637f94d8f60d4667abfca1e28e111422258"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room10_mix007.csv",
+      "rows": 1375,
+      "sha256": "d8391ceb11b243a12496a6462fb6d9f2c7b41cef874f1b1a37952cf1b8ea84a4"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room10_mix008.csv",
+      "rows": 1850,
+      "sha256": "44135dabc9dc8fa4e09102ea6bb661ac4125edd524cb579b51449f5215b6ead2"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room10_mix009.csv",
+      "rows": 2601,
+      "sha256": "7fdbff2e9f749c29ff9223f2f8df11a69a2f475b28445459d2899c868164c1a4"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room2_mix001.csv",
+      "rows": 1479,
+      "sha256": "a0b5f7aa69c05f2d6bb9efc01fbc16c3f235c43ec2d26328a3d8bcca080114fb"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room2_mix002.csv",
+      "rows": 4663,
+      "sha256": "e0534dd3e140ed85f65065e366518788ffbf8abf3829fb5271ac8f134aee464f"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room2_mix003.csv",
+      "rows": 2652,
+      "sha256": "34dfafb8448f5aa2c4126a639e556e1e83ec67a5b6ed793169186c22b3207be2"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room2_mix004.csv",
+      "rows": 1537,
+      "sha256": "cb0ae7e6d74aef879ad5c33ab0cc24643b9323eaac3d375abb0725a69ddce5bf"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room2_mix005.csv",
+      "rows": 2654,
+      "sha256": "0d9df9ab564c093e2db902c1769d9a70b6c0f9cbc375df5df2cee5597e151656"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room2_mix006.csv",
+      "rows": 3975,
+      "sha256": "b96475490345bed16feee421677d15b52f2de26220a1aa40e2ca35246f86b0c4"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room8_mix001.csv",
+      "rows": 2105,
+      "sha256": "9ad77a16415e2070fe74ebc99bca416c46f1ebb573dc1d752f9cd215dda184a6"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room8_mix002.csv",
+      "rows": 3120,
+      "sha256": "f4bf5f6f348e1f58f88b2593500a9230692dae22cbcb5d9aad85bfd6d5f66aac"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room8_mix003.csv",
+      "rows": 4375,
+      "sha256": "54c2f98bb6c14c56c3693378d9d3ba27c5bbee2a49a0537f54cbcbb69a37fc35"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room8_mix004.csv",
+      "rows": 1750,
+      "sha256": "e9bde1ce6b8d85e04f0284b2728eaf340d02a26b812a2d063e870028b1ddd4b2"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room8_mix005.csv",
+      "rows": 1590,
+      "sha256": "00af17367e0e53c50418f9dd0d7abe0e3a3a35fe4d8c2e59deafa9c4f602a1af"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room8_mix006.csv",
+      "rows": 4295,
+      "sha256": "82a6844dc0cfcb9f7cb11093d0d10319437e3b47ffd6a810e6676c2c0a348cff"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room8_mix007.csv",
+      "rows": 1940,
+      "sha256": "e053f3a8b0c18cdb685df06f44c1e2b4255c0bb6878adfc6aad408c570433e52"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room8_mix008.csv",
+      "rows": 2790,
+      "sha256": "794fe53215dbfb885cbb9e9093b5ca66d78dd0eff9db88ead30e056332e1ae96"
+    },
+    {
+      "relative_path": "dev-test-tau/fold4_room8_mix009.csv",
+      "rows": 3375,
+      "sha256": "52661aabb43deed7a573d5e378f87151d948de228d3fac1f8e42f6b48b88a6f8"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix001.csv",
+      "rows": 788,
+      "sha256": "a12239e9cda9d673effa3037350faeab8c690cec2434672a109d637c44ce27a1"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix002.csv",
+      "rows": 852,
+      "sha256": "81ea552ed1205602c5da1b2565115d4916f3edef92ca5cea0623d34ee9f8bc97"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix003.csv",
+      "rows": 1793,
+      "sha256": "7f4c1340e015492d6895945f4d150347d140befa15b165ec668a705a8ef56255"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix004.csv",
+      "rows": 743,
+      "sha256": "34c1b6d732f9aa464956ae70a67464422b43564d6d9f8fb7c6b635fc3e6e7b34"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix005.csv",
+      "rows": 643,
+      "sha256": "3c073cce000bf0658883a18cdea9cb96d6d8e8dc9e9aa3f34a014ea9728c8e67"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix006.csv",
+      "rows": 347,
+      "sha256": "d995de644dc4fc48537290e6bd6e841f907c11446d9f1ad06d11f00b792822e9"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix007.csv",
+      "rows": 1144,
+      "sha256": "5e36a577500e4bf986cf296a64dc8a218587ed3e688006e866333b0030b963d8"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix008.csv",
+      "rows": 905,
+      "sha256": "7d7169317f98a79d73a20f9cd72cac3737cf45375e459f7be393092e1d59bbc2"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix009.csv",
+      "rows": 2307,
+      "sha256": "299a0d1db01ebf91b05c82b8ca203304cc950c3bd9adbf44b1a217f9a07fdeaa"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix010.csv",
+      "rows": 2114,
+      "sha256": "a1c775e33f533615f5edd1266922c1dc38c3e59885bee71e3d9a5a6d1f0f173b"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix011.csv",
+      "rows": 1311,
+      "sha256": "eac69d1c56ecfdc5b5599ddcf5ef5c2e63c841aaf49e4cdf9b229a1d0e1e501b"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix012.csv",
+      "rows": 2432,
+      "sha256": "c6b923ad0123e8982372088b0bd80497b51661a842b63e5f1c62c8f1a822e06e"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix013.csv",
+      "rows": 1158,
+      "sha256": "a979dcdb26e903bce28ada6f6cd79f2498f211c6645376c45a8e7733594580d1"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix014.csv",
+      "rows": 1212,
+      "sha256": "cf6891ff9edc8d16a5ff5805b5e2a20eb156a478626f7c29c3bc8495a79c6cb3"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix015.csv",
+      "rows": 2115,
+      "sha256": "0d6519c331f6ef5bccd014a53abea85dd9d8a28ef903ba195478db2cd7d00cec"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix016.csv",
+      "rows": 553,
+      "sha256": "e7bccf8a24dea3b4671d80c4aed3070a0180358b49bc02e4f0f250d7816bd0f4"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix017.csv",
+      "rows": 2189,
+      "sha256": "098265a0be58b36ae133a86e5006e94420f47fef74d50ce429f935c07f684cd1"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix018.csv",
+      "rows": 1939,
+      "sha256": "14e5a09e4ecadf4d886d77b4af7fca66bcd834eef6bbf50e6b6016c031daf63d"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix019.csv",
+      "rows": 897,
+      "sha256": "5881bcea2da0789819df5b78a12a7f549c9549e5521f9e7b27c1cf4fe3a8f11c"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix020.csv",
+      "rows": 884,
+      "sha256": "967abc6ef76573c6859955e63d87383729f7f0aaedbc50a5470c781468d6958a"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix021.csv",
+      "rows": 1975,
+      "sha256": "29fc53143c64f5c297086317b752346b30867bc0413f84b94bb7a6b92d3dd252"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix022.csv",
+      "rows": 1193,
+      "sha256": "bce3888990430e2b68f3cfa8b1e51104eee4b366a5d5fcd2b224cacb4151095a"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix023.csv",
+      "rows": 2208,
+      "sha256": "c1842397492b297a6da6f259fed4f827576b09a7efa94e86341f5869a7f67e3f"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix024.csv",
+      "rows": 926,
+      "sha256": "c5f67296c0930b0c5dcf9365b5f76726e28d4c1755895a40e0edc8c15a3b8d7e"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix025.csv",
+      "rows": 5892,
+      "sha256": "a5045745a4ea6fb811032478ac28933f7526ab80ffd68d3d31ae8f6a6c0d29e6"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix026.csv",
+      "rows": 4442,
+      "sha256": "78e577a1a4265d3e1f8c7076304a1e356d47bce5e750110c455f61aa8c3b41f7"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix027.csv",
+      "rows": 1531,
+      "sha256": "10900cb8152f07433976b51a62f1c6da8a39b8c5ceb9fa4f4a20c6a607c3668f"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix028.csv",
+      "rows": 1526,
+      "sha256": "6338c39672f6b430921ea4604ab4520b145ed956f04d64fee05569d1d0dfe90a"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room21_mix029.csv",
+      "rows": 5075,
+      "sha256": "5fce86cc56e143372736a24069afc6c56afb4186daa5584aa21d08abccdc15a1"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room22_mix001.csv",
+      "rows": 588,
+      "sha256": "80dbe07b15b87501e455d8d8ca6b8fd5e228a3dd3efca7fed0c2c7cf24489ff0"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room22_mix002.csv",
+      "rows": 1012,
+      "sha256": "70c0ba0272d0822258d8018d0fb3cf31e2464e9d995910b64d3f5261e35e003b"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room22_mix003.csv",
+      "rows": 542,
+      "sha256": "475f75fa66671a13e63d987c5ca69b17cb16a05d4666967551adba156350b68d"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room22_mix004.csv",
+      "rows": 1282,
+      "sha256": "62bc0ce27da990cbd9bacb392aa1857a3744f98c748e32b9a838c29e4d3b4b71"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room22_mix005.csv",
+      "rows": 3083,
+      "sha256": "5354b953b114b2815d7bd2fc0fe248d169504eca75c32b637f29061eaf833498"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room22_mix006.csv",
+      "rows": 1147,
+      "sha256": "1e4e7b5e978ec699ef7609cac359dd89d142f19f7b5f90427aaf6897e7d480e6"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room22_mix007.csv",
+      "rows": 1230,
+      "sha256": "c72e3a949d60785c8434bbb553797de9bb93c5cb867bd5a9b18c3d423d55c324"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room22_mix008.csv",
+      "rows": 709,
+      "sha256": "877bf825504090ece0b086cb99b83b9c2bab9a995db259bf6490050177b0c9d4"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room22_mix009.csv",
+      "rows": 618,
+      "sha256": "f6a3fa51630c71dcb046fe7c0f197a8c8a1ff317cb97c5a2efb51c44f229d719"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room22_mix010.csv",
+      "rows": 1600,
+      "sha256": "746c756e97af6c4bcd14f88780bd1f0e55d07a1fc78cf7ed802c31fe7a998172"
+    },
+    {
+      "relative_path": "dev-train-sony/fold3_room22_mix011.csv",
+      "rows": 1203,
+      "sha256": "c3e44bcc752d2a8d8f6d216af40daec068ce423ae9051eab266b6024623b1e3d"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room4_mix001.csv",
+      "rows": 655,
+      "sha256": "248033768725352ad613e6de1c22d5b4faabe492434efc698607d2d20d5c0e7e"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room4_mix004.csv",
+      "rows": 469,
+      "sha256": "82c46ce81958e01de53c4ee22bc2154f8af56e87889c0409a7ea5be11cc8da20"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room4_mix005.csv",
+      "rows": 355,
+      "sha256": "06b53bcfe92887c58abfc1432515c761258fa13bc80b9a75e5b858d402b8ffa8"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room4_mix006.csv",
+      "rows": 1760,
+      "sha256": "74f83cb2bb90246ddae3a9b905e34d1450a14515306a3a890e81f7aebc74195e"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room4_mix007.csv",
+      "rows": 2030,
+      "sha256": "1323d29be847a8f26ff4dcf4ecbb1df7ec1f9fcc4d9b29acb8aeef1aca222d48"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room4_mix008.csv",
+      "rows": 1365,
+      "sha256": "37166830cc57225033bcecef5b3b8d77c883ba7ad32734990055c638e4d77477"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room6_mix001.csv",
+      "rows": 2580,
+      "sha256": "f3ea728827c50340a2595f35843175ed01377b96b76dc3c1da82076937d852d5"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room6_mix002.csv",
+      "rows": 2890,
+      "sha256": "b892b970f1ffefb26cc55b75053b5667e5c02370e6c5f5e75cea2e4031a682aa"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room6_mix003.csv",
+      "rows": 2930,
+      "sha256": "22fe85d928923469e9258cb91946fdea7efc7ca4bfd7d031e18bfeef11167b10"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room6_mix004.csv",
+      "rows": 2800,
+      "sha256": "2ba15e0c60494917f9a69d235a6a2cd333770c2aa1a7a1ddf0fccfb499697f0f"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room6_mix005.csv",
+      "rows": 3110,
+      "sha256": "5c72d64189e7cdae25dd8e87eba5dcc7ddea9dcd968dd157668a70273123b9ad"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room6_mix006.csv",
+      "rows": 1035,
+      "sha256": "b53eb9a05311b327e2d0df502b9bc93fefec506a0326493f3347b6b8dd5d940c"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room6_mix007.csv",
+      "rows": 1840,
+      "sha256": "0bb7618e817ef07063b3b1f9b3aed2ec96c03a08820c880340adcdc61656e575"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room7_mix001.csv",
+      "rows": 1435,
+      "sha256": "d13519149e9deaf2c5a513d698ea81820957fea76d3ef41555fabb3cde5c6393"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room7_mix002.csv",
+      "rows": 3200,
+      "sha256": "36fc29eda484fbc1e71bd8fd3bd6967c7374fa5935bcdf646f6bf2c25b082986"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room7_mix003.csv",
+      "rows": 3965,
+      "sha256": "7447c6b98b40e5ed9a804bca65767d3da4eb7f8a5b28cd6cbf273ca28c6efc94"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room7_mix004.csv",
+      "rows": 3340,
+      "sha256": "e398a80f7937d43530b823c2a948436cb5b2b8ab9ce7510f89cc5d53d14963b8"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room7_mix005.csv",
+      "rows": 2765,
+      "sha256": "e73cca4c416178935fc347fc39cea5f6aa266fbb1561d49af5a7795b26126c39"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room7_mix006.csv",
+      "rows": 5165,
+      "sha256": "af36ab5c9b9b47cc0efafb7db38d244a0b1fddb4e0ff6a31cbb2eb46d64e5b37"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room9_mix001.csv",
+      "rows": 1450,
+      "sha256": "cd91923759bd1e745227214a3054f522cdd1183dbead5b1cc7c06f99113ebab2"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room9_mix002.csv",
+      "rows": 1305,
+      "sha256": "d5a2cfd3e8cadc3f7711bc4ae6c1f1318469ecf0d3a271971c1ee71c17365164"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room9_mix003.csv",
+      "rows": 870,
+      "sha256": "3a9d929b95adb3dd2b5bb74f4db985e3ed6a4b8f5d8cc5203788d66b44d7a598"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room9_mix004.csv",
+      "rows": 1340,
+      "sha256": "bf6d931cc8ed70f645bbf742d9e563777dd243f4960485986444159100df6049"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room9_mix005.csv",
+      "rows": 1725,
+      "sha256": "a0a40f93c9d269d1d414e40324c7a62783c32c1fc00144809013b5c05388f37d"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room9_mix006.csv",
+      "rows": 1210,
+      "sha256": "9de43ddebc087ebf3110566944dcf440cb825ab445b9e3840b1ea6e30823175b"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room9_mix007.csv",
+      "rows": 1120,
+      "sha256": "d0aa439661e882731526bd81c9845a02c8f765d3fa4afde9fed16d321660f3fa"
+    },
+    {
+      "relative_path": "dev-train-tau/fold3_room9_mix008.csv",
+      "rows": 1810,
+      "sha256": "2b3e21626400f1646d15ccdf58cc757d05d99dc3d616d8ea276db77ceb9cc2df"
+    }
+  ]
+}

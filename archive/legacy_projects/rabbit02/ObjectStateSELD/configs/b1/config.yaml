@@ -1,0 +1,8 @@
+model_id: B1
+description: Current SELD plus tangent velocity and kinematic future prior
+objectives:
+  current: true
+  velocity: true
+  future_position: true
+  future_latent: false
+

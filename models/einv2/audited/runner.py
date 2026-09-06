@@ -30,7 +30,8 @@ def source_manifest():
              *sorted((ROOT / 'models/einv2/variants/C3/seld').rglob('*.py')),
              *sorted((ROOT / 'evaluation').rglob('*.py')),
              ROOT / 'scripts/train/einv2_audited.py', ROOT / 'scripts/eval/einv2_audited.py',
-             ROOT / 'scripts/data/build_einv2_train_scalar.py', ROOT / 'configs/einv2/C3.yaml']
+             ROOT / 'scripts/data/build_einv2_train_scalar.py', ROOT / 'configs/einv2/C3.yaml',
+             ROOT / 'scripts/train/einv2_weightprobe_queue.py', ROOT / 'docs/RB05_DYNAMICMASK_PLAN.md']
     return {str(p.relative_to(ROOT)): sha256(p) for p in paths}
 
 
@@ -107,14 +108,27 @@ def train_main():
     parser.add_argument('--seed', type=int, required=True)
     parser.add_argument('--workers', type=int, default=4)
     parser.add_argument('--smoke-batches', type=int, default=0)
+    parser.add_argument('--hdf5-dir', type=Path)
+    parser.add_argument('--lambda-jepa', type=float)
+    parser.add_argument('--velocity-min-norm', type=float, default=0.0,
+                        help='Apply velocity loss only when target Cartesian velocity norm exceeds this value')
+    parser.add_argument('--run-id')
     args = parser.parse_args()
     torch.set_num_threads(4)
     seed_all(args.seed)
     if not torch.cuda.is_available():
         raise RuntimeError('Full training requires an explicitly allocated CUDA device')
     device = torch.device('cuda:0')
-    cfg = configuration(args.project_root.resolve(), args.scalar.resolve(), args.variant, args.seed)
+    cfg = configuration(args.project_root.resolve(), args.scalar.resolve(), args.variant, args.seed,
+                        hdf5_dir=args.hdf5_dir, lambda_jepa=args.lambda_jepa,
+                        velocity_min_norm=args.velocity_min_norm)
     run_id = ('smoke_' if args.smoke_batches else '') + '{}_seed{}_framecausal_v020'.format(args.variant, args.seed)
+    if args.run_id:
+        if not all(c.isalnum() or c in '_-.' for c in args.run_id) or args.run_id in ('.', '..'):
+            raise ValueError('run-id must be a single safe directory name')
+        run_id = ('smoke_' if args.smoke_batches else '') + args.run_id
+    elif args.lambda_jepa is not None or args.velocity_min_norm:
+        raise ValueError('An explicit run-id is required for an override')
     run = args.output_root.resolve() / run_id
     run.mkdir(parents=True, exist_ok=False)
     cfg['workspace_dir'] = str(run)

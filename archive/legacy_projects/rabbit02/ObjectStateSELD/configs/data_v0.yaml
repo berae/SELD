@@ -1,0 +1,39 @@
+project:
+  raw_root: /work/zhanghc/Myllm/SELD/ObjectStateSELD/data_raw/dcase2020
+  intermediate_root: /work/zhanghc/Myllm/SELD/ObjectStateSELD/data_intermediate
+  processed_root: /work/zhanghc/Myllm/SELD/ObjectStateSELD/data_processed/v0_single_track_2s_05s
+  docs_root: /work/zhanghc/Myllm/SELD/ObjectStateSELD/docs
+
+dataset:
+  name: tau_nigens_seld_2020
+  source_version: "1.2.0"
+  input_format: foa
+  sample_rate: 24000
+  channels: 4
+  label_rate_hz: 10
+  class_ids: 14
+  metadata_subdir: metadata_dev
+  audio_subdir: foa_dev
+  split_by_fold:
+    train: [3, 4, 5, 6]
+    val: [2]
+    test: [1]
+
+window:
+  context_duration_s: 2.0
+  future_horizons_s: [0.1, 0.3, 0.5]
+  minimum_track_duration_s: 2.5
+  hop_frames: 1
+  require_scene_polyphony_one: true
+
+motion:
+  static_max_deg_s: 1.0
+  slow_max_deg_s: 15.0
+  medium_max_deg_s: 30.0
+
+output:
+  preprocess_version: object_state_v0.1
+  label_version: tangent_velocity_v0.1
+  write_csv: true
+  write_npz: true
+

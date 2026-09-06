@@ -1,0 +1,69 @@
+experiment:
+  name: Object-State-SELD-v0
+  seeds: [2026, 2027, 2028]
+  source_dataset: tau_nigens_seld_2020_v1.2
+
+data:
+  input_format: foa
+  sample_rate: 24000
+  channels: 4
+  label_rate_hz: 10
+  context_duration_s: 2.0
+  future_horizons_s: [0.1, 0.3, 0.5]
+  object_slots: 1
+  require_scene_polyphony_one: true
+
+features:
+  type: logmel_and_intensity
+  n_fft: 1024
+  hop_length: 600
+  n_mels: 256
+  window: hann
+  fmin: 20
+  fmax: 12000
+  normalize_from_train_only: true
+
+model:
+  backbone: einv2_style
+  encoder_hidden_size: 128
+  latent_size: 128
+  object_slots: 1
+  predictor: mlp
+  predictor_hidden_size: 256
+  predictor_layers: 2
+  dropout: 0.1
+  ema_momentum: 0.996
+  physics_residual: true
+
+training:
+  optimizer: adam
+  learning_rate: 0.0005
+  batch_size: 32
+  max_epochs: 90
+  early_stop_patience: 15
+  scheduler: step
+  scheduler_step_size: 80
+  scheduler_gamma: 0.1
+  gradient_clip_norm: 5.0
+  mixed_precision: true
+  checkpoint_metric: composite_current_future
+
+loss:
+  lambda_class: 1.0
+  lambda_activity: 1.0
+  lambda_doa: 1.0
+  lambda_velocity: 1.0
+  lambda_future: 1.0
+  lambda_jepa: 1.0
+  lambda_variance: 0.0
+
+evaluation:
+  future_horizons_s: [0.1, 0.3, 0.5]
+  gap_durations_s: [0.1, 0.3, 0.5]
+  gap_modes: [zero, same_room_background]
+  motion_bins_deg_s:
+    static: [0.0, 1.0]
+    slow: [1.0, 15.0]
+    medium: [15.0, 30.0]
+    fast: [30.0, null]
+

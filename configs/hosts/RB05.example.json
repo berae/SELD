@@ -1,0 +1,5 @@
+{
+  "project_root": "/home/zhanghc/SELD",
+  "hdf5_dir": "/home/zhanghc/SELD/EINV2/shared/_hdf5",
+  "scalar": "/home/zhanghc/SELD/experiment_einv2_weightprobe_20260904_r1/scalar_trainfolds2-6.h5"
+}

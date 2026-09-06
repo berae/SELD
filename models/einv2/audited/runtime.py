@@ -1,4 +1,4 @@
-"""Versioned EINV2 rerun runtime; the historical variant sources remain frozen.
+"""Versioned EINV2 dynamic-motion rerun runtime; historical sources stay frozen.
 
 All four causal ablations instantiate the same network in the same order.
 Only loss coefficients change. Unused heads receive no gradients.
@@ -24,7 +24,7 @@ sys.path.insert(0, str(ROOT / 'evaluation'))
 from methods.ein_seld.models.seld_causal import CausalEINV2VelocityJEPA
 from methods.feature_causal import CausalLogmelIntensity_Extractor
 
-VERSION = 'einv2_reaudit_v1'
+VERSION = 'einv2_rb05_dynamicmask_v1'
 WEIGHTS = {'C0': (0., 0.), 'C1': (.2, 0.), 'C2': (0., .2), 'C3': (.2, .2)}
 
 
@@ -95,7 +95,13 @@ def loss_values(pred, target, teacher, cfg):
     lv, lj = cfg['training']['lambda_velocity'], cfg['training']['lambda_jepa']
     if lv:
         mask = canonical(target['velocity_mask'], original)
-        error = F.smooth_l1_loss(pred['velocity'], canonical(target['velocity'], original), reduction='none').mean(-1)
+        target_velocity = canonical(target['velocity'], original)
+        velocity_min_norm = float(cfg['training'].get('velocity_min_norm', 0.0))
+        if velocity_min_norm:
+            # Retain only adjacent label-frame pairs with actual DOA motion.
+            # The default zero threshold preserves the frozen all-valid-pairs loss.
+            mask = mask * (target_velocity.norm(dim=-1) > velocity_min_norm)
+        error = F.smooth_l1_loss(pred['velocity'], target_velocity, reduction='none').mean(-1)
         velocity = (error * mask).sum() / mask.sum().clamp_min(1.)
     if lj:
         # Teacher output slots can differ from the online model: align independently.
@@ -135,7 +141,8 @@ def sha256(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def configuration(project, scalar, variant, seed, alignment='current_frame_75ms'):
+def configuration(project, scalar, variant, seed, alignment='current_frame_75ms', *,
+                  hdf5_dir=None, lambda_jepa=None, velocity_min_norm=0.0):
     from ruamel.yaml import YAML
     cfg = YAML(typ='safe').load((ROOT / 'configs/einv2/C3.yaml').read_text())
     cfg.update(dataset_dir=str(project / 'EINV2/dataset_root'),
@@ -147,9 +154,20 @@ def configuration(project, scalar, variant, seed, alignment='current_frame_75ms'
     # Keep validation and independent inference numerically comparable as well.
     cfg['inference']['batch_size'] = cfg['training']['batch_size']
     cfg['training']['lambda_velocity'], cfg['training']['lambda_jepa'] = WEIGHTS[variant]
+    if hdf5_dir is not None:
+        cfg['hdf5_dir'] = str(Path(hdf5_dir).resolve())
+    if lambda_jepa is not None:
+        if not np.isfinite(lambda_jepa) or lambda_jepa < 0:
+            raise ValueError('lambda_jepa must be finite and nonnegative')
+        cfg['training']['lambda_jepa'] = float(lambda_jepa)
+    if not np.isfinite(velocity_min_norm) or velocity_min_norm < 0:
+        raise ValueError('velocity_min_norm must be finite and nonnegative')
+    cfg['training']['velocity_min_norm'] = float(velocity_min_norm)
     cfg['audit'] = dict(version=VERSION, variant=variant, seed=seed, alignment=alignment,
                         metric='dcase2023_micro', checkpoint_selection='minimum_validation_SELD_LR',
                         scalar_sha256=sha256(scalar), resume='fresh_runs_only',
                         context='4 s independently reset chunks; no streaming cache',
-                        auxiliary_heads='identically initialized in every variant; zero-weight heads receive no gradients')
+                        auxiliary_heads='identically initialized in every variant; zero-weight heads receive no gradients',
+                        velocity_pair_filter='target Cartesian velocity norm > velocity_min_norm')
+    cfg['audit']['parent_version'] = 'einv2_rb05_weightprobe_v1 / repository 0.2.0'
     return cfg

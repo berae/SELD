@@ -1,0 +1,8 @@
+model_id: B0
+description: Current SELD only
+objectives:
+  current: true
+  velocity: false
+  future_position: false
+  future_latent: false
+
