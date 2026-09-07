@@ -145,6 +145,8 @@ def main():
     a=p.parse_args()
     started=time.time();torch.set_num_threads(2)
     spec=json.loads(a.config.read_text());execution=json.loads(a.execution.read_text())
+    seed=execution.get('seed',2026)
+    assert isinstance(seed,int) and 0 <= seed < 2**32
     sys.path.insert(0,str(a.scorer))
     a.output.mkdir(parents=True,exist_ok=False)
     condition=a.condition;learned=condition in ('F-Deriv','R0','R1','R2')
@@ -168,7 +170,7 @@ def main():
         save_json(a.output/'COMPLETED.json',dict(status='PASS',condition=condition,training_updates=0,
                   elapsed_seconds=time.time()-started,result=result))
         return
-    random.seed(2026);np.random.seed(2026);torch.manual_seed(2026);torch.cuda.manual_seed_all(2026)
+    random.seed(seed);np.random.seed(seed);torch.manual_seed(seed);torch.cuda.manual_seed_all(seed)
     gate=initialization_gate(validation,device,condition)
     save_json(a.output/'preflight.json',dict(status='PASS',**gate,raw_scores_exact=True))
     train=CachedSplit(a.cache/'train')
@@ -176,13 +178,13 @@ def main():
     assert train.manifest['checkpoint_sha256']==validation.manifest['checkpoint_sha256']
     assert train.manifest['source_hashes']==validation.manifest['source_hashes']
     # Gates consume RNG; reset before formal head and optimizer construction.
-    random.seed(2026);np.random.seed(2026);torch.manual_seed(2026);torch.cuda.manual_seed_all(2026)
+    random.seed(seed);np.random.seed(seed);torch.manual_seed(seed);torch.cuda.manual_seed_all(seed)
     head=make_head(condition).to(device)
     proposal=spec['training_proposal']
     optimizer=torch.optim.AdamW(head.parameters(),lr=proposal['learning_rate'],weight_decay=proposal['weight_decay'])
     expected=next(c['parameters'] for c in spec['conditions'] if c['id']==condition)
     assert sum(p.numel() for p in head.parameters())==expected
-    generator=torch.Generator().manual_seed(2026)
+    generator=torch.Generator().manual_seed(seed)
     best=float('inf');progress_best=float('inf');last_progress=0;best_epoch=0;history=[];updates=0
     policy=execution['stopping'];stop=False
     epochs=1 if a.smoke_batches else policy['maximum_epochs']
@@ -211,7 +213,7 @@ def main():
             best=value;best_epoch=epoch
             # This file is owned by this new run. Atomic best replacement only.
             temp=a.output/'best.tmp.pth'
-            torch.save(dict(head=head.state_dict(),epoch=epoch,condition=condition,seed=2026,
+            torch.save(dict(head=head.state_dict(),epoch=epoch,condition=condition,seed=seed,
                             config=spec,execution=execution,checkpoint_sha256=spec['baseline_checkpoint_sha256']),temp)
             temp.replace(a.output/'best.pth')
         if value<progress_best-policy['validation_min_delta']:

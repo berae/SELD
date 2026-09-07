@@ -23,6 +23,14 @@
 
 已完成执行与证据入口：[单 seed 收敛试跑结果](../../reports/refinement_v2_execution_20260907_r1/RESULTS.md)。
 
+## 2026-09-08 用户授权追加
+
+用户允许按结果分析需要在rabbit02补实验。`launch_stability.py`仅追加同C0的head seed2027/2028，保持四个条件全部报告；`train_heads.py`现在读取execution中的seed（默认仍2026），不改变pilot中固定C0 seed或其历史内容。这不是三个主干seed的独立验证。
+
+`review_results.py`从逐录音计数复核micro分数并做条件性配对录音重采样；`diagnose_objectives.py`在保存的最优小头上做无更新损失/梯度诊断；`summarize_stability.py`核对12次运行与全部种子配对差，不挑选最好seed。
+
+新增运行用独立输出和代码快照，不覆盖9月7日实验。`diagnose_objectives.py`的正式修正角度使用float64 atan2，旧float32 acos诊断记录保留但不作为修正角度依据。此变化不影响官方评分或训练。
+
 ## 调用规范
 
 实际路径和 GPU 分配记录在每个新运行目录的 `RUNNING.json` / `STARTED.json`，不把示例视为已执行。
