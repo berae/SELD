@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "conditions": [
+    "F0",
+    "F-EMA",
+    "F-KF",
+    "F-Deriv",
+    "R0",
+    "R1",
+    "R2"
+  ],
+  "strata": [
+    "all_fixed_matched",
+    "static_pair",
+    "moving_pair",
+    "matched_without_valid_motion_pair"
+  ],
+  "recordings": 100
+}

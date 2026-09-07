@@ -19,6 +19,9 @@
 - `test_execution.py`：新增执行接口的合成 CPU 回归，包含梯度、空 mask、GT 身份不一致、换槽与跨 chunk。
 - `train_heads.py`：F0/F-EMA/F-KF 完整 validation；或 F-Deriv/R0/R1/R2 的独立 smoke/收敛试跑。只加载冻结缓存与新 head，不加载主干。
 - `run_guarded.py`：独立进程、30 秒心跳、日志停滞提示、硬时限；失败不自动重试。
+- `diagnose_fixed_targets.py`：七个条件完成后，对原 C0 固定匹配目标做量化方向误差的描述性分层；不重新匹配，不代替官方 LE_CD，不输出显著性结论。
+
+已完成执行与证据入口：[单 seed 收敛试跑结果](../../reports/refinement_v2_execution_20260907_r1/RESULTS.md)。
 
 ## 调用规范
 
