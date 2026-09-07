@@ -156,6 +156,9 @@ def main():
               smoke_batches=a.smoke_batches,backbone_loaded=False,start_unix=started))
     validation=CachedSplit(a.cache/'validation')
     assert validation.manifest['checkpoint_sha256']==spec['baseline_checkpoint_sha256']
+    for rel, expected_hash in validation.manifest['source_hashes'].items():
+        if rel.startswith('evaluation/'):
+            assert digest(a.scorer/Path(rel).relative_to('evaluation'))==expected_hash, 'Scorer source mismatch: '+rel
     raw=predict(None,validation,'F0','cpu');reference=evaluate(validation,raw)
     assert reference['scores']==json.loads((a.cache/'validation'/'COMPLETED.json').read_text())['scores']
     if not learned:

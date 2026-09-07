@@ -52,6 +52,10 @@ def main():
     ds, generator, _ = runner.get_generator(runner.data_args(2026, 4), cfg, dataset, 'test')
     expected = 100 if args.split == 'validation' else 500
     assert len(ds) == expected*15
+    waveform_paths = sorted({Path(str(path).split('%')[0]) for path in ds.paths_list})
+    assert len(waveform_paths) == expected
+    print(json.dumps(dict(stage='hashing_actual_waveform_inputs',files=expected)),flush=True)
+    waveform_hashes = {str(path):digest(path) for path in waveform_paths}
     model = runner.AuditedEINV2(cfg, dataset).cuda().eval().requires_grad_(False)
     frontend = runner.Frontend(cfg).cuda().eval().requires_grad_(False)
     model.load_state_dict(ck['model']); frontend.load_state_dict(ck['frontend']); del ck
@@ -71,7 +75,9 @@ def main():
                     scalar_sha256=digest(scalar), gt_files=gt_hashes, storage_relocation=relocation,
                     gpu=torch.cuda.get_device_name(), torch=torch.__version__, command=sys.argv,
                     original_forward_predictions=True, optimizer_updates=0,
-                    feature_shape=[600,2,512], script_sha256=digest(__file__))
+                    feature_shape=[600,2,512], script_sha256=digest(__file__),
+                    waveform_inputs_sha256=waveform_hashes,
+                    waveform_identity_scope='actual rabbit02 HDF5 hashes retained; validation forward additionally compared to RB05 exports')
     save_json(args.output/'input_manifest.json', manifest)
     chunks = {}; hashes = {}; counts = {}; probes = []; predictions = {}
     historical = Path(relocation.get('original_validation', str(Path(spec['existing_export'])/'validation')))
