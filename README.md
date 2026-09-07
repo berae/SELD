@@ -5,6 +5,7 @@ EINV2 与 Multi-ACCDOA 的 causal / offline、velocity、JEPA 辅助监督实验
 
 ## 当前入口（2026-09-07）
 
+- [冻结 C0 检测保持方向修正：唯一 v2](scripts/refinement_v2/README.md)：缓存与回归、固定 Kalman、同 C0 导数头、R0/R1/R2 递进消融和收敛优先试跑入口；新增代码通过组件测试不等于已取得新训练结果。
 - [全部实验结果](reports/ALL_EXPERIMENTS.md)：68个统一主run、131个已评分run×split；另列旧Multi 8×3矩阵、STARSS训练曲线、试跑与缺测。
 - [代码地图与复现命令](docs/CODE_MAP.md)：EINV2/Multi-ACCDOA分开，训练/测试分开，host路径与method recipe分开。
 - [逐run证据](reports/summary_20260907/runs.csv)、[全部旧记录](reports/summary_20260907/legacy_registry.csv)。旧A1/A2 λ=.2已有三seed，不能概括为“仅有代码”。
