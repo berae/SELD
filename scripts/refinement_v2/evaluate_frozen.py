@@ -27,7 +27,9 @@ def diagnostics(data, methods, output, motion_source):
             'source_static','source_dynamic','source_unobservable')
     pools={(c,g):[] for c in methods for g in groups};per_record=[];denominators=[]
     for i,name in enumerate(data.names):
-        with np.load(data.path/'targets'/(Path(name).stem+'.npz')) as targets:
+        with np.load(data.path/'targets'/(Path(name).stem+'.npz')) as target_file:
+            # Materialize once; identical arrays avoid repeated NPZ decompression per row.
+            targets={key:target_file[key] for key in target_file.files}
             matched=targets['matched'];valid=targets['motion_valid']
             moving=np.linalg.norm(targets['displacement'],axis=-1)>1e-7
             masks=dict(all_fixed_matched=matched,static_pair=valid&~moving,moving_pair=valid&moving,
@@ -66,7 +68,7 @@ def main():
     for k in ('frozen','cache','output'):p.add_argument('--'+k,type=Path,required=True)
     a=p.parse_args();start=time.time();torch.set_num_threads(2)
     seal=json.loads((a.frozen/'FROZEN.json').read_text());verify(a.frozen,seal)
-    assert seal['evaluation_selection_prohibited'] and len(seal['runs'])==12
+    assert seal['evaluation_selection_prohibited'] and len(seal['runs'])==seal.get('expected_learned_runs',12)
     a.output.mkdir(parents=True,exist_ok=False)
     save_json(a.output/'STARTED.json',dict(start_unix=start,freeze_sha256=digest(a.frozen/'FROZEN.json'),
         registry_sha256=seal['preregistration_sha256'],new_training_runs=0,historical_evaluation_seen=True))
@@ -101,19 +103,19 @@ def main():
         for field,value in unchanged.items():assert torch.equal(data.data[field],value),field
         if c=='F0':
             assert all((path/n).read_bytes()==data.raw_csv[i] for i,n in enumerate(data.names))
-        row=dict(id=key,condition=c,head_seed=seed,C0_seed=2026,weight_sha256=entry.get('weight_sha256'),
+        row=dict(id=key,condition=c,head_seed=seed,C0_seed=seal['C0_seed'],weight_sha256=entry.get('weight_sha256'),
             selected_validation_epoch=entry.get('selected_epoch'),**result,
             detection_preservation=dict(ordered_frame_class_slot_records_exact=True,pure_SED_counts_exact=True,
                 probability_raw_doa_mapping_unchanged=True),head_prefix_max_delta=prefix,
             prediction_sha256={n:digest(path/n) for n in data.names})
         results.append(row);methods[key]=path;save_json(path/'PROVENANCE.json',row)
-        print(json.dumps(dict(stage='evaluated',id=key,completed=len(results),total=15)),flush=True)
+        print(json.dumps(dict(stage='evaluated',id=key,completed=len(results),total=len(conditions))),flush=True)
     diagnostics(data,methods,a.output,a.frozen/'code/motion_decomposition/analyze_motion_coverage.py')
     verify(a.frozen,seal)
     save_json(a.output/'SUMMARY.json',dict(results=results,freeze_sha256=digest(a.frozen/'FROZEN.json'),
         cache_manifest_sha256=digest(a.cache/'file_manifest.json'),input_manifest_sha256=digest(a.cache/'input_manifest.json'),
         historical_evaluation_seen=True,new_blind_test=False,selection_on_evaluation=False,
-        new_training_runs=0,bootstrap_repeated=False,scope='fixed C0 seed2026, three head seeds, not cross-C0 stability'))
+        new_training_runs=0,bootstrap_repeated=False,scope='single frozen C0 seed%d; registered head seeds %s; cross-C0 aggregation is separate'%(seal['C0_seed'],sorted({r['head_seed'] for r in seal['runs']}))))
     save_json(a.output/'COMPLETED.json',dict(status='PASS',conditions=len(results),files=len(data.names),
         elapsed_seconds=time.time()-start,all_frozen_hashes_unchanged=True,all_detection_checks_pass=True))
     print(json.dumps(dict(status='PASS',conditions=len(results),seconds=time.time()-start)),flush=True)
