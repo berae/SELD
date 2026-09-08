@@ -1,0 +1,20 @@
+{"stage": "cache_load", "split": "evaluation", "files": 50}
+{"stage": "cache_load", "split": "evaluation", "files": 100}
+{"stage": "cache_load", "split": "evaluation", "files": 150}
+{"stage": "cache_load", "split": "evaluation", "files": 200}
+{"stage": "evaluated", "id": "F0", "completed": 1, "total": 15}
+{"stage": "evaluated", "id": "F-EMA", "completed": 2, "total": 15}
+{"stage": "evaluated", "id": "F-KF", "completed": 3, "total": 15}
+{"stage": "evaluated", "id": "head2026_F-Deriv", "completed": 4, "total": 15}
+{"stage": "evaluated", "id": "head2026_R0", "completed": 5, "total": 15}
+{"stage": "evaluated", "id": "head2026_R1", "completed": 6, "total": 15}
+{"stage": "evaluated", "id": "head2026_R2", "completed": 7, "total": 15}
+{"stage": "evaluated", "id": "head2027_F-Deriv", "completed": 8, "total": 15}
+{"stage": "evaluated", "id": "head2027_R0", "completed": 9, "total": 15}
+{"stage": "evaluated", "id": "head2027_R1", "completed": 10, "total": 15}
+{"stage": "evaluated", "id": "head2027_R2", "completed": 11, "total": 15}
+{"stage": "evaluated", "id": "head2028_F-Deriv", "completed": 12, "total": 15}
+{"stage": "evaluated", "id": "head2028_R0", "completed": 13, "total": 15}
+{"stage": "evaluated", "id": "head2028_R1", "completed": 14, "total": 15}
+{"stage": "evaluated", "id": "head2028_R2", "completed": 15, "total": 15}
+{"status": "PASS", "conditions": 15, "seconds": 508.8339412212372}

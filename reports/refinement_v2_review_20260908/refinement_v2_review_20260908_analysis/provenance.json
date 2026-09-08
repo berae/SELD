@@ -1,0 +1,26 @@
+{
+  "sources": {
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/baselines/F0/COMPLETED.json": "3ce8c275ff4ca26ddab030793fa794340c2cab89a7d43b8be5b00168cc61c970",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/baselines/F0/validation/per_recording.json": "8c608cf764bda108dc6a5b77ab0bdfd05809badea71a412aa48b129ccb18c8ea",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/baselines/F-EMA/COMPLETED.json": "0f155d394f20ed840b5616c5d558c1cd7605811dec4f20b488ed74292c385dcf",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/baselines/F-EMA/validation/per_recording.json": "a2f5950558b8138e2adbd41f251203a903ee8b7ce4017743e205e3537be51ea5",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/baselines/F-KF/COMPLETED.json": "5a4a22b8b9637d90805445112799740c5bd63c23cc9b4b613d4674e443b8048c",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/baselines/F-KF/validation/per_recording.json": "5faa4fc3c6148dd0bbdbd36d9e4fb5fbf0574c2f179030fed57cbc6a26af6706",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/pilot/F-Deriv/COMPLETED.json": "ff582c2652f3ff68c8641688dd4dec0cb7ce990c0566588410223029fc0f5207",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/pilot/F-Deriv/validation/per_recording.json": "16f2faa116aaa9603e7e3568b4460a5ce59d9cfe07d72c52e147d61fd6515386",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/pilot/F-Deriv/epochs.jsonl": "94cdf61d697b6290b656047774ff768fb3012ab860da30e3eb551812cf59b7a2",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/pilot/R0/COMPLETED.json": "b4a31e75ae137dd71a864389e6ae548ac364e54e511f522859196081b69dc829",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/pilot/R0/validation/per_recording.json": "30f2f54894fadb5845450f45daf423605fbba47d8a55eb5f22c456cecbbc8da0",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/pilot/R0/epochs.jsonl": "6934e1c53d9d707aff1ccb9421c6335c8cf4464d9a153952a76ce6e800b6b853",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/pilot/R1/COMPLETED.json": "f5ad8b28e0b6268f77a1b2927f08051368e2572d9c5e9a547be5e04d64a82b53",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/pilot/R1/validation/per_recording.json": "bd77e1b14f0d68fda156bfb31ad4ba5eaaf7a1ad90caa5fa223dcb11a6bd1c30",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/pilot/R1/epochs.jsonl": "5c871b713f06e3c8301ab53462e1615d65118c002700090f6232a42e422cce2b",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/pilot/R2/COMPLETED.json": "ae61b0f173b72782054f5ad7493e19dd657128d10a822a76cc22d0a5c7137e01",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/pilot/R2/validation/per_recording.json": "585d9291a1a21ecb4eefb047a368e6785aa78ba30d2635da8d47695e3686c40d",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/pilot/R2/epochs.jsonl": "06e11db9ee68d192504632d91ab0cf38d29531c85b35c1f0b83f9c973585f573"
+  },
+  "script_sha256": "0e478463655b981c72f9e46ea3ea0aeee59241e2218eae547a5575a3ab822588",
+  "resampling_seed": 91082026,
+  "resamples": 20000,
+  "limits": "Post-selection descriptive paired recording resampling, conditional on fitted models; ignores training/selection uncertainty and possible shared room/source dependence; not independent test, no p-values, no multiplicity correction, no confirmatory significance."
+}

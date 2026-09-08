@@ -1,0 +1,9 @@
+{
+  "exit_codes": [
+    1,
+    0,
+    1,
+    0
+  ],
+  "automatic_retry": false
+}

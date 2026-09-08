@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_review_code_20260908/refinement_v2/train_heads.py",
+    "--cache",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/cache",
+    "--config",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/configs/pilot.json",
+    "--execution",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_stability_20260908_r1/execution_seed2027.json",
+    "--scorer",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/scorer",
+    "--output",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_stability_20260908_r1/seed2027/F-Deriv",
+    "--condition",
+    "F-Deriv"
+  ],
+  "pid": 1605612,
+  "guardian_pid": 1605017,
+  "start_unix": 1788800828.270948,
+  "hard_timeout_seconds": 14400,
+  "visible_devices": "GPU-82ffbec4-d577-dd23-8b52-bd489c348f74"
+}

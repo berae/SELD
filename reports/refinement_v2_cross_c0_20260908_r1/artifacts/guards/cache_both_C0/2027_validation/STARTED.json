@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1/code/refinement_v2/cache_features.py",
+    "--config",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1/configs/pilot_C0_2027.json",
+    "--relocation",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1/configs/relocation_C0_2027.json",
+    "--split",
+    "validation",
+    "--output",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1/C0_2027/cache/validation"
+  ],
+  "pid": 2147244,
+  "guardian_pid": 2146694,
+  "start_unix": 1788851459.7867634,
+  "hard_timeout_seconds": 1800,
+  "visible_devices": "GPU-82ffbec4-d577-dd23-8b52-bd489c348f74"
+}

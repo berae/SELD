@@ -1,0 +1,48 @@
+{
+  "created_unix": 1788800826.6781437,
+  "head_seeds": [
+    2027,
+    2028
+  ],
+  "conditions": [
+    "F-Deriv",
+    "R0",
+    "R1",
+    "R2"
+  ],
+  "primary_comparisons": [
+    "R0-F0",
+    "R0-F-Deriv",
+    "R1-R0",
+    "R2-R1"
+  ],
+  "primary_metrics": [
+    "SELD_LR",
+    "LE_CD"
+  ],
+  "C0_seed": 2026,
+  "cache_manifest_sha256": {
+    "train": "3d1688b89eb9bdb84dfa9782b698a8264019c493ef4436955d2943bd310ab655",
+    "validation": "fdda8ea9bbc5a63ac0daf01992a84f492a98850ce28762c7d1c1e266530597f9"
+  },
+  "analysis": "Report all head seeds including original 2026, mean/sample SD and paired differences; no p-values or independent-C0 claims",
+  "scope": "initialization and shuffle sensitivity only; no parameter search, no new data/backbone/C0 weights",
+  "authorization": "2026-09-08 user: \u67e5\u770b\u5b9e\u9a8c\u7ed3\u679c\uff0c\u5e76\u5206\u6790\u5b9e\u9a8c\u7ed3\u679c\uff0c\u5982\u9700\u8fdb\u4e00\u6b65\u5b9e\u9a8c\u53ef\u4ee5\u5728rabbit02\u4e0a\u8fdb\u884c",
+  "code_hashes": {
+    "candidate.py": "f403205c3dcd4a1b88398d2dc206a36e2ca52bede33e8497cf006c00c190d729",
+    "diagnose_fixed_targets.py": "3850bc06935f026273d29b30361b208f6aade629a28b26ddf40f3846c647dee2",
+    "train_heads.py": "be106a706fb60f95598e9fa336910882d7201e08f09810a9974578a1aedac564",
+    "launch_heads.py": "0a93437ebb82083cc6420a10491e46f5e3dc1a61050184ec7bc2d24445150a94",
+    "test_candidate.py": "1b5e58dc38200ccebbb72d40b0ce100d01a7cb138ddc9edd1156f654f66c9e41",
+    "cache_features.py": "e98087f10f443811a1433c4439ec44e9a6a6dd9922265e0fa59e8189b3190bde",
+    "verify_delivery.py": "dcda1ef3b0a76b3d80be7b26bade34c069e56a1c9c8bc09cef639124bf8998d9",
+    "test_cached_output.py": "21696cd7a61bf69682bacd9c166870355e069b7d588d2151d6d72ec4c4828d6f",
+    "audit_cache.py": "1bc0e53545755be56fb6ffd6b418e271834f40c2a0fc02db7c8074151fd6745e",
+    "run_guarded.py": "62b8c9438605cadf0c05fd96e1dea85ac47fc41a23f949d404afb6eeda4bf5f2",
+    "experiment_core.py": "5900a69317feb8bf7badbdc49bd4d38da6303fa881b3988fc36cb6b0e259a1fa",
+    "launch_stability.py": "d439192dc784171a611ae44408abc13385492539d1028068953c60351e03c2c7",
+    "test_execution.py": "4845a37cf3981c220e4ac41a62a7be95414ab7cac963c81a65cfec5cc3dc33b3",
+    "probe_frozen_c0.py": "529e80998542d78ff3432463e5b04388b52ff27683411688cb15c2b50ace17e5",
+    "score_baselines.py": "e615da995ded8da160dcbc130d3862643255a00c4f69a7ee642140f635b35f9b"
+  }
+}

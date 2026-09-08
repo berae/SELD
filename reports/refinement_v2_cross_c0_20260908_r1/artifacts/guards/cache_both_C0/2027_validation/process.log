@@ -1,0 +1,20 @@
+
+Dataset dcase2020task3 is being developed......
+
+{"stage": "hashing_actual_waveform_inputs", "files": 100}
+/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/lib/python3.10/site-packages/torch/nn/modules/transformer.py:307: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1/runtime/models/einv2/variants/C3/seld/methods/ein_seld/data.py:379: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  'waveform': torch.tensor(batch_x, dtype=torch.float32)
+/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1/runtime/models/einv2/variants/C3/seld/methods/ein_seld/data.py:379: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  'waveform': torch.tensor(batch_x, dtype=torch.float32)
+/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1/runtime/models/einv2/variants/C3/seld/methods/ein_seld/data.py:379: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  'waveform': torch.tensor(batch_x, dtype=torch.float32)
+/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1/runtime/models/einv2/variants/C3/seld/methods/ein_seld/data.py:379: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  'waveform': torch.tensor(batch_x, dtype=torch.float32)
+Traceback (most recent call last):
+  File "/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1/code/refinement_v2/cache_features.py", line 163, in <module>
+    main()
+  File "/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1/code/refinement_v2/cache_features.py", line 126, in main
+    assert np.array_equal(out[field], old[field]), (filename,field,'original raw mismatch')
+AssertionError: ('fold1_room1_mix001_ov1', 'sed', 'original raw mismatch')

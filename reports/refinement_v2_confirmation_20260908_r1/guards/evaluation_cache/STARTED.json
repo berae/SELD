@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+    "frozen/code/refinement_v2/cache_features.py",
+    "--config",
+    "frozen/configs/pilot.json",
+    "--relocation",
+    "evaluation_relocation.json",
+    "--split",
+    "evaluation",
+    "--output",
+    "cache/evaluation"
+  ],
+  "pid": 1919442,
+  "guardian_pid": 1919149,
+  "start_unix": 1788833783.0783026,
+  "hard_timeout_seconds": 1800,
+  "visible_devices": "GPU-82ffbec4-d577-dd23-8b52-bd489c348f74"
+}

@@ -1,0 +1,8 @@
+{
+  "run": "/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1/source/C0_2028",
+  "runtime": "/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1/runtime",
+  "causal_scalar_path": "/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1/scalar_trainfolds2-6.h5",
+  "dataset_dir": "/work/zhanghc/Myllm/SELD/EINV2/dataset_root",
+  "hdf5_dir": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/_hdf5",
+  "original_validation": "/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1/source/C0_2028/validation"
+}

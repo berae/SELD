@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+    "frozen/code/refinement_v2/evaluate_frozen.py",
+    "--frozen",
+    "frozen",
+    "--cache",
+    "cache/evaluation",
+    "--output",
+    "evaluation"
+  ],
+  "pid": 1921952,
+  "guardian_pid": 1921638,
+  "start_unix": 1788833884.5130763,
+  "hard_timeout_seconds": 1800,
+  "visible_devices": ""
+}

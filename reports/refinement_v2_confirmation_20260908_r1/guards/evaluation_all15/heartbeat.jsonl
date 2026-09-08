@@ -1,0 +1,17 @@
+{"elapsed_seconds": 0.0008392333984375, "pid": 1921952, "alive": true, "log_bytes": 0, "advisory": null}
+{"elapsed_seconds": 30.030959606170654, "pid": 1921952, "alive": true, "log_bytes": 374, "advisory": null}
+{"elapsed_seconds": 60.061219692230225, "pid": 1921952, "alive": true, "log_bytes": 518, "advisory": null}
+{"elapsed_seconds": 90.08423852920532, "pid": 1921952, "alive": true, "log_bytes": 664, "advisory": null}
+{"elapsed_seconds": 120.11459803581238, "pid": 1921952, "alive": true, "log_bytes": 888, "advisory": null}
+{"elapsed_seconds": 150.14495301246643, "pid": 1921952, "alive": true, "log_bytes": 1115, "advisory": null}
+{"elapsed_seconds": 180.17530846595764, "pid": 1921952, "alive": true, "log_bytes": 1263, "advisory": null}
+{"elapsed_seconds": 210.20564246177673, "pid": 1921952, "alive": true, "log_bytes": 1337, "advisory": null}
+{"elapsed_seconds": 240.23598408699036, "pid": 1921952, "alive": true, "log_bytes": 1337, "advisory": null}
+{"elapsed_seconds": 270.26632261276245, "pid": 1921952, "alive": true, "log_bytes": 1337, "advisory": null}
+{"elapsed_seconds": 300.2966604232788, "pid": 1921952, "alive": true, "log_bytes": 1337, "advisory": "OUTPUT_STALL_SUSPECTED"}
+{"elapsed_seconds": 330.3269958496094, "pid": 1921952, "alive": true, "log_bytes": 1337, "advisory": "OUTPUT_STALL_SUSPECTED"}
+{"elapsed_seconds": 360.35733437538147, "pid": 1921952, "alive": true, "log_bytes": 1337, "advisory": "OUTPUT_STALL_SUSPECTED"}
+{"elapsed_seconds": 390.387668132782, "pid": 1921952, "alive": true, "log_bytes": 1337, "advisory": "OUTPUT_STALL_SUSPECTED"}
+{"elapsed_seconds": 420.4180066585541, "pid": 1921952, "alive": true, "log_bytes": 1337, "advisory": "OUTPUT_STALL_SUSPECTED"}
+{"elapsed_seconds": 450.4483222961426, "pid": 1921952, "alive": true, "log_bytes": 1337, "advisory": "OUTPUT_STALL_SUSPECTED"}
+{"elapsed_seconds": 480.4786467552185, "pid": 1921952, "alive": true, "log_bytes": 1337, "advisory": "OUTPUT_STALL_SUSPECTED"}

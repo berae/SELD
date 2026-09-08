@@ -1,5 +1,7 @@
 # SELD 全部实验结果与代码整理（2026-09-07）
 
+接续说明（2026-09-08）：本表保留9月7日盘点时点。其后5个缺失evaluation已补齐，并完成唯一v2固定C0的12个小头与15条件evaluation；跨C0新增训练仍为0/8。最新汇总、失败状态和全量结果入口见[当前实验总览](CURRENT_EXPERIMENT_SUMMARY_20260908.md)，不按本表的旧缺失/待办状态启动实验。
+
 证据来自 rabbit02 `/work/zhanghc/Myllm/SELD` 与 RB05 `/home/zhanghc/SELD` 的实际文件；不采用聊天中的成绩作为数据源。
 
 [Dashboard](summary_20260907/DASHBOARD.md) · [代码地图](../docs/CODE_MAP.md)

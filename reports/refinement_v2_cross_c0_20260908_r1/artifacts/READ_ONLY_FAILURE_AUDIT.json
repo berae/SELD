@@ -1,0 +1,145 @@
+{
+  "status": "BLOCKED_AT_VALIDATION_FLOAT_REGRESSION",
+  "rows": [
+    {
+      "C0_seed": 2027,
+      "checkpoint_identity_exact": true,
+      "checkpoint_config_exact": true,
+      "runtime_and_GT_hashes_exact": true,
+      "current_waveform_hashes_equal_prior_C0_2026_validation": true,
+      "historical_float_hashes_verified": 100,
+      "historical_export_command": [
+        "/home/zhanghc/SELD/reports/motion_decomposition_20260907/code/export_v2.py",
+        "--run",
+        "/home/zhanghc/SELD/experiment_einv2_fairbaseline_20260905_r1/runs/B0_audited_seed2027_rb05_v1",
+        "--runtime",
+        "/home/zhanghc/SELD/code_releases/SELD_rb05_dynamicmask_20260905_r1",
+        "--output",
+        "/home/zhanghc/SELD/reports/motion_decomposition_20260907/exports/C0_2027/validation",
+        "--split",
+        "validation"
+      ],
+      "historical_gpu": "NVIDIA RTX A6000",
+      "current_gpu": "NVIDIA GeForce RTX 3090",
+      "historical_torch": "2.4.1+cu121",
+      "current_torch": "2.4.1+cu121",
+      "failed_recording": "fold1_room1_mix001_ov1",
+      "failed_field": "sed",
+      "failure": "bitwise_float_mismatch",
+      "numerical_delta": null,
+      "CSV_comparison": null,
+      "official_metric_comparison": null,
+      "unavailable_reason": "assertion precedes writing first-record float/CSV; no diagnostic re-forward authorized or performed",
+      "validation_saved_float_files": 0,
+      "original_exit": {
+        "exit_code": 1,
+        "timed_out": false,
+        "elapsed_seconds": 30.031033992767334,
+        "status": "FAILED",
+        "automatic_retry": false
+      },
+      "train_cache_completion": {
+        "status": "PASS",
+        "files": 500,
+        "elapsed_seconds": 137.8036892414093,
+        "exact_validation_float_csv_score": false,
+        "scores": null,
+        "parameters_buffers_unchanged": true,
+        "prefix_probes": [
+          {
+            "batch": 0,
+            "raw_prefix_max_delta": 0.0,
+            "feature_prefix_max_delta": 0.0
+          },
+          {
+            "batch": 234,
+            "raw_prefix_max_delta": 0.0,
+            "feature_prefix_max_delta": 0.0
+          }
+        ],
+        "causality_scope": "first and last export batches, prefix20; not universal proof",
+        "in_sample_training_cache": true,
+        "training_updates": 0
+      },
+      "formal_head_runs_started": 0,
+      "source_hashes": {
+        "historical_manifest": "4ee907d2e913b565b782e9ed263aa016934754d4fc443f861881d03b5009be6f",
+        "current_manifest": "812e517b97fbc13ada6f819d0e1cebfc3f1d03dfbc7ace1321fb8631f40c290c",
+        "failure_log": "ea0b2c9b643b3f763419a059919461833066042ebdfcc3b390cbb1e3347e2ec8"
+      }
+    },
+    {
+      "C0_seed": 2028,
+      "checkpoint_identity_exact": true,
+      "checkpoint_config_exact": true,
+      "runtime_and_GT_hashes_exact": true,
+      "current_waveform_hashes_equal_prior_C0_2026_validation": true,
+      "historical_float_hashes_verified": 100,
+      "historical_export_command": [
+        "/home/zhanghc/SELD/reports/motion_decomposition_20260907/code/export_v2.py",
+        "--run",
+        "/home/zhanghc/SELD/experiment_einv2_fairbaseline_20260905_r1/runs/B0_audited_seed2028_rb05_v1",
+        "--runtime",
+        "/home/zhanghc/SELD/code_releases/SELD_rb05_dynamicmask_20260905_r1",
+        "--output",
+        "/home/zhanghc/SELD/reports/motion_decomposition_20260907/exports/C0_2028/validation",
+        "--split",
+        "validation"
+      ],
+      "historical_gpu": "NVIDIA RTX A6000",
+      "current_gpu": "NVIDIA GeForce RTX 3090",
+      "historical_torch": "2.4.1+cu121",
+      "current_torch": "2.4.1+cu121",
+      "failed_recording": "fold1_room1_mix001_ov1",
+      "failed_field": "sed",
+      "failure": "bitwise_float_mismatch",
+      "numerical_delta": null,
+      "CSV_comparison": null,
+      "official_metric_comparison": null,
+      "unavailable_reason": "assertion precedes writing first-record float/CSV; no diagnostic re-forward authorized or performed",
+      "validation_saved_float_files": 0,
+      "original_exit": {
+        "exit_code": 1,
+        "timed_out": false,
+        "elapsed_seconds": 30.030999898910522,
+        "status": "FAILED",
+        "automatic_retry": false
+      },
+      "train_cache_completion": {
+        "status": "PASS",
+        "files": 500,
+        "elapsed_seconds": 137.60037922859192,
+        "exact_validation_float_csv_score": false,
+        "scores": null,
+        "parameters_buffers_unchanged": true,
+        "prefix_probes": [
+          {
+            "batch": 0,
+            "raw_prefix_max_delta": 0.0,
+            "feature_prefix_max_delta": 0.0
+          },
+          {
+            "batch": 234,
+            "raw_prefix_max_delta": 0.0,
+            "feature_prefix_max_delta": 0.0
+          }
+        ],
+        "causality_scope": "first and last export batches, prefix20; not universal proof",
+        "in_sample_training_cache": true,
+        "training_updates": 0
+      },
+      "formal_head_runs_started": 0,
+      "source_hashes": {
+        "historical_manifest": "4f2f1decff2d153dfb94f828c484b55ac2dce99c961663aefe77295215ba3ef8",
+        "current_manifest": "4f4be50d05ab3b38693d8a8720ad8f29477f2aee1e1770fec01825a8392cdbc5",
+        "failure_log": "ea0b2c9b643b3f763419a059919461833066042ebdfcc3b390cbb1e3347e2ec8"
+      }
+    }
+  ],
+  "new_training_runs": 0,
+  "maximum_authorized_training_runs": 8,
+  "automatic_retry": false,
+  "suspected_cause": "Unresolved; differing historical exporter contexts and GPU hardware are investigation leads, not established causes",
+  "script_sha256": "09843e694bd05f4ad16716017a35ec2a63ae7b8923545ce1eac3c8936b978c05",
+  "scope": "read-only provenance/file checks; zero new inference or training"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "date": "2026-09-08",
+  "evaluation_conditions_completed": 15,
+  "recordings_per_condition": 200,
+  "local_prediction_files_sha256_verified": 3000,
+  "local_cache_manifest_sha256_verified": true,
+  "transfer_archive_sha256": "4d0c8c9f52d645c89ed746f95e15a19f1e232fa3603b849a0d2a6a0e7b3e055d",
+  "transfer_hash_matches_remote": true,
+  "frozen_artifact_manifest_sha256": "eb731da858558475c184cb0c8560a339d3f7cb403cd28aff495890adfc3a0f47",
+  "all_12_source_weights_configs_core_hashes_verified": true,
+  "all_15_detection_checks_pass": true,
+  "counter_reaggregation_all_15_pass": true,
+  "new_training_runs_this_phase": 0,
+  "repeated_existing_bootstrap": false,
+  "cross_C0_added_training_runs": 0,
+  "cross_C0_authorization": "PENDING_SEPARATE_CURRENT_USER_CONFIRMATION",
+  "historical_evaluation_seen": true,
+  "new_blind_test": false,
+  "code_commit": "842b56351b4fd2b2a40dea1b8eef2ec22f6e8d9a",
+  "github_push_status": "NOT_CONFIRMED_NETWORK_FAILURE",
+  "github_push_attempts": 2
+}

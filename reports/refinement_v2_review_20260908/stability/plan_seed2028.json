@@ -1,0 +1,122 @@
+[
+  {
+    "condition": "F-Deriv",
+    "gpu": {
+      "index": "0",
+      "uuid": "GPU-82ffbec4-d577-dd23-8b52-bd489c348f74"
+    },
+    "command": [
+      "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_review_code_20260908/refinement_v2/run_guarded.py",
+      "--directory",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_stability_20260908_r1/guards/seed2028/F-Deriv",
+      "--seconds",
+      "14400",
+      "--",
+      "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_review_code_20260908/refinement_v2/train_heads.py",
+      "--cache",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/cache",
+      "--config",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/configs/pilot.json",
+      "--execution",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_stability_20260908_r1/execution_seed2028.json",
+      "--scorer",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/scorer",
+      "--output",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_stability_20260908_r1/seed2028/F-Deriv",
+      "--condition",
+      "F-Deriv"
+    ]
+  },
+  {
+    "condition": "R0",
+    "gpu": {
+      "index": "1",
+      "uuid": "GPU-9b71a5f1-1cd2-bb60-6a59-fbf428faf941"
+    },
+    "command": [
+      "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_review_code_20260908/refinement_v2/run_guarded.py",
+      "--directory",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_stability_20260908_r1/guards/seed2028/R0",
+      "--seconds",
+      "14400",
+      "--",
+      "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_review_code_20260908/refinement_v2/train_heads.py",
+      "--cache",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/cache",
+      "--config",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/configs/pilot.json",
+      "--execution",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_stability_20260908_r1/execution_seed2028.json",
+      "--scorer",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/scorer",
+      "--output",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_stability_20260908_r1/seed2028/R0",
+      "--condition",
+      "R0"
+    ]
+  },
+  {
+    "condition": "R1",
+    "gpu": {
+      "index": "2",
+      "uuid": "GPU-abaec7b3-9c80-1052-1654-01a131128629"
+    },
+    "command": [
+      "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_review_code_20260908/refinement_v2/run_guarded.py",
+      "--directory",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_stability_20260908_r1/guards/seed2028/R1",
+      "--seconds",
+      "14400",
+      "--",
+      "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_review_code_20260908/refinement_v2/train_heads.py",
+      "--cache",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/cache",
+      "--config",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/configs/pilot.json",
+      "--execution",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_stability_20260908_r1/execution_seed2028.json",
+      "--scorer",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/scorer",
+      "--output",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_stability_20260908_r1/seed2028/R1",
+      "--condition",
+      "R1"
+    ]
+  },
+  {
+    "condition": "R2",
+    "gpu": {
+      "index": "3",
+      "uuid": "GPU-d1e267dc-6282-a541-c0a0-b867cf2ad3d1"
+    },
+    "command": [
+      "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_review_code_20260908/refinement_v2/run_guarded.py",
+      "--directory",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_stability_20260908_r1/guards/seed2028/R2",
+      "--seconds",
+      "14400",
+      "--",
+      "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_review_code_20260908/refinement_v2/train_heads.py",
+      "--cache",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/cache",
+      "--config",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/configs/pilot.json",
+      "--execution",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_stability_20260908_r1/execution_seed2028.json",
+      "--scorer",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/scorer",
+      "--output",
+      "/work/zhanghc/Myllm/SELD/reports/refinement_v2_stability_20260908_r1/seed2028/R2",
+      "--condition",
+      "R2"
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "test": "vectorized_same_inputs_as_reference_head",
+      "status": "PASS"
+    },
+    {
+      "test": "batched_future_prefix_and_chunk_reset",
+      "status": "PASS"
+    },
+    {
+      "test": "fixed_GT_masks_identity_switch_no_angle_gate",
+      "status": "PASS"
+    },
+    {
+      "test": "KF_constant_direction_slot_swap_prefix_chunk_reset",
+      "status": "PASS"
+    },
+    {
+      "test": "nonzero_learnable_gradient_and_empty_mask_losses",
+      "status": "PASS"
+    },
+    {
+      "test": "batched_zero_residual_exact_identity",
+      "status": "PASS"
+    }
+  ],
+  "scope": "synthetic CPU execution adapters; backward only, no optimizer updates"
+}

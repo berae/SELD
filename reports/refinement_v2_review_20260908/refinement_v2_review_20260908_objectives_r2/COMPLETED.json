@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "optimizer_updates": 0,
+  "backbone_loaded": false,
+  "scope": "Original head seed2026 selected best checkpoints only; float directions separate from quantized official metrics; gradients are local descriptive diagnostics, not proof of optimization cause",
+  "script_sha256": "fff21a30efece0b214f88ae980f432166c8e5afec47704ad538251d115a67c79"
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "head_seeds": [
+    2027,
+    2028
+  ],
+  "conditions": [
+    "F-Deriv",
+    "R0",
+    "R1",
+    "R2"
+  ],
+  "C0_seeds": [
+    2026
+  ]
+}

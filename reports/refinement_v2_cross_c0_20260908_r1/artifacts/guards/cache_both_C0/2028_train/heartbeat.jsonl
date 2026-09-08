@@ -1,0 +1,5 @@
+{"elapsed_seconds": 0.0009558200836181641, "pid": 2147437, "alive": true, "log_bytes": 0, "advisory": null}
+{"elapsed_seconds": 30.031128883361816, "pid": 2147437, "alive": true, "log_bytes": 4314, "advisory": null}
+{"elapsed_seconds": 60.061915159225464, "pid": 2147437, "alive": true, "log_bytes": 9438, "advisory": null}
+{"elapsed_seconds": 90.09096598625183, "pid": 2147437, "alive": true, "log_bytes": 14429, "advisory": null}
+{"elapsed_seconds": 120.1189603805542, "pid": 2147437, "alive": true, "log_bytes": 19737, "advisory": null}

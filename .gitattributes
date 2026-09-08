@@ -4,3 +4,6 @@ provenance/* -text
 reports/historical/*.csv -text
 reports/aligned_20260904/*.csv -text
 reports/catalog_20260904/completion_* -text
+reports/refinement_v2_review_20260908/** -text
+reports/refinement_v2_confirmation_20260908_r1/** -text
+reports/refinement_v2_cross_c0_20260908_r1/** -text

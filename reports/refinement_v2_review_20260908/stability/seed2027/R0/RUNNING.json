@@ -1,0 +1,43 @@
+{
+  "pid": 1605679,
+  "command": [
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_review_code_20260908/refinement_v2/train_heads.py",
+    "--cache",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/cache",
+    "--config",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/configs/pilot.json",
+    "--execution",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_stability_20260908_r1/execution_seed2027.json",
+    "--scorer",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_execution_20260907_r1/scorer",
+    "--output",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_stability_20260908_r1/seed2027/R0",
+    "--condition",
+    "R0"
+  ],
+  "condition": "R0",
+  "config_sha256": "8c22199ff444a5b1d60d7baac066819fff87db6d1ef78d6e083637a840c8c947",
+  "execution_sha256": "b64265c0e79ed547bbffd1a9c190028c95a1e828147a176090e14d2dd34060c2",
+  "code_hashes": {
+    "candidate.py": "f403205c3dcd4a1b88398d2dc206a36e2ca52bede33e8497cf006c00c190d729",
+    "diagnose_fixed_targets.py": "3850bc06935f026273d29b30361b208f6aade629a28b26ddf40f3846c647dee2",
+    "train_heads.py": "be106a706fb60f95598e9fa336910882d7201e08f09810a9974578a1aedac564",
+    "launch_heads.py": "0a93437ebb82083cc6420a10491e46f5e3dc1a61050184ec7bc2d24445150a94",
+    "test_candidate.py": "1b5e58dc38200ccebbb72d40b0ce100d01a7cb138ddc9edd1156f654f66c9e41",
+    "cache_features.py": "e98087f10f443811a1433c4439ec44e9a6a6dd9922265e0fa59e8189b3190bde",
+    "verify_delivery.py": "dcda1ef3b0a76b3d80be7b26bade34c069e56a1c9c8bc09cef639124bf8998d9",
+    "test_cached_output.py": "21696cd7a61bf69682bacd9c166870355e069b7d588d2151d6d72ec4c4828d6f",
+    "audit_cache.py": "1bc0e53545755be56fb6ffd6b418e271834f40c2a0fc02db7c8074151fd6745e",
+    "run_guarded.py": "62b8c9438605cadf0c05fd96e1dea85ac47fc41a23f949d404afb6eeda4bf5f2",
+    "experiment_core.py": "5900a69317feb8bf7badbdc49bd4d38da6303fa881b3988fc36cb6b0e259a1fa",
+    "launch_stability.py": "d439192dc784171a611ae44408abc13385492539d1028068953c60351e03c2c7",
+    "test_execution.py": "4845a37cf3981c220e4ac41a62a7be95414ab7cac963c81a65cfec5cc3dc33b3",
+    "probe_frozen_c0.py": "529e80998542d78ff3432463e5b04388b52ff27683411688cb15c2b50ace17e5",
+    "score_baselines.py": "e615da995ded8da160dcbc130d3862643255a00c4f69a7ee642140f635b35f9b"
+  },
+  "torch": "2.4.1+cu121",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "smoke_batches": 0,
+  "backbone_loaded": false,
+  "start_unix": 1788800829.7631953
+}

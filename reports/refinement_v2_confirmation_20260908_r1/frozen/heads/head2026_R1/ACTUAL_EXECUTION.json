@@ -1,0 +1,61 @@
+{
+  "schema": "seld_refinement_v2_execution/1",
+  "decision": "unified_v2_20260907",
+  "base_config": "pilot.json",
+  "user_authorization": "\u5141\u8bb8\uff0c\u7a7a\u95f2\u7684\u5361\u90fd\u53ef\u4ee5\u542f\u52a8\u4f18\u5148\u75283090\u5427",
+  "authorized_scope": "implement missing v2 experiment code, test, export same-C0 features, bounded smoke and seed2026 first-stage pilots",
+  "delta_from_original": {
+    "new_head_optimizer_updates": true,
+    "max_parallel_head_processes": 4,
+    "preferred_head_host": "rabbit02",
+    "preferred_head_gpu": "RTX3090",
+    "cache_host": "rabbit02",
+    "RB05_compute": "PROHIBITED_BY_LATEST_USER_REQUEST",
+    "RB05_transfer": "user authorized read-only copy of fixed C0 weights, normalization and reference predictions; no inference/training",
+    "original_artifacts_unchanged": true
+  },
+  "conditions": [
+    "F0",
+    "F-EMA",
+    "F-KF",
+    "F-Deriv",
+    "R0",
+    "R1",
+    "R2"
+  ],
+  "seed": 2026,
+  "smoke_batches_per_condition": 3,
+  "smoke_hard_timeout_seconds": 1800,
+  "cache_hard_timeout_seconds": 1800,
+  "pilot_hard_timeout_seconds": 14400,
+  "epochs": 200,
+  "convergence_authorization": "20epoch\u80fd\u591f\u6536\u655b\u5417\uff1f\u4f18\u5148\u5148\u6536\u655b",
+  "stopping": {
+    "minimum_epochs": 40,
+    "maximum_epochs": 200,
+    "validation_patience": 20,
+    "validation_min_delta": 1e-05,
+    "train_loss_windows": 10,
+    "relative_train_loss_plateau": 0.01,
+    "require_both_plateaus": true,
+    "cap_without_plateau": "CONVERGENCE_NOT_CONFIRMED"
+  },
+  "batch_chunks": 32,
+  "selection_profile": "dcase2023_micro",
+  "selection_metric": "SELD_LR",
+  "implementation_clarifications_before_results": {
+    "unmatched_regularizer_R": "mean squared chord distance between corrected and raw unit directions (angular-equivalent locally), lambda=.1",
+    "unmatched_regularizer_deriv": "mean coordinate squared displacement on unmatched active detections, lambda=.1",
+    "GT_frame_matching": "classwise minimum angular-cost Hungarian, no angular gate; GT identities are (class,source_id), never used for input association",
+    "static_pair_threshold": "unit-GT displacement L2 <= 1e-7; descriptive pair diagnostic only",
+    "zero_raw_directions": "retain raw; exclude directional supervision and explicitly count",
+    "GT_assignment_tie": "deterministic CSV order under scipy Hungarian; count near-equal row/column nearest costs, do not relabel inputs",
+    "smoke_is_disposable": "formal runs initialize independently from seed2026, never continue smoke weights"
+  },
+  "no_parameter_search": true,
+  "no_backbone_training": true,
+  "no_evaluation_selection": true,
+  "no_automatic_retry": true,
+  "no_automatic_three_seed_expansion": true,
+  "numeric_promotion_thresholds": "still pending; no automatic promotion"
+}

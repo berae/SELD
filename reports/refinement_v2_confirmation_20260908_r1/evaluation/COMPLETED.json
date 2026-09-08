@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "conditions": 15,
+  "files": 200,
+  "elapsed_seconds": 508.8338677883148,
+  "all_frozen_hashes_unchanged": true,
+  "all_detection_checks_pass": true
+}

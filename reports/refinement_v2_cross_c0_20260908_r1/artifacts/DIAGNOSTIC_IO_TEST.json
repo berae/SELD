@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "filename": "mix001.csv",
+  "all_arrays_exact": true,
+  "fixed_errors_exact": true,
+  "scope": "One-file NPZ materialization equivalence; no model training, bootstrap, or metric selection",
+  "source_target_sha256": "216b8328866dd0bed4b75b975a8170147d71b8fa3bd9670dbf5ed95180605f03",
+  "script_sha256": "01691f9ae4eb8161cb432c0e34fe214e4f0d3582766a1d83c3ea2bd090119809"
+}

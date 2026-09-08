@@ -3,7 +3,9 @@
 EINV2 与 Multi-ACCDOA 的 causal / offline、velocity、JEPA 辅助监督实验代码。
 当前版本 **0.3.0**：汇总两台服务器全部已发现实验记录，整理命名配置与训练/测试入口，保留三个精确runtime快照及历史代码；不包含数据、权重或大体积预测。
 
-## 当前入口（2026-09-07）
+## 当前入口（2026-09-08）
+
+- [当前全部实验总览与最新结果](reports/CURRENT_EXPERIMENT_SUMMARY_20260908.md)：历史68个主干run、唯一v2的12个小头及15条件evaluation分开汇总；跨C0新增训练0/8，失败记录完整保留。最新证据目录包含3,000份轻量evaluation预测CSV，但不含权重、特征或音频。下方9月7日历史总表保留当时状态，后补结果与状态更正见本入口。
 
 - [冻结 C0 检测保持方向修正：唯一 v2](scripts/refinement_v2/README.md)：缓存与回归、固定 Kalman、同 C0 导数头、R0/R1/R2 递进消融和收敛优先试跑入口；新增代码通过组件测试不等于已取得新训练结果。
 - [全部实验结果](reports/ALL_EXPERIMENTS.md)：68个统一主run、131个已评分run×split；另列旧Multi 8×3矩阵、STARSS训练曲线、试跑与缺测。

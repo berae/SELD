@@ -1,0 +1,7 @@
+{
+  "run": "/work/zhanghc/Myllm/SELD/reports/refinement_v2_confirmation_20260908_r1/frozen/C0",
+  "runtime": "/work/zhanghc/Myllm/SELD/reports/refinement_v2_confirmation_20260908_r1/frozen/runtime",
+  "causal_scalar_path": "/work/zhanghc/Myllm/SELD/reports/refinement_v2_confirmation_20260908_r1/frozen/scalar_trainfolds2-6.h5",
+  "dataset_dir": "/work/zhanghc/Myllm/SELD/EINV2/dataset_root",
+  "hdf5_dir": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/_hdf5"
+}

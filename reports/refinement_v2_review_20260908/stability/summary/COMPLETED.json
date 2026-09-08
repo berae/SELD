@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "verified_runs": 12,
+  "new_runs": 8,
+  "all_detection_preserved": true,
+  "all_new_guard_exit_zero": true,
+  "all_new_best_epoch_selection_checked": true,
+  "script_sha256": "cd2a0604eab035e3346ee976765a7044cae99f9375f4d623ad5ead56beb9e702"
+}

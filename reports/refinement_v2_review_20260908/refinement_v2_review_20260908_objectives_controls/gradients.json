@@ -1,0 +1,13 @@
+[
+  {
+    "split": "validation",
+    "condition": "R2",
+    "chunks": 64,
+    "sampling_seed": 91082026,
+    "direction_loss": 0.07421151548624039,
+    "motion_loss": 0.0021490780636668205,
+    "direction_grad_norm": 0.0687674731016159,
+    "motion_grad_norm": 0.008143720217049122,
+    "grad_cosine": -0.20799612998962402
+  }
+]
