@@ -18,7 +18,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument('--config', type=Path, required=True)
     p.add_argument('--output', type=Path, required=True)
-    p.add_argument('--split', choices=['train', 'validation'], required=True)
+    p.add_argument('--split', choices=['train', 'validation', 'evaluation'], required=True)
     p.add_argument('--relocation', type=Path, help='Only storage-path relocation; original config and hashes remain authoritative')
     args = p.parse_args()
     spec = json.loads(args.config.read_text())
@@ -41,16 +41,18 @@ def main():
     assert ck['config'] == cfg_disk
     for key in ('optimizer', 'scheduler', 'rng', 'cuda_rng', 'np_rng', 'random_rng'):
         ck.pop(key, None)
-    runner.seed_all(2026)
+    source_seed=cfg_disk['audit']['seed']
+    runner.seed_all(source_seed)
     cfg = copy.deepcopy(cfg_disk)
     for key in ('causal_scalar_path','dataset_dir','hdf5_dir'):
         if key in relocation:
             cfg[key] = relocation[key]
     assert cfg['inference']['batch_size'] == 32
-    cfg['inference'].update(testset_type='dev', test_fold='1' if args.split == 'validation' else '2,3,4,5,6')
+    cfg['inference'].update(testset_type='eval' if args.split=='evaluation' else 'dev',
+                            test_fold='None' if args.split=='evaluation' else '1' if args.split=='validation' else '2,3,4,5,6')
     dataset = runner.get_dataset(cfg['dataset'], cfg['dataset_dir'])
-    ds, generator, _ = runner.get_generator(runner.data_args(2026, 4), cfg, dataset, 'test')
-    expected = 100 if args.split == 'validation' else 500
+    ds, generator, _ = runner.get_generator(runner.data_args(source_seed, 4), cfg, dataset, 'test')
+    expected = {'validation':100,'train':500,'evaluation':200}[args.split]
     assert len(ds) == expected*15
     waveform_paths = sorted({Path(str(path).split('%')[0]) for path in ds.paths_list})
     assert len(waveform_paths) == expected
@@ -66,8 +68,8 @@ def main():
             saved[i] = inputs[0].detach().clone()
         return capture
     handles = [head.register_forward_pre_hook(hook(i)) for i, head in enumerate(model.doa_heads)]
-    references = Path(cfg['dataset_dir'])/'metadata_dev'
-    gt_paths = sorted(p for p in references.glob('*.csv') if p.name.startswith(tuple('fold'+str(i) for i in ([1] if args.split == 'validation' else [2,3,4,5,6]))))
+    references = Path(cfg['dataset_dir'])/('metadata_eval' if args.split=='evaluation' else 'metadata_dev')
+    gt_paths = sorted(p for p in references.glob('*.csv') if args.split=='evaluation' or p.name.startswith(tuple('fold'+str(i) for i in ([1] if args.split == 'validation' else [2,3,4,5,6]))))
     assert len(gt_paths) == expected
     gt_hashes = {p.name: digest(p) for p in gt_paths}
     manifest = dict(split=args.split, run=str(run), runtime=str(runtime), config=cfg_disk,
