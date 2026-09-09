@@ -1,0 +1,108 @@
+
+Dataset dcase2020task3 is being developed......
+
+{"stage": "hashing_actual_waveform_inputs", "files": 200}
+/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/lib/python3.10/site-packages/torch/nn/modules/transformer.py:307: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/frozen/runtime/models/einv2/variants/C3/seld/methods/ein_seld/data.py:379: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  'waveform': torch.tensor(batch_x, dtype=torch.float32)
+/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/frozen/runtime/models/einv2/variants/C3/seld/methods/ein_seld/data.py:379: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  'waveform': torch.tensor(batch_x, dtype=torch.float32)
+/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/frozen/runtime/models/einv2/variants/C3/seld/methods/ein_seld/data.py:379: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  'waveform': torch.tensor(batch_x, dtype=torch.float32)
+/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/frozen/runtime/models/einv2/variants/C3/seld/methods/ein_seld/data.py:379: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  'waveform': torch.tensor(batch_x, dtype=torch.float32)
+{"batch": 1, "batches": 94, "recordings": 2, "elapsed_seconds": 10.034612894058228}
+{"batch": 2, "batches": 94, "recordings": 4, "elapsed_seconds": 10.891192436218262}
+{"batch": 3, "batches": 94, "recordings": 6, "elapsed_seconds": 11.321209907531738}
+{"batch": 4, "batches": 94, "recordings": 8, "elapsed_seconds": 11.762043952941895}
+{"batch": 5, "batches": 94, "recordings": 10, "elapsed_seconds": 12.219482898712158}
+{"batch": 6, "batches": 94, "recordings": 12, "elapsed_seconds": 12.690393447875977}
+{"batch": 7, "batches": 94, "recordings": 14, "elapsed_seconds": 13.104411602020264}
+{"batch": 8, "batches": 94, "recordings": 17, "elapsed_seconds": 13.708074808120728}
+{"batch": 9, "batches": 94, "recordings": 19, "elapsed_seconds": 14.152126789093018}
+{"batch": 10, "batches": 94, "recordings": 21, "elapsed_seconds": 14.596834659576416}
+{"batch": 11, "batches": 94, "recordings": 23, "elapsed_seconds": 15.03501009941101}
+{"batch": 12, "batches": 94, "recordings": 25, "elapsed_seconds": 15.520893812179565}
+{"batch": 13, "batches": 94, "recordings": 27, "elapsed_seconds": 15.965789079666138}
+{"batch": 14, "batches": 94, "recordings": 29, "elapsed_seconds": 16.399442672729492}
+{"batch": 15, "batches": 94, "recordings": 32, "elapsed_seconds": 17.03710675239563}
+{"batch": 16, "batches": 94, "recordings": 34, "elapsed_seconds": 17.47710418701172}
+{"batch": 17, "batches": 94, "recordings": 36, "elapsed_seconds": 17.937570810317993}
+{"batch": 18, "batches": 94, "recordings": 38, "elapsed_seconds": 18.38727068901062}
+{"batch": 19, "batches": 94, "recordings": 40, "elapsed_seconds": 18.838598251342773}
+{"batch": 20, "batches": 94, "recordings": 42, "elapsed_seconds": 19.274643421173096}
+{"batch": 21, "batches": 94, "recordings": 44, "elapsed_seconds": 19.73098397254944}
+{"batch": 22, "batches": 94, "recordings": 46, "elapsed_seconds": 20.171128511428833}
+{"batch": 23, "batches": 94, "recordings": 49, "elapsed_seconds": 20.78802490234375}
+{"batch": 24, "batches": 94, "recordings": 51, "elapsed_seconds": 21.234505653381348}
+{"batch": 25, "batches": 94, "recordings": 53, "elapsed_seconds": 21.721517324447632}
+{"batch": 26, "batches": 94, "recordings": 55, "elapsed_seconds": 22.198310136795044}
+{"batch": 27, "batches": 94, "recordings": 57, "elapsed_seconds": 22.638179779052734}
+{"batch": 28, "batches": 94, "recordings": 59, "elapsed_seconds": 23.08316135406494}
+{"batch": 29, "batches": 94, "recordings": 61, "elapsed_seconds": 23.541286945343018}
+{"batch": 30, "batches": 94, "recordings": 64, "elapsed_seconds": 24.331444025039673}
+{"batch": 31, "batches": 94, "recordings": 66, "elapsed_seconds": 24.777464389801025}
+{"batch": 32, "batches": 94, "recordings": 68, "elapsed_seconds": 25.21274471282959}
+{"batch": 33, "batches": 94, "recordings": 70, "elapsed_seconds": 25.67813539505005}
+{"batch": 34, "batches": 94, "recordings": 72, "elapsed_seconds": 26.10837411880493}
+{"batch": 35, "batches": 94, "recordings": 74, "elapsed_seconds": 26.584128856658936}
+{"batch": 36, "batches": 94, "recordings": 76, "elapsed_seconds": 27.039047718048096}
+{"batch": 37, "batches": 94, "recordings": 78, "elapsed_seconds": 27.492511749267578}
+{"batch": 38, "batches": 94, "recordings": 81, "elapsed_seconds": 28.120043992996216}
+{"batch": 39, "batches": 94, "recordings": 83, "elapsed_seconds": 28.55471920967102}
+{"batch": 40, "batches": 94, "recordings": 85, "elapsed_seconds": 28.992497205734253}
+{"batch": 41, "batches": 94, "recordings": 87, "elapsed_seconds": 29.443991661071777}
+{"batch": 42, "batches": 94, "recordings": 89, "elapsed_seconds": 29.868386268615723}
+{"batch": 43, "batches": 94, "recordings": 91, "elapsed_seconds": 30.315656185150146}
+{"batch": 44, "batches": 94, "recordings": 93, "elapsed_seconds": 30.788618803024292}
+{"batch": 45, "batches": 94, "recordings": 96, "elapsed_seconds": 31.42222833633423}
+{"batch": 46, "batches": 94, "recordings": 98, "elapsed_seconds": 31.870119333267212}
+{"batch": 47, "batches": 94, "recordings": 100, "elapsed_seconds": 32.30684971809387}
+{"batch": 48, "batches": 94, "recordings": 102, "elapsed_seconds": 32.771647691726685}
+{"batch": 49, "batches": 94, "recordings": 104, "elapsed_seconds": 33.23529124259949}
+{"batch": 50, "batches": 94, "recordings": 106, "elapsed_seconds": 33.67803764343262}
+{"batch": 51, "batches": 94, "recordings": 108, "elapsed_seconds": 34.13600134849548}
+{"batch": 52, "batches": 94, "recordings": 110, "elapsed_seconds": 34.5943648815155}
+{"batch": 53, "batches": 94, "recordings": 113, "elapsed_seconds": 35.2126886844635}
+{"batch": 54, "batches": 94, "recordings": 115, "elapsed_seconds": 35.68627738952637}
+{"batch": 55, "batches": 94, "recordings": 117, "elapsed_seconds": 36.14200520515442}
+{"batch": 56, "batches": 94, "recordings": 119, "elapsed_seconds": 36.58702611923218}
+{"batch": 57, "batches": 94, "recordings": 121, "elapsed_seconds": 37.02985501289368}
+{"batch": 58, "batches": 94, "recordings": 123, "elapsed_seconds": 37.511926889419556}
+{"batch": 59, "batches": 94, "recordings": 125, "elapsed_seconds": 37.94878172874451}
+{"batch": 60, "batches": 94, "recordings": 128, "elapsed_seconds": 38.56143593788147}
+{"batch": 61, "batches": 94, "recordings": 130, "elapsed_seconds": 39.01782989501953}
+{"batch": 62, "batches": 94, "recordings": 132, "elapsed_seconds": 39.467583656311035}
+{"batch": 63, "batches": 94, "recordings": 134, "elapsed_seconds": 39.90602159500122}
+{"batch": 64, "batches": 94, "recordings": 136, "elapsed_seconds": 40.317469358444214}
+{"batch": 65, "batches": 94, "recordings": 138, "elapsed_seconds": 40.76142454147339}
+{"batch": 66, "batches": 94, "recordings": 140, "elapsed_seconds": 41.20800304412842}
+{"batch": 67, "batches": 94, "recordings": 142, "elapsed_seconds": 41.62638807296753}
+{"batch": 68, "batches": 94, "recordings": 145, "elapsed_seconds": 42.262964963912964}
+{"batch": 69, "batches": 94, "recordings": 147, "elapsed_seconds": 42.715906381607056}
+{"batch": 70, "batches": 94, "recordings": 149, "elapsed_seconds": 43.168155908584595}
+{"batch": 71, "batches": 94, "recordings": 151, "elapsed_seconds": 43.61544752120972}
+{"batch": 72, "batches": 94, "recordings": 153, "elapsed_seconds": 44.056662797927856}
+{"batch": 73, "batches": 94, "recordings": 155, "elapsed_seconds": 44.5005886554718}
+{"batch": 74, "batches": 94, "recordings": 157, "elapsed_seconds": 44.96723246574402}
+{"batch": 75, "batches": 94, "recordings": 160, "elapsed_seconds": 45.7148334980011}
+{"batch": 76, "batches": 94, "recordings": 162, "elapsed_seconds": 46.13117218017578}
+{"batch": 77, "batches": 94, "recordings": 164, "elapsed_seconds": 46.59862947463989}
+{"batch": 78, "batches": 94, "recordings": 166, "elapsed_seconds": 47.05194973945618}
+{"batch": 79, "batches": 94, "recordings": 168, "elapsed_seconds": 47.51613688468933}
+{"batch": 80, "batches": 94, "recordings": 170, "elapsed_seconds": 47.93515920639038}
+{"batch": 81, "batches": 94, "recordings": 172, "elapsed_seconds": 48.411985874176025}
+{"batch": 82, "batches": 94, "recordings": 174, "elapsed_seconds": 48.85104274749756}
+{"batch": 83, "batches": 94, "recordings": 177, "elapsed_seconds": 49.45107364654541}
+{"batch": 84, "batches": 94, "recordings": 179, "elapsed_seconds": 49.91703963279724}
+{"batch": 85, "batches": 94, "recordings": 181, "elapsed_seconds": 50.34575343132019}
+{"batch": 86, "batches": 94, "recordings": 183, "elapsed_seconds": 50.77380132675171}
+{"batch": 87, "batches": 94, "recordings": 185, "elapsed_seconds": 51.26160168647766}
+{"batch": 88, "batches": 94, "recordings": 187, "elapsed_seconds": 51.706787109375}
+{"batch": 89, "batches": 94, "recordings": 189, "elapsed_seconds": 52.166597843170166}
+{"batch": 90, "batches": 94, "recordings": 192, "elapsed_seconds": 52.79681968688965}
+{"batch": 91, "batches": 94, "recordings": 194, "elapsed_seconds": 53.24780321121216}
+{"batch": 92, "batches": 94, "recordings": 196, "elapsed_seconds": 53.67904591560364}
+{"batch": 93, "batches": 94, "recordings": 198, "elapsed_seconds": 54.11366581916809}
+{"batch": 94, "batches": 94, "recordings": 200, "elapsed_seconds": 54.59944677352905}

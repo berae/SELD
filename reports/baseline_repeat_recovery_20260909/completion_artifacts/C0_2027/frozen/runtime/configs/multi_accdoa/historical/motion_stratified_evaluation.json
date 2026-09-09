@@ -1,0 +1,50 @@
+{
+  "multiaccdoa_manifest_glob": "runs/manifests/*paper_v1*.json",
+  "einv2_predictions": [
+    {
+      "context": "causal",
+      "variant": "C0.1",
+      "seed": 2026,
+      "prediction_format": "polar",
+      "evidence_level": "historical_pilot_single_seed",
+      "prediction_dir": "C0p1_CausalEINV2_fix_seed2026/out_infer/ein_seld/Eval_Pilot_C0_best_seed2026/submissions",
+      "official_metrics_csv": "C0p1_CausalEINV2_fix_seed2026/out_eval/ein_seld/Eval_Pilot_C0_best_seed2026/results.csv"
+    },
+    {
+      "context": "causal",
+      "variant": "C1",
+      "seed": 2026,
+      "prediction_format": "polar",
+      "evidence_level": "historical_pilot_single_seed",
+      "prediction_dir": "C1_CausalEINV2_Velocity_seed2026/out_infer/ein_seld/Eval_Pilot_C1_best_seed2026/submissions",
+      "official_metrics_csv": "C1_CausalEINV2_Velocity_seed2026/out_eval/ein_seld/Eval_Pilot_C1_best_seed2026/results.csv"
+    },
+    {
+      "context": "causal",
+      "variant": "C2",
+      "seed": 2026,
+      "prediction_format": "polar",
+      "evidence_level": "historical_pilot_single_seed",
+      "prediction_dir": "C2_CausalEINV2_JEPA_seed2026/out_infer/ein_seld/Eval_Pilot_C2_best_seed2026/submissions",
+      "official_metrics_csv": "C2_CausalEINV2_JEPA_seed2026/out_eval/ein_seld/Eval_Pilot_C2_best_seed2026/results.csv"
+    },
+    {
+      "context": "causal",
+      "variant": "C3",
+      "seed": 2026,
+      "prediction_format": "polar",
+      "evidence_level": "historical_pilot_single_seed",
+      "prediction_dir": "C3_CausalEINV2_Velocity_JEPA_seed2026/out_infer/ein_seld/Eval_Pilot_C3_best_seed2026/submissions",
+      "official_metrics_csv": "C3_CausalEINV2_Velocity_JEPA_seed2026/out_eval/ein_seld/Eval_Pilot_C3_best_seed2026/results.csv"
+    },
+    {
+      "context": "noncausal",
+      "variant": "E0",
+      "seed": 2026,
+      "prediction_format": "polar",
+      "evidence_level": "historical_pilot_single_seed",
+      "prediction_dir": "C0p1_CausalEINV2_fix_seed2026/out_infer/ein_seld/Eval_Pilot_E0_best_seed2026/submissions",
+      "official_metrics_csv": "C0p1_CausalEINV2_fix_seed2026/out_eval/ein_seld/Eval_Pilot_E0_best_seed2026/results.csv"
+    }
+  ]
+}

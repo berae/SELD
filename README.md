@@ -3,11 +3,11 @@
 EINV2 与 Multi-ACCDOA 的 causal / offline、velocity、JEPA 辅助监督实验代码。
 当前版本 **0.3.0**：汇总两台服务器全部已发现实验记录，整理命名配置与训练/测试入口，保留三个精确runtime快照及历史代码；不包含数据、权重或大体积预测。
 
-## 当前入口（2026-09-08）
+## 当前入口（2026-09-09）
 
-- 2026-09-09：[前端保持冻结的首批次补核](reports/baseline_frontend_frozen_check_20260909/RESULTS.md)已通过；仅恢复主干历史参数标志即可逐位匹配两份baseline的首批原输出。[上一轮诊断](reports/baseline_repeat_diagnostic_20260909/RESULTS.md)保留。全量缓存修复/恢复仍待确认，新增小头0/8。
+- [两份baseline重复验证已完成](reports/baseline_repeat_recovery_20260909/RESULTS.md)：新增8头全部双平台收敛，全部冻结后完成14条件evaluation。方向修正在三个baseline上LE/SELD均改善，历史输入和运动监督的增量存在分歧；不是新盲测。缓存恢复、预检修正及旧失败完整保留。
 
-- [当前全部实验总览与最新结果](reports/CURRENT_EXPERIMENT_SUMMARY_20260908.md)：历史68个主干run、唯一v2的12个小头及15条件evaluation分开汇总；跨C0新增训练0/8，失败记录完整保留。最新证据目录包含3,000份轻量evaluation预测CSV，但不含权重、特征或音频。下方9月7日历史总表保留当时状态，后补结果与状态更正见本入口。
+- [当前全部实验总览与最新结果](reports/CURRENT_EXPERIMENT_SUMMARY_20260909.md)：历史主干矩阵与唯一v2累计20个小头、29个evaluation条件分开计数。[跨C0配对](reports/baseline_repeat_recovery_20260909/paired_results/PAIRED_RESULTS.md)与[固定C0头seed稳定性](reports/baseline_repeat_recovery_20260909/FIXED_C0_HEAD_STABILITY_REUSED.md)单列。只发布轻量结果、逐录音预测和源码，不含权重、特征或音频；下方历史总表保留当时状态。
 
 - [冻结 C0 检测保持方向修正：唯一 v2](scripts/refinement_v2/README.md)：缓存与回归、固定 Kalman、同 C0 导数头、R0/R1/R2 递进消融和收敛优先试跑入口；新增代码通过组件测试不等于已取得新训练结果。
 - [全部实验结果](reports/ALL_EXPERIMENTS.md)：68个统一主run、131个已评分run×split；另列旧Multi 8×3矩阵、STARSS训练曲线、试跑与缺测。

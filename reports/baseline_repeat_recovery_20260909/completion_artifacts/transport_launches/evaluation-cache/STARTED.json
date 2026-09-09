@@ -1,0 +1,12 @@
+{
+  "pid": 2459153,
+  "command": [
+    "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/operations/launch_cross_evaluation.py",
+    "--root",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909",
+    "--stage",
+    "cache"
+  ],
+  "log": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/transport_launches/evaluation-cache/launcher.log"
+}

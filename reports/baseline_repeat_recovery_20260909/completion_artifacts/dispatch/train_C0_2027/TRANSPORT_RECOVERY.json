@@ -1,0 +1,34 @@
+{
+  "status": "VERIFIED_COMPLETED_JOBS",
+  "created_unix": 1788952678.1455238,
+  "reason": "SSH stdout connection lost; launcher no longer listed; original independent guards and training processes continued",
+  "new_processes_launched": 0,
+  "training_retried": false,
+  "script_sha256": "6e2aebf91bb4df4efa7163fa5751f3c75462144dcc0da7e5a990615fa3296a6d",
+  "evidence": [
+    {
+      "condition": "F-Deriv",
+      "guard_exit_sha256": "927165f4710ebe483a0d93fe301a0b4601e45380e91a829d29f17aad7c412c7d",
+      "completed_sha256": "a0b68f8cf4a2e7d15e5632064ec06b1503ef78b9a8fa500c02eb93a987f6558b",
+      "checkpoint_sha256": "01a95fb303932bf6e192d7061c80026d1fcef31b3a147963a8be34be6fac6bbf"
+    },
+    {
+      "condition": "R0",
+      "guard_exit_sha256": "c275ece503f998a8a23040f01ff4b28e2de88ac2d8f190a25bbc0491f29741e8",
+      "completed_sha256": "2150339bfcc7cc7188b8ec1e5071ba82e8fffb998a178ae383a1d530f19c04b8",
+      "checkpoint_sha256": "aa6fb384e020bb47fc4f9897ef9668643f9dcc858a0d960756b6c800e1c6cb42"
+    },
+    {
+      "condition": "R1",
+      "guard_exit_sha256": "f484a61d865109ff7e951d0069fc0b1727295c8593461a02f632f285c6fa5434",
+      "completed_sha256": "b39d303801248ebaddfaba04e788225dee137b1b86496891e193264ccd2274b7",
+      "checkpoint_sha256": "6b545363f9c4fba2415993dca3c05b9dbabb9de05d70ca9a9925e6a7e3d2b5a4"
+    },
+    {
+      "condition": "R2",
+      "guard_exit_sha256": "e08a4f2660d94753e59ef65c9f180cd9f34376e13f3441dc25adc1eb0d3b283a",
+      "completed_sha256": "a6fa55ad4af74a3f97dd2489cd2543c48b3f9037ed97a0bfd322b47e7a762805",
+      "checkpoint_sha256": "312bf2587ad818d168de31a5dd98a6862af83d6ef562e72cd333f97d40f35318"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "multiaccdoa_manifest_glob": null,
+  "multiaccdoa_predictions": [
+    {
+      "context": "causal",
+      "variant": "C0",
+      "seed": 2026,
+      "evidence_level": "matched_validation_baseline",
+      "prediction_dir": "runs/analysis/threshold_predictions/paper_v1_C0_seed2026_validation_t050"
+    },
+    {
+      "context": "causal",
+      "variant": "C1-L002",
+      "seed": 2026,
+      "evidence_level": "validation_weight_pilot",
+      "prediction_dir": "runs/analysis/threshold_predictions/pilot_v2_C1_lambda002_seed2026_validation_t050"
+    },
+    {
+      "context": "causal",
+      "variant": "C1-L005",
+      "seed": 2026,
+      "evidence_level": "validation_weight_pilot",
+      "prediction_dir": "runs/analysis/threshold_predictions/pilot_v2_C1_lambda005_seed2026_validation_t050"
+    },
+    {
+      "context": "causal",
+      "variant": "C2-L002",
+      "seed": 2026,
+      "evidence_level": "validation_weight_pilot",
+      "prediction_dir": "runs/analysis/threshold_predictions/pilot_v2_C2_lambda002_seed2026_validation_t050"
+    },
+    {
+      "context": "causal",
+      "variant": "C2-L005",
+      "seed": 2026,
+      "evidence_level": "validation_weight_pilot",
+      "prediction_dir": "runs/analysis/threshold_predictions/pilot_v2_C2_lambda005_seed2026_validation_t050"
+    }
+  ],
+  "einv2_predictions": []
+}

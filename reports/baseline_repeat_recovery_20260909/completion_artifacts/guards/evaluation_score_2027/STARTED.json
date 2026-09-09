@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2027/frozen/code/refinement_v2/evaluate_frozen.py",
+    "--frozen",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2027/frozen",
+    "--cache",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2027/cache/evaluation",
+    "--output",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2027/evaluation"
+  ],
+  "pid": 2462005,
+  "guardian_pid": 2461749,
+  "start_unix": 1788953679.2408295,
+  "hard_timeout_seconds": 1800,
+  "visible_devices": ""
+}

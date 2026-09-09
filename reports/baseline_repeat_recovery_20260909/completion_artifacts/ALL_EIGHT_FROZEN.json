@@ -1,0 +1,756 @@
+{
+  "status": "PASS",
+  "seals": [
+    {
+      "C0_seed": 2027,
+      "manifest_sha256": "50b988d6bb87d9a214c9a7219e6f0d641c22bda175818934b6b66dcbc3c9fdab"
+    },
+    {
+      "C0_seed": 2028,
+      "manifest_sha256": "b9027a91059cd0ba8cb85896b95cedb140d55cfdbfd6ea076f335e12c9042aee"
+    }
+  ],
+  "runs": [
+    {
+      "C0_seed": 2027,
+      "head_seed": 2026,
+      "condition": "F-Deriv",
+      "source": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2027/heads/F-Deriv",
+      "weight_path": "heads/head2026_F-Deriv/best.pth",
+      "weight_sha256": "01a95fb303932bf6e192d7061c80026d1fcef31b3a147963a8be34be6fac6bbf",
+      "stopped_epoch": 156,
+      "selected_epoch": 45,
+      "convergence_confirmed": true,
+      "validation_best_scores": {
+        "dcase2020_source": {
+          "ER20": 0.5787311729803742,
+          "F20": 0.5733621310295175,
+          "LE_CD": 14.926422759483623,
+          "LF_CD": 0.6812095032397407,
+          "SELD_LF": 0.35177102739928406
+        },
+        "dcase2020_web_lr": {
+          "ER20": 0.5787311729803742,
+          "F20": 0.5733621310295175,
+          "LE_CD": 14.926422759483623,
+          "LR_CD": 0.7197626654495665,
+          "SELD_LR": 0.34213273684682766
+        },
+        "dcase2023_micro": {
+          "ER20": 0.6316810988354733,
+          "F20": 0.5601732206467835,
+          "LE_CD": 14.92260031145126,
+          "LR_CD": 0.7085255170361553,
+          "SELD_LR": 0.36147142405403815
+        },
+        "dcase2023_macro": {
+          "ER20": 0.6316810988354733,
+          "F20": 0.5432080568229131,
+          "LE_CD": 14.017471112929288,
+          "LR_CD": 0.6989488501628129,
+          "SELD_LR": 0.36684975784150525
+        }
+      },
+      "stopping_record": {
+        "epoch": 156,
+        "updates": 36660,
+        "loss": 0.0006642594727925322,
+        "terms": {
+          "gradient_norm": 0.00917871445516481,
+          "direction": 0.0006591170896191467,
+          "motion": 0.0,
+          "regularizer": 5.142385477696773e-05
+        },
+        "denominators": {
+          "matched": 288552,
+          "motion_pairs": 272813,
+          "unmatched": 3410
+        },
+        "scores": {
+          "dcase2020_source": {
+            "ER20": 0.5790354480450327,
+            "F20": 0.5730741540676745,
+            "LE_CD": 14.933882462348159,
+            "LF_CD": 0.6812095032397407,
+            "SELD_LF": 0.3519294511043323
+          },
+          "dcase2020_web_lr": {
+            "ER20": 0.5790354480450327,
+            "F20": 0.5730741540676745,
+            "LE_CD": 14.933882462348159,
+            "LR_CD": 0.7197626654495665,
+            "SELD_LR": 0.3422911605518759
+          },
+          "dcase2023_micro": {
+            "ER20": 0.631979695431472,
+            "F20": 0.5598938325068101,
+            "LE_CD": 14.930259768365302,
+            "LR_CD": 0.7085255170361553,
+            "SELD_LR": 0.361626558372634
+          },
+          "dcase2023_macro": {
+            "ER20": 0.631979695431472,
+            "F20": 0.542949228332404,
+            "LE_CD": 14.025180531401139,
+            "LR_CD": 0.6989488501628129,
+            "SELD_LR": 0.36699982163878764
+          }
+        },
+        "best_epoch": 45,
+        "epoch_seconds": 4.578810453414917,
+        "train_plateau_relative_change": 0.009604471526030405,
+        "validation_epochs_without_progress": 111
+      },
+      "validation_selection_verified": true
+    },
+    {
+      "C0_seed": 2027,
+      "head_seed": 2026,
+      "condition": "R0",
+      "source": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2027/heads/R0",
+      "weight_path": "heads/head2026_R0/best.pth",
+      "weight_sha256": "aa6fb384e020bb47fc4f9897ef9668643f9dcc858a0d960756b6c800e1c6cb42",
+      "stopped_epoch": 93,
+      "selected_epoch": 8,
+      "convergence_confirmed": true,
+      "validation_best_scores": {
+        "dcase2020_source": {
+          "ER20": 0.5787311729803742,
+          "F20": 0.5737940964722821,
+          "LE_CD": 14.795408751498009,
+          "LF_CD": 0.6812095032397407,
+          "SELD_LF": 0.3514810721386129
+        },
+        "dcase2020_web_lr": {
+          "ER20": 0.5787311729803742,
+          "F20": 0.5737940964722821,
+          "LE_CD": 14.795408751498009,
+          "LR_CD": 0.7197626654495665,
+          "SELD_LR": 0.34184278158615644
+        },
+        "dcase2023_micro": {
+          "ER20": 0.6322782920274709,
+          "F20": 0.5603911980440098,
+          "LE_CD": 14.798622891854057,
+          "LR_CD": 0.7084821428571428,
+          "SELD_LR": 0.3614048806869324
+        },
+        "dcase2023_macro": {
+          "ER20": 0.6322782920274709,
+          "F20": 0.5442590616028463,
+          "LE_CD": 13.893280633068215,
+          "LR_CD": 0.6989331079180656,
+          "SELD_LR": 0.3665677537281234
+        }
+      },
+      "stopping_record": {
+        "epoch": 93,
+        "updates": 21855,
+        "loss": 0.030298547557693848,
+        "terms": {
+          "gradient_norm": 0.03089224118343059,
+          "direction": 0.029706826976480635,
+          "motion": 0.0029933059305705606,
+          "regularizer": 0.0059172051901770556
+        },
+        "denominators": {
+          "matched": 288552,
+          "motion_pairs": 272813,
+          "unmatched": 3410
+        },
+        "scores": {
+          "dcase2020_source": {
+            "ER20": 0.5808610984329834,
+            "F20": 0.571058315334773,
+            "LE_CD": 15.261496697504272,
+            "LF_CD": 0.6812095032397407,
+            "SELD_LF": 0.35334484315559556
+          },
+          "dcase2020_web_lr": {
+            "ER20": 0.5808610984329834,
+            "F20": 0.571058315334773,
+            "LE_CD": 15.261496697504272,
+            "LR_CD": 0.7197626654495665,
+            "SELD_LR": 0.3437065526031391
+          },
+          "dcase2023_micro": {
+            "ER20": 0.6351149596894595,
+            "F20": 0.5575969263010828,
+            "LE_CD": 15.266998980611998,
+            "LR_CD": 0.7084821428571428,
+            "SELD_LR": 0.36346313788365847
+          },
+          "dcase2023_macro": {
+            "ER20": 0.6351149596894595,
+            "F20": 0.540499935036526,
+            "LE_CD": 14.373812042953418,
+            "LR_CD": 0.6987671651973824,
+            "SELD_LR": 0.36892559270132314
+          }
+        },
+        "best_epoch": 8,
+        "epoch_seconds": 4.881270170211792,
+        "train_plateau_relative_change": 0.00998553209410245,
+        "validation_epochs_without_progress": 85
+      },
+      "validation_selection_verified": true
+    },
+    {
+      "C0_seed": 2027,
+      "head_seed": 2026,
+      "condition": "R1",
+      "source": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2027/heads/R1",
+      "weight_path": "heads/head2026_R1/best.pth",
+      "weight_sha256": "6b545363f9c4fba2415993dca3c05b9dbabb9de05d70ca9a9925e6a7e3d2b5a4",
+      "stopped_epoch": 81,
+      "selected_epoch": 13,
+      "convergence_confirmed": true,
+      "validation_best_scores": {
+        "dcase2020_source": {
+          "ER20": 0.578579035448045,
+          "F20": 0.5737940964722821,
+          "LE_CD": 14.901215515783823,
+          "LF_CD": 0.6812095032397407,
+          "SELD_LF": 0.3515899915948164
+        },
+        "dcase2020_web_lr": {
+          "ER20": 0.578579035448045,
+          "F20": 0.5737940964722821,
+          "LE_CD": 14.901215515783823,
+          "LR_CD": 0.7197626654495665,
+          "SELD_LR": 0.34195170104235995
+        },
+        "dcase2023_micro": {
+          "ER20": 0.6315318005374738,
+          "F20": 0.5607319969267305,
+          "LE_CD": 14.902233038561576,
+          "LR_CD": 0.7085255170361553,
+          "SELD_LR": 0.3612661175305381
+        },
+        "dcase2023_macro": {
+          "ER20": 0.6315318005374738,
+          "F20": 0.5445433085592699,
+          "LE_CD": 13.984491969103344,
+          "LR_CD": 0.6989560741432703,
+          "SELD_LR": 0.36643100997137695
+        }
+      },
+      "stopping_record": {
+        "epoch": 81,
+        "updates": 19035,
+        "loss": 0.030446030774173585,
+        "terms": {
+          "gradient_norm": 0.0316539725724687,
+          "direction": 0.029829592998833098,
+          "motion": 0.0026006480986054273,
+          "regularizer": 0.006164378616612088
+        },
+        "denominators": {
+          "matched": 288552,
+          "motion_pairs": 272813,
+          "unmatched": 3410
+        },
+        "scores": {
+          "dcase2020_source": {
+            "ER20": 0.5814696485623003,
+            "F20": 0.571058315334773,
+            "LE_CD": 15.256203571075005,
+            "LF_CD": 0.6812095032397407,
+            "SELD_LF": 0.35348962912343973
+          },
+          "dcase2020_web_lr": {
+            "ER20": 0.5814696485623003,
+            "F20": 0.571058315334773,
+            "LE_CD": 15.256203571075005,
+            "LR_CD": 0.7197626654495665,
+            "SELD_LR": 0.34385133857098327
+          },
+          "dcase2023_micro": {
+            "ER20": 0.6346670647954613,
+            "F20": 0.5576587273870224,
+            "LE_CD": 15.26187024040517,
+            "LR_CD": 0.7085255170361553,
+            "SELD_LR": 0.3633177470936336
+          },
+          "dcase2023_macro": {
+            "ER20": 0.6346670647954613,
+            "F20": 0.5421250547306767,
+            "LE_CD": 14.395694963225925,
+            "LR_CD": 0.6989560741432703,
+            "SELD_LR": 0.36839050476263674
+          }
+        },
+        "best_epoch": 13,
+        "epoch_seconds": 4.893745422363281,
+        "train_plateau_relative_change": 0.009967469876671825,
+        "validation_epochs_without_progress": 68
+      },
+      "validation_selection_verified": true
+    },
+    {
+      "C0_seed": 2027,
+      "head_seed": 2026,
+      "condition": "R2",
+      "source": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2027/heads/R2",
+      "weight_path": "heads/head2026_R2/best.pth",
+      "weight_sha256": "312bf2587ad818d168de31a5dd98a6862af83d6ef562e72cd333f97d40f35318",
+      "stopped_epoch": 81,
+      "selected_epoch": 16,
+      "convergence_confirmed": true,
+      "validation_best_scores": {
+        "dcase2020_source": {
+          "ER20": 0.5775140727217405,
+          "F20": 0.5749460043196544,
+          "LE_CD": 14.778834557569127,
+          "LF_CD": 0.6812095032397407,
+          "SELD_LF": 0.35086580039832127
+        },
+        "dcase2020_web_lr": {
+          "ER20": 0.5775140727217405,
+          "F20": 0.5749460043196544,
+          "LE_CD": 14.778834557569127,
+          "LR_CD": 0.7197626654495665,
+          "SELD_LR": 0.3412275098458648
+        },
+        "dcase2023_micro": {
+          "ER20": 0.6306360107494775,
+          "F20": 0.561648620328327,
+          "LE_CD": 14.779435709265863,
+          "LR_CD": 0.7084821428571428,
+          "SELD_LR": 0.3606533059316489
+        },
+        "dcase2023_macro": {
+          "ER20": 0.6306360107494775,
+          "F20": 0.5454168682528748,
+          "LE_CD": 13.893916750092407,
+          "LR_CD": 0.6989331079180656,
+          "SELD_LR": 0.3658686152419849
+        }
+      },
+      "stopping_record": {
+        "epoch": 81,
+        "updates": 19035,
+        "loss": 0.03165873961642068,
+        "terms": {
+          "gradient_norm": 0.048281365276334136,
+          "direction": 0.02931755333544409,
+          "motion": 0.001754392599538365,
+          "regularizer": 0.005867937243880426
+        },
+        "denominators": {
+          "matched": 288552,
+          "motion_pairs": 272813,
+          "unmatched": 3410
+        },
+        "scores": {
+          "dcase2020_source": {
+            "ER20": 0.5802525483036665,
+            "F20": 0.5724982001439883,
+            "LE_CD": 15.10353628464848,
+            "LF_CD": 0.6812095032397407,
+            "SELD_LF": 0.3526133449586628
+          },
+          "dcase2020_web_lr": {
+            "ER20": 0.5802525483036665,
+            "F20": 0.5724982001439883,
+            "LE_CD": 15.10353628464848,
+            "LR_CD": 0.7197626654495665,
+            "SELD_LR": 0.34297505440620635
+          },
+          "dcase2023_micro": {
+            "ER20": 0.6324275903254702,
+            "F20": 0.5594747502968499,
+            "LE_CD": 15.098191751315175,
+            "LR_CD": 0.7085255170361553,
+            "SELD_LR": 0.3620765415138318
+          },
+          "dcase2023_macro": {
+            "ER20": 0.6324275903254702,
+            "F20": 0.5423270968483359,
+            "LE_CD": 14.183253956095793,
+            "LR_CD": 0.6989488501628129,
+            "SELD_LR": 0.36748687465649116
+          }
+        },
+        "best_epoch": 16,
+        "epoch_seconds": 5.450863599777222,
+        "train_plateau_relative_change": 0.00987910140681244,
+        "validation_epochs_without_progress": 65
+      },
+      "validation_selection_verified": true
+    },
+    {
+      "C0_seed": 2028,
+      "head_seed": 2026,
+      "condition": "F-Deriv",
+      "source": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/heads/F-Deriv",
+      "weight_path": "heads/head2026_F-Deriv/best.pth",
+      "weight_sha256": "31f92ecf79831cdbcbceb763558711ef7aed548308f56e94c4298d487a018713",
+      "stopped_epoch": 173,
+      "selected_epoch": 151,
+      "convergence_confirmed": true,
+      "validation_best_scores": {
+        "dcase2020_source": {
+          "ER20": 0.5995740149094781,
+          "F20": 0.5590562508991511,
+          "LE_CD": 15.465738842699945,
+          "LF_CD": 0.6721335059703638,
+          "SELD_LF": 0.363576257347074
+        },
+        "dcase2020_web_lr": {
+          "ER20": 0.5995740149094781,
+          "F20": 0.5590562508991511,
+          "LE_CD": 15.465738842699945,
+          "LR_CD": 0.7107865510421421,
+          "SELD_LR": 0.35391299607912946
+        },
+        "dcase2023_micro": {
+          "ER20": 0.6525828605553897,
+          "F20": 0.5463312368972746,
+          "LE_CD": 15.50249234016415,
+          "LR_CD": 0.6997466845477575,
+          "SELD_LR": 0.3731574741389285
+        },
+        "dcase2023_macro": {
+          "ER20": 0.6525828605553897,
+          "F20": 0.5266083454015085,
+          "LE_CD": 15.041893610721804,
+          "LR_CD": 0.695117183311092,
+          "SELD_LR": 0.37860585186447754
+        }
+      },
+      "stopping_record": {
+        "epoch": 173,
+        "updates": 40655,
+        "loss": 0.0006567928154873563,
+        "terms": {
+          "gradient_norm": 0.008769135135523182,
+          "direction": 0.0006523047897102747,
+          "motion": 0.0,
+          "regularizer": 4.4880257261885417e-05
+        },
+        "denominators": {
+          "matched": 288701,
+          "motion_pairs": 273121,
+          "unmatched": 2809
+        },
+        "scores": {
+          "dcase2020_source": {
+            "ER20": 0.5997261524418074,
+            "F20": 0.5589123867069485,
+            "LE_CD": 15.47652764706955,
+            "LF_CD": 0.6721335059703638,
+            "SELD_LF": 0.3636652422287203
+          },
+          "dcase2020_web_lr": {
+            "ER20": 0.5997261524418074,
+            "F20": 0.5589123867069485,
+            "LE_CD": 15.47652764706955,
+            "LR_CD": 0.7107865510421421,
+            "SELD_LR": 0.3540019809607758
+          },
+          "dcase2023_micro": {
+            "ER20": 0.6528814571513885,
+            "F20": 0.5460517120894479,
+            "LE_CD": 15.514707500843487,
+            "LR_CD": 0.6997466845477575,
+            "SELD_LR": 0.37331896999082836
+          },
+          "dcase2023_macro": {
+            "ER20": 0.6528814571513885,
+            "F20": 0.5264624590212627,
+            "LE_CD": 15.054009227445844,
+            "LR_CD": 0.695117183311092,
+            "SELD_LR": 0.37873379985398875
+          }
+        },
+        "best_epoch": 151,
+        "epoch_seconds": 4.322194814682007,
+        "train_plateau_relative_change": 0.009517119559045604,
+        "validation_epochs_without_progress": 22
+      },
+      "validation_selection_verified": true
+    },
+    {
+      "C0_seed": 2028,
+      "head_seed": 2026,
+      "condition": "R0",
+      "source": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/heads/R0",
+      "weight_path": "heads/head2026_R0/best.pth",
+      "weight_sha256": "5305beb8fea2722971a48724b58fbdd314fc11c50ec33b9cdf63f8773650aeec",
+      "stopped_epoch": 82,
+      "selected_epoch": 8,
+      "convergence_confirmed": true,
+      "validation_best_scores": {
+        "dcase2020_source": {
+          "ER20": 0.5986611897155029,
+          "F20": 0.5604948928211767,
+          "LE_CD": 15.329724042583992,
+          "LF_CD": 0.6721335059703638,
+          "SELD_LF": 0.3627994811234684
+        },
+        "dcase2020_web_lr": {
+          "ER20": 0.5986611897155029,
+          "F20": 0.5604948928211767,
+          "LE_CD": 15.329724042583992,
+          "LR_CD": 0.7107865510421421,
+          "SELD_LR": 0.3531362198555238
+        },
+        "dcase2023_micro": {
+          "ER20": 0.6510898775753956,
+          "F20": 0.5475890985324947,
+          "LE_CD": 15.36623263262484,
+          "LR_CD": 0.6997466845477575,
+          "SELD_LR": 0.3722805133913203
+        },
+        "dcase2023_macro": {
+          "ER20": 0.6510898775753956,
+          "F20": 0.528037120292036,
+          "LE_CD": 14.931585332897287,
+          "LR_CD": 0.695117183311092,
+          "SELD_LR": 0.3777222064554243
+        }
+      },
+      "stopping_record": {
+        "epoch": 82,
+        "updates": 19270,
+        "loss": 0.029802605386902676,
+        "terms": {
+          "gradient_norm": 0.03115573208382789,
+          "direction": 0.029302744218643675,
+          "motion": 0.0031157921994739075,
+          "regularizer": 0.004998611297552533
+        },
+        "denominators": {
+          "matched": 288701,
+          "motion_pairs": 273121,
+          "unmatched": 2809
+        },
+        "scores": {
+          "dcase2020_source": {
+            "ER20": 0.6033774532177089,
+            "F20": 0.5553157819018845,
+            "LE_CD": 15.741873324222848,
+            "LF_CD": 0.6721335059703638,
+            "SELD_LF": 0.36584575428667465
+          },
+          "dcase2020_web_lr": {
+            "ER20": 0.6033774532177089,
+            "F20": 0.5553157819018845,
+            "LE_CD": 15.741873324222848,
+            "LR_CD": 0.7107865510421421,
+            "SELD_LR": 0.3561824930187301
+          },
+          "dcase2023_micro": {
+            "ER20": 0.6563153180053748,
+            "F20": 0.5424060360486237,
+            "LE_CD": 15.784749020096696,
+            "LR_CD": 0.6998361388350961,
+            "SELD_LR": 0.3754415483083259
+          },
+          "dcase2023_macro": {
+            "ER20": 0.6563153180053748,
+            "F20": 0.5219046043419481,
+            "LE_CD": 15.302017927707977,
+            "LR_CD": 0.6951617709747676,
+            "SELD_LR": 0.3810650383495369
+          }
+        },
+        "best_epoch": 8,
+        "epoch_seconds": 4.954012632369995,
+        "train_plateau_relative_change": 0.009970073312722094,
+        "validation_epochs_without_progress": 74
+      },
+      "validation_selection_verified": true
+    },
+    {
+      "C0_seed": 2028,
+      "head_seed": 2026,
+      "condition": "R1",
+      "source": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/heads/R1",
+      "weight_path": "heads/head2026_R1/best.pth",
+      "weight_sha256": "9dfc7e650d54ec7c734a013cbe2d4b371bb5e79a84ef2f8974f2638bb3a14156",
+      "stopped_epoch": 81,
+      "selected_epoch": 1,
+      "convergence_confirmed": true,
+      "validation_best_scores": {
+        "dcase2020_source": {
+          "ER20": 0.5977483645215275,
+          "F20": 0.5613580779743921,
+          "LE_CD": 15.3220149823063,
+          "LF_CD": 0.6721335059703638,
+          "SELD_LF": 0.3623447715085072
+        },
+        "dcase2020_web_lr": {
+          "ER20": 0.5977483645215275,
+          "F20": 0.5613580779743921,
+          "LE_CD": 15.3220149823063,
+          "LR_CD": 0.7107865510421421,
+          "SELD_LR": 0.3526815102405626
+        },
+        "dcase2023_micro": {
+          "ER20": 0.650492684383398,
+          "F20": 0.5482247693597987,
+          "LE_CD": 15.36157360904324,
+          "LR_CD": 0.6997019374068555,
+          "SELD_LR": 0.37197701330563493
+        },
+        "dcase2023_macro": {
+          "ER20": 0.650492684383398,
+          "F20": 0.5289476502185093,
+          "LE_CD": 14.924639936146574,
+          "LR_CD": 0.6950948221262878,
+          "SELD_LR": 0.37734121958763156
+        }
+      },
+      "stopping_record": {
+        "epoch": 81,
+        "updates": 19035,
+        "loss": 0.029410007996286482,
+        "terms": {
+          "gradient_norm": 0.031101735720926144,
+          "direction": 0.02890926424334658,
+          "motion": 0.002682694897768979,
+          "regularizer": 0.005007437275762253
+        },
+        "denominators": {
+          "matched": 288701,
+          "motion_pairs": 273121,
+          "unmatched": 2809
+        },
+        "scores": {
+          "dcase2020_source": {
+            "ER20": 0.6038338658146964,
+            "F20": 0.5547403251330744,
+            "LE_CD": 15.701651365387484,
+            "LF_CD": 0.6721335059703638,
+            "SELD_LF": 0.36604785779640836
+          },
+          "dcase2020_web_lr": {
+            "ER20": 0.6038338658146964,
+            "F20": 0.5547403251330744,
+            "LE_CD": 15.701651365387484,
+            "LR_CD": 0.7107865510421421,
+            "SELD_LR": 0.35638459652846377
+          },
+          "dcase2023_micro": {
+            "ER20": 0.6570618094953717,
+            "F20": 0.5420626048071548,
+            "LE_CD": 15.739853700023351,
+            "LR_CD": 0.6997914183551848,
+            "SELD_LR": 0.3756628544999571
+          },
+          "dcase2023_macro": {
+            "ER20": 0.6570618094953717,
+            "F20": 0.5236085403893277,
+            "LE_CD": 15.23601848428845,
+            "LR_CD": 0.695139499548791,
+            "SELD_LR": 0.3807395791730471
+          }
+        },
+        "best_epoch": 1,
+        "epoch_seconds": 4.9206883907318115,
+        "train_plateau_relative_change": 0.009819644002830715,
+        "validation_epochs_without_progress": 80
+      },
+      "validation_selection_verified": true
+    },
+    {
+      "C0_seed": 2028,
+      "head_seed": 2026,
+      "condition": "R2",
+      "source": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/heads/R2",
+      "weight_path": "heads/head2026_R2/best.pth",
+      "weight_sha256": "4e72d4856a820a0ac9f4aa79d5ce9f5eae4630819beba053c0d94b0c650e3bb3",
+      "stopped_epoch": 81,
+      "selected_epoch": 16,
+      "convergence_confirmed": true,
+      "validation_best_scores": {
+        "dcase2020_source": {
+          "ER20": 0.5979005020538567,
+          "F20": 0.5617896705509998,
+          "LE_CD": 15.213257773404642,
+          "LF_CD": 0.6721335059703638,
+          "SELD_LF": 0.36212385606840747
+        },
+        "dcase2020_web_lr": {
+          "ER20": 0.5979005020538567,
+          "F20": 0.5617896705509998,
+          "LE_CD": 15.213257773404642,
+          "LR_CD": 0.7107865510421421,
+          "SELD_LR": 0.35246059480046293
+        },
+        "dcase2023_micro": {
+          "ER20": 0.6500447894893998,
+          "F20": 0.5488469601677148,
+          "LE_CD": 15.247763754589222,
+          "LR_CD": 0.6997466845477575,
+          "SELD_LR": 0.3715402358526336
+        },
+        "dcase2023_macro": {
+          "ER20": 0.6500447894893998,
+          "F20": 0.529451073782908,
+          "LE_CD": 14.808248302586438,
+          "LR_CD": 0.695117183311092,
+          "SELD_LR": 0.37693614463022
+        }
+      },
+      "stopping_record": {
+        "epoch": 81,
+        "updates": 19035,
+        "loss": 0.030982805031569714,
+        "terms": {
+          "gradient_norm": 0.0510164590750603,
+          "direction": 0.028627853975334065,
+          "motion": 0.0018258354240196183,
+          "regularizer": 0.0052911569900622474
+        },
+        "denominators": {
+          "matched": 288701,
+          "motion_pairs": 273121,
+          "unmatched": 2809
+        },
+        "scores": {
+          "dcase2020_source": {
+            "ER20": 0.6009432527004412,
+            "F20": 0.5573298805927203,
+            "LE_CD": 15.576304276413,
+            "LF_CD": 0.6721335059703638,
+            "SELD_LF": 0.3645037224738018
+          },
+          "dcase2020_web_lr": {
+            "ER20": 0.6009432527004412,
+            "F20": 0.5573298805927203,
+            "LE_CD": 15.576304276413,
+            "LR_CD": 0.7107865510421421,
+            "SELD_LR": 0.3548404612058572
+          },
+          "dcase2023_micro": {
+            "ER20": 0.6546730367273813,
+            "F20": 0.5443108750349455,
+            "LE_CD": 15.615118630398712,
+            "LR_CD": 0.6997019374068555,
+            "SELD_LR": 0.3743527208358377
+          },
+          "dcase2023_macro": {
+            "ER20": 0.6546730367273813,
+            "F20": 0.5255914357572207,
+            "LE_CD": 15.171503447506074,
+            "LR_CD": 0.6950948221262878,
+            "SELD_LR": 0.37956822727694883
+          }
+        },
+        "best_epoch": 16,
+        "epoch_seconds": 5.287165403366089,
+        "train_plateau_relative_change": 0.00968313445085123,
+        "validation_epochs_without_progress": 65
+      },
+      "validation_selection_verified": true
+    }
+  ],
+  "head_seed": 2026,
+  "new_formal_runs": 8,
+  "old_head_runs_retrained": 0,
+  "bootstrap_repeated": false,
+  "all_new_evaluation_still_unopened": true
+}

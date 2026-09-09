@@ -1,0 +1,14 @@
+{
+  "pid": 2452537,
+  "command": [
+    "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/code/refinement_v2/launch_cross_c0.py",
+    "--root",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909",
+    "--stage",
+    "train",
+    "--C0-seed",
+    "2028"
+  ],
+  "log": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/transport_launches/train-2028/launcher.log"
+}

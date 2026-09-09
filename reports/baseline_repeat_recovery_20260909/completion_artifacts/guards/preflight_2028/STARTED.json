@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+    "code/refinement_v2/preflight_cross_c0.py",
+    "--root",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909",
+    "--C0-seed",
+    "2028"
+  ],
+  "pid": 2435153,
+  "guardian_pid": 2434856,
+  "start_unix": 1788945577.4951737,
+  "hard_timeout_seconds": 1800,
+  "visible_devices": ""
+}

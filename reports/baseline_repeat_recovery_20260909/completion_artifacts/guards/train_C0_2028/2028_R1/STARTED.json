@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/code/refinement_v2/train_heads.py",
+    "--config",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/configs/pilot_C0_2028.json",
+    "--execution",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/configs/execution_cross_c0.json",
+    "--cache",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/cache",
+    "--scorer",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/scorer",
+    "--condition",
+    "R1",
+    "--output",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/heads/R1"
+  ],
+  "pid": 2453249,
+  "guardian_pid": 2452863,
+  "start_unix": 1788952699.8516967,
+  "hard_timeout_seconds": 14400,
+  "visible_devices": "GPU-abaec7b3-9c80-1052-1654-01a131128629"
+}

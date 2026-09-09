@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "date": "2026-09-09",
+  "scope": "Transfer integrity, frozen-source binding, evaluation chronology and completed experiment records; not a new training run or statistical significance test",
+  "archive_sha256": "de2b7a54f02078c963412de749cbde0388d39c92b7de5a8dbf1f4b69e5fc55c0",
+  "archive_bytes": 17706502,
+  "new_evaluation_csv_hashes_verified": 2800,
+  "available_frozen_source_and_metadata_hashes_verified": 1134,
+  "intentionally_omitted_sealed_binary_files": 12,
+  "omission_scope": "Two C0 checkpoints, eight head checkpoints, two scaler H5 files; originals retained on rabbit02",
+  "unexpected_missing_sealed_files": 0,
+  "all_eight_frozen_sha256": "30036eb4998a39b48b15be67bb250d0ddf044a88d66842628d95ebb07879ebc7",
+  "evaluation_dispatch_bound_to_all_eight_freeze": true,
+  "evaluation_export_start_seconds_after_last_freeze": {
+    "2027": 23.6647288799286,
+    "2028": 23.6052615642548
+  },
+  "new_completed_heads": 8,
+  "new_heads_with_registered_dual_plateau": 8,
+  "new_evaluation_conditions": 14,
+  "files_per_evaluation_condition": 200,
+  "paired_baselines": 3,
+  "fixed_head_seed": 2026,
+  "paired_conditions_including_reused_original_baseline": 21,
+  "stopping_and_validation_selection_replayed": true,
+  "training_retried": false,
+  "bootstrap_repeated": false,
+  "new_blind_test": false,
+  "local_archive_csv_total": 5800,
+  "csv_total_scope": "Includes training/validation raw cache CSV and validation controls; not 5800 new evaluation recordings",
+  "final_rabbit02_gpu_check": "All five RTX3090s at 0 MiB and no compute-app processes"
+}

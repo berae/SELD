@@ -1,0 +1,62 @@
+[
+  {
+    "C0_seed": 2027,
+    "gpu": {
+      "index": "0",
+      "uuid": "GPU-82ffbec4-d577-dd23-8b52-bd489c348f74"
+    },
+    "command": [
+      "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+      "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2027/frozen/code/refinement_v2/run_guarded.py",
+      "--directory",
+      "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/guards/evaluation_cache_2027",
+      "--seconds",
+      "1800",
+      "--",
+      "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+      "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2027/frozen/code/refinement_v2/cache_features.py",
+      "--config",
+      "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2027/frozen/configs/pilot.json",
+      "--relocation",
+      "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2027/frozen/configs/evaluation_relocation.json",
+      "--split",
+      "evaluation",
+      "--output",
+      "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2027/cache/evaluation",
+      "--preserve-source-model-flags"
+    ],
+    "guard": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/guards/evaluation_cache_2027",
+    "code": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2027/frozen/code/refinement_v2",
+    "guardian_pid": 2459284
+  },
+  {
+    "C0_seed": 2028,
+    "gpu": {
+      "index": "1",
+      "uuid": "GPU-9b71a5f1-1cd2-bb60-6a59-fbf428faf941"
+    },
+    "command": [
+      "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+      "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/frozen/code/refinement_v2/run_guarded.py",
+      "--directory",
+      "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/guards/evaluation_cache_2028",
+      "--seconds",
+      "1800",
+      "--",
+      "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+      "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/frozen/code/refinement_v2/cache_features.py",
+      "--config",
+      "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/frozen/configs/pilot.json",
+      "--relocation",
+      "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/frozen/configs/evaluation_relocation.json",
+      "--split",
+      "evaluation",
+      "--output",
+      "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/cache/evaluation",
+      "--preserve-source-model-flags"
+    ],
+    "guard": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/guards/evaluation_cache_2028",
+    "code": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/frozen/code/refinement_v2",
+    "guardian_pid": 2459350
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "files": 500,
+  "elapsed_seconds": 134.77038192749023,
+  "exact_validation_float_csv_score": false,
+  "scores": null,
+  "parameters_buffers_unchanged": true,
+  "prefix_probes": [
+    {
+      "batch": 0,
+      "raw_prefix_max_delta": 0.0,
+      "feature_prefix_max_delta": 0.0
+    },
+    {
+      "batch": 234,
+      "raw_prefix_max_delta": 0.0,
+      "feature_prefix_max_delta": 0.0
+    }
+  ],
+  "causality_scope": "first and last export batches, prefix20; not universal proof",
+  "in_sample_training_cache": true,
+  "training_updates": 0
+}

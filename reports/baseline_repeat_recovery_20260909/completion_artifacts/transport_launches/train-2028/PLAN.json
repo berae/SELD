@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/code/refinement_v2/launch_cross_c0.py",
+    "--root",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909",
+    "--stage",
+    "train",
+    "--C0-seed",
+    "2028"
+  ],
+  "script_sha256": "6787b6ede2082aa2ba8a56611353fc0c94819d83ab15987cd9dc7f40f8d47189",
+  "child_entry_sha256": "36f640986e600b47a55be559c673b3320801787509988ebefaa37c8b47fabce4",
+  "reason": "Server-side log avoids SSH stdout lifetime dependency",
+  "training_recipe_changed": false,
+  "automatic_retry": false
+}

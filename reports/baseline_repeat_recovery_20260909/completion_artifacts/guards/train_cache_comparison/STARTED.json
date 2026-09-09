@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+    "operations/audit_recovered_train.py",
+    "--old",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1",
+    "--new",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909",
+    "--output",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/TRAIN_CACHE_COMPARISON.json"
+  ],
+  "pid": 2433317,
+  "guardian_pid": 2433024,
+  "start_unix": 1788945451.1860552,
+  "hard_timeout_seconds": 1800,
+  "visible_devices": null
+}

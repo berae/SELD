@@ -1,0 +1,16 @@
+{
+  "active_detections": 97181,
+  "matched": 71509,
+  "unmatched": 25672,
+  "gt_events": 117220,
+  "zero_raw_active": 0,
+  "gt_assignment_tie_signals": 1,
+  "predicted_pairs": 84890,
+  "pair_gt_inconsistent": 74,
+  "pair_unmatched_endpoint": 20276,
+  "identity_continuous_gt_pairs": 112128,
+  "FN_at_fixed_frame_class_matching": 45711,
+  "valid_motion_pairs": 64540,
+  "static_pairs": 35900,
+  "moving_pairs": 28640
+}

@@ -1,0 +1,3 @@
+{"stage": "cache_load", "split": "validation", "files": 50}
+{"stage": "cache_load", "split": "validation", "files": 100}
+{"status": "PASS", "C0_seed": 2027, "optimizer_updates": 0}

@@ -1,0 +1,8 @@
+{
+  "run": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/source/C0_2027",
+  "runtime": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/runtime",
+  "causal_scalar_path": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/scalar_trainfolds2-6.h5",
+  "dataset_dir": "/work/zhanghc/Myllm/SELD/EINV2/dataset_root",
+  "hdf5_dir": "/work/zhanghc/Myllm/SELD/EINV2/C0_CausalEINV2_seed2026/_hdf5",
+  "original_validation": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/source/C0_2027/validation"
+}

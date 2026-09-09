@@ -1,0 +1,10 @@
+{
+  "exit_codes": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "automatic_retry": false,
+  "source": "Recovered from four original guarded job EXIT records, not launcher wait returncodes"
+}

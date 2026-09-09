@@ -1,0 +1,136 @@
+[
+  {
+    "host": "rabbit02",
+    "id": "TAU2020_dev",
+    "audio_root": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/data_raw/dcase2020/foa_dev",
+    "label_root": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/data_raw/dcase2020/metadata_dev",
+    "audio": 600,
+    "labels": 600,
+    "audio_without_labels": [],
+    "labels_without_audio": [],
+    "sidecars": [
+      "/work/zhanghc/Myllm/SELD/ObjectStateSELD/data_raw/dcase2020/metadata_dev/._fold1_room1_mix001_ov1.csv"
+    ],
+    "matched": true
+  },
+  {
+    "host": "rabbit02",
+    "id": "TAU2020_eval",
+    "audio_root": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/data_raw/dcase2020/foa_eval",
+    "label_root": "/work/zhanghc/Myllm/SELD/ObjectStateSELD/data_raw/dcase2020/metadata_eval",
+    "audio": 200,
+    "labels": 200,
+    "audio_without_labels": [],
+    "labels_without_audio": [],
+    "sidecars": [],
+    "matched": true
+  },
+  {
+    "host": "rabbit02",
+    "id": "TAU2021_dev",
+    "audio_root": "/work/zhanghc/Myllm/SELD/datasets/TAU2021/raw/foa_dev",
+    "label_root": "/work/zhanghc/Myllm/SELD/datasets/TAU2021/raw/metadata_dev",
+    "audio": 600,
+    "labels": 600,
+    "audio_without_labels": [],
+    "labels_without_audio": [],
+    "sidecars": [],
+    "matched": true
+  },
+  {
+    "host": "rabbit02",
+    "id": "STARSS22_dev",
+    "audio_root": "/work/zhanghc/Myllm/SELD/datasets/STARSS22/raw/foa_dev",
+    "label_root": "/work/zhanghc/Myllm/SELD/datasets/STARSS22/raw/metadata_dev",
+    "audio": 121,
+    "labels": 121,
+    "audio_without_labels": [],
+    "labels_without_audio": [],
+    "sidecars": [],
+    "matched": true
+  },
+  {
+    "host": "rabbit02",
+    "id": "STARSS23_dev",
+    "audio_root": "/work/zhanghc/Myllm/SELD/datasets/STARSS23/raw/foa_dev",
+    "label_root": "/work/zhanghc/Myllm/SELD/datasets/STARSS23/raw/metadata_dev",
+    "audio": 168,
+    "labels": 168,
+    "audio_without_labels": [],
+    "labels_without_audio": [],
+    "sidecars": [],
+    "matched": true
+  },
+  {
+    "host": "rabbit02",
+    "id": "DCASE2024_foa",
+    "audio_root": "/work/zhanghc/Myllm/SELD/datasets/DCASE2024_Synthetic/raw/DCASE Task 3 synthetic dataset 2024/synth_dev/foa",
+    "label_root": "/work/zhanghc/Myllm/SELD/datasets/DCASE2024_Synthetic/raw/DCASE Task 3 synthetic dataset 2024/metadata",
+    "audio": 1200,
+    "labels": 1200,
+    "audio_without_labels": [],
+    "labels_without_audio": [],
+    "sidecars": [],
+    "matched": true
+  },
+  {
+    "host": "RB05",
+    "id": "TAU2020_dev",
+    "audio_root": "/home/zhanghc/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/foa_dev/source",
+    "label_root": "/home/zhanghc/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/metadata_dev/source",
+    "audio": 600,
+    "labels": 600,
+    "audio_without_labels": [],
+    "labels_without_audio": [],
+    "sidecars": [],
+    "matched": true
+  },
+  {
+    "host": "rabbit02",
+    "id": "DCASE2024_mic",
+    "audio_root": "/work/zhanghc/Myllm/SELD/datasets/DCASE2024_Synthetic/raw/DCASE Task 3 synthetic dataset 2024/synth_dev/mic",
+    "label_root": "/work/zhanghc/Myllm/SELD/datasets/DCASE2024_Synthetic/raw/DCASE Task 3 synthetic dataset 2024/metadata",
+    "audio": 1200,
+    "labels": 1200,
+    "audio_without_labels": [],
+    "labels_without_audio": [],
+    "sidecars": [],
+    "matched": true
+  },
+  {
+    "host": "rabbit02",
+    "id": "DCASE2025_dev",
+    "audio_root": "/work/zhanghc/Myllm/SELD/datasets/DCASE2025_StereoSELD/raw/stereo_dev",
+    "label_root": "/work/zhanghc/Myllm/SELD/datasets/DCASE2025_StereoSELD/raw/metadata_dev",
+    "audio": 30000,
+    "labels": 30000,
+    "audio_without_labels": [],
+    "labels_without_audio": [],
+    "sidecars": [],
+    "matched": true
+  },
+  {
+    "host": "RB05",
+    "id": "TAU2020_eval",
+    "audio_root": "/home/zhanghc/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/foa_eval/source",
+    "label_root": "/home/zhanghc/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/metadata_eval/source",
+    "audio": 200,
+    "labels": 200,
+    "audio_without_labels": [],
+    "labels_without_audio": [],
+    "sidecars": [],
+    "matched": true
+  },
+  {
+    "host": "rabbit02",
+    "id": "TAU2021_eval",
+    "audio_root": "/work/zhanghc/Myllm/SELD/datasets/TAU2021/raw/foa_eval/eval-test",
+    "label_root": "/work/zhanghc/Myllm/SELD/datasets/TAU2021/raw/metadata_eval",
+    "audio": 200,
+    "labels": 200,
+    "audio_without_labels": [],
+    "labels_without_audio": [],
+    "sidecars": [],
+    "matched": true
+  }
+]

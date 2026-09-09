@@ -1,0 +1,1252 @@
+{
+  "host": "RB05",
+  "hostname": "rabbit05",
+  "root": "/home/zhanghc/SELD",
+  "captured_at_utc": "2026-09-04T09:11:41.746378+00:00",
+  "method": "stat + all readable audio headers + bounded deterministic samples; no whole-audio content hash",
+  "collector_sha256": "fccf55f384633bb2d8268620720da4dd322d4575eec19a4bf81ef8b78987c826",
+  "assets": [
+    {
+      "asset": "Multi_TAU2020_data",
+      "path": "/home/zhanghc/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset",
+      "resolved_path": "/home/zhanghc/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset",
+      "exists": true,
+      "groups": [
+        {
+          "directory": "foa_dev/source",
+          "files": 600,
+          "bytes": 6912026400,
+          "extensions": {
+            ".wav": 600
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "e7ce6995f8dca0472a38f75e7f1daf639c947c16be6682bd62beea6f2322a0e7",
+          "stem_digests": {
+            ".wav": {
+              "count": 600,
+              "unique": 600,
+              "sha256": "a8b1e52bd9699ae9a599c5b0f0c2054498b8c33b5cb6a69c0302c17dd9617aad"
+            }
+          },
+          "samples": [],
+          "content_samples": [
+            {
+              "file": "fold1_room1_mix001_ov1.wav",
+              "bytes": 11520044,
+              "sha256": "ec7ada9dd814993af37ed0386cd56a8096494140bb8d53694ab2c626a17cd322"
+            },
+            {
+              "file": "fold4_room1_mix001_ov1.wav",
+              "bytes": 11520044,
+              "sha256": "c92d93eeb35d32ebaaa65402026b8129cb621bff73ed75ff969405a695bacd26"
+            },
+            {
+              "file": "fold6_room1_mix100_ov2.wav",
+              "bytes": 11520044,
+              "sha256": "fd8a2317400003dcaa333a813a434780a33e1254bcc86e69532c56b0c9037961"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 600,
+            "headers_read": 600,
+            "seconds": 36000.0,
+            "duration_min": 60.0,
+            "duration_max": 60.0,
+            "sample_rates": {
+              "24000": 600
+            },
+            "channels": {
+              "4": 600
+            },
+            "subtypes": {
+              "PCM_16": 600
+            }
+          }
+        },
+        {
+          "directory": "foa_eval/source",
+          "files": 200,
+          "bytes": 2304008800,
+          "extensions": {
+            ".wav": 200
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "3f2332b35e2bd8c470b906c0a4caf1d96d07e1bf5d843bab15d4eb695fa4368d",
+          "stem_digests": {
+            ".wav": {
+              "count": 200,
+              "unique": 200,
+              "sha256": "dfd52a749009c3ba9b11db6381fa77ca0aac358f416d42109a515136609042e2"
+            }
+          },
+          "samples": [],
+          "content_samples": [
+            {
+              "file": "mix001.wav",
+              "bytes": 11520044,
+              "sha256": "7061bf76d0493c3dfd99d7e381474f5dc146da204d81dc4b420e4628e3974b8b"
+            },
+            {
+              "file": "mix101.wav",
+              "bytes": 11520044,
+              "sha256": "549779571fb5e37bc846d5715ee782b4792c623a355365d8abf3016e6728e43c"
+            },
+            {
+              "file": "mix200.wav",
+              "bytes": 11520044,
+              "sha256": "9bd4e402e96915867e1d2ba78c10ae961b04edd92edba5e5bf37c459b3645c41"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 200,
+            "headers_read": 200,
+            "seconds": 12000.0,
+            "duration_min": 60.0,
+            "duration_max": 60.0,
+            "sample_rates": {
+              "24000": 200
+            },
+            "channels": {
+              "4": 200
+            },
+            "subtypes": {
+              "PCM_16": 200
+            }
+          }
+        },
+        {
+          "directory": "metadata_dev/source",
+          "files": 600,
+          "bytes": 5297842,
+          "extensions": {
+            ".csv": 600
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "462ba97f021505f1a62df11dafc8f79bb27d139198c59279cbe784947edf641a",
+          "stem_digests": {
+            ".csv": {
+              "count": 600,
+              "unique": 600,
+              "sha256": "a8b1e52bd9699ae9a599c5b0f0c2054498b8c33b5cb6a69c0302c17dd9617aad"
+            }
+          },
+          "samples": [
+            {
+              "file": "fold1_room1_mix001_ov1.csv",
+              "shape": null,
+              "first_row_columns": 5
+            }
+          ],
+          "content_samples": [
+            {
+              "file": "fold1_room1_mix001_ov1.csv",
+              "bytes": 5459,
+              "sha256": "f8a73561c63caf5f38ac24161226dfae119f344104951c3eeda3ecc65b61c2f7"
+            },
+            {
+              "file": "fold4_room1_mix001_ov1.csv",
+              "bytes": 6617,
+              "sha256": "70a081b1324841be931725a026d27e0fb4ab21c71524cb38ca1d49abd4651e3d"
+            },
+            {
+              "file": "fold6_room1_mix100_ov2.csv",
+              "bytes": 12653,
+              "sha256": "0931a6f234c1bc91d33899fe27ebbbe2380a06d3ff5555cec483bfee19290dd6"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          },
+          "full_content_digest": "30a46e9adca791cbbee3d2e8bb368b149f252171af279c49b4794ff383da76c1",
+          "full_content_files": 600
+        },
+        {
+          "directory": "metadata_eval/source",
+          "files": 200,
+          "bytes": 1739420,
+          "extensions": {
+            ".csv": 200
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "b1da79aabc67780892db516805dfd6b46c8d573d13c15663f3f48ae21f7d68d9",
+          "stem_digests": {
+            ".csv": {
+              "count": 200,
+              "unique": 200,
+              "sha256": "dfd52a749009c3ba9b11db6381fa77ca0aac358f416d42109a515136609042e2"
+            }
+          },
+          "samples": [
+            {
+              "file": "mix001.csv",
+              "shape": null,
+              "first_row_columns": 5
+            }
+          ],
+          "content_samples": [
+            {
+              "file": "mix001.csv",
+              "bytes": 6424,
+              "sha256": "c3863de215388d9297959e43babf627bc66546a501ceca4e90a9b82f498fe8d9"
+            },
+            {
+              "file": "mix101.csv",
+              "bytes": 7165,
+              "sha256": "ca8a8dfc8f7a637787800e59655cf6a28edcbed012639492c8179a0441803d98"
+            },
+            {
+              "file": "mix200.csv",
+              "bytes": 4443,
+              "sha256": "0b940f955f5c56ea072a1bd2d86914e1045a5836fc5e2becea71bf4f933da4f3"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          },
+          "full_content_digest": "52141632cb4d5338efa060028ac7379405eeeeb5b3ebe9cc74199b5913eb8607",
+          "full_content_files": 200
+        }
+      ],
+      "symlinks": [],
+      "broken_symlinks": [],
+      "errors": [],
+      "files": 1600,
+      "bytes": 9223072462,
+      "file_size_digest": "3758e7dc00dbaa4a658614785a0880e22b2b5482f1a90f908f7f164394918ae0",
+      "symlink_count": 0
+    },
+    {
+      "asset": "Multi_strict_features",
+      "path": "/home/zhanghc/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6",
+      "resolved_path": "/home/zhanghc/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6",
+      "exists": true,
+      "groups": [
+        {
+          "directory": ".",
+          "files": 2,
+          "bytes": 28397,
+          "extensions": {
+            "<none>": 1,
+            ".json": 1
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "a8db6a07cc0ebe54d8268cbd842ccbe4055e5c7e9e27830d43b0f178d412b2df",
+          "stem_digests": {},
+          "samples": [],
+          "content_samples": [],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          }
+        },
+        {
+          "directory": "foa_dev",
+          "files": 600,
+          "bytes": 6451276800,
+          "extensions": {
+            ".npy": 600
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "d186a5cade70dee0dd785bf013d3f30f5a2510afc33e96efbad2656bba0c67d5",
+          "stem_digests": {
+            ".npy": {
+              "count": 600,
+              "unique": 600,
+              "sha256": "a8b1e52bd9699ae9a599c5b0f0c2054498b8c33b5cb6a69c0302c17dd9617aad"
+            }
+          },
+          "samples": [
+            {
+              "file": "fold1_room1_mix001_ov1.npy",
+              "shape": {
+                "shape": [
+                  3000,
+                  448
+                ],
+                "dtype": "float64"
+              }
+            }
+          ],
+          "content_samples": [
+            {
+              "file": "fold1_room1_mix001_ov1.npy",
+              "bytes": 10752128,
+              "sha256": "1fdc16bcd816298c99b384646594b3f0da42a4bc3efb9cfe56ba6ef311859969"
+            },
+            {
+              "file": "fold4_room1_mix001_ov1.npy",
+              "bytes": 10752128,
+              "sha256": "f03b93cea6d2dcf5f2e1b42732dca17d0078b630672e9082cbf1ee33ec822351"
+            },
+            {
+              "file": "fold6_room1_mix100_ov2.npy",
+              "bytes": 10752128,
+              "sha256": "eac035f397ac3e2b5bbaa2f7577fa4ff804e2df11d665db281e7355464076866"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          }
+        },
+        {
+          "directory": "foa_dev_adpit_label",
+          "files": 600,
+          "bytes": 967756800,
+          "extensions": {
+            ".npy": 600
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "933d6bbff7987b14a52d14b65ceb29f899da204b2ee3bca47fadc9ea20237eec",
+          "stem_digests": {
+            ".npy": {
+              "count": 600,
+              "unique": 600,
+              "sha256": "a8b1e52bd9699ae9a599c5b0f0c2054498b8c33b5cb6a69c0302c17dd9617aad"
+            }
+          },
+          "samples": [
+            {
+              "file": "fold1_room1_mix001_ov1.npy",
+              "shape": {
+                "shape": [
+                  600,
+                  6,
+                  4,
+                  14
+                ],
+                "dtype": "float64"
+              }
+            }
+          ],
+          "content_samples": [
+            {
+              "file": "fold1_room1_mix001_ov1.npy",
+              "bytes": 1612928,
+              "sha256": "188fc82ad0bc7038f154d7b043d110b9428af4e8e48cb4fc23399f812d563261"
+            },
+            {
+              "file": "fold4_room1_mix001_ov1.npy",
+              "bytes": 1612928,
+              "sha256": "d8f56f4a1805ff14fdf3fc49708af671c2b23037027a605a767a0bd7ba57dcd6"
+            },
+            {
+              "file": "fold6_room1_mix100_ov2.npy",
+              "bytes": 1612928,
+              "sha256": "76aeb3e94feca0b724ef08f9999313e809190311622a3f73f4eec5708c0c8887"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          }
+        },
+        {
+          "directory": "foa_dev_norm",
+          "files": 600,
+          "bytes": 6451276800,
+          "extensions": {
+            ".npy": 600
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "d186a5cade70dee0dd785bf013d3f30f5a2510afc33e96efbad2656bba0c67d5",
+          "stem_digests": {
+            ".npy": {
+              "count": 600,
+              "unique": 600,
+              "sha256": "a8b1e52bd9699ae9a599c5b0f0c2054498b8c33b5cb6a69c0302c17dd9617aad"
+            }
+          },
+          "samples": [
+            {
+              "file": "fold1_room1_mix001_ov1.npy",
+              "shape": {
+                "shape": [
+                  3000,
+                  448
+                ],
+                "dtype": "float64"
+              }
+            }
+          ],
+          "content_samples": [
+            {
+              "file": "fold1_room1_mix001_ov1.npy",
+              "bytes": 10752128,
+              "sha256": "117e8df994fa779f2dedb546c1e60bf48b7c46edbcd484f444948f1cadb6d6cf"
+            },
+            {
+              "file": "fold4_room1_mix001_ov1.npy",
+              "bytes": 10752128,
+              "sha256": "cf24e4454088a38458f82e5d3fee43324f2ae0009637cf68e0373e07f2adf864"
+            },
+            {
+              "file": "fold6_room1_mix100_ov2.npy",
+              "bytes": 10752128,
+              "sha256": "9cba06c904d0b999b06f8a6c38c713a395431c734857d7820ce0dc1a92d32713"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          }
+        },
+        {
+          "directory": "foa_eval",
+          "files": 200,
+          "bytes": 2150425600,
+          "extensions": {
+            ".npy": 200
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "64d0c51b4004481d2fc384c349db4aa4aeae5a3da00f7da73dd767b459fca0b1",
+          "stem_digests": {
+            ".npy": {
+              "count": 200,
+              "unique": 200,
+              "sha256": "dfd52a749009c3ba9b11db6381fa77ca0aac358f416d42109a515136609042e2"
+            }
+          },
+          "samples": [
+            {
+              "file": "mix001.npy",
+              "shape": {
+                "shape": [
+                  3000,
+                  448
+                ],
+                "dtype": "float64"
+              }
+            }
+          ],
+          "content_samples": [
+            {
+              "file": "mix001.npy",
+              "bytes": 10752128,
+              "sha256": "aff1c8fa0baaeada73f941609984c7e43ec760437f576b3b9053058a0289849b"
+            },
+            {
+              "file": "mix101.npy",
+              "bytes": 10752128,
+              "sha256": "f37b6e2fce432e8e87ca5e7316649b46b13dad1634cbde9f28c149f75bae20b8"
+            },
+            {
+              "file": "mix200.npy",
+              "bytes": 10752128,
+              "sha256": "ad32af452e959deb2344575821634e72047cbdfccfc230cf375508b5e52abdc5"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          }
+        },
+        {
+          "directory": "foa_eval_norm",
+          "files": 200,
+          "bytes": 2150425600,
+          "extensions": {
+            ".npy": 200
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "64d0c51b4004481d2fc384c349db4aa4aeae5a3da00f7da73dd767b459fca0b1",
+          "stem_digests": {
+            ".npy": {
+              "count": 200,
+              "unique": 200,
+              "sha256": "dfd52a749009c3ba9b11db6381fa77ca0aac358f416d42109a515136609042e2"
+            }
+          },
+          "samples": [
+            {
+              "file": "mix001.npy",
+              "shape": {
+                "shape": [
+                  3000,
+                  448
+                ],
+                "dtype": "float64"
+              }
+            }
+          ],
+          "content_samples": [
+            {
+              "file": "mix001.npy",
+              "bytes": 10752128,
+              "sha256": "4b6bc23e9ed5b03783d8e7e8332ea87ac8bcbb07bf99af12ea5cad7340fc70a7"
+            },
+            {
+              "file": "mix101.npy",
+              "bytes": 10752128,
+              "sha256": "d42cf50c9f07269ec9dd571e736fe710fb4eb4056e9b062f49a97dc6cf64d992"
+            },
+            {
+              "file": "mix200.npy",
+              "bytes": 10752128,
+              "sha256": "b62a17716bb2980e815f26776c8a749a5af505b178e8c29832c7823dee3c3ac8"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          }
+        }
+      ],
+      "symlinks": [],
+      "broken_symlinks": [],
+      "errors": [],
+      "files": 2202,
+      "bytes": 18171189997,
+      "file_size_digest": "1d17f1b3124672239a17779da98f8d36f69383ac70f6b8ad72bf71fca35c6889",
+      "symlink_count": 0
+    },
+    {
+      "asset": "EINV2_TAU2020_hdf5",
+      "path": "/home/zhanghc/SELD/EINV2/shared/_hdf5",
+      "resolved_path": "/home/zhanghc/SELD/EINV2/shared/_hdf5",
+      "exists": true,
+      "groups": [
+        {
+          "directory": "dcase2020task3/data/24000fs/dev",
+          "files": 2,
+          "bytes": 168,
+          "extensions": {
+            ".txt": 2
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "70644ba7a0e8cca69040cec6e3ce5bf23f3a44caa5e50ebee5680be0a7eefbd4",
+          "stem_digests": {},
+          "samples": [],
+          "content_samples": [],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          }
+        },
+        {
+          "directory": "dcase2020task3/data/24000fs/dev/foa",
+          "files": 600,
+          "bytes": 6913228800,
+          "extensions": {
+            ".h5": 600
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "faf7869848b9f262718815ae4b46b43b201bf0d1c35f4afa5b4d2f6c456533cd",
+          "stem_digests": {
+            ".h5": {
+              "count": 600,
+              "unique": 600,
+              "sha256": "a8b1e52bd9699ae9a599c5b0f0c2054498b8c33b5cb6a69c0302c17dd9617aad"
+            }
+          },
+          "samples": [
+            {
+              "file": "fold1_room1_mix001_ov1.h5",
+              "shape": {
+                "waveform": {
+                  "shape": [
+                    4,
+                    1440000
+                  ],
+                  "dtype": "int16"
+                }
+              }
+            }
+          ],
+          "content_samples": [
+            {
+              "file": "fold1_room1_mix001_ov1.h5",
+              "bytes": 11522048,
+              "sha256": "c5186120f09766620294aaebab1c9725a6aa2a6973b3670e9f0383325c70ae27"
+            },
+            {
+              "file": "fold4_room1_mix001_ov1.h5",
+              "bytes": 11522048,
+              "sha256": "344b61dc9f4fa011c1794d16690afa03a6bf11a900dea9ba56037dd22ae2c7aa"
+            },
+            {
+              "file": "fold6_room1_mix100_ov2.h5",
+              "bytes": 11522048,
+              "sha256": "8394072cb99ed43c6176ab27701c4aa6c8d06a6b5ef85c0fd13dd245c22b403f"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          }
+        },
+        {
+          "directory": "dcase2020task3/data/24000fs/eval",
+          "files": 2,
+          "bytes": 168,
+          "extensions": {
+            ".txt": 2
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "70644ba7a0e8cca69040cec6e3ce5bf23f3a44caa5e50ebee5680be0a7eefbd4",
+          "stem_digests": {},
+          "samples": [],
+          "content_samples": [],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          }
+        },
+        {
+          "directory": "dcase2020task3/data/24000fs/eval/foa",
+          "files": 200,
+          "bytes": 2304409600,
+          "extensions": {
+            ".h5": 200
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "510cbe44ab7b798eeb56c2bdcf7f8340bd993692034b39f7930265de517a2030",
+          "stem_digests": {
+            ".h5": {
+              "count": 200,
+              "unique": 200,
+              "sha256": "dfd52a749009c3ba9b11db6381fa77ca0aac358f416d42109a515136609042e2"
+            }
+          },
+          "samples": [
+            {
+              "file": "mix001.h5",
+              "shape": {
+                "waveform": {
+                  "shape": [
+                    4,
+                    1440000
+                  ],
+                  "dtype": "int16"
+                }
+              }
+            }
+          ],
+          "content_samples": [
+            {
+              "file": "mix001.h5",
+              "bytes": 11522048,
+              "sha256": "792bc5bba2c0e5672ac4f55a1b389cd147cdb501980630966782d51cf9a9e81a"
+            },
+            {
+              "file": "mix101.h5",
+              "bytes": 11522048,
+              "sha256": "d56f36d20f2985560c7d91f6dc0f7ab613a0dd8b3951cfae33ba50ff69d0fe5c"
+            },
+            {
+              "file": "mix200.h5",
+              "bytes": 11522048,
+              "sha256": "722a745eaf12f7af98363b8cca5234e15e166473e053df8001c6e8395dacc529"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          }
+        },
+        {
+          "directory": "dcase2020task3/meta/dev",
+          "files": 600,
+          "bytes": 50188800,
+          "extensions": {
+            ".h5": 600
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "a3a2cb69c903e012b38bb482daeec998e746f0990f6e84cda53c760d866d2e08",
+          "stem_digests": {
+            ".h5": {
+              "count": 600,
+              "unique": 600,
+              "sha256": "a8b1e52bd9699ae9a599c5b0f0c2054498b8c33b5cb6a69c0302c17dd9617aad"
+            }
+          },
+          "samples": [
+            {
+              "file": "fold1_room1_mix001_ov1.h5",
+              "shape": {
+                "doa_label": {
+                  "shape": [
+                    600,
+                    2,
+                    3
+                  ],
+                  "dtype": "float32"
+                },
+                "sed_label": {
+                  "shape": [
+                    600,
+                    2,
+                    14
+                  ],
+                  "dtype": "float32"
+                }
+              }
+            }
+          ],
+          "content_samples": [
+            {
+              "file": "fold1_room1_mix001_ov1.h5",
+              "bytes": 83648,
+              "sha256": "b275e6762584a854dc0bc58aa513268df721fe0a74dc1d5262c1022e0d6a4d28"
+            },
+            {
+              "file": "fold4_room1_mix001_ov1.h5",
+              "bytes": 83648,
+              "sha256": "922644f2f178ad6b9228dfc15d8890e60e22bc530016f93b016328042eba10f6"
+            },
+            {
+              "file": "fold6_room1_mix100_ov2.h5",
+              "bytes": 83648,
+              "sha256": "f62d9f0c17daaad3532200159aafafa68a629edb0acbe09578f1e722381d86bd"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          }
+        },
+        {
+          "directory": "dcase2020task3/meta/eval",
+          "files": 200,
+          "bytes": 16729600,
+          "extensions": {
+            ".h5": 200
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "b66354dd029655e14dcb4e5277ab3735933a6e96b2a4917d6514d5c249c13a50",
+          "stem_digests": {
+            ".h5": {
+              "count": 200,
+              "unique": 200,
+              "sha256": "dfd52a749009c3ba9b11db6381fa77ca0aac358f416d42109a515136609042e2"
+            }
+          },
+          "samples": [
+            {
+              "file": "mix001.h5",
+              "shape": {
+                "doa_label": {
+                  "shape": [
+                    600,
+                    2,
+                    3
+                  ],
+                  "dtype": "float32"
+                },
+                "sed_label": {
+                  "shape": [
+                    600,
+                    2,
+                    14
+                  ],
+                  "dtype": "float32"
+                }
+              }
+            }
+          ],
+          "content_samples": [
+            {
+              "file": "mix001.h5",
+              "bytes": 83648,
+              "sha256": "6c83a949fee38ddf0add1c4b653d6f6886564f38e4b936171882ad3c2cd7f59c"
+            },
+            {
+              "file": "mix101.h5",
+              "bytes": 83648,
+              "sha256": "21a749db2720b17b54eea9d7c67be8dd6790bf5f5e8351f1e9c4d50aabd5c57c"
+            },
+            {
+              "file": "mix200.h5",
+              "bytes": 83648,
+              "sha256": "e96f52689e61914cbde9800e7b6c350bc4cd99540864b673bec06d38943434d8"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          }
+        },
+        {
+          "directory": "dcase2020task3/scalar",
+          "files": 2,
+          "bytes": 32768,
+          "extensions": {
+            ".h5": 2
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "4a8ca8931215501a966ab9bb7c7cf07d1dc1f494045e04a800746f6a1e98d459",
+          "stem_digests": {
+            ".h5": {
+              "count": 2,
+              "unique": 2,
+              "sha256": "051767bf3cbdb4ac219f17eb48de0ff3c6ac5760d742bac51bafcf6e181b3439"
+            }
+          },
+          "samples": [
+            {
+              "file": "foa_causal_logmel&intensity_sr24000_nfft1024_hop600_mel256.h5",
+              "shape": {
+                "mean": {
+                  "shape": [
+                    1,
+                    7,
+                    1,
+                    256
+                  ],
+                  "dtype": "float32"
+                },
+                "std": {
+                  "shape": [
+                    1,
+                    7,
+                    1,
+                    256
+                  ],
+                  "dtype": "float32"
+                }
+              }
+            }
+          ],
+          "content_samples": [
+            {
+              "file": "foa_causal_logmel&intensity_sr24000_nfft1024_hop600_mel256.h5",
+              "bytes": 16384,
+              "sha256": "3855ae4209113e0e268508ee74969fe7aebe3b645dda9a47e23010fca76d0ef2"
+            },
+            {
+              "file": "foa_logmel&intensity_sr24000_nfft1024_hop600_mel256.h5",
+              "bytes": 16384,
+              "sha256": "02dfca684960d5e68602317ab41796d487faa812f2d14f8f9de11c6161c821b5"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          },
+          "full_content_digest": "499d51fd2c869bcce65fb7a0d2e3fbcef7650438f4ba34aee345afbf66cda06d",
+          "full_content_files": 2
+        }
+      ],
+      "symlinks": [],
+      "broken_symlinks": [],
+      "errors": [],
+      "files": 1606,
+      "bytes": 9284589904,
+      "file_size_digest": "0caafa97bcdac56f3106d2ebf0d3ea087e2e577828e6200ebc93fc21c19baca1",
+      "symlink_count": 0
+    },
+    {
+      "asset": "EINV2_velocity",
+      "path": "/home/zhanghc/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/velocity_hdf5",
+      "resolved_path": "/home/zhanghc/SELD/EINV2/C1_CausalEINV2_Velocity_seed2026/velocity_hdf5",
+      "exists": true,
+      "groups": [
+        {
+          "directory": "dcase2020task3/velocity/dev",
+          "files": 600,
+          "bytes": 15206400,
+          "extensions": {
+            ".h5": 600
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "0fc0c79f5563db430607c5d2b03a2fe745abf5f62a3da163970da58ba413ef3f",
+          "stem_digests": {
+            ".h5": {
+              "count": 600,
+              "unique": 600,
+              "sha256": "a8b1e52bd9699ae9a599c5b0f0c2054498b8c33b5cb6a69c0302c17dd9617aad"
+            }
+          },
+          "samples": [
+            {
+              "file": "fold1_room1_mix001_ov1.h5",
+              "shape": {
+                "velocity_label": {
+                  "shape": [
+                    600,
+                    2,
+                    3
+                  ],
+                  "dtype": "float32"
+                },
+                "velocity_mask": {
+                  "shape": [
+                    600,
+                    2
+                  ],
+                  "dtype": "float32"
+                }
+              }
+            }
+          ],
+          "content_samples": [
+            {
+              "file": "fold1_room1_mix001_ov1.h5",
+              "bytes": 25344,
+              "sha256": "f1497399e5daf03a25f4ceeafee701ea66d9d1f16185b0383170c84e5ebfd516"
+            },
+            {
+              "file": "fold4_room1_mix001_ov1.h5",
+              "bytes": 25344,
+              "sha256": "481886d2908d5acf19896bf06b308e417b6831420311b3066476a491d237b8d7"
+            },
+            {
+              "file": "fold6_room1_mix100_ov2.h5",
+              "bytes": 25344,
+              "sha256": "ac311f6a346db6449f855e96e884d505de57dcaebcbc710f0a18281a853e052e"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          }
+        }
+      ],
+      "symlinks": [],
+      "broken_symlinks": [],
+      "errors": [],
+      "files": 600,
+      "bytes": 15206400,
+      "file_size_digest": "8c78bf3778f36607e89ab6c456290165adf47a1ed1aaf232361b6241d429ce1a",
+      "symlink_count": 0
+    },
+    {
+      "asset": "EINV2_jepa",
+      "path": "/home/zhanghc/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/jepa_hdf5",
+      "resolved_path": "/home/zhanghc/SELD/EINV2/C2_CausalEINV2_JEPA_seed2026/jepa_hdf5",
+      "exists": true,
+      "groups": [
+        {
+          "directory": "dcase2020task3/jepa/dev",
+          "files": 600,
+          "bytes": 18086400,
+          "extensions": {
+            ".h5": 600
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "2544300ae4951c04f691135932f937cfdbc52b1ee644b523b020a34c6285f0ff",
+          "stem_digests": {
+            ".h5": {
+              "count": 600,
+              "unique": 600,
+              "sha256": "a8b1e52bd9699ae9a599c5b0f0c2054498b8c33b5cb6a69c0302c17dd9617aad"
+            }
+          },
+          "samples": [
+            {
+              "file": "fold1_room1_mix001_ov1.h5",
+              "shape": {
+                "identity_label": {
+                  "shape": [
+                    600,
+                    2,
+                    2
+                  ],
+                  "dtype": "int32"
+                },
+                "jepa_valid_mask": {
+                  "shape": [
+                    600,
+                    2,
+                    3
+                  ],
+                  "dtype": "float32"
+                }
+              }
+            }
+          ],
+          "content_samples": [
+            {
+              "file": "fold1_room1_mix001_ov1.h5",
+              "bytes": 30144,
+              "sha256": "43a86d6a1be99f064ea0c149fd8a308b91ec86197669b73da2ff4b6c186da0be"
+            },
+            {
+              "file": "fold4_room1_mix001_ov1.h5",
+              "bytes": 30144,
+              "sha256": "1b3ff6ee9b1310d4f69d1760c387862124caf8be442f9b36f23ffa509ea40b68"
+            },
+            {
+              "file": "fold6_room1_mix100_ov2.h5",
+              "bytes": 30144,
+              "sha256": "0be10abf213655334f80b562aef8f2d21ac53bbf04aae94457f14bf9e9fc40f4"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          }
+        }
+      ],
+      "symlinks": [],
+      "broken_symlinks": [],
+      "errors": [],
+      "files": 600,
+      "bytes": 18086400,
+      "file_size_digest": "01dbb629d32febace1e1706e7d9057fd83a519856199b78680a3d1447f4bb8b8",
+      "symlink_count": 0
+    },
+    {
+      "asset": "EINV2_TAU2020_metadata",
+      "path": "/home/zhanghc/SELD/EINV2/dataset_root",
+      "resolved_path": "/home/zhanghc/SELD/EINV2/dataset_root",
+      "exists": true,
+      "groups": [
+        {
+          "directory": "metadata_dev",
+          "files": 601,
+          "bytes": 5301938,
+          "extensions": {
+            ".csv": 601
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "f8164683e3d5fa1c870f9bc20d36afbc795e674664cd938a2a9e2763a8fe5412",
+          "stem_digests": {
+            ".csv": {
+              "count": 601,
+              "unique": 601,
+              "sha256": "936adc57f7dab7a80fa51afd43a40c45133d4378875f481ad39991c01f2568e6"
+            }
+          },
+          "samples": [
+            {
+              "file": "._fold1_room1_mix001_ov1.csv",
+              "shape": null,
+              "first_row_columns": 1
+            }
+          ],
+          "content_samples": [
+            {
+              "file": "._fold1_room1_mix001_ov1.csv",
+              "bytes": 4096,
+              "sha256": "1ec7664a3a3488926e1a0a4cbe131940a07ce601c4af5598b43191daf8c2f1df"
+            },
+            {
+              "file": "fold3_room2_mix050_ov2.csv",
+              "bytes": 11241,
+              "sha256": "d9c3aa1eff6f972f7ea6ac362c841e1a35308834abe82b09f8b47b9dd76dd718"
+            },
+            {
+              "file": "fold6_room1_mix100_ov2.csv",
+              "bytes": 12653,
+              "sha256": "0931a6f234c1bc91d33899fe27ebbbe2380a06d3ff5555cec483bfee19290dd6"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          },
+          "full_content_digest": "99fa0a3040c30ac8309da0ae621dd386b5958161b77a273bb07e8eba0e0ac8ca",
+          "full_content_files": 601
+        },
+        {
+          "directory": "metadata_eval",
+          "files": 200,
+          "bytes": 1739420,
+          "extensions": {
+            ".csv": 200
+          },
+          "zero_bytes": 0,
+          "file_size_digest": "b1da79aabc67780892db516805dfd6b46c8d573d13c15663f3f48ae21f7d68d9",
+          "stem_digests": {
+            ".csv": {
+              "count": 200,
+              "unique": 200,
+              "sha256": "dfd52a749009c3ba9b11db6381fa77ca0aac358f416d42109a515136609042e2"
+            }
+          },
+          "samples": [
+            {
+              "file": "mix001.csv",
+              "shape": null,
+              "first_row_columns": 5
+            }
+          ],
+          "content_samples": [
+            {
+              "file": "mix001.csv",
+              "bytes": 6424,
+              "sha256": "c3863de215388d9297959e43babf627bc66546a501ceca4e90a9b82f498fe8d9"
+            },
+            {
+              "file": "mix101.csv",
+              "bytes": 7165,
+              "sha256": "ca8a8dfc8f7a637787800e59655cf6a28edcbed012639492c8179a0441803d98"
+            },
+            {
+              "file": "mix200.csv",
+              "bytes": 4443,
+              "sha256": "0b940f955f5c56ea072a1bd2d86914e1045a5836fc5e2becea71bf4f933da4f3"
+            }
+          ],
+          "audio_header_errors": [],
+          "audio": {
+            "files": 0,
+            "headers_read": 0,
+            "seconds": 0.0,
+            "duration_min": null,
+            "duration_max": null,
+            "sample_rates": {},
+            "channels": {},
+            "subtypes": {}
+          },
+          "full_content_digest": "52141632cb4d5338efa060028ac7379405eeeeb5b3ebe9cc74199b5913eb8607",
+          "full_content_files": 200
+        }
+      ],
+      "symlinks": [
+        {
+          "path": "/home/zhanghc/SELD/EINV2/dataset_root/metadata_eval",
+          "target": "/home/zhanghc/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/metadata_eval/source",
+          "resolved": "/home/zhanghc/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/metadata_eval/source"
+        }
+      ],
+      "broken_symlinks": [],
+      "errors": [],
+      "files": 801,
+      "bytes": 7041358,
+      "file_size_digest": "3eee880de437a9eb37a3a946937f91ed575962fbded5d3aea77f31f7bc6e0a68",
+      "symlink_count": 1
+    },
+    {
+      "asset": "other_datasets_root",
+      "path": "/home/zhanghc/SELD/datasets",
+      "resolved_path": "/home/zhanghc/SELD/datasets",
+      "exists": false,
+      "groups": [],
+      "symlinks": [],
+      "broken_symlinks": [],
+      "errors": []
+    }
+  ]
+}

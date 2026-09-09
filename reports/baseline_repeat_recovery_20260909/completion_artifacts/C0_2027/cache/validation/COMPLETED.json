@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "files": 100,
+  "elapsed_seconds": 43.54349184036255,
+  "exact_validation_float_csv_score": true,
+  "scores": {
+    "dcase2020_source": {
+      "ER20": 0.5788833105127035,
+      "F20": 0.5733621310295175,
+      "LE_CD": 14.971724192754971,
+      "LF_CD": 0.6812095032397407,
+      "SELD_LF": 0.35187198043968765
+    },
+    "dcase2020_web_lr": {
+      "ER20": 0.5788833105127035,
+      "F20": 0.5733621310295175,
+      "LE_CD": 14.971724192754971,
+      "LR_CD": 0.7197626654495665,
+      "SELD_LR": 0.34223368988723124
+    },
+    "dcase2023_micro": {
+      "ER20": 0.6318303971334727,
+      "F20": 0.5600335265767968,
+      "LE_CD": 14.971597518947124,
+      "LR_CD": 0.7085255170361553,
+      "SELD_LR": 0.36161172382311224
+    },
+    "dcase2023_macro": {
+      "ER20": 0.6318303971334727,
+      "F20": 0.5431331999221197,
+      "LE_CD": 14.06615291021595,
+      "LR_CD": 0.6989488501628129,
+      "SELD_LR": 0.3669734102485461
+    }
+  },
+  "parameters_buffers_unchanged": true,
+  "prefix_probes": [
+    {
+      "batch": 0,
+      "raw_prefix_max_delta": 0.0,
+      "feature_prefix_max_delta": 0.0
+    },
+    {
+      "batch": 46,
+      "raw_prefix_max_delta": 0.0,
+      "feature_prefix_max_delta": 0.0
+    }
+  ],
+  "causality_scope": "first and last export batches, prefix20; not universal proof",
+  "in_sample_training_cache": false,
+  "training_updates": 0
+}

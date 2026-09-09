@@ -1,0 +1,61 @@
+
+Dataset dcase2020task3 is being developed......
+
+{"stage": "hashing_actual_waveform_inputs", "files": 100}
+/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/lib/python3.10/site-packages/torch/nn/modules/transformer.py:307: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
+/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/runtime/models/einv2/variants/C3/seld/methods/ein_seld/data.py:379: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  'waveform': torch.tensor(batch_x, dtype=torch.float32)
+/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/runtime/models/einv2/variants/C3/seld/methods/ein_seld/data.py:379: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  'waveform': torch.tensor(batch_x, dtype=torch.float32)
+/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/runtime/models/einv2/variants/C3/seld/methods/ein_seld/data.py:379: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  'waveform': torch.tensor(batch_x, dtype=torch.float32)
+/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/runtime/models/einv2/variants/C3/seld/methods/ein_seld/data.py:379: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:278.)
+  'waveform': torch.tensor(batch_x, dtype=torch.float32)
+{"batch": 1, "batches": 47, "recordings": 2, "elapsed_seconds": 18.876919746398926}
+{"batch": 2, "batches": 47, "recordings": 4, "elapsed_seconds": 19.315555334091187}
+{"batch": 3, "batches": 47, "recordings": 6, "elapsed_seconds": 19.79225206375122}
+{"batch": 4, "batches": 47, "recordings": 8, "elapsed_seconds": 20.233652591705322}
+{"batch": 5, "batches": 47, "recordings": 10, "elapsed_seconds": 20.667604446411133}
+{"batch": 6, "batches": 47, "recordings": 12, "elapsed_seconds": 21.085801124572754}
+{"batch": 7, "batches": 47, "recordings": 14, "elapsed_seconds": 21.52250623703003}
+{"batch": 8, "batches": 47, "recordings": 17, "elapsed_seconds": 22.120320796966553}
+{"batch": 9, "batches": 47, "recordings": 19, "elapsed_seconds": 22.55192756652832}
+{"batch": 10, "batches": 47, "recordings": 21, "elapsed_seconds": 22.977070093154907}
+{"batch": 11, "batches": 47, "recordings": 23, "elapsed_seconds": 23.425119638442993}
+{"batch": 12, "batches": 47, "recordings": 25, "elapsed_seconds": 23.870292901992798}
+{"batch": 13, "batches": 47, "recordings": 27, "elapsed_seconds": 24.332889556884766}
+{"batch": 14, "batches": 47, "recordings": 29, "elapsed_seconds": 24.79398226737976}
+{"batch": 15, "batches": 47, "recordings": 32, "elapsed_seconds": 25.430189609527588}
+{"batch": 16, "batches": 47, "recordings": 34, "elapsed_seconds": 25.900168418884277}
+{"batch": 17, "batches": 47, "recordings": 36, "elapsed_seconds": 26.397947549819946}
+{"batch": 18, "batches": 47, "recordings": 38, "elapsed_seconds": 26.867695569992065}
+{"batch": 19, "batches": 47, "recordings": 40, "elapsed_seconds": 27.334365367889404}
+{"batch": 20, "batches": 47, "recordings": 42, "elapsed_seconds": 27.805778980255127}
+{"batch": 21, "batches": 47, "recordings": 44, "elapsed_seconds": 28.288249015808105}
+{"batch": 22, "batches": 47, "recordings": 46, "elapsed_seconds": 28.76687526702881}
+{"batch": 23, "batches": 47, "recordings": 49, "elapsed_seconds": 29.400049686431885}
+{"batch": 24, "batches": 47, "recordings": 51, "elapsed_seconds": 29.857492923736572}
+{"batch": 25, "batches": 47, "recordings": 53, "elapsed_seconds": 30.289684772491455}
+{"batch": 26, "batches": 47, "recordings": 55, "elapsed_seconds": 30.717851638793945}
+{"batch": 27, "batches": 47, "recordings": 57, "elapsed_seconds": 31.163299798965454}
+{"batch": 28, "batches": 47, "recordings": 59, "elapsed_seconds": 31.60555863380432}
+{"batch": 29, "batches": 47, "recordings": 61, "elapsed_seconds": 32.040156841278076}
+{"batch": 30, "batches": 47, "recordings": 64, "elapsed_seconds": 32.63791346549988}
+{"batch": 31, "batches": 47, "recordings": 66, "elapsed_seconds": 33.07962131500244}
+{"batch": 32, "batches": 47, "recordings": 68, "elapsed_seconds": 33.531487464904785}
+{"batch": 33, "batches": 47, "recordings": 70, "elapsed_seconds": 33.97109580039978}
+{"batch": 34, "batches": 47, "recordings": 72, "elapsed_seconds": 34.4057240486145}
+{"batch": 35, "batches": 47, "recordings": 74, "elapsed_seconds": 34.83755612373352}
+{"batch": 36, "batches": 47, "recordings": 76, "elapsed_seconds": 35.29611778259277}
+{"batch": 37, "batches": 47, "recordings": 78, "elapsed_seconds": 35.893754720687866}
+{"batch": 38, "batches": 47, "recordings": 81, "elapsed_seconds": 36.54587531089783}
+{"batch": 39, "batches": 47, "recordings": 83, "elapsed_seconds": 37.00660824775696}
+{"batch": 40, "batches": 47, "recordings": 85, "elapsed_seconds": 37.480677366256714}
+{"batch": 41, "batches": 47, "recordings": 87, "elapsed_seconds": 37.949870347976685}
+{"batch": 42, "batches": 47, "recordings": 89, "elapsed_seconds": 38.42076301574707}
+{"batch": 43, "batches": 47, "recordings": 91, "elapsed_seconds": 38.91074562072754}
+{"batch": 44, "batches": 47, "recordings": 93, "elapsed_seconds": 39.38083076477051}
+{"batch": 45, "batches": 47, "recordings": 96, "elapsed_seconds": 40.01016116142273}
+{"batch": 46, "batches": 47, "recordings": 98, "elapsed_seconds": 40.47810125350952}
+{"batch": 47, "batches": 47, "recordings": 100, "elapsed_seconds": 41.01531457901001}

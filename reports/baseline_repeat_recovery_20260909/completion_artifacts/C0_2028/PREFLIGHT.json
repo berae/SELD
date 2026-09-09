@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "C0_seed": 2028,
+  "C0_sha256": "5d128ad298b110d3afff8ae95fc37b08d25e38fb9d1f595e8d51d99708c76683",
+  "split_disjoint": true,
+  "validation_original_float_csv_scores_exact": true,
+  "real_head_gates": {
+    "F-Deriv": {
+      "zero_float_and_csv_exact": false,
+      "derivative_zero_is_smoothing": true,
+      "real_hidden_prefix": true
+    },
+    "R0": {
+      "zero_float_and_csv_exact": true,
+      "derivative_zero_is_smoothing": false,
+      "real_hidden_prefix": true
+    },
+    "R1": {
+      "zero_float_and_csv_exact": true,
+      "derivative_zero_is_smoothing": false,
+      "real_hidden_prefix": true
+    },
+    "R2": {
+      "zero_float_and_csv_exact": true,
+      "derivative_zero_is_smoothing": false,
+      "real_hidden_prefix": true
+    }
+  },
+  "real_train_gradient_finite_nonzero": true,
+  "optimizer_updates": 0,
+  "baselines_pure_sed_exact": true,
+  "static_zero_target_check": {
+    "chunks": 2,
+    "matched": 61,
+    "valid_pairs": 59,
+    "loss": 0.0,
+    "all_gradients_finite_and_zero": true
+  },
+  "gradient_checks": {
+    "F-Deriv": {
+      "loss": 0.0026629013009369373,
+      "final_weight_gradient_abs_sum": 0.22502511739730835,
+      "all_gradients_finite": true,
+      "chunks": 15,
+      "matched": 471,
+      "valid_pairs": 453,
+      "nonzero_target_coordinates": 324
+    },
+    "R0": {
+      "loss": 0.0029100917745381594,
+      "final_weight_gradient_abs_sum": 0.8187456727027893,
+      "all_gradients_finite": true,
+      "chunks": 15,
+      "matched": 471,
+      "valid_pairs": 453,
+      "nonzero_target_coordinates": 324
+    },
+    "R1": {
+      "loss": 0.0029100917745381594,
+      "final_weight_gradient_abs_sum": 0.6896551251411438,
+      "all_gradients_finite": true,
+      "chunks": 15,
+      "matched": 471,
+      "valid_pairs": 453,
+      "nonzero_target_coordinates": 324
+    },
+    "R2": {
+      "loss": 0.0034776560496538877,
+      "final_weight_gradient_abs_sum": 0.6964020729064941,
+      "all_gradients_finite": true,
+      "chunks": 15,
+      "matched": 471,
+      "valid_pairs": 453,
+      "nonzero_target_coordinates": 324
+    }
+  },
+  "fixture_seed": 2026,
+  "fixture_recording": "fold2_room1_mix001_ov1",
+  "no_training_data_change": true,
+  "code_snapshot_unchanged": true,
+  "script_sha256": "b3992fb5d74e205297573893de59da9710a85dcf328b5c132d4d29f6a8793dc9",
+  "authorization_sha256": "acebe713923c42b4c863e5ee31989c8a0de9b8ffec8dbce4e7768e62ac4df116",
+  "recovery_output": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/preflight_recovered/C0_2028",
+  "manifests_sha256": {
+    "train": "96dde163440fd464b911cb8016f8bd2ed2948c82f5972781306a0d7ee708613f",
+    "validation": "15a7290fbfae58951a49259036131724a0ed18c44d81a50a530671189d7511a7"
+  }
+}

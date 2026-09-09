@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "jobs": 4,
+  "stage": "train",
+  "recovered_after_transport_loss": true,
+  "evidence_sha256": "43977704b16c013fd9a97270330df170fbdf83efdb718e4a215bb9603e974928"
+}

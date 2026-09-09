@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "zero_float_and_csv_exact": true,
+  "derivative_zero_is_smoothing": false,
+  "real_hidden_prefix": true,
+  "raw_scores_exact": true
+}

@@ -1,0 +1,7 @@
+{
+  "start_unix": 1788953680.6000216,
+  "freeze_sha256": "b9027a91059cd0ba8cb85896b95cedb140d55cfdbfd6ea076f335e12c9042aee",
+  "registry_sha256": "564e15dfa7d13a505956a7aa4d8706fc6a273f0e01a509dd7b49ef0dd09ada93",
+  "new_training_runs": 0,
+  "historical_evaluation_seen": true
+}
