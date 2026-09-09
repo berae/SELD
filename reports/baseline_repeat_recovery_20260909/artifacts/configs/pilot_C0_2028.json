@@ -1,0 +1,229 @@
+{
+  "schema": "seld_refinement_v2_pilot/1",
+  "version": "unified_v2_20260907",
+  "status": "SPECIFIED_NOT_AUTHORIZED_FOR_TRAINING",
+  "canonical_decision": "E:/SELDR/ICCIP2026_UNIFIED_V2_20260907.md",
+  "phase": 1,
+  "dataset": "TAU2020_FOA",
+  "cohort": "audited_RB05",
+  "baseline_variant": "C0",
+  "baseline_seed": 2028,
+  "baseline_run": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/source/C0_2028",
+  "baseline_checkpoint_sha256": "5d128ad298b110d3afff8ae95fc37b08d25e38fb9d1f595e8d51d99708c76683",
+  "runtime": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/runtime",
+  "runtime_version": "einv2_rb05_dynamicmask_v1",
+  "existing_export": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/source/C0_2028",
+  "proposed_feature_cache": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/cache",
+  "proposed_pilot_output": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/C0_2028/heads",
+  "splits": {
+    "train_folds": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "validation_fold": 1,
+    "train_recordings": 500,
+    "validation_recordings": 100,
+    "evaluation_access_for_selection": false
+  },
+  "frozen": {
+    "model_eval": true,
+    "frontend_eval": true,
+    "requires_grad": false,
+    "optimizer_scope": "new_head_only",
+    "allow_buffer_update": false,
+    "allow_teacher": false
+  },
+  "feature": {
+    "field": "doa_features",
+    "dimension": 512,
+    "dtype": "float32",
+    "layer": "doa_heads[k] forward_pre_hook input after causal Transformer before Linear/tanh",
+    "layout": [
+      "recording_frame",
+      "raw_slot",
+      "channel"
+    ],
+    "shape_per_recording": [
+      600,
+      2,
+      512
+    ],
+    "raw_predictions": "save authoritative original forward outputs, do not recompute from packed features",
+    "extraction_mode": "torch.no_grad; original batch32; 4s independent chunks",
+    "includes_implicit_history": true
+  },
+  "detection_contract": {
+    "threshold": 0.5,
+    "comparison": "strict_greater",
+    "class_per_slot": "argmax",
+    "decode_first": true,
+    "corrected_fields": [
+      "azimuth",
+      "elevation"
+    ],
+    "record_identity": [
+      "filename",
+      "frame",
+      "class",
+      "raw_slot",
+      "occurrence_index"
+    ],
+    "multiplicity": "ordered_sequence_not_set",
+    "preserve_full_probability_tensor": true,
+    "post_correction_dedup": false,
+    "polar_quantization": "numpy.rint degrees with original atan2"
+  },
+  "association": {
+    "input": "raw prediction only",
+    "rule": "same-class gated max-cardinality Hungarian",
+    "gate_degrees": 45.0,
+    "ambiguity_degrees": 1e-06,
+    "max_frame_gap": 1,
+    "gt_input": false,
+    "corrected_direction_feedback": false
+  },
+  "context": {
+    "frame_seconds": 0.1,
+    "chunk_frames": 40,
+    "future_label_frames": 0,
+    "within_frame_latest_sample_ms": 75,
+    "cross_chunk": false,
+    "R1_explicit_predecessor_frames": 1,
+    "no_match_R1": "zero history vectors and validity=0; retain current-representation correction, not an independently trained fallback head",
+    "no_match_filters": "raw"
+  },
+  "vector_convention": {
+    "current_and_previous": "unit DOA for all new direction decoders",
+    "output": "preserve raw norm, modify direction only",
+    "derivative_symbol": "d_t",
+    "derivative_unit": "unit-DOA displacement per 100ms frame",
+    "derivative_target": "unit_GT_t minus unit_GT_t_minus_1",
+    "velocity_symbol_reserved": "v_t = d_t/0.1 seconds",
+    "tangent_residual_symbol": "xi_t",
+    "rho_degrees": 15.0,
+    "rho_radians": 0.2617993877991494
+  },
+  "training_proposal": {
+    "epochs": 20,
+    "batch_chunks": 32,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "scheduler": "none",
+    "gradient_clip_norm": 1.0,
+    "head_seed": 2026,
+    "last_layer_initialization": "zero",
+    "hidden_width": 128,
+    "activation": "GELU",
+    "augmentation": "none",
+    "mixed_precision": false,
+    "selection": "minimum validation SELD_LR under frozen micro scorer; tie earlier epoch",
+    "validation_frequency_epochs": 1,
+    "parameter_search": false,
+    "max_runs_per_learned_condition": 1
+  },
+  "training_targets": {
+    "matching": "fixed C0 frame/class Hungarian to GT without 20-degree quality rejection; immutable saved mapping",
+    "motion_pair": "consecutive same GT identity, matched both frames, same chunk, prediction-only predecessor mapping agrees with pair; GT never repairs input history",
+    "R0_R1_direction_loss": "mean(1-dot(unit_corrected,unit_GT)) on fixed matched detections",
+    "R2_extra_loss": "mean coordinate MSE of corrected consecutive unit-DOA displacement versus GT displacement, lambda=1.0",
+    "F_Deriv_loss": "SmoothL1(beta=0.1) mean over valid displacement pairs",
+    "unmatched_identity_regularization": "lambda=0.1 mean squared angular-equivalent correction; identical for R0/R1/R2; zero-displacement penalty for F-Deriv",
+    "empty_mask": "term zero; log denominator; no invented labels",
+    "train_easy_cache_bias": "disclose in-sample frozen C0 cache vs validation; no automatic cross-fitting"
+  },
+  "conditions": [
+    {
+      "id": "F0",
+      "training": false,
+      "entry": "existing C0 raw export",
+      "status": "EXISTING_CACHE_VERIFIED"
+    },
+    {
+      "id": "F-EMA",
+      "training": false,
+      "entry": "candidate.derivative_fusion with zero displacement",
+      "definition": "two-frame nonrecursive alpha=.5 smoothing; label explicitly, not long-memory EMA",
+      "status": "COMPONENT_TESTED"
+    },
+    {
+      "id": "F-KF",
+      "training": false,
+      "entry": null,
+      "definition": "fixed 3D constant-velocity linear Kalman on unit directions; state=(position,displacement/frame), H=[I,0], F=[[I,I],[0,I]], P0=diag(1,1,1,.1,.1,.1), Q=diag(.001,.001,.001,.001,.001,.001), R=.01I; reuse raw predicted association, reset at gaps/chunks, raw fallback, normalize output only",
+      "status": "SPECIFIED_IMPLEMENTATION_PENDING",
+      "claim_limit": "recursive within chunk; explicit memory differs from two-frame filters and must be reported"
+    },
+    {
+      "id": "F-Deriv",
+      "training": true,
+      "entry": "candidate.DerivativeHead + candidate.derivative_fusion",
+      "input_dim": 512,
+      "parameters": 66051,
+      "head_source": "fresh head trained on this frozen C0 only",
+      "fusion_alpha": 0.5,
+      "previous_position": "raw not fused",
+      "status": "MODULE_TESTED_TRAINER_PENDING"
+    },
+    {
+      "id": "R0",
+      "training": true,
+      "entry": "candidate.ResidualHead(explicit_history=False)",
+      "input_dim": 515,
+      "parameters": 66435,
+      "motion_lambda": 0.0,
+      "status": "MODULE_TESTED_TRAINER_PENDING"
+    },
+    {
+      "id": "R1",
+      "training": true,
+      "entry": "candidate.ResidualHead(explicit_history=True)",
+      "input_dim": 1031,
+      "parameters": 132483,
+      "motion_lambda": 0.0,
+      "status": "MODULE_TESTED_TRAINER_PENDING"
+    },
+    {
+      "id": "R2",
+      "training": true,
+      "entry": "candidate.ResidualHead(explicit_history=True)",
+      "input_dim": 1031,
+      "parameters": 132483,
+      "motion_lambda": 1.0,
+      "status": "MODULE_TESTED_TRAINER_PENDING"
+    }
+  ],
+  "promotion": {
+    "author_approval": "PENDING_FOR_NUMERIC_THRESHOLDS",
+    "relative_to": "best of F-EMA and F-KF on validation; additionally report comparison with F-Deriv",
+    "LE_improvement_degrees_at_least": 0.5,
+    "F20_drop_percentage_points_at_most": 0.5,
+    "SELD_LR_must_not_worsen": true,
+    "hard_gates": [
+      "cache_provenance",
+      "raw_zero_float_csv_score_regression",
+      "detection_contract",
+      "causality",
+      "split_and_full_output_coverage"
+    ],
+    "oracle_required": false,
+    "factorial_2x2": false
+  },
+  "execution": {
+    "training_started": false,
+    "full_cache_export_started": false,
+    "max_gpu_processes_phase1": 1,
+    "gpu_allocation": "only explicitly assigned or rechecked idle card; no standing reservation",
+    "pilot_budget_hours": [
+      24,
+      36
+    ],
+    "new_training_throughput": "NOT_MEASURED",
+    "automatic_retry": false,
+    "confirmation_three_seeds": "conditional later stage, not auto-enqueued",
+    "timeout_policy": "first smoke hard cap 30 minutes; formal pilot cap set after smoke and explicit execution scope"
+  }
+}
