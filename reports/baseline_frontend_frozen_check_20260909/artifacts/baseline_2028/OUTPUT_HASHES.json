@@ -1,0 +1,9 @@
+{
+  "INPUT_MANIFEST.json": "3e5d7515362d86e40c509b7893e3d86b80f210854eaca0dff3ac0daa74e9d840",
+  "RESULTS.json": "5566a8c681251ae936df4cbc2b375db380c58bae74939e93164b0b7b2b67ac4e",
+  "default_model_flags_frontend_frozen/COMPARISON.json": "b9875ba82238fc319ca457cf9a56f5735f7ace32b97f5e6fe70d93bd0ee2a27f",
+  "default_model_flags_frontend_frozen/first_batch.npz": "f06464b3ea06d027fc9ea886e958f8d89b3fc45326346489401c012b125be803",
+  "default_model_flags_frontend_frozen/fold1_room1_mix001_ov1.csv": "82528836ef018213ea282548cb66b6c5b336a4ae35466849d21de5ba40f06722",
+  "default_model_flags_frontend_frozen/fold1_room1_mix002_ov1.csv": "6ee31abea5bdf17963cc78676b655b70566028beaf2825ecbc20f4464c96e04d",
+  "historical_first_batch.npz": "fecea7116f05cbd3e9ea09d17699f78166974646de39418a1944b434dc6fa08c"
+}

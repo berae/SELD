@@ -5,7 +5,7 @@ EINV2 与 Multi-ACCDOA 的 causal / offline、velocity、JEPA 辅助监督实验
 
 ## 当前入口（2026-09-08）
 
-- 2026-09-09：[两份baseline首批次差异诊断](reports/baseline_repeat_diagnostic_20260909/RESULTS.md)已完成；参数标志组合可消除首批浮点差异，但须补核前端保持冻结的历史条件。未恢复全量缓存，新增小头仍0/8。
+- 2026-09-09：[前端保持冻结的首批次补核](reports/baseline_frontend_frozen_check_20260909/RESULTS.md)已通过；仅恢复主干历史参数标志即可逐位匹配两份baseline的首批原输出。[上一轮诊断](reports/baseline_repeat_diagnostic_20260909/RESULTS.md)保留。全量缓存修复/恢复仍待确认，新增小头0/8。
 
 - [当前全部实验总览与最新结果](reports/CURRENT_EXPERIMENT_SUMMARY_20260908.md)：历史68个主干run、唯一v2的12个小头及15条件evaluation分开汇总；跨C0新增训练0/8，失败记录完整保留。最新证据目录包含3,000份轻量evaluation预测CSV，但不含权重、特征或音频。下方9月7日历史总表保留当时状态，后补结果与状态更正见本入口。
 

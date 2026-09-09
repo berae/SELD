@@ -1,0 +1,171 @@
+{
+  "requires_grad_flag": true,
+  "grad_enabled_during_forward": false,
+  "hook": true,
+  "inference_mode": false,
+  "vs_historical": {
+    "sed": {
+      "array_equal": true,
+      "shape": [
+        32,
+        40,
+        2,
+        14
+      ],
+      "unequal_elements": 0,
+      "elements": 35840,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "p99_abs": 0.0
+    },
+    "probability": {
+      "array_equal": true,
+      "shape": [
+        32,
+        40,
+        2,
+        14
+      ],
+      "unequal_elements": 0,
+      "elements": 35840,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "p99_abs": 0.0
+    },
+    "doa": {
+      "array_equal": true,
+      "shape": [
+        32,
+        40,
+        2,
+        3
+      ],
+      "unequal_elements": 0,
+      "elements": 7680,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "p99_abs": 0.0
+    }
+  },
+  "activity_changes": 0,
+  "active_class_changes": 0,
+  "complete_recordings": [
+    {
+      "filename": "fold1_room1_mix001_ov1",
+      "records": 440,
+      "historical_records": 440,
+      "csv_bytes_equal": true,
+      "ordered_detection_entries_equal": true,
+      "changed_rows": 0,
+      "historical_csv_sha256": "35559c8be135b913af8f9fadf580ab8e0bf62183d3caf98a0a8899fe38251155",
+      "diagnostic_csv_sha256": "35559c8be135b913af8f9fadf580ab8e0bf62183d3caf98a0a8899fe38251155",
+      "gt_sha256": "f8a73561c63caf5f38ac24161226dfae119f344104951c3eeda3ecc65b61c2f7"
+    },
+    {
+      "filename": "fold1_room1_mix002_ov1",
+      "records": 290,
+      "historical_records": 290,
+      "csv_bytes_equal": true,
+      "ordered_detection_entries_equal": true,
+      "changed_rows": 0,
+      "historical_csv_sha256": "1f35f9e0a515fed015eaadf9ec3694e42f275db4c6bcb6282779839cf5ad4893",
+      "diagnostic_csv_sha256": "1f35f9e0a515fed015eaadf9ec3694e42f275db4c6bcb6282779839cf5ad4893",
+      "gt_sha256": "ef336e02e19d3cfb994d77eb866ddd940b4062d6d872666c3503e8c469f7dd07"
+    }
+  ],
+  "frontend_frozen": true,
+  "model_default_flags_restored": true,
+  "subset_scores": {
+    "historical": {
+      "dcase2020_source": {
+        "ER20": 0.6987951807228916,
+        "F20": 0.43523316062176154,
+        "LE_CD": 21.623821318110704,
+        "LF_CD": 0.7357512953367875,
+        "SELD_LF": 0.41198576635512824
+      },
+      "dcase2020_web_lr": {
+        "ER20": 0.6987951807228916,
+        "F20": 0.43523316062176154,
+        "LE_CD": 21.623821318110704,
+        "LR_CD": 0.8554216867469879,
+        "SELD_LR": 0.38206816850257813
+      },
+      "dcase2023_micro": {
+        "ER20": 0.891566265060241,
+        "F20": 0.42857142857142855,
+        "LE_CD": 21.623821318110707,
+        "LR_CD": 0.8554216867469879,
+        "SELD_LR": 0.43192637259949873
+      },
+      "dcase2023_macro": {
+        "ER20": 0.891566265060241,
+        "F20": 0.347134724857685,
+        "LE_CD": 74.89821899521156,
+        "LR_CD": 0.5178146258503402,
+        "SELD_LR": 0.61067953274807
+      }
+    },
+    "diagnostic": {
+      "dcase2020_source": {
+        "ER20": 0.6987951807228916,
+        "F20": 0.43523316062176154,
+        "LE_CD": 21.623821318110704,
+        "LF_CD": 0.7357512953367875,
+        "SELD_LF": 0.41198576635512824
+      },
+      "dcase2020_web_lr": {
+        "ER20": 0.6987951807228916,
+        "F20": 0.43523316062176154,
+        "LE_CD": 21.623821318110704,
+        "LR_CD": 0.8554216867469879,
+        "SELD_LR": 0.38206816850257813
+      },
+      "dcase2023_micro": {
+        "ER20": 0.891566265060241,
+        "F20": 0.42857142857142855,
+        "LE_CD": 21.623821318110707,
+        "LR_CD": 0.8554216867469879,
+        "SELD_LR": 0.43192637259949873
+      },
+      "dcase2023_macro": {
+        "ER20": 0.891566265060241,
+        "F20": 0.347134724857685,
+        "LE_CD": 74.89821899521156,
+        "LR_CD": 0.5178146258503402,
+        "SELD_LR": 0.61067953274807
+      }
+    },
+    "delta": {
+      "dcase2020_source": {
+        "ER20": 0.0,
+        "F20": 0.0,
+        "LE_CD": 0.0,
+        "LF_CD": 0.0,
+        "SELD_LF": 0.0
+      },
+      "dcase2020_web_lr": {
+        "ER20": 0.0,
+        "F20": 0.0,
+        "LE_CD": 0.0,
+        "LR_CD": 0.0,
+        "SELD_LR": 0.0
+      },
+      "dcase2023_micro": {
+        "ER20": 0.0,
+        "F20": 0.0,
+        "LE_CD": 0.0,
+        "LR_CD": 0.0,
+        "SELD_LR": 0.0
+      },
+      "dcase2023_macro": {
+        "ER20": 0.0,
+        "F20": 0.0,
+        "LE_CD": 0.0,
+        "LR_CD": 0.0,
+        "SELD_LR": 0.0
+      }
+    },
+    "scope": "Only complete recordings contained in first batch; NOT full validation score"
+  }
+}
