@@ -1,0 +1,8 @@
+{"stage": "cache_load", "split": "validation", "files": 50}
+{"stage": "cache_load", "split": "validation", "files": 100}
+Traceback (most recent call last):
+  File "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/code/refinement_v2/preflight_cross_c0.py", line 47, in <module>
+    if __name__=='__main__':main()
+  File "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/code/refinement_v2/preflight_cross_c0.py", line 39, in main
+    assert head.net[-1].weight.grad.abs().sum()>0
+AssertionError
