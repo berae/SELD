@@ -1,0 +1,28 @@
+{
+  "baseline_seed": 2028,
+  "gpu": {
+    "index": "1",
+    "uuid": "GPU-9b71a5f1-1cd2-bb60-6a59-fbf428faf941",
+    "name": "NVIDIA GeForce RTX 3090",
+    "memory_mib": 0
+  },
+  "command": [
+    "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1/code/refinement_v2/run_guarded.py",
+    "--directory",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_diagnostic_20260909/guards/baseline_2028",
+    "--seconds",
+    "3600",
+    "--",
+    "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_diagnostic_20260909/code/diagnose_baseline_first_batch.py",
+    "--source-root",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1",
+    "--baseline-seed",
+    "2028",
+    "--output",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_diagnostic_20260909/baseline_2028"
+  ],
+  "guard": "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_diagnostic_20260909/guards/baseline_2028",
+  "guardian_pid": 2421132
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/work/zhanghc/Myllm/SELD/EINV2/.venvs/einv2-cu121/bin/python",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_diagnostic_20260909/code/diagnose_baseline_first_batch.py",
+    "--source-root",
+    "/work/zhanghc/Myllm/SELD/reports/refinement_v2_cross_c0_20260908_r1",
+    "--baseline-seed",
+    "2028",
+    "--output",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_diagnostic_20260909/baseline_2028"
+  ],
+  "pid": 2421408,
+  "guardian_pid": 2421132,
+  "start_unix": 1788943189.0938573,
+  "hard_timeout_seconds": 3600,
+  "visible_devices": "GPU-9b71a5f1-1cd2-bb60-6a59-fbf428faf941"
+}
