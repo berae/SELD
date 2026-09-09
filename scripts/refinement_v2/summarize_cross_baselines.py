@@ -4,6 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 import statistics
+import numpy as np
 
 NAMES = {'F0':'原模型', 'F-EMA':'原模型＋两帧平滑', 'F-KF':'原模型＋卡尔曼滤波',
          'F-Deriv':'原模型＋独立运动预测头', 'R0':'原模型＋方向修正',
@@ -75,11 +76,33 @@ def main():
             assert result['best_epoch'] == run['selected_epoch'] and result['epochs'] == run['stopped_epoch']
             assert sha(frozen/run['weight_path']) == run['weight_sha256']
             assert selected[run['condition']]['weight_sha256'] == run['weight_sha256']
+            history_path = frozen/Path(run['weight_path']).parent/'epochs.jsonl'
+            history = [json.loads(line) for line in history_path.read_text().splitlines()]
+            policy = read(frozen/'configs/execution_r1.json')['stopping']
+            assert min(history, key=lambda r:(r['scores']['dcase2023_micro']['SELD_LR'],r['epoch']))['epoch'] == result['best_epoch']
+            progress_best = float('inf'); last_progress = 0; replay_stop = False
+            for i, row in enumerate(history):
+                value = row['scores']['dcase2023_micro']['SELD_LR']; epoch = row['epoch']
+                assert epoch == i+1
+                if value < progress_best-policy['validation_min_delta']:
+                    progress_best = value; last_progress = epoch
+                assert row['validation_epochs_without_progress'] == epoch-last_progress
+                w = policy['train_loss_windows']; relative = None
+                if epoch >= policy['minimum_epochs'] and epoch >= 2*w:
+                    older = np.mean([r['loss'] for r in history[i+1-2*w:i+1-w]])
+                    newer = np.mean([r['loss'] for r in history[i+1-w:i+1]])
+                    relative = float(abs(newer-older)/max(abs(older),1e-8))
+                assert row['train_plateau_relative_change'] == relative
+                replay_stop = relative is not None and relative <= policy['relative_train_loss_plateau'] and epoch-last_progress >= policy['validation_patience']
+                assert not replay_stop or i == len(history)-1
+            assert bool(replay_stop) == result['convergence_confirmed']
+            assert replay_stop or len(history) == policy['maximum_epochs']
             training.append(dict(baseline_seed=seed, name=NAMES[run['condition']], reused=(seed==2026),
                 condition=run['condition'], head_seed=2026, best_epoch=result['best_epoch'],
                 stopped_epoch=result['epochs'], stopping_reason=result['stopping_reason'],
                 convergence_confirmed=result['convergence_confirmed'], seconds=result['elapsed_seconds'],
-                checkpoint_sha256=run['weight_sha256'], validation_scores=result['result']['scores']))
+                checkpoint_sha256=run['weight_sha256'], validation_scores=result['result']['scores'],
+                stopping_and_validation_selection_replayed=True, epoch_history_sha256=sha(history_path)))
         for newer, reference in PAIRS:
             delta = {m:selected[newer]['scores']['dcase2023_micro'][m]-selected[reference]['scores']['dcase2023_micro'][m] for m in METRICS}
             paired.append(dict(baseline_seed=seed, comparison=NAMES[newer]+' − '+NAMES[reference],

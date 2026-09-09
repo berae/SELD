@@ -1,0 +1,17 @@
+{
+  "command": [
+    "operations/preflight_recovered_baselines.py",
+    "--root",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909",
+    "--C0-seed",
+    "2028",
+    "--output",
+    "/work/zhanghc/Myllm/SELD/reports/baseline_repeat_recovery_20260909/preflight_recovered/C0_2028"
+  ],
+  "script_sha256": "b3992fb5d74e205297573893de59da9710a85dcf328b5c132d4d29f6a8793dc9",
+  "authorization_sha256": "acebe713923c42b4c863e5ee31989c8a0de9b8ffec8dbce4e7768e62ac4df116",
+  "prepared_sha256": "86983c5f99953b57c64b979de81cb6ba8abf53c59a16702c494373f482e62bd9",
+  "fixture_seed": 2026,
+  "backbone_loaded": false,
+  "optimizer_updates": 0
+}

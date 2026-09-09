@@ -1,0 +1,9 @@
+{
+  "loss": 0.0034776560496538877,
+  "final_weight_gradient_abs_sum": 0.6964020729064941,
+  "all_gradients_finite": true,
+  "chunks": 15,
+  "matched": 471,
+  "valid_pairs": 453,
+  "nonzero_target_coordinates": 324
+}
