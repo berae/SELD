@@ -16,6 +16,7 @@ def main():
     p.add_argument('--C0-seed',type=int,choices=[2027,2028])
     a=p.parse_args();root=a.root.resolve();code=Path(__file__).parent.resolve()
     prepared=json.loads((root/'PREPARED.json').read_text());assert prepared['status']=='PASS'
+    assert code == (root/'code/refinement_v2').resolve(), 'Execute the verified snapshot itself'
     for relative,h in prepared['code_hashes'].items():assert digest(root/'code'/relative)==h,relative
     for name,h in prepared['config_hashes'].items():assert digest(root/'configs'/name)==h,name
     wave='cache_both_C0' if a.stage=='cache' else 'train_C0_%d'%a.C0_seed
@@ -40,6 +41,8 @@ def main():
             command=[sys.executable,str(code/'cache_features.py'),'--config',str(config),
                 '--relocation',str(root/'configs'/('relocation_C0_%d.json'%seed)),
                 '--split',item,'--output',str(cohort/'cache'/item)]
+            if prepared.get('preserve_source_model_flags',False):
+                command.append('--preserve-source-model-flags')
             seconds=1800
         else:
             command=[sys.executable,str(code/'train_heads.py'),'--config',str(config),

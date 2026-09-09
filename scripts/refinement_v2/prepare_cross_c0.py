@@ -21,6 +21,7 @@ def normalized(config):
 def main():
     p=argparse.ArgumentParser()
     for k in ('root','previous'):p.add_argument('--'+k,type=Path,required=True)
+    p.add_argument('--preserve-source-model-flags',action='store_true')
     a=p.parse_args();a.root=a.root.resolve();frozen=a.previous/'frozen'
     registry=json.loads((frozen/'FROZEN.json').read_text())
     assert digest(a.root/'CROSS_C0_PREREGISTRATION.md')==registry['preregistration_sha256']
@@ -63,7 +64,7 @@ def main():
         save_json(a.root/'configs'/('relocation_C0_%d.json'%seed),relocation)
         sources.append(dict(C0_seed=seed,C0_sha256=expected,config_sha256=digest(source/'config.json'),
             files_sha256={str(f.relative_to(source)):digest(f) for f in source.rglob('*') if f.is_file() and '.partial.' not in f.name and '.stream.' not in f.name}))
-    execution.update(seed=2026,user_authorization='2026-09-08 explicit user confirmation; see AUTHORIZATION.md',
+    execution.update(seed=2026,user_authorization='Explicit user confirmation; see AUTHORIZATION.md',
         authorized_scope='preregistered same-cohort C0 seeds2027/2028, fixed head2026, maximum8 new formal heads',
         smoke_batches_per_condition=0,no_automatic_three_seed_expansion=False)
     save_json(a.root/'configs/execution_cross_c0.json',execution)
@@ -72,6 +73,7 @@ def main():
         preregistration_sha256=digest(a.root/'CROSS_C0_PREREGISTRATION.md'),sources=sources,
         code_hashes={str(f.relative_to(a.root/'code')):digest(f) for f in (a.root/'code').rglob('*.py')},
         config_hashes={f.name:digest(f) for f in (a.root/'configs').glob('*.json')},
+        preserve_source_model_flags=a.preserve_source_model_flags,
         unchanged_model_loss_and_training_core=True,evaluation_selection_prohibited=True,bootstrap_repeated=False))
     print(json.dumps(dict(status='PASS',C0_seeds=[2027,2028],maximum_new_training_runs=8)))
 

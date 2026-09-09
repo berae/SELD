@@ -20,6 +20,8 @@ def main():
     p.add_argument('--output', type=Path, required=True)
     p.add_argument('--split', choices=['train', 'validation', 'evaluation'], required=True)
     p.add_argument('--relocation', type=Path, help='Only storage-path relocation; original config and hashes remain authoritative')
+    p.add_argument('--preserve-source-model-flags', action='store_true',
+                   help='Authorized 2027/2028 recovery: historical model flags, frozen frontend, no_grad only')
     args = p.parse_args()
     spec = json.loads(args.config.read_text())
     args.output.mkdir(parents=True, exist_ok=False)
@@ -58,8 +60,14 @@ def main():
     assert len(waveform_paths) == expected
     print(json.dumps(dict(stage='hashing_actual_waveform_inputs',files=expected)),flush=True)
     waveform_hashes = {str(path):digest(path) for path in waveform_paths}
-    model = runner.AuditedEINV2(cfg, dataset).cuda().eval().requires_grad_(False)
+    model = runner.AuditedEINV2(cfg, dataset).cuda().eval()
+    if args.preserve_source_model_flags:
+        assert source_seed in (2027, 2028)
+        assert all(p.requires_grad for p in model.parameters())
+    else:
+        model.requires_grad_(False)
     frontend = runner.Frontend(cfg).cuda().eval().requires_grad_(False)
+    model_flags = [p.requires_grad for p in model.parameters()]
     model.load_state_dict(ck['model']); frontend.load_state_dict(ck['frontend']); del ck
     before = state_digest(model), state_digest(frontend)
     saved = {}
@@ -77,6 +85,9 @@ def main():
                     scalar_sha256=digest(scalar), gt_files=gt_hashes, storage_relocation=relocation,
                     gpu=torch.cuda.get_device_name(), torch=torch.__version__, command=sys.argv,
                     original_forward_predictions=True, optimizer_updates=0,
+                    preserve_source_model_flags=args.preserve_source_model_flags,
+                    model_parameter_flags=model_flags, frontend_parameter_flags=[p.requires_grad for p in frontend.parameters()],
+                    autograd_context='torch.no_grad',
                     feature_shape=[600,2,512], script_sha256=digest(__file__),
                     waveform_inputs_sha256=waveform_hashes,
                     waveform_identity_scope='actual rabbit02 HDF5 hashes retained; validation forward additionally compared to RB05 exports')
@@ -145,7 +156,9 @@ def main():
         handle.remove()
     assert not chunks and set(predictions) == set(gt_hashes)
     assert before == (state_digest(model),state_digest(frontend))
-    assert all(p.grad is None and not p.requires_grad for p in model.parameters())
+    assert all(p.grad is None for p in model.parameters())
+    assert [p.requires_grad for p in model.parameters()] == model_flags
+    assert all(p.grad is None and not p.requires_grad for p in frontend.parameters())
     scores = None
     if args.split == 'validation':
         scores = runner.score(predictions, cfg, 'validation')['scores']
