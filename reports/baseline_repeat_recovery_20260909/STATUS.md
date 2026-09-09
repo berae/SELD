@@ -76,6 +76,6 @@
 - `artifacts/C0_2027/validation_controls`、`artifacts/C0_2028/validation_controls`：已产出的原输出／两帧平滑／卡尔曼对照及逐录音评分；不是新evaluation。
 - 元数据包SHA256：`9718ca8e5133a2d10d112e6a82fac20263057da0a4d472bd464484d15b79b682`，本地与远端一致。
 - 传回的1200份原输出CSV逐个与缓存manifest核验通过。元数据包另保留600份validation固定对照CSV，共1800份CSV；不含权重、NPZ或GT原文件。
-- 修复代码及此前两轮诊断已推送main `1b426ed`。本状态与产物在后续提交上传；以实际push回执为准。
+- 修复代码及此前两轮诊断已推送main `1b426ed`；本状态/产物初版已推送 `21b9cec`。随后补全日志并禁止Git换行转换，完整逐字节版本为本地 `c246581`，1873个归档文件的Git对象已与本地原始字节核验一致。推送该完整版两次遇到GitHub连接重置/443超时，尚未确认上传；不要把GitHub初版CSV字节用于与原manifest核验。远端原始记录及本地完整归档不受影响。
 
 当前没有新学习结果可作baseline配对差、收敛表或evaluation检测保持结论，不用预计值填表。原固定C0头seed稳定性结果不受本次操作修改，也不与本次0/8混计。
