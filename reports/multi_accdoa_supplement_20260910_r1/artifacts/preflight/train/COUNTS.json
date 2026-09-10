@@ -1,0 +1,9 @@
+{
+  "events": 384,
+  "fixed_unmatched": 2,
+  "gt_events": 484,
+  "matched": 382,
+  "nonzero_motion_coordinates": 316,
+  "predicted_pairs": 371,
+  "valid_motion_pairs": 371
+}

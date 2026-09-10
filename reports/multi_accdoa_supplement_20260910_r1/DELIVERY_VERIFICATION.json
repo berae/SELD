@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-10",
+  "archive_sha256": "25c586c64cfb710e17c5adb6babba46e113b80413b64fb48a7504c2bce6f2446",
+  "local_remote_archive_match": true,
+  "expanded_artifact_files": 54,
+  "source_seal_present_files_verified": 31,
+  "intentional_source_binary_omissions": ["source/C0.h5", "source/scaler"],
+  "source_hash_mismatches": [],
+  "preflight_check_records_passed": 95,
+  "preflight_check_records_failed": 0,
+  "training_runs": 0,
+  "optimizer_steps": 0,
+  "new_evaluation_runs": 0
+}

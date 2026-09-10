@@ -1,0 +1,22 @@
+{
+  "evaluation_accessed": false,
+  "full_validation_scoring": "NOT_RUN",
+  "max_gpu_allocated_bytes": 127882752,
+  "optimizer_created": false,
+  "remaining": [
+    "full validation regression and official scoring",
+    "all-cache checks",
+    "trained-head causal prefix regression",
+    "full padding tests beyond native full-length samples",
+    "full-cache training and evaluation authorization"
+  ],
+  "scope": "two recordings only",
+  "seconds": 21.542259138077497,
+  "source_sha256": "710a6bb4d6da01b61afed92d401b06a88580d90122130c9b56a38b46cb494d72",
+  "status": "PASS",
+  "timings": {
+    "train": 1.9791486486792564,
+    "validation": 0.8223551511764526
+  },
+  "training_started": false
+}

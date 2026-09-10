@@ -1,0 +1,119 @@
+{"check": "source:MULTI_ACCDOA_PREFLIGHT_PLAN_20260910.md", "passed": true, "detail": null}
+{"check": "source:operations/AUTHORIZATION.md", "passed": true, "detail": null}
+{"check": "source:operations/event_adapter.py", "passed": true, "detail": null}
+{"check": "source:operations/preflight.py", "passed": true, "detail": null}
+{"check": "source:operations/prepare_and_launch.py", "passed": true, "detail": null}
+{"check": "source:operations/raw_association.py", "passed": true, "detail": null}
+{"check": "source:source/C0.h5", "passed": true, "detail": null}
+{"check": "source:source/completion_manifest.json", "passed": true, "detail": null}
+{"check": "source:source/foa_dev_norm_filenames.json", "passed": true, "detail": null}
+{"check": "source:source/foa_eval_norm_filenames.json", "passed": true, "detail": null}
+{"check": "source:source/historical_threshold_decoder.py", "passed": true, "detail": null}
+{"check": "source:source/manifest.json", "passed": true, "detail": null}
+{"check": "source:source/runtime/SELD_evaluation_metrics.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/audit_adpit_overlap.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/batch_feature_extraction.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/batch_feature_extraction_eval.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/cls_compute_seld_results.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/cls_data_generator.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/cls_feature_class.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/experiment.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/experiment_matrix.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/parameters.official.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/parameters.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/scripts_verify_env.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/seldnet_model.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/test_a0_shared_initialization.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/test_causality.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/test_dynamic_aux.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/test_experiment_protocol.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/train_seldnet.py", "passed": true, "detail": null}
+{"check": "source:source/runtime/visualize_seldnet_output.py", "passed": true, "detail": null}
+{"check": "source:source/scaler", "passed": true, "detail": null}
+{"check": "source:source/scaler.json", "passed": true, "detail": null}
+{"check": "baseline_scope", "passed": true, "detail": null}
+{"check": "native_runtime", "passed": true, "detail": {"python": "3.8.11 (default, Aug  3 2021, 15:09:35) \n[GCC 7.5.0]", "torch": "1.10.0+cu111", "cuda": "11.1"}}
+{"check": "synthetic_native_merge_identity", "passed": true, "detail": null}
+{"check": "merged_below_threshold_retained", "passed": true, "detail": null}
+{"check": "empty_frame_no_event", "passed": true, "detail": null}
+{"check": "track_switch_chunk_reset_zero_norm", "passed": true, "detail": [-1, -1, 1, 0, -1, -1]}
+{"check": "near_tie_rejected", "passed": true, "detail": null}
+{"check": "zero_norm_fallback", "passed": true, "detail": null}
+{"check": "norm_preservation", "passed": true, "detail": null}
+{"check": "no_motion_pair_zero_loss_gradient", "passed": true, "detail": null}
+Computing some stats about the dataset
+	WARNING: Resetting batch size to 12. To accommodate the inference of longest file of 3000 frames in a single batch
+	Datagen_mode: dev, nb_files: 1, nb_classes:14
+	nb_frames_file: 3000, feat_len: 64, nb_ch: 7, label_len:None
+
+	Dataset: foa, split: [2]
+	batch_size: 12, feat_seq_len: 250, label_seq_len: 50, shuffle: False
+	Total batches in dataset: 1
+	label_dir: /work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6/foa_dev_adpit_label
+ 	feat_dir: /work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6/foa_dev_norm
+
+{"check": "train:hook_output_bitwise", "passed": true, "detail": null}
+{"check": "train:shapes", "passed": true, "detail": {"input": [12, 7, 250, 64], "hidden": [12, 50, 128], "output": [12, 50, 126]}}
+{"check": "train:frozen_flags_output_bitwise", "passed": true, "detail": null}
+{"check": "train:future_feature_prefix_bitwise", "passed": true, "detail": {"max_abs": 0.0, "prefix_labels": 25, "latest_available_seconds": 2.5}}
+{"check": "train:chunk_independence_bitwise", "passed": true, "detail": null}
+{"check": "train:native_decode_exact", "passed": true, "detail": null}
+{"check": "train:native_train_decoder_csv_bytes", "passed": true, "detail": null}
+{"check": "train:direction:zero_identity", "passed": true, "detail": null}
+{"check": "train:direction:zero_csv_bytes", "passed": true, "detail": null}
+{"check": "train:direction:finite_nonzero_head_gradient", "passed": true, "detail": {"total_loss": 0.013252214528620243, "gradient_abs_sum": 1.3219396024942398, "terms": {"direction": 0.013252214528620243, "regularizer": 0.0, "motion": 0.0005323474179022014}}}
+{"check": "train:direction:no_parameter_update", "passed": true, "detail": null}
+{"check": "train:history:zero_identity", "passed": true, "detail": null}
+{"check": "train:history:zero_csv_bytes", "passed": true, "detail": null}
+{"check": "train:history:finite_nonzero_head_gradient", "passed": true, "detail": {"total_loss": 0.013252214528620243, "gradient_abs_sum": 1.3576771169900894, "terms": {"direction": 0.013252214528620243, "regularizer": 0.0, "motion": 0.0005323474179022014}}}
+{"check": "train:history:no_parameter_update", "passed": true, "detail": null}
+{"check": "train:motion:zero_identity", "passed": true, "detail": null}
+{"check": "train:motion:zero_csv_bytes", "passed": true, "detail": null}
+{"check": "train:motion:finite_nonzero_head_gradient", "passed": true, "detail": {"total_loss": 0.013784562237560749, "gradient_abs_sum": 1.3594307899475098, "terms": {"direction": 0.013252214528620243, "regularizer": 0.0, "motion": 0.0005323474179022014}}}
+{"check": "train:motion:no_parameter_update", "passed": true, "detail": null}
+{"check": "train:backbone_buffers_unchanged", "passed": true, "detail": null}
+{"check": "train:waveform_frontend_prefix_bitwise", "passed": true, "detail": {"cut_samples": 60000, "prefix_feature_frames": 125, "nfft": 1024, "left_pad": 544}}
+{"split": "train", "seconds": 1.9791486486792564, "counts": {"events": 384, "matched": 382, "valid_motion_pairs": 371, "nonzero_motion_coordinates": 316, "fixed_unmatched": 2, "gt_events": 484, "predicted_pairs": 371}}
+Computing some stats about the dataset
+	WARNING: Resetting batch size to 12. To accommodate the inference of longest file of 3000 frames in a single batch
+	Datagen_mode: dev, nb_files: 1, nb_classes:14
+	nb_frames_file: 3000, feat_len: 64, nb_ch: 7, label_len:None
+
+	Dataset: foa, split: [1]
+	batch_size: 12, feat_seq_len: 250, label_seq_len: 50, shuffle: False
+	Total batches in dataset: 1
+	label_dir: /work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6/foa_dev_adpit_label
+ 	feat_dir: /work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6/foa_dev_norm
+
+{"check": "validation:hook_output_bitwise", "passed": true, "detail": null}
+{"check": "validation:shapes", "passed": true, "detail": {"input": [12, 7, 250, 64], "hidden": [12, 50, 128], "output": [12, 50, 126]}}
+{"check": "validation:frozen_flags_output_bitwise", "passed": true, "detail": null}
+{"check": "validation:future_feature_prefix_bitwise", "passed": true, "detail": {"max_abs": 0.0, "prefix_labels": 25, "latest_available_seconds": 2.5}}
+{"check": "validation:chunk_independence_bitwise", "passed": true, "detail": null}
+{"check": "validation:native_decode_exact", "passed": true, "detail": null}
+{"check": "validation:native_train_decoder_csv_bytes", "passed": true, "detail": null}
+{"check": "validation:historical_best_csv_bytes", "passed": true, "detail": {"actual": "e39f6676a7205ded36fb7d213ad5b9c5827615edaf29f8e3766d784d8b1a8c86", "historical": "e39f6676a7205ded36fb7d213ad5b9c5827615edaf29f8e3766d784d8b1a8c86"}}
+{"check": "validation:direction:zero_identity", "passed": true, "detail": null}
+{"check": "validation:direction:zero_csv_bytes", "passed": true, "detail": null}
+{"check": "validation:direction:finite_nonzero_head_gradient", "passed": true, "detail": {"total_loss": 0.1470588594675064, "gradient_abs_sum": 5.656889408826828, "terms": {"direction": 0.1470588594675064, "regularizer": 0.0, "motion": 0.0013522541848942637}}}
+{"check": "validation:direction:no_parameter_update", "passed": true, "detail": null}
+{"check": "validation:history:zero_identity", "passed": true, "detail": null}
+{"check": "validation:history:zero_csv_bytes", "passed": true, "detail": null}
+{"check": "validation:history:finite_nonzero_head_gradient", "passed": true, "detail": {"total_loss": 0.1470588594675064, "gradient_abs_sum": 5.3681144416332245, "terms": {"direction": 0.1470588594675064, "regularizer": 0.0, "motion": 0.0013522541848942637}}}
+{"check": "validation:history:no_parameter_update", "passed": true, "detail": null}
+{"check": "validation:motion:zero_identity", "passed": true, "detail": null}
+{"check": "validation:motion:zero_csv_bytes", "passed": true, "detail": null}
+{"check": "validation:motion:finite_nonzero_head_gradient", "passed": true, "detail": {"total_loss": 0.1484111100435257, "gradient_abs_sum": 5.376143515110016, "terms": {"direction": 0.1470588594675064, "regularizer": 0.0, "motion": 0.0013522541848942637}}}
+{"check": "validation:motion:no_parameter_update", "passed": true, "detail": null}
+{"check": "validation:backbone_buffers_unchanged", "passed": true, "detail": null}
+{"check": "validation:waveform_frontend_prefix_bitwise", "passed": true, "detail": {"cut_samples": 60000, "prefix_feature_frames": 125, "nfft": 1024, "left_pad": 544}}
+{"split": "validation", "seconds": 0.8223551511764526, "counts": {"events": 389, "matched": 319, "valid_motion_pairs": 300, "nonzero_motion_coordinates": 291, "fixed_unmatched": 70, "gt_events": 380, "predicted_pairs": 365}}
+{"check": "input_unchanged:/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/foa_dev/source/fold1_room1_mix001_ov1.wav", "passed": true, "detail": null}
+{"check": "input_unchanged:/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/foa_dev/source/fold2_room1_mix001_ov1.wav", "passed": true, "detail": null}
+{"check": "input_unchanged:/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/metadata_dev/source/fold1_room1_mix001_ov1.csv", "passed": true, "detail": null}
+{"check": "input_unchanged:/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/metadata_dev/source/fold2_room1_mix001_ov1.csv", "passed": true, "detail": null}
+{"check": "input_unchanged:/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6/foa_dev_adpit_label/fold1_room1_mix001_ov1.npy", "passed": true, "detail": null}
+{"check": "input_unchanged:/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6/foa_dev_adpit_label/fold2_room1_mix001_ov1.npy", "passed": true, "detail": null}
+{"check": "input_unchanged:/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6/foa_dev_norm/fold1_room1_mix001_ov1.npy", "passed": true, "detail": null}
+{"check": "input_unchanged:/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6/foa_dev_norm/fold2_room1_mix001_ov1.npy", "passed": true, "detail": null}
+{"check": "input_unchanged:/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/analysis/threshold_predictions/Completion_20260904_paper_v1_C0_seed2026_validation_seed2026_validation_t050/fold1_room1_mix001_ov1.csv", "passed": true, "detail": null}

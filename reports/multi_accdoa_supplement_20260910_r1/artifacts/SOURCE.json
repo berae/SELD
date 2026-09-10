@@ -1,0 +1,68 @@
+{
+  "automatic_retry": false,
+  "created": 1789006574.5571835,
+  "files": {
+    "MULTI_ACCDOA_PREFLIGHT_PLAN_20260910.md": "a12360e8ca4ebfc36c2c72ece7e005e85562b386d97d5b56ee8a8eb630ae0c7e",
+    "operations/AUTHORIZATION.md": "224f115ce3d7d66512f69b5be2c2b2444392e74c2d5fd58c4d00f9735a1f8646",
+    "operations/event_adapter.py": "f47fae006d4d17db89c643fefb70b7e44bf87eb79b4f76e6a047097cd499df07",
+    "operations/preflight.py": "64e64f6f8c5a4fdddb29d45955af915ffbf097b61ffe8ad34d24fbcb0d745b5e",
+    "operations/prepare_and_launch.py": "9dbe0591c146854b8990e0401c09d2f8850b21fd6446899e09b301dcd59b42d4",
+    "operations/raw_association.py": "b68bc1a1bbdaad1a9a82a402203203fcdca3b568d1da807159cce4b7fa1d0ed2",
+    "source/C0.h5": "8c0fc23d13f35468d69b9e35e96a3868011b06384f9de9196ac06f392f40bcc1",
+    "source/completion_manifest.json": "1f8bf90e9e9ca9a04aa88891a32ea477ec42083035bd4d0fa310faa857248cf9",
+    "source/foa_dev_norm_filenames.json": "3b4453122e470c1259c42cf18653d66c3a1c60e75d50d4052e7ae085fae5b77d",
+    "source/foa_eval_norm_filenames.json": "615cc298454e9b15f191d892f7c7173437c7146089abf02f9f04d3fe3b989cc8",
+    "source/historical_threshold_decoder.py": "33ee7d3814e311868da8f6e20ffa6fed0049d0f6dce57f2957a8336ccc1f1c72",
+    "source/manifest.json": "0f68bb78e90f00dbc5311b62462bbfc796efed160ce4b37340c1cdb31d35940f",
+    "source/runtime/SELD_evaluation_metrics.py": "41b17ffbd5007cd06549b07ad620a77d7cdbc65ae62c93e409f37f28882512c9",
+    "source/runtime/audit_adpit_overlap.py": "e786f6accff31edae2588ee82b8016f19a29106a9ca2d50800ed5892b734e4d4",
+    "source/runtime/batch_feature_extraction.py": "fda887b830d86a026670fbd134c38a1a1d2f390675f601680d3660a1fd7664fc",
+    "source/runtime/batch_feature_extraction_eval.py": "2fa8e8ae529ced413a17167298714aa769a8a8c2f4c4cc755f2ac6099758e636",
+    "source/runtime/cls_compute_seld_results.py": "94cbaeba38c5ce074fd8e07aea914689b9e4fb4e77203276c36f0d72d8497d66",
+    "source/runtime/cls_data_generator.py": "01859e2c95b2ddd11292f6cbb4ade850a782ed3aad0ddb7234bc1e73e5e76514",
+    "source/runtime/cls_feature_class.py": "901beacc230d5874c9e50e414391f330d1bc6782966ecacd6598a52915fd3cb5",
+    "source/runtime/experiment.py": "69aac976af47719ef0b59344fc569b3c3566d4106292977e1492a67ea3db9264",
+    "source/runtime/experiment_matrix.py": "dc23fe3dfd4dbe9c69c71d640495cd5be0ff67c276bce232d1b7ce6e1226de7b",
+    "source/runtime/parameters.official.py": "bfb765ea2869e32418cf07bcb7cec76fb892d5cc570e9648a93c4b4be456193c",
+    "source/runtime/parameters.py": "000fd2e34e6bfff7db1a43b2b70e7a53185259a595140453e30b9bb69888c9ba",
+    "source/runtime/scripts_verify_env.py": "06e22b5e5223dc9fefcc984a924271601b66870309ccc45f87c4ea8e9cbe1441",
+    "source/runtime/seldnet_model.py": "99790739f0e4ab994d413f07a945c1cd648c845fc1b23fb22684a58346037a2e",
+    "source/runtime/test_a0_shared_initialization.py": "622f8fcaeb692ecc0ea23452b1388e5d830ddcc2f1173334755c6da6a30bd931",
+    "source/runtime/test_causality.py": "1c82e9525167a43149c871946a7564c2d3334274a587b5ebb043c6939cc6f919",
+    "source/runtime/test_dynamic_aux.py": "3ae1a20edb69470b76c8318bb35c245a7b73c12c4999a454f68181d1f99802a6",
+    "source/runtime/test_experiment_protocol.py": "b1662e2c19ca4981757e207011a45251c0e44736283b38b263ca39fb4d354460",
+    "source/runtime/train_seldnet.py": "2b3821935026e1e5d90df9818b888423fedc3e5dc78d2c4712258c6e6b84dc1a",
+    "source/runtime/visualize_seldnet_output.py": "91f8f3e5c4e0f027e2bf3fdc3069fb35cb8690293ebd14bde4476522cc64b4e1",
+    "source/scaler": "35f60fdb0d7467e005a8f530a0786a29057e8d160e88b409c4cd26e9cd2a1b27",
+    "source/scaler.json": "a89eace7a92de01ac9cb57e7c166003953b3bb7c7e89529420b743c149b2e0ca"
+  },
+  "historical_commit": "ca05f674b3c719c7b1912417a766f3219197e1a1",
+  "inputs": {
+    "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/foa_dev/source/fold1_room1_mix001_ov1.wav": "ec7ada9dd814993af37ed0386cd56a8096494140bb8d53694ab2c626a17cd322",
+    "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/foa_dev/source/fold2_room1_mix001_ov1.wav": "76d541f4099e9a15cd85dc5f62202c378e6e07988e746bbc519a94295da2c3bf",
+    "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/metadata_dev/source/fold1_room1_mix001_ov1.csv": "f8a73561c63caf5f38ac24161226dfae119f344104951c3eeda3ecc65b61c2f7",
+    "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/metadata_dev/source/fold2_room1_mix001_ov1.csv": "bbae3540f895a65307c9da1d6b5a541cf142feb14d4c6a231144bca968d10974",
+    "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6/foa_dev_adpit_label/fold1_room1_mix001_ov1.npy": "188fc82ad0bc7038f154d7b043d110b9428af4e8e48cb4fc23399f812d563261",
+    "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6/foa_dev_adpit_label/fold2_room1_mix001_ov1.npy": "9f5e18b59fe251c69e3cd32c342e7cdaddeb0bb78c7ef082b216a47288c4db6b",
+    "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6/foa_dev_norm/fold1_room1_mix001_ov1.npy": "117e8df994fa779f2dedb546c1e60bf48b7c46edbcd484f444948f1cadb6d6cf",
+    "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6/foa_dev_norm/fold2_room1_mix001_ov1.npy": "49df762e4742b0c811d4d4745bde67253215eb90f3d07452ee15c1715753b23c",
+    "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/analysis/threshold_predictions/Completion_20260904_paper_v1_C0_seed2026_validation_seed2026_validation_t050/fold1_room1_mix001_ov1.csv": "e39f6676a7205ded36fb7d213ad5b9c5827615edaf29f8e3766d784d8b1a8c86"
+  },
+  "records": {
+    "train": {
+      "audio": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/foa_dev/source/fold2_room1_mix001_ov1.wav",
+      "features": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6/foa_dev_norm/fold2_room1_mix001_ov1.npy",
+      "gt": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/metadata_dev/source/fold2_room1_mix001_ov1.csv",
+      "labels": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6/foa_dev_adpit_label/fold2_room1_mix001_ov1.npy"
+    },
+    "validation": {
+      "audio": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/foa_dev/source/fold1_room1_mix001_ov1.wav",
+      "features": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6/foa_dev_norm/fold1_room1_mix001_ov1.npy",
+      "gt": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/data/TAU2020_SELD_dataset/metadata_dev/source/fold1_room1_mix001_ov1.csv",
+      "historical_csv": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/runs/analysis/threshold_predictions/Completion_20260904_paper_v1_C0_seed2026_validation_seed2026_validation_t050/fold1_room1_mix001_ov1.csv",
+      "labels": "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/features/tau2020_foa_multiaccdoa_strictcausal_trainfolds2-6/foa_dev_adpit_label/fold1_room1_mix001_ov1.npy"
+    }
+  },
+  "scope": "two fixed complete recordings, synthetic boundaries, no optimizer, no evaluation",
+  "timeout_seconds": 1800
+}

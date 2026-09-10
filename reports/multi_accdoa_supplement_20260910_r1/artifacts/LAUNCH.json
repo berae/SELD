@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/work/zhanghc/Myllm/SELD/DynamicCausalMultiACCDOA_TAU2020/.venvs/dcase2023-official-py38/bin/python",
+    "-B",
+    "-u",
+    "/work/zhanghc/Myllm/SELD/reports/multi_accdoa_supplement_20260910_r1/operations/preflight.py"
+  ],
+  "gpu": "GPU-60c5a347-ee77-3c01-8321-f17dbaf8b176, NVIDIA GeForce RTX 3090, 0, 0",
+  "retries": 0,
+  "source_sha256": "710a6bb4d6da01b61afed92d401b06a88580d90122130c9b56a38b46cb494d72",
+  "started": 1789006592.9525826,
+  "timeout_seconds": 1800
+}
